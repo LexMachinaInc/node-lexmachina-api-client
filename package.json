@@ -1,0 +1,43 @@
+{
+  "name": "@lexmachina/lexmachina-client",
+  "version": "0.1.0",
+  "description": "Library to access the Lex Machina API",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },  
+  "devDependencies": {
+    "chai": "*",
+    "chai-as-promised": "^7.1.1",
+    "chai-things": "^0.2.0",
+    "mocha": "*",
+    "nock": "^13.2.8",
+    "nock-record": "^0.3.9",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "axios": "^0.27.2",
+    "moment": "^2.29.3",
+    "node-persist": "^3.1.0",
+    "readline-sync": "^1.4.10",
+    "retry-axios": "^3.0.0",
+    "simple-oauth2": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexMachinaInc/node-lexmachina-api-client.git"
+  },
+  "keywords": [
+    "legal analytics",
+    "lex machina",
+    "lexis nexis",
+    "api"
+  ],
+  "author": "Dave Slusher <dslusher@lexmachina.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/LexMachinaInc/node-lexmachina-api-client/issues"
+  },
+  "homepage": "https://github.com/LexMachinaInc/node-lexmachina-api-client#readme"
+}

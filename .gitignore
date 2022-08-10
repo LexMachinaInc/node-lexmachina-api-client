@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Routine data being used by client library
+.node-persist/
+config/config.json
+config/config-auth.json
+.vscode/

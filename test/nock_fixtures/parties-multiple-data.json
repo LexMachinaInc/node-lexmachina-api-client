@@ -1,0 +1,51 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/parties?party_ids=216320&party_ids=196852&party_ids=56391",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "InputId": 216320,
+                "Party": {
+                    "Name": "Neil Gaiman",
+                    "PartyId": 216320
+                }
+            },
+            {
+                "InputId": 196852,
+                "Party": {
+                    "Name": "Todd McFarlane",
+                    "PartyId": 196852
+                }
+            },
+            {
+                "InputId": 56391,
+                "Party": {
+                    "Name": "Stan Lee",
+                    "PartyId": 56391
+                }
+            }
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "53622331e7b6bb53616e8a8f17e0ac53",
+            "date",
+            "Fri, 22 Jul 2022 14:57:11 GMT",
+            "content-length",
+            "200",
+            "x-request-id",
+            "f7034506-a843-436e-8ed5-7dd7525b00f1",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

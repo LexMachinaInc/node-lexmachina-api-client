@@ -1,0 +1,80 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "XLJhq7H8sFsyfIojwhfet1Qm9YUw",
+            "issued_at": 1657914558272,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "c463eecc-741e-4898-8de5-0fe10f74fe0c",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 15 Jul 2022 19:49:17 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/list-case-types",
+        "body": "",
+        "status": 200,
+        "response": [
+            "Antitrust",
+            "Bankruptcy",
+            "Civil Rights",
+            "Consumer Protection",
+            "Contracts",
+            "Copyright",
+            "ERISA",
+            "Employment",
+            "Environmental",
+            "False Claims",
+            "Insurance",
+            "Patent",
+            "Product Liability",
+            "Securities",
+            "Tax",
+            "Torts",
+            "Trade Secret",
+            "Trademark",
+            "Remaining Federal"
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "b26c4e24bd84b219b93fb011b32a7988",
+            "date",
+            "Fri, 15 Jul 2022 19:49:18 GMT",
+            "content-length",
+            "254",
+            "x-request-id",
+            "69474307-7761-4ddc-8b63-34b6b5c16f74",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

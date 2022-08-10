@@ -1,0 +1,66 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "287xTKwxNAdNm0xtUASVDUs46I3t",
+            "issued_at": 1658511901092,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "88a35013-8282-470e-b482-2dead95246f9",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 22 Jul 2022 17:45:00 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/resolve-parties/216320",
+        "body": "",
+        "status": 200,
+        "response": {
+            "InputId": 216320,
+            "Party": {
+                "Name": "Neil Gaiman",
+                "PartyId": 216320
+            }
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "b750da1494ac568b0d14e546babb454e;o=1",
+            "date",
+            "Fri, 22 Jul 2022 17:45:01 GMT",
+            "content-length",
+            "66",
+            "x-request-id",
+            "71c8a051-b99a-4e61-9162-d1a534834de5",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

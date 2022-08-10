@@ -1,0 +1,88 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "ZwaApY1L2IEeAVGEo0LV53TALGUA",
+            "issued_at": 1658434823719,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "38f9fa41-02bc-4e6f-ac27-e0ee8a37e36d",
+            "content-length",
+            "157",
+            "date",
+            "Thu, 21 Jul 2022 20:20:23 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/search-judges?q=brim",
+        "body": "",
+        "status": 200,
+        "response": {
+            "FederalJudges": [
+                {
+                    "Name": "Clarence Addison Brimmer Jr.",
+                    "Initials": "CAB",
+                    "FederalJudgeId": 260,
+                    "CaseCountByCourt": [
+                        {
+                            "Court": "total",
+                            "Count": 122
+                        }
+                    ],
+                    "Url": "http://lawmachine-alpha-mralpoiyfa-uk.a.run.app/federal-judges/260"
+                },
+                {
+                    "Name": "Philip A. Brimmer",
+                    "Initials": "PAB",
+                    "FederalJudgeId": 3191,
+                    "CaseCountByCourt": [
+                        {
+                            "Court": "total",
+                            "Count": 3405
+                        }
+                    ],
+                    "Url": "http://lawmachine-alpha-mralpoiyfa-uk.a.run.app/federal-judges/3191"
+                }
+            ],
+            "MagistrateJudges": []
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "0b6174991c57ed9dc366b938f6f005a5;o=1",
+            "date",
+            "Thu, 21 Jul 2022 20:20:24 GMT",
+            "content-length",
+            "441",
+            "x-request-id",
+            "76e0e97b-43ae-4220-892f-f24e971fc78b",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

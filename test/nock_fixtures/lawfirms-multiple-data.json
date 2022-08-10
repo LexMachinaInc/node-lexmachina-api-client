@@ -1,0 +1,109 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "Hxpl7GuUA0GRX4FoZdRzmjYcCsJA",
+            "issued_at": 1658500235038,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "2ea77d1d-1cfc-4ce0-846b-471010730f07",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 22 Jul 2022 14:30:34 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/law-firms?law_firm_ids=1368&law_firm_ids=920&law_firm_ids=101693204",
+        "body": "",
+        "status": 500,
+        "response": "Internal Server Error",
+        "rawHeaders": [
+            "content-type",
+            "text/plain; charset=utf-8",
+            "x-cloud-trace-context",
+            "6bea7c4e8886efa44476889e4c7cbe97",
+            "date",
+            "Fri, 22 Jul 2022 14:30:35 GMT",
+            "content-length",
+            "21",
+            "x-request-id",
+            "c14809b6-9cfe-4885-8365-7fb1efdb368d",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/law-firms?law_firm_ids=1368&law_firm_ids=920&law_firm_ids=101693204",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "InputId": 1368,
+                "LawFirm": {
+                    "Name": "Perkins Coie",
+                    "LawFirmId": 1368
+                }
+            },
+            {
+                "InputId": 920,
+                "LawFirm": {
+                    "Name": "Quinn Emanuel Urquhart & Sullivan",
+                    "LawFirmId": 920
+                }
+            },
+            {
+                "InputId": 101693204,
+                "LawFirm": {
+                    "Name": "Sligh Law Firm",
+                    "LawFirmId": 101693204
+                }
+            }
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "85e94e3aab35e26d4c281c895fa73aab",
+            "date",
+            "Fri, 22 Jul 2022 14:30:36 GMT",
+            "content-length",
+            "236",
+            "x-request-id",
+            "199e0c02-0f76-49a2-a0d5-21f10090cad7",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

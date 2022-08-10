@@ -1,0 +1,67 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "KsmAPs5ntx0NOTV259K82JDd36Ry",
+            "issued_at": 1658499148040,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "dcd04082-26d1-4741-b64a-f1e46abfc045",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 22 Jul 2022 14:12:27 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/federal-judges/3349",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Name": "Beryl Alaine Howell",
+            "Initials": "BAH",
+            "DateOfBirth": "1956-01-01",
+            "CaseCount": 1613,
+            "JudgeId": 3349,
+            "NominatingPresident": "Barack Obama"
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "56456dcbe686d3df9a16987248c1243f;o=1",
+            "date",
+            "Fri, 22 Jul 2022 14:12:48 GMT",
+            "content-length",
+            "143",
+            "x-request-id",
+            "cab054e2-8ddd-42bd-862e-33b94fd75c28",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

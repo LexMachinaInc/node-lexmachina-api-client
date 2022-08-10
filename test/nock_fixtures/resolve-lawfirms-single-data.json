@@ -1,0 +1,66 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "r7n3VByo4IkhOW4sddGZ33ReIMnz",
+            "issued_at": 1658511327256,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "c08d8173-4e5d-4bbc-835d-7bd1c8aeec29",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 22 Jul 2022 17:35:26 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/resolve-law-firms/1368",
+        "body": "",
+        "status": 200,
+        "response": {
+            "InputId": 1368,
+            "LawFirm": {
+                "Name": "Perkins Coie",
+                "LawFirmId": 1368
+            }
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "a4601153ec3f3d655845ab086e5fa908;o=1",
+            "date",
+            "Fri, 22 Jul 2022 17:35:27 GMT",
+            "content-length",
+            "67",
+            "x-request-id",
+            "f5e09205-f572-4305-9e49-1d5dc77489c2",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

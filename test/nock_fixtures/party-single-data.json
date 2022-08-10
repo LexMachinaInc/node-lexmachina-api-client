@@ -1,0 +1,93 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "sXydAsMiyDqH6niZToy1kDI3RrDA",
+            "issued_at": 1658501829800,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "48791e6b-3302-4ccd-8561-fa4ed0041c39",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 22 Jul 2022 14:57:09 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/parties/216320",
+        "body": "",
+        "status": 500,
+        "response": "Internal Server Error",
+        "rawHeaders": [
+            "content-type",
+            "text/plain; charset=utf-8",
+            "x-cloud-trace-context",
+            "9446efc86c5f3fad96be2d781202d762;o=1",
+            "date",
+            "Fri, 22 Jul 2022 14:57:10 GMT",
+            "content-length",
+            "21",
+            "x-request-id",
+            "2d8c4a78-fa86-4a20-ae50-23973e85d46f",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/parties/216320",
+        "body": "",
+        "status": 200,
+        "response": {
+            "InputId": 216320,
+            "Party": {
+                "Name": "Neil Gaiman",
+                "PartyId": 216320
+            }
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "df941048e10fc58c8669c9faff9dc075",
+            "date",
+            "Fri, 22 Jul 2022 14:57:10 GMT",
+            "content-length",
+            "66",
+            "x-request-id",
+            "22897e77-ebe2-494d-a405-16c5faecb702",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

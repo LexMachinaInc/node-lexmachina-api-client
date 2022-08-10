@@ -1,0 +1,85 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "saMbWkWFeA911c2KFsQkbIAGQEBw",
+            "issued_at": 1658502970375,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "b84d2b69-14e8-45b7-9927-d2c2433187ad",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 22 Jul 2022 15:16:10 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/resolve-attorneys?attorney_ids=110161257&attorney_ids=43337&attorney_ids=14974596",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "InputId": 110161257,
+                "Attorney": {
+                    "Name": "Gerry L. Spence",
+                    "AttorneyIds": 110161257,
+                    "AttorneyPguids": []
+                }
+            },
+            {
+                "InputId": 43337,
+                "Attorney": {
+                    "Name": "Justin M. Brownstone",
+                    "AttorneyIds": 43337,
+                    "AttorneyPguids": []
+                }
+            },
+            {
+                "InputId": 14974596,
+                "Attorney": {
+                    "Name": "Kathryn Harper Sligh",
+                    "AttorneyIds": 14974596,
+                    "AttorneyPguids": []
+                }
+            }
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "65ed1c519194a26037c3fec336f9aec8",
+            "date",
+            "Fri, 22 Jul 2022 15:16:12 GMT",
+            "content-length",
+            "313",
+            "x-request-id",
+            "e9643a20-2904-4632-b44e-9c0a9509b523",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "IX2vcXAdiozFgGlFI3AV2gGFQp6D",
+            "issued_at": 1658346186595,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "9ad6fd73-d187-4d9d-bc7a-afe81efa720d",
+            "content-length",
+            "157",
+            "date",
+            "Wed, 20 Jul 2022 19:43:06 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/list-judgment-sources",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Damages": [
+                "No Type Specified",
+                "Default Judgment",
+                "Consent Judgment",
+                "Judgment on Merits",
+                "Jury Verdict"
+            ],
+            "Remedies": [
+                "No Type Specified",
+                "Default Judgment",
+                "Consent Judgment",
+                "Judgment on Merits"
+            ],
+            "Findings": [
+                "No Type Specified",
+                "Bench Trial",
+                "Consent Judgment",
+                "Default Judgment",
+                "Judgment as a Matter of Law",
+                "Judgment on the Pleadings",
+                "Trial",
+                "Summary Judgment"
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "a9ce34f8a4ba11c1dfa6f28303b56331;o=1",
+            "date",
+            "Wed, 20 Jul 2022 19:43:06 GMT",
+            "content-length",
+            "369",
+            "x-request-id",
+            "ca33a76c-847f-490e-a808-5c1a7116a582",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

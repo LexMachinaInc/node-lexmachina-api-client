@@ -1,0 +1,10 @@
+{
+    "client": {
+    "id": "F8N6QPziv5sGvsphlJhX4yEKIdeOGMpDgKwmxnNIiXIIItGw",
+    "secret": "Gxz5ITVTYet2pBAvKaAT1CPNb9uvrDrPELvpCe5aXqWGWCDclfQL9XaKfNwMWf2E"
+  },
+  "auth": {
+    "tokenHost": "https://api.lexmachina.com",
+    "tokenPath": "/oauth/client_credential/accesstoken"
+  }
+}

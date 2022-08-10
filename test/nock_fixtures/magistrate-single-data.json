@@ -1,0 +1,34 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/magistrates/333",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Name": "Hildy Bowbeer",
+            "Initials": "HB",
+            "CaseCount": 3907,
+            "MagistrateId": 333
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "9e32ff43b950176c42d64973f282ec39;o=1",
+            "date",
+            "Fri, 22 Jul 2022 14:38:57 GMT",
+            "content-length",
+            "76",
+            "x-request-id",
+            "ea0d3664-77c3-4749-a59e-14841948ffce",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,625 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "HITcCO1ddzygkInoVt9uUqJe3AlT",
+            "issued_at": 1657914233902,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "c8dd9b1e-9ea3-4c91-8ae1-9e975b47fb2b",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 15 Jul 2022 19:43:53 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/list-courts",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "Name": "U.S. District Court for the District of New Jersey",
+                "ShortName": "D.N.J.",
+                "Abbreviation": "njd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Columbia",
+                "ShortName": "D.D.C.",
+                "Abbreviation": "dcd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Oregon",
+                "ShortName": "D.Or.",
+                "Abbreviation": "ord",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of North Carolina",
+                "ShortName": "E.D.N.C.",
+                "Abbreviation": "nced",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Alabama",
+                "ShortName": "S.D.Ala.",
+                "Abbreviation": "alsd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Texas",
+                "ShortName": "W.D.Tex.",
+                "Abbreviation": "txwd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Michigan",
+                "ShortName": "E.D.Mich.",
+                "Abbreviation": "mied",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Ohio",
+                "ShortName": "S.D.Ohio",
+                "Abbreviation": "ohsd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Indiana",
+                "ShortName": "S.D.Ind.",
+                "Abbreviation": "insd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Missouri",
+                "ShortName": "W.D.Mo.",
+                "Abbreviation": "mowd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of California",
+                "ShortName": "S.D.Cal.",
+                "Abbreviation": "casd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Washington",
+                "ShortName": "E.D.Wash.",
+                "Abbreviation": "waed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Delaware",
+                "ShortName": "D.Del.",
+                "Abbreviation": "ded",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Maine",
+                "ShortName": "D.Me.",
+                "Abbreviation": "med",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Massachusetts",
+                "ShortName": "D.Mass.",
+                "Abbreviation": "mad",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of New Hampshire",
+                "ShortName": "D.N.H.",
+                "Abbreviation": "nhd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Rhode Island",
+                "ShortName": "D.R.I.",
+                "Abbreviation": "rid",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Puerto Rico",
+                "ShortName": "D.P.R.",
+                "Abbreviation": "prd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Connecticut",
+                "ShortName": "D.Conn.",
+                "Abbreviation": "ctd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of New York",
+                "ShortName": "N.D.N.Y.",
+                "Abbreviation": "nynd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of New York",
+                "ShortName": "E.D.N.Y.",
+                "Abbreviation": "nyed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of New York",
+                "ShortName": "S.D.N.Y.",
+                "Abbreviation": "nysd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of New York",
+                "ShortName": "W.D.N.Y.",
+                "Abbreviation": "nywd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Vermont",
+                "ShortName": "D.Vt.",
+                "Abbreviation": "vtd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Pennsylvania",
+                "ShortName": "E.D.Pa.",
+                "Abbreviation": "paed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Middle District of Pennsylvania",
+                "ShortName": "M.D.Pa.",
+                "Abbreviation": "pamd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Pennsylvania",
+                "ShortName": "W.D.Pa.",
+                "Abbreviation": "pawd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Maryland",
+                "ShortName": "D.Md.",
+                "Abbreviation": "mdd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Middle District of North Carolina",
+                "ShortName": "M.D.N.C.",
+                "Abbreviation": "ncmd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of North Carolina",
+                "ShortName": "W.D.N.C.",
+                "Abbreviation": "ncwd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of South Carolina",
+                "ShortName": "D.S.C.",
+                "Abbreviation": "scd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Virginia",
+                "ShortName": "E.D.Va.",
+                "Abbreviation": "vaed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Virginia",
+                "ShortName": "W.D.Va.",
+                "Abbreviation": "vawd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of West Virginia",
+                "ShortName": "N.D.W.Va.",
+                "Abbreviation": "wvnd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of West Virginia",
+                "ShortName": "S.D.W.Va.",
+                "Abbreviation": "wvsd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Alabama",
+                "ShortName": "N.D.Ala.",
+                "Abbreviation": "alnd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Middle District of Alabama",
+                "ShortName": "M.D.Ala.",
+                "Abbreviation": "almd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Louisiana",
+                "ShortName": "W.D.La.",
+                "Abbreviation": "lawd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Mississippi",
+                "ShortName": "N.D.Miss.",
+                "Abbreviation": "msnd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Mississippi",
+                "ShortName": "S.D.Miss.",
+                "Abbreviation": "mssd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Texas",
+                "ShortName": "N.D.Tex.",
+                "Abbreviation": "txnd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Texas",
+                "ShortName": "E.D.Tex.",
+                "Abbreviation": "txed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Texas",
+                "ShortName": "S.D.Tex.",
+                "Abbreviation": "txsd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Kentucky",
+                "ShortName": "E.D.Ky.",
+                "Abbreviation": "kyed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Kentucky",
+                "ShortName": "W.D.Ky.",
+                "Abbreviation": "kywd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Ohio",
+                "ShortName": "N.D.Ohio",
+                "Abbreviation": "ohnd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Tennessee",
+                "ShortName": "E.D.Tenn.",
+                "Abbreviation": "tned",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Middle District of Tennessee",
+                "ShortName": "M.D.Tenn.",
+                "Abbreviation": "tnmd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Tennessee",
+                "ShortName": "W.D.Tenn.",
+                "Abbreviation": "tnwd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Illinois",
+                "ShortName": "N.D.Ill.",
+                "Abbreviation": "ilnd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Central District of Illinois",
+                "ShortName": "C.D.Ill.",
+                "Abbreviation": "ilcd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Illinois",
+                "ShortName": "S.D.Ill.",
+                "Abbreviation": "ilsd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Indiana",
+                "ShortName": "N.D.Ind.",
+                "Abbreviation": "innd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Wisconsin",
+                "ShortName": "E.D.Wis.",
+                "Abbreviation": "wied",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Wisconsin",
+                "ShortName": "W.D.Wis.",
+                "Abbreviation": "wiwd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Arkansas",
+                "ShortName": "E.D.Ark.",
+                "Abbreviation": "ared",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Arkansas",
+                "ShortName": "W.D.Ark.",
+                "Abbreviation": "arwd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Iowa",
+                "ShortName": "N.D.Iowa",
+                "Abbreviation": "iand",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Iowa",
+                "ShortName": "S.D.Iowa",
+                "Abbreviation": "iasd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Minnesota",
+                "ShortName": "D.Minn.",
+                "Abbreviation": "mnd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Missouri",
+                "ShortName": "E.D.Mo.",
+                "Abbreviation": "moed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Nebraska",
+                "ShortName": "D.Neb.",
+                "Abbreviation": "ned",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of North Dakota",
+                "ShortName": "D.N.D.",
+                "Abbreviation": "ndd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of South Dakota",
+                "ShortName": "D.S.D.",
+                "Abbreviation": "sdd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Arizona",
+                "ShortName": "D.Ariz.",
+                "Abbreviation": "azd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of California",
+                "ShortName": "N.D.Cal.",
+                "Abbreviation": "cand",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of California",
+                "ShortName": "E.D.Cal.",
+                "Abbreviation": "caed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Central District of California",
+                "ShortName": "C.D.Cal.",
+                "Abbreviation": "cacd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Michigan",
+                "ShortName": "W.D.Mich.",
+                "Abbreviation": "miwd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Idaho",
+                "ShortName": "D.Idaho",
+                "Abbreviation": "idd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Montana",
+                "ShortName": "D.Mont.",
+                "Abbreviation": "mtd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Nevada",
+                "ShortName": "D.Nev.",
+                "Abbreviation": "nvd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Washington",
+                "ShortName": "W.D.Wash.",
+                "Abbreviation": "wawd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Colorado",
+                "ShortName": "D.Colo.",
+                "Abbreviation": "cod",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Kansas",
+                "ShortName": "D.Kan.",
+                "Abbreviation": "ksd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of New Mexico",
+                "ShortName": "D.N.M.",
+                "Abbreviation": "nmd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Oklahoma",
+                "ShortName": "N.D.Okla.",
+                "Abbreviation": "oknd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Oklahoma",
+                "ShortName": "E.D.Okla.",
+                "Abbreviation": "oked",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Western District of Oklahoma",
+                "ShortName": "W.D.Okla.",
+                "Abbreviation": "okwd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Utah",
+                "ShortName": "D.Utah",
+                "Abbreviation": "utd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Wyoming",
+                "ShortName": "D.Wyo.",
+                "Abbreviation": "wyd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Virgin Islands",
+                "ShortName": "D.V.I.",
+                "Abbreviation": "vid",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Guam",
+                "ShortName": "D.Guam",
+                "Abbreviation": "gud",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Northern Mariana Islands",
+                "ShortName": "D.N.Mar.I.",
+                "Abbreviation": "nmid",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Hawaii",
+                "ShortName": "D.Haw.",
+                "Abbreviation": "hid",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the District of Alaska",
+                "ShortName": "D.Alaska",
+                "Abbreviation": "akd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Middle District of Florida",
+                "ShortName": "M.D.Fla.",
+                "Abbreviation": "flmd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Florida",
+                "ShortName": "S.D.Fla.",
+                "Abbreviation": "flsd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Georgia",
+                "ShortName": "N.D.Ga.",
+                "Abbreviation": "gand",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Middle District of Georgia",
+                "ShortName": "M.D.Ga.",
+                "Abbreviation": "gamd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Southern District of Georgia",
+                "ShortName": "S.D.Ga.",
+                "Abbreviation": "gasd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Eastern District of Louisiana",
+                "ShortName": "E.D.La.",
+                "Abbreviation": "laed",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Middle District of Louisiana",
+                "ShortName": "M.D.La.",
+                "Abbreviation": "lamd",
+                "Type": "FederalDistrict"
+            },
+            {
+                "Name": "U.S. District Court for the Northern District of Florida",
+                "ShortName": "N.D.Fla.",
+                "Abbreviation": "flnd",
+                "Type": "FederalDistrict"
+            }
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "43059a69f5c6eb9094442033faa52d69",
+            "date",
+            "Fri, 15 Jul 2022 19:43:54 GMT",
+            "content-length",
+            "12719",
+            "x-request-id",
+            "5f4a65ec-7d60-4fb0-ba87-696874faa117",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

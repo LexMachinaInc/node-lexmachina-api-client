@@ -1,0 +1,48 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/magistrates?magistrate_ids=333&magistrate_ids=141&magistrate_ids=131",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "Name": "Hildy Bowbeer",
+                "Initials": "HB",
+                "CaseCount": 3907,
+                "MagistrateId": 333
+            },
+            {
+                "Name": "Nita L Stormes",
+                "Initials": "NLS",
+                "CaseCount": 3940,
+                "MagistrateId": 141
+            },
+            {
+                "Name": "Nathanael M Cousins",
+                "Initials": "NMC",
+                "CaseCount": 8171,
+                "MagistrateId": 131
+            }
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "eeb8c7fd5631426592e65b35ba05a030",
+            "date",
+            "Fri, 22 Jul 2022 14:38:59 GMT",
+            "content-length",
+            "241",
+            "x-request-id",
+            "515fc3ed-3db2-4794-baeb-6ac0f30a120c",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

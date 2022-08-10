@@ -1,0 +1,67 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "bpULcnobObe6gHxs0A9A9GA7UXNY",
+            "issued_at": 1658414020629,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "b9bc5ec7-1e98-4ec5-8d49-25c38f96a001",
+            "content-length",
+            "157",
+            "date",
+            "Thu, 21 Jul 2022 14:33:40 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/attorneys/110161257",
+        "body": "",
+        "status": 200,
+        "response": {
+            "InputId": 110161257,
+            "Attorney": {
+                "Name": "G. L. Spence",
+                "AttorneyIds": 110161257,
+                "AttorneyPguids": []
+            }
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "49261534bd8b237233bd72ffe332dbb0;o=1",
+            "date",
+            "Thu, 21 Jul 2022 14:29:28 GMT",
+            "content-length",
+            "100",
+            "x-request-id",
+            "04b89b7f-3d47-4885-b7b6-58d493d62d7e",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

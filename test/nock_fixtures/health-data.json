@@ -1,0 +1,60 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "UgYCq8N5dvVlW8Au6CrKHxNF8dhl",
+            "issued_at": 1658499777348,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "99b1916b-1be6-473f-8e2e-e9eb18553153",
+            "content-length",
+            "157",
+            "date",
+            "Fri, 22 Jul 2022 14:22:56 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/alpha/health",
+        "body": "",
+        "status": 200,
+        "response": "Feelin' fine.",
+        "rawHeaders": [
+            "content-type",
+            "text/plain; charset=utf-8",
+            "x-cloud-trace-context",
+            "10e52e27abda0662f26867c42299a7b0;o=1",
+            "date",
+            "Fri, 22 Jul 2022 14:22:58 GMT",
+            "content-length",
+            "13",
+            "x-request-id",
+            "9b45474e-8e37-485a-850b-bf918b8b5abb",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]
