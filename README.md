@@ -64,37 +64,37 @@ The functions provided fall into several classes:
 
 These functions are available from LexMachinaClient. Each returns an array or JSON object describing resources. 
 
-LexMachinaClient.listCaseResolutions()
-LexMachinaClient.listCaseTags()
-LexMachinaClient.listCaseTypes()
-LexMachinaClient.listDamages()
-LexMachinaClient.listJudgmentSources()
+- LexMachinaClient.listCaseResolutions()
+- LexMachinaClient.listCaseTags()
+- LexMachinaClient.listCaseTypes()
+- LexMachinaClient.listDamages()
+- LexMachinaClient.listJudgmentSources()
 
 ## Lookup by ID(s)
 These functions are available from LexMachinaClient. Each takes a single integer or an array of up to 100 integers where the parameter is the Lex Machina ID for that record. It will return a JSON object or an array of objects representing the data for that type of record.
 
-LexMachinaClient.attorneys()
-LexMachinaClient.districtCases()
-LexMachinaClient.federalJudges()
-LexMachinaClient.lawFirm()
-LexMachinaClient.magistrates()
-LexMachinaClient.parties()
+- LexMachinaClient.attorneys()
+- LexMachinaClient.districtCases()
+- LexMachinaClient.federalJudges()
+- LexMachinaClient.lawFirm()
+- LexMachinaClient.magistrates()
+- LexMachinaClient.parties()
 
 ## Resolvers
 The Lex Machina data comes from a variety of inputs, sometimes with different spellings for the same thing. Our process normalizes and combines differently spelled names when they refer to the same person or organization. It is uncommon but possible that a different entity becomes the new normalized ID if that spelling becomes more common. By passing in any ID previously used this endpoint will always return the current normalized ID for that entity. This answer will typically be the same ID used as input.
 
 These functions all accept either an integer of a previously used ID or an array of integers.
 
-LexMachinaClient.resolveAttorneys()
-LexMachinaClient.resolveLawFirms()
-LexMachinaClient.resolveParties()
+- LexMachinaClient.resolveAttorneys()
+- LexMachinaClient.resolveLawFirms()
+- LexMachinaClient.resolveParties()
 
 
 ## Search Functions
 
 Search functions take a string input and match items. These searches match only the beginning of strings. When searching for a name, the search query "hof" will match the name "Hoffman" but will not match "Schofield".
 
-LexMachinaClient.searchJudges()
+- LexMachinaClient.searchJudges()
 
 # Case Query Object
 
@@ -111,68 +111,65 @@ Following is a list of operations available in the CaseQueryRequest without disc
 
 The following methods add criteria based on participants in a case and their role. Each takes an integer or array of integers that correspond to the Lex Machina ID for each participant type.
 
-CaseQueryRequest.addJudgesInclude()
-CaseQueryRequest.addJudgesExclude()
+- CaseQueryRequest.addJudgesInclude()
+- CaseQueryRequest.addJudgesExclude()
 
-CaseQueryRequest.addMagistratesInclude()
-CaseQueryRequest.addMagistratesExclude()
+- CaseQueryRequest.addMagistratesInclude()
+- CaseQueryRequest.addMagistratesExclude()
 
-CaseQueryRequest.addLawFirmsInclude()
-CaseQueryRequest.addLawFirmsExclude()
-CaseQueryRequest.addLawFirmsIncludePlaintiff()
-CaseQueryRequest.addLawFirmsExcludePlaintiff()
-CaseQueryRequest.addLawFirmsIncludeDefendant()
-CaseQueryRequest.addLawFirmsExcludeDefendant()
-CaseQueryRequest.addLawFirmsIncludeThirdParty()
-CaseQueryRequest.addLawFirmsExcludeThirdParty()
+- CaseQueryRequest.addLawFirmsInclude()
+- CaseQueryRequest.addLawFirmsExclude()
+- CaseQueryRequest.addLawFirmsIncludePlaintiff()
+- CaseQueryRequest.addLawFirmsExcludePlaintiff()
+- CaseQueryRequest.addLawFirmsIncludeDefendant()
+- CaseQueryRequest.addLawFirmsExcludeDefendant()
+- CaseQueryRequest.addLawFirmsIncludeThirdParty()
+- CaseQueryRequest.addLawFirmsExcludeThirdParty()
 
-CaseQueryRequest.addPartiesInclude()
-CaseQueryRequest.addPartiesExclude()
-CaseQueryRequest.addPartiesIncludePlaintiff()
-CaseQueryRequest.addPartiesExcludePlaintiff()
-CaseQueryRequest.addPartiesIncludeDefendant()
-CaseQueryRequest.addPartiesExcludeDefendant()
-CaseQueryRequest.addPartiesIncludeThirdParty()
-CaseQueryRequest.addPartiesExcludeThirdParty()
-CaseQueryRequest.setCaseStatus()
+- CaseQueryRequest.addPartiesInclude()
+- CaseQueryRequest.addPartiesExclude()
+- CaseQueryRequest.addPartiesIncludePlaintiff()
+- CaseQueryRequest.addPartiesExcludePlaintiff()
+- CaseQueryRequest.addPartiesIncludeDefendant()
+- CaseQueryRequest.addPartiesExcludeDefendant()
+- CaseQueryRequest.addPartiesIncludeThirdParty()
+- CaseQueryRequest.addPartiesExcludeThirdParty()
+
 
 ## Case Aspect Criteria
 
-The following methods add criteria based on aspects of the case. In most of these, the list of valid inputs is available via the corresponding API list functionionality, such as LexMachinaClient.listCaseTypes()
+The following methods add criteria based on aspects of the case. In most of these, the list of valid inputs is available via the corresponding API list functionality, such as LexMachinaClient.listCaseTypes()
 
-CaseQueryRequest.addCaseTypesInclude()
-CaseQueryRequest.addCaseTypesExclude()
-
-CaseQueryRequest.addCaseTagsInclude()
-CaseQueryRequest.addCaseTagsExclude()
-
-CaseQueryRequest.addEventTypesInclude()
-CaseQueryRequest.addEventTypesExclude()
-CaseQueryRequest.addResolutionsInclude()
-CaseQueryRequest.addResolutionsExclude()
-CaseQueryRequest.addFindingsIncludeAwardedToParties()
-CaseQueryRequest.addFindingsIncludeAwardedAgainstParties()
-CaseQueryRequest.addFindingsIncludeJudgmentSource()
-CaseQueryRequest.addFindingsIncludePatentInvalidityReasons()
-CaseQueryRequest.addRemediesIncludeAwardedToParties()
-CaseQueryRequest.addRemediesIncludeAwardedAgainstParties()
-CaseQueryRequest.addRemediesIncludeJudgmentSource()
-CaseQueryRequest.addDamagesIncludeInFavorOfParties()
-CaseQueryRequest.addDamagesIncludeAwardedAgainstParties()
-CaseQueryRequest.addDamagesIncludeName()
-CaseQueryRequest.addDamagesIncludeType()
-CaseQueryRequest.addDamagesIncludeJudgmentSource()
-CaseQueryRequest.setDamagesMinimumAmount()
-
-CaseQueryRequest.addPatentsInclude()
-CaseQueryRequest.addPatentsExclude()
-
-CaseQueryRequest.addMDLInclude()
-CaseQueryRequest.addMDLExclude()
+- CaseQueryRequest.setCaseStatus()
+- CaseQueryRequest.addCaseTypesInclude()
+- CaseQueryRequest.addCaseTypesExclude()
+- CaseQueryRequest.addCaseTagsInclude()
+- CaseQueryRequest.addCaseTagsExclude()
+- CaseQueryRequest.addEventTypesInclude()
+- CaseQueryRequest.addEventTypesExclude()
+- CaseQueryRequest.addResolutionsInclude()
+- CaseQueryRequest.addResolutionsExclude()
+- CaseQueryRequest.addFindingsIncludeAwardedToParties()
+- CaseQueryRequest.addFindingsIncludeAwardedAgainstParties()
+- CaseQueryRequest.addFindingsIncludeJudgmentSource()
+- CaseQueryRequest.addFindingsIncludePatentInvalidityReasons()
+- CaseQueryRequest.addRemediesIncludeAwardedToParties()
+- CaseQueryRequest.addRemediesIncludeAwardedAgainstParties()
+- CaseQueryRequest.addRemediesIncludeJudgmentSource()
+- CaseQueryRequest.addDamagesIncludeInFavorOfParties()
+- CaseQueryRequest.addDamagesIncludeAwardedAgainstParties()
+- CaseQueryRequest.addDamagesIncludeName()
+- CaseQueryRequest.addDamagesIncludeType()
+- CaseQueryRequest.addDamagesIncludeJudgmentSource()
+- CaseQueryRequest.setDamagesMinimumAmount()
+- CaseQueryRequest.addPatentsInclude()
+- CaseQueryRequest.addPatentsExclude()
+- CaseQueryRequest.addMDLInclude()
+- CaseQueryRequest.addMDLExclude()
 
 ## Date Criteria
 
-The setDate() method uses a different pattern. It takes three parameters: date value, a field and an operator. The date value must be string in valid date format of "YYYY-MM-DD". The field is one of the below string values.
+The setDate() method uses a different pattern. It takes three parameters: date value, a field and an operator. The date value must be a string in valid date format of "YYYY-MM-DD". The field is one of the below string values.
 
 - Filed
 - Terminated
@@ -186,16 +183,23 @@ The operators are one of the these strings:
 
 CaseQueryRequest.setDate()
 
+Example:
+
+To query on all cases filed since the beginning of 2019:
+
+```javascript
+CaseQueryRequest.setDate("2019-01-01", "Filed", "OnOrAfter");
+```
 
 ## Query aspects
 
 The following methods control aspects of the query and operation of the query. By default the page size is 5 cases and it can be increased to a maximum of 100.
 
-CaseQueryRequest.setOrdering()
-CaseQueryRequest.setPage()
-CaseQueryRequest.setPageSize()
-CaseQueryRequest.nextPage()
-CaseQueryRequest.clear()
+- CaseQueryRequest.setOrdering()
+- CaseQueryRequest.setPage()
+- CaseQueryRequest.setPageSize()
+- CaseQueryRequest.nextPage()
+- CaseQueryRequest.clear()
 
 
 # Executing the Query
