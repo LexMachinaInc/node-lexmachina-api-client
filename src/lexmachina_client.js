@@ -1,10 +1,9 @@
-
-const BaseLexMachinaRequest = require('./base_lm_request')
+const BaseLexMachinaRequest = require('./base_lm_request.js')
 
 module.exports = class LexMachinaClient {
 
-    constructor(config) {
-        this.lmRequest = new BaseLexMachinaRequest(config);
+    constructor(config_path) {
+        this.lmRequest = new BaseLexMachinaRequest(config_path);
     }
 
     async attorneys(attornies) {
