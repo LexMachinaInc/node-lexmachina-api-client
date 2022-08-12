@@ -7,7 +7,7 @@ This package provides a client to access the Lex Machina API for legal analytics
 
 1. Create an app and get the client key and secret via the [directions here](https://developer.lexmachina.com/get-your-api-keys).
 
-1. In your project directory create a directory /config and inside that create a file named config-auth.json . Populate using the below values and the key and secret from above:
+1. In your project directory create a directory /config and inside that create a file named config.json . Populate using the below values and the key and secret from above:
 
     ```json
     {
