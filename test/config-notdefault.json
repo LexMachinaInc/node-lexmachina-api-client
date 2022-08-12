@@ -1,0 +1,10 @@
+{
+    "client": {
+    "id": "CLIENT_ID",
+    "secret": "CLIENT_SECRET"
+  },
+  "auth": {
+    "tokenHost": "https://api.lexmachina.com",
+    "tokenPath": "/oauth/client_credential/accesstoken"
+  }
+}
