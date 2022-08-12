@@ -39,7 +39,7 @@ The LexMachinaClient object is the main way to interact with the GET functions o
 
 ## Instantiating the LexMachinaClient object
 
-If called with no parameter in the constructor, the config file will be loaded from the node package base directory of lexmachina-client/config/config.json
+If called with no parameter in the constructor, the config file will be loaded from the node package base directory of lexmachina-client/config/config-auth.json
  
 ```javascript
 var client = new LexMachinaClient();
