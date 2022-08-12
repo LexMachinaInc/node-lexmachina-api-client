@@ -2,14 +2,29 @@ const storage = require('node-persist');
 const { ClientCredentials, ResourceOwnerPassword, AuthorizationCode } = require('simple-oauth2');
 const TOKEN_KEY = 'accesstoken'
 const debug = require('debug')('auth')
+const path = require('path');
 
 module.exports = class AccessTokenUtils {
 
-  constructor(config_file_path) {
-    if (!config_file_path) {
+  constructor(input_config_file_path) {
+    var config_file_path="";
+    if (!input_config_file_path) {
       config_file_path =  '../config/config-auth.json'
+    } else {
+    if (!path.isAbsolute(input_config_file_path)) {
+      config_file_path = path.join(process.cwd(), input_config_file_path)
+    } else {
+      config_file_path = input_config_file_path;
     }
+    }
+
+    try {
     this.token_config = require(config_file_path);
+    } catch (e){
+      console.log(" Cannot load access token config file at " + config_file_path);
+      throw (e);
+    }
+    
   }
 
   async fetchTokenIntoStorage() {
