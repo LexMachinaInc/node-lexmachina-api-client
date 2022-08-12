@@ -58,9 +58,9 @@ describe("Judge Endpoints", () => {
             judgeBadInput = client.federalJudges("Invalid String Input");
             judgesInput = client.federalJudges(judgeId)
             nockDone();
-            await expect(judgesInput).to.be.fulfilled;
-            await expect(judgesNoInput).to.be.rejected;
-            await expect(judgeBadInput).to.be.rejected;
+            expect(judgesInput).to.be.fulfilled;
+            expect(judgesNoInput).to.be.rejected;
+            expect(judgeBadInput).to.be.rejected;
         })
     })
 })

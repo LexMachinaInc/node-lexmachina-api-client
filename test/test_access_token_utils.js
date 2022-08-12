@@ -20,12 +20,24 @@ describe("Access Token Utility Functions", () => {
             expect(atu.token_config).to.not.be.empty;
         })
 
-        it("should be able to non-default file constructor", () => {
-            var atu = new AccessTokenUtils("../config/config-notdefault.json");
+        it("should be able to access non-default file constructor", () => {
+            var atu = new AccessTokenUtils("./config/config-notdefault.json");
+            expect(atu.token_config).to.not.be.empty;
+        })
+
+        it("should be able to access relative path file constructor", () => {
+            var atu = new AccessTokenUtils("./config/config-notdefault.json");
             expect(atu.token_config).to.not.be.empty;
         })
 
         it("should throw error with nonexistent file constructor", () => {
+            function badConfigFile() {
+                var atu = new AccessTokenUtils("../config/nonexistent.json");
+            }
+            expect(badConfigFile).to.throw()
+        })
+
+                it("should throw error with nonexistent file constructor", () => {
             function badConfigFile() {
                 var atu = new AccessTokenUtils("../config/nonexistent.json");
             }
