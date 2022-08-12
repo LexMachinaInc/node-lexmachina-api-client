@@ -1,13 +1,18 @@
-const axios = require('axios');
-const AccessTokenUtils = require('./access_token_utils')
+const axios =  require('axios');
+const AccessTokenUtils =  require('./access_token_utils.js')
 const BASE_URL = 'https://api.lexmachina.com/alpha';
 
 module.exports = class BaseLexMachinaRequest {
 
-    constructor(config) {
-        if (config && config.token_config_file_path) {
-            this.token_config_file_path = config.token_config_file_path
+    constructor(token_config_file_path) {
+        this.token_config_file_path = token_config_file_path
+        try {
+        this.atu = new AccessTokenUtils(token_config_file_path);
+        } catch (e) {
+            console.log(e +" : Cannot load authentication config file");
+            process.exit(1);
         }
+
     }
 
     async requestURL(config) {
@@ -21,8 +26,7 @@ module.exports = class BaseLexMachinaRequest {
         }
 
         var url = config.endpoint
-        var atu = new AccessTokenUtils(this.token_config_file_path);
-        var token = await atu.getAccessToken();
+        var token = await this.atu.getAccessToken();
         if (config.params) {
             urlParams = new URLSearchParams();
             var key = Object.keys(config.params).forEach(key => {
