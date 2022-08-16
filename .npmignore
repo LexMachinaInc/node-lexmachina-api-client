@@ -1,0 +1,9 @@
+support
+test
+examples
+.gitignore
+History.md
+*.tgz
+.node-persist
+.nyc_output
+.vscode
