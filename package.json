@@ -1,23 +1,25 @@
 {
   "name": "@lexmachina/lexmachina-client",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Library to access the Lex Machina API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
-  },  
+    "test": "mocha",
+    "lint": "eslint **/*.js"
+  },
   "devDependencies": {
     "chai": "*",
     "chai-as-promised": "^7.1.1",
     "chai-things": "^0.2.0",
+    "eslint": "^8.22.0",
     "mocha": "*",
     "nock": "^13.2.8",
     "nock-record": "^0.3.9",
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "global": "^4.4.0",
     "axios": "^0.27.2",
+    "global": "^4.4.0",
     "moment": "^2.29.3",
     "node-persist": "^3.1.0",
     "readline-sync": "^1.4.10",
