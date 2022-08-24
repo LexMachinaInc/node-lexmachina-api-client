@@ -1,9 +1,11 @@
 const BaseLexMachinaRequest = require('./base_lm_request.js')
+const QueryDistrictCases = require('./query_district_cases.js')
 
 module.exports = class LexMachinaClient {
 
     constructor(config_path) {
         this.lmRequest = new BaseLexMachinaRequest(config_path);
+        this.queryEngine = new QueryDistrictCases(config_path);
     }
 
     async attorneys(attornies) {
@@ -159,5 +161,9 @@ module.exports = class LexMachinaClient {
         config.endpoint = "/search-judges"
         config.params = { q: judge_string }
         return this.lmRequest.requestURL(config)
+    }
+
+    async queryDistrictCases(query, options) {
+        return this.queryEngine.queryDistrictCases(query, options);
     }
 }
