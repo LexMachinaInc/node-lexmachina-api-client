@@ -1,7 +1,6 @@
 var chai = require('chai');
 chai.use(require('chai-things'));
 chai.use(require('chai-as-promised'))
-const assert = chai.assert;
 const expect = chai.expect;
 chai.should();
 const nock = require('nock');
@@ -17,7 +16,7 @@ describe("Resolve Party Endpoints", () => {
     describe('Resolve Party', () => {
 
         it('should contain single party information', async () => {
-            const { nockDone, context } = await nockBack('resolve-party-single-data.json');
+            const { nockDone } = await nockBack('resolve-party-single-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var party = await client.resolveParties(partyId);
@@ -31,7 +30,7 @@ describe("Resolve Party Endpoints", () => {
     describe('Resolve Parties', () => {
 
         it('should contain multiple parties information', async () => {
-            const { nockDone, context } = await nockBack('resolve-parties-multiple-data.json');
+            const { nockDone} = await nockBack('resolve-parties-multiple-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var parties = await client.resolveParties(partyIds);
@@ -53,7 +52,7 @@ describe("Resolve Party Endpoints", () => {
 
         it("bad input throws error", async () => {
             const client = new LexMachinaClient();
-            const { nockDone, context } = await nockBack('resolve-party-single-data.json');
+            const { nockDone } = await nockBack('resolve-party-single-data.json');
             nock.enableNetConnect();
 
             partiesNoInput = client.resolveParties();

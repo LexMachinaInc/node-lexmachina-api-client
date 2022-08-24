@@ -1,6 +1,5 @@
 var chai = require('chai');
-const assert = require('chai').assert;
-const expect = require('chai').expect;
+const expect = chai.expect;
 chai.should();
 chai.use(require('chai-things'));
 const nock = require('nock');
@@ -13,7 +12,7 @@ describe('List Judgment Sources', () => {
     var categories = ["Damages", "Remedies", "Findings"];
 
     it('should contain judgment sources', async () => {
-        const { nockDone, context } = await nockBack('list-judgments-data.json');
+        const { nockDone} = await nockBack('list-judgments-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
         var judgmentSources = await client.listJudgmentSources();

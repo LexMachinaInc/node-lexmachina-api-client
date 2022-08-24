@@ -1,6 +1,5 @@
 var chai = require('chai');
-const assert = require('chai').assert;
-const expect = require('chai').expect;
+const expect = chai.expect;
 chai.should();
 const nock = require('nock');
 const nockBack = require('nock').back;
@@ -11,7 +10,7 @@ nockBack.setMode('record');
 describe('Health Check', () => {
 
     it('should register health', async () => {
-        const { nockDone, context } = await nockBack('health-data.json');
+        const { nockDone} = await nockBack('health-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
         var health = await client.health();

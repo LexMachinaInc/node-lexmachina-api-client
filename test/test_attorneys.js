@@ -1,7 +1,6 @@
 var chai = require('chai');
 chai.use(require('chai-things'));
 chai.use(require('chai-as-promised'))
-const assert = chai.assert;
 const expect = chai.expect;
 chai.should();
 
@@ -18,7 +17,7 @@ describe("Attorney Endpoints", () => {
     
     describe('Lookup Attorney', () => {
         it('should contain single attorney information', async () => {
-            const { nockDone, context } = await nockBack('attorneys-single-data.json');
+            const { nockDone} = await nockBack('attorneys-single-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var attorney = await client.attorneys(attorneyId);
@@ -31,7 +30,7 @@ describe("Attorney Endpoints", () => {
     describe('Lookup Attorneys', () => {
 
         it('should contain multiple attorney information', async () => {
-            const { nockDone, context } = await nockBack('attorneys-multiple-data.json');
+            const { nockDone} = await nockBack('attorneys-multiple-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var attorneys = await client.attorneys(attorneyIds);
@@ -51,7 +50,7 @@ describe("Attorney Endpoints", () => {
         var attorneyBadInput;
         it("bad input throws error", async () => {
             const client = new LexMachinaClient();
-            const { nockDone, context } = await nockBack('attorneys-single-data.json');
+            const { nockDone} = await nockBack('attorneys-single-data.json');
             nock.enableNetConnect();
             attorneysNoInput = client.attorneys();
             attorneyBadInput = client.attorneys("Invalid String Input");

@@ -1,5 +1,4 @@
 var chai = require('chai');
-const assert = require('chai').assert;
 const expect = require('chai').expect;
 chai.should();
 chai.use(require('chai-things'));
@@ -13,7 +12,7 @@ describe('Search Judges', () => {
 
     it('should contain results', async () => {
         var search_string = "brim";
-        const { nockDone, context } = await nockBack('search-judges-brim-data.json');
+        const { nockDone } = await nockBack('search-judges-brim-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
         var judges = await client.searchJudges(search_string);

@@ -1,7 +1,6 @@
 var chai = require('chai');
 chai.use(require('chai-things'));
 chai.use(require('chai-as-promised'))
-const assert = chai.assert;
 const expect = chai.expect;
 chai.should();
 const nock = require('nock');
@@ -15,7 +14,7 @@ describe("District Case Endpoint", () => {
     describe('Lookup District Case', () => {
 
         it('should contain case information', async () => {
-            const { nockDone, context } = await nockBack('district-case-data.json');
+            const { nockDone} = await nockBack('district-case-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var districtCase = await client.districtCases(caseId);
@@ -29,7 +28,7 @@ describe("District Case Endpoint", () => {
     describe('Error Handling', () => {
         it("bad input throws error", async () => {
             const client = new LexMachinaClient();
-            const { nockDone, context } = await nockBack('district-case-data.json');
+            const { nockDone} = await nockBack('district-case-data.json');
             nock.enableNetConnect();
             var caseNoInput = client.districtCases();
             var caseBadInput = client.districtCases("This is invalid input");

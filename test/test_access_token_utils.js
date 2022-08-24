@@ -1,7 +1,6 @@
 var chai = require('chai');
 chai.use(require('chai-things'));
 chai.use(require('chai-as-promised'))
-const assert = chai.assert;
 const expect = chai.expect;
 chai.should();
 
@@ -33,6 +32,7 @@ describe("Access Token Utility Functions", () => {
         it("should throw error with nonexistent file constructor", () => {
             function badConfigFile() {
                 var atu = new AccessTokenUtils("../config/nonexistent.json");
+                atu;
             }
             expect(badConfigFile).to.throw()
         })
@@ -40,6 +40,7 @@ describe("Access Token Utility Functions", () => {
                 it("should throw error with nonexistent file constructor", () => {
             function badConfigFile() {
                 var atu = new AccessTokenUtils("../config/nonexistent.json");
+                atu;
             }
             expect(badConfigFile).to.throw()
         })
@@ -49,8 +50,8 @@ describe("Access Token Utility Functions", () => {
         it("should get token from API and store via node-persist", async () => {
             var atu = new AccessTokenUtils();
             nock.enableNetConnect();
-            doFetch = atu.fetchTokenIntoStorage();
-            const { nockDone, context } = await nockBack('access-token-success.json');
+            const doFetch = atu.fetchTokenIntoStorage();
+            const { nockDone} = await nockBack('access-token-success.json');
             await expect(doFetch).to.be.fulfilled;
             nockDone();
         })

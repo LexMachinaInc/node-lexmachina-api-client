@@ -1,6 +1,5 @@
 var chai = require('chai');
-const assert = require('chai').assert;
-const expect = require('chai').expect;
+const expect = chai.expect;
 chai.should();
 chai.use(require('chai-things'));
 const nock = require('nock');
@@ -12,7 +11,7 @@ nockBack.setMode('record');
 describe('List Case Types', () => {
 
     it('should contain case types', async () => {
-        const { nockDone, context } = await nockBack('list-case-types-data.json');
+        const { nockDone} = await nockBack('list-case-types-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
         var caseTypes = await client.listCaseTypes();

@@ -1,7 +1,6 @@
 var chai = require('chai');
 chai.use(require('chai-things'));
 chai.use(require('chai-as-promised'))
-const assert = chai.assert;
 const expect = chai.expect;
 chai.should();
 const nock = require('nock');
@@ -16,7 +15,7 @@ describe("Judge Endpoints", () => {
     describe('Lookup Judge', () => {
 
         it('should contain single judge information', async () => {
-            const { nockDone, context } = await nockBack('judge-single-data.json');
+            const { nockDone} = await nockBack('judge-single-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var judge = await client.federalJudges(judgeId);
@@ -30,7 +29,7 @@ describe("Judge Endpoints", () => {
     describe('Lookup Judges', () => {
 
         it('should contain multiple judge information', async () => {
-            const { nockDone, context } = await nockBack('judge-multiple-data.json');
+            const { nockDone} = await nockBack('judge-multiple-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var judges = await client.federalJudges(judgeIds);
@@ -51,7 +50,7 @@ describe("Judge Endpoints", () => {
         var judgeBadInput;
         it("bad input throws error", async () => {
             const client = new LexMachinaClient();
-            const { nockDone, context } = await nockBack('judge-single-data.json');
+            const { nockDone} = await nockBack('judge-single-data.json');
             nock.enableNetConnect();
 
             judgesNoInput = client.federalJudges();

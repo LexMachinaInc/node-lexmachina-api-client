@@ -1,7 +1,6 @@
 var chai = require('chai');
 chai.use(require('chai-things'));
 chai.use(require('chai-as-promised'))
-const assert = chai.assert;
 const expect = chai.expect;
 chai.should();
 const nock = require('nock');
@@ -17,7 +16,7 @@ describe("Magistrate Endpoints", () => {
     describe('Lookup Magistrate', () => {
 
         it('should contain single magistrate information', async () => {
-            const { nockDone, context } = await nockBack('magistrate-single-data.json');
+            const { nockDone} = await nockBack('magistrate-single-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var magistrate = await client.magistrates(magistrateId);
@@ -31,7 +30,7 @@ describe("Magistrate Endpoints", () => {
     describe('Lookup Magistrates', () => {
 
         it('should contain multiple magistrate information', async () => {
-            const { nockDone, context } = await nockBack('magistrate-multiple-data.json');
+            const { nockDone} = await nockBack('magistrate-multiple-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var magistrates = await client.magistrates(magistrateIds);
@@ -52,7 +51,7 @@ describe("Magistrate Endpoints", () => {
         var magistrateBadInput;
         it("bad input throws error", async () => {
             const client = new LexMachinaClient();
-            const { nockDone, context } = await nockBack('magistrate-single-data.json');
+            const { nockDone} = await nockBack('magistrate-single-data.json');
             nock.enableNetConnect();
 
             magistratesNoInput = client.magistrates();

@@ -1,7 +1,6 @@
 const CasesQueryRequest = require('../src/case_query_request.js')
 var chai = require('chai');
-const assert = require('chai').assert;
-const expect = require('chai').expect;
+const expect = chai.expect;
 chai.should();
 chai.use(require('chai-things'));
 
@@ -269,7 +268,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Awarded Against Parties
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addFindingsIncludeAwardedAgainstParties(1234)
             expect(caseQuery.queryObject.Findings.Include.AwardedAgainstParties).to.have.lengthOf(1);
             caseQuery.addFindingsIncludeAwardedAgainstParties(1234)
@@ -287,7 +285,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Judgment Sources
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addFindingsIncludeJudgmentSource(1234)
             expect(caseQuery.queryObject.Findings.Include.JudgmentSource).to.have.lengthOf(1);
             caseQuery.addFindingsIncludeJudgmentSource(1234)
@@ -303,7 +300,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Patent Invalidity Reasons
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addFindingsIncludePatentInvalidityReasons(1234)
             expect(caseQuery.queryObject.Findings.Include.PatentInvalidityReasons).to.have.lengthOf(1);
             caseQuery.addFindingsIncludePatentInvalidityReasons(1234)
@@ -378,7 +374,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Awarded Against Parties
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addRemediesIncludeAwardedAgainstParties(1234)
             expect(caseQuery.queryObject.Remedies.Include.AwardedAgainstParties).to.have.lengthOf(1);
             caseQuery.addRemediesIncludeAwardedAgainstParties(1234)
@@ -394,7 +389,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Judgment Sources
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addRemediesIncludeJudgmentSource(1234)
             expect(caseQuery.queryObject.Remedies.Include.JudgmentSource).to.have.lengthOf(1);
             caseQuery.addRemediesIncludeJudgmentSource(1234)
@@ -481,7 +475,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Awarded Against Parties
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addDamagesIncludeAwardedAgainstParties(1234)
             expect(caseQuery.queryObject.Damages.Include.AwardedAgainstParties).to.have.lengthOf(1);
             caseQuery.addDamagesIncludeAwardedAgainstParties(1234)
@@ -497,7 +490,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Judgment Sources
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addDamagesIncludeJudgmentSource(1234)
             expect(caseQuery.queryObject.Damages.Include.JudgmentSource).to.have.lengthOf(1);
             caseQuery.addDamagesIncludeJudgmentSource(1234)
@@ -513,7 +505,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Name
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addDamagesIncludeName(1234)
             expect(caseQuery.queryObject.Damages.Include.Name).to.have.lengthOf(1);
             caseQuery.addDamagesIncludeName(1234)
@@ -531,7 +522,6 @@ describe('Add and Remove Query Statements', () => {
             caseQuery.clear();
 
             // Type
-            var caseQuery = new CasesQueryRequest();
             caseQuery.addDamagesIncludeType(1234)
             expect(caseQuery.queryObject.Damages.Include.Type).to.have.lengthOf(1);
             caseQuery.addDamagesIncludeType(1234)
@@ -734,7 +724,6 @@ describe('Add and Remove Query Statements', () => {
     describe('Courts', () => {
         var court = "njd"
         var array1 = ["njd", "dcd", "ord"]
-        var array2 = ["dcd", "ord", "alsd"]
 
         it('should be able to add and remove courts includes and excludes', () => {
             var caseQuery = new CasesQueryRequest();
@@ -799,8 +788,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Law Firms', () => {
         var lawFirm = 1234
-        var array1 = [1234, 2345, 3456,]
-        var array2 = [2345, 3456, 4567]
+        var array1 = [1234, 2345, 3456]
 
         it('should be able to add and remove lawFirms includes and excludes', () => {
             var caseQuery = new CasesQueryRequest();
@@ -1012,8 +1000,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Parties', () => {
         var party = 1234
-        var array1 = [1234, 2345, 3456,]
-        var array2 = [2345, 3456, 4567]
+        var array1 = [1234, 2345, 3456]
 
         it('should be able to add and remove parties includes and excludes', () => {
             var caseQuery = new CasesQueryRequest();

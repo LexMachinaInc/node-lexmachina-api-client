@@ -7,7 +7,7 @@ module.exports = class QueryDistrictCases {
     }
 
     async queryOnePage(query, options) {
-        var config = {}
+        var config = options;
         config.endpoint = '/query-district-cases'
         config.method = 'post'
         config.data = query.getPostBody()

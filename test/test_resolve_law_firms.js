@@ -1,7 +1,6 @@
 var chai = require('chai');
 chai.use(require('chai-things'));
 chai.use(require('chai-as-promised'))
-const assert = chai.assert;
 const expect = chai.expect;
 chai.should();
 const nock = require('nock');
@@ -17,7 +16,7 @@ describe("Resolve Law Firm Endpoints", () => {
     describe('Lookup Law Firm', () => {
 
         it('should contain single lawfirm information', async () => {
-            const { nockDone, context } = await nockBack('resolve-lawfirms-single-data.json');
+            const { nockDone} = await nockBack('resolve-lawfirms-single-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var lawfirm = await client.resolveLawFirms(lawfirmId);
@@ -31,7 +30,7 @@ describe("Resolve Law Firm Endpoints", () => {
     describe('Lookup Law Firms', () => {
 
         it('should contain multiple law firm information', async () => {
-            const { nockDone, context } = await nockBack('resolve-lawfirms-multiple-data.json');
+            const { nockDone} = await nockBack('resolve-lawfirms-multiple-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var lawfirms = await client.resolveLawFirms(lawfirmIds);
@@ -53,7 +52,7 @@ describe("Resolve Law Firm Endpoints", () => {
 
         it("bad input throws error", async () => {
             const client = new LexMachinaClient();
-            const { nockDone, context } = await nockBack('resolve-lawfirms-single-data.json');
+            const { nockDone} = await nockBack('resolve-lawfirms-single-data.json');
             nock.enableNetConnect();
 
             lawfirmsNoInput = client.resolveLawFirms();

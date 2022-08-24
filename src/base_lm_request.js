@@ -17,7 +17,7 @@ module.exports = class BaseLexMachinaRequest {
 
     async requestURL(config) {
         const rax = await import('retry-axios');
-        const interceptorId = rax.attach();
+        rax.attach();
 
         var returnValue = null
         var urlParams = null
@@ -29,7 +29,7 @@ module.exports = class BaseLexMachinaRequest {
         var token = await this.atu.getAccessToken();
         if (config.params) {
             urlParams = new URLSearchParams();
-            var key = Object.keys(config.params).forEach(key => {
+            Object.keys(config.params).forEach(key => {
                 if (Array.isArray(config.params[key])) {
                     config.params[key].forEach(value => {
                         urlParams.append(key, value)
