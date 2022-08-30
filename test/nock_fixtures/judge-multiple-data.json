@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "KsmAPs5ntx0NOTV259K82JDd36Ry",
-            "issued_at": 1658499148040,
+            "access_token": "0etDpLmRupFxF9aSsPwrNnKRNNzw",
+            "issued_at": 1661878985422,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "dcd04082-26d1-4741-b64a-f1e46abfc045",
+            "3a6d4592-cfd3-4fe8-8a63-4af10cfb88af",
             "content-length",
             "157",
             "date",
-            "Fri, 22 Jul 2022 14:12:27 GMT",
+            "Tue, 30 Aug 2022 17:03:05 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,46 +33,61 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/federal-judges?judge_ids=3349&judge_ids=3488&judge_ids=2877",
+        "path": "/beta/federal-judges?federalJudgeIds=3349&federalJudgeIds=3488&federalJudgeIds=2877",
         "body": "",
         "status": 200,
         "response": [
             {
-                "Name": "Beryl Alaine Howell",
-                "Initials": "BAH",
-                "DateOfBirth": "1956-01-01",
-                "CaseCount": 1613,
-                "JudgeId": 3349,
-                "NominatingPresident": "Barack Obama"
+                "name": "Beryl Alaine Howell",
+                "federalJudgeId": 3349,
+                "initials": "BAH",
+                "dateOfBirth": "1956-01-01",
+                "caseCountByCourt": [
+                    {
+                        "court": "total",
+                        "count": 1634
+                    }
+                ],
+                "nominatingPresident": "Barack Obama"
             },
             {
-                "Name": "Vernon Speede Broderick",
-                "Initials": "VSB",
-                "DateOfBirth": "1963-01-01",
-                "CaseCount": 3422,
-                "JudgeId": 3488,
-                "NominatingPresident": "Barack Obama"
+                "name": "Vernon Speede Broderick",
+                "federalJudgeId": 3488,
+                "initials": "VSB",
+                "dateOfBirth": "1963-01-01",
+                "caseCountByCourt": [
+                    {
+                        "court": "total",
+                        "count": 3503
+                    }
+                ],
+                "nominatingPresident": "Barack Obama"
             },
             {
-                "Name": "James S. Moody",
-                "Initials": "JSM",
-                "DateOfBirth": "1947-01-01",
-                "CaseCount": 6006,
-                "JudgeId": 2877,
-                "NominatingPresident": "William J. Clinton"
+                "name": "James S. Moody",
+                "federalJudgeId": 2877,
+                "initials": "JSM",
+                "dateOfBirth": "1947-01-01",
+                "caseCountByCourt": [
+                    {
+                        "court": "total",
+                        "count": 6037
+                    }
+                ],
+                "nominatingPresident": "William J. Clinton"
             }
         ],
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "a1e1b67c68325df81fc644bd8ea92d4b;o=1",
+            "610ee1bc497f83760b956a0071ffd98d;o=1",
             "date",
-            "Fri, 22 Jul 2022 14:12:29 GMT",
+            "Tue, 30 Aug 2022 17:03:05 GMT",
             "content-length",
-            "438",
+            "564",
             "x-request-id",
-            "1f0429bf-71fc-4e5c-9faf-072176ddeafe",
+            "aeb46c64-0c31-46b3-8d40-026a758adde6",
             "Via",
             "1.1 google",
             "Alt-Svc",

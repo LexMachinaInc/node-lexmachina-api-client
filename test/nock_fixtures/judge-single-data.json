@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "KsmAPs5ntx0NOTV259K82JDd36Ry",
-            "issued_at": 1658499148040,
+            "access_token": "fTA6Tx44GPAtwye5FAXOlhaGc2pk",
+            "issued_at": 1661878227697,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "dcd04082-26d1-4741-b64a-f1e46abfc045",
+            "edec2167-1ee0-44f1-815f-0648dcafbe15",
             "content-length",
             "157",
             "date",
-            "Fri, 22 Jul 2022 14:12:27 GMT",
+            "Tue, 30 Aug 2022 16:50:27 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,28 +33,33 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/federal-judges/3349",
+        "path": "/beta/federal-judges/3349",
         "body": "",
         "status": 200,
         "response": {
-            "Name": "Beryl Alaine Howell",
-            "Initials": "BAH",
-            "DateOfBirth": "1956-01-01",
-            "CaseCount": 1613,
-            "JudgeId": 3349,
-            "NominatingPresident": "Barack Obama"
+            "name": "Beryl Alaine Howell",
+            "federalJudgeId": 3349,
+            "initials": "BAH",
+            "dateOfBirth": "1956-01-01",
+            "caseCountByCourt": [
+                {
+                    "court": "total",
+                    "count": 1634
+                }
+            ],
+            "nominatingPresident": "Barack Obama"
         },
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "56456dcbe686d3df9a16987248c1243f;o=1",
+            "9c55bb5cef13cd24c5eafa1afde2eef1;o=1",
             "date",
-            "Fri, 22 Jul 2022 14:12:48 GMT",
+            "Tue, 30 Aug 2022 16:50:27 GMT",
             "content-length",
-            "143",
+            "185",
             "x-request-id",
-            "cab054e2-8ddd-42bd-862e-33b94fd75c28",
+            "16d4821c-df29-4d5f-9103-a13c8f0f47aa",
             "Via",
             "1.1 google",
             "Alt-Svc",

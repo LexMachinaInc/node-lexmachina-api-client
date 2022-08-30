@@ -14,16 +14,16 @@ describe("Judge Endpoints", () => {
     var judgeIds = [3349, 3488, 2877];
     describe('Lookup Judge', () => {
 
-        it('should contain single judge information', async () => {
+         it('should contain single judge information', async () => {
             const { nockDone} = await nockBack('judge-single-data.json');
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var judge = await client.federalJudges(judgeId);
             nockDone();
 
-            expect(judge.JudgeId).to.equal(judgeId);
-            expect(judge.Name).to.equal("Beryl Alaine Howell");
-        })
+            expect(judge.federalJudgeId).to.equal(judgeId);
+            expect(judge.name).to.equal("Beryl Alaine Howell");
+        }) 
     })
 
     describe('Lookup Judges', () => {
@@ -36,11 +36,11 @@ describe("Judge Endpoints", () => {
             nockDone();
             judges.should.have.length(judgeIds.length)
             judgeIds.forEach(judge => {
-                judges.should.include.a.thing.with.deep.property("JudgeId", judge);
+                judges.should.include.a.thing.with.deep.property("federalJudgeId", judge);
             })
-            judges.should.include.a.thing.with.deep.nested.property("Name", "Beryl Alaine Howell");
-            judges.should.include.a.thing.with.deep.nested.property("Name", "Vernon Speede Broderick");
-            judges.should.include.a.thing.with.deep.nested.property("Name", "James S. Moody");
+            judges.should.include.a.thing.with.deep.nested.property("name", "Beryl Alaine Howell");
+            judges.should.include.a.thing.with.deep.nested.property("name", "Vernon Speede Broderick");
+            judges.should.include.a.thing.with.deep.nested.property("name", "James S. Moody");
         })
     })
 
