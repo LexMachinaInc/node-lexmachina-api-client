@@ -18,9 +18,9 @@ describe('List Case Resolutions', () => {
         nockDone();
         expect(caseResolutions).to.have.length.above(20);
 
-        caseResolutions.should.include("Claimant Win - Jury",);
-        caseResolutions.should.include("Procedural - Dismissal");
-        caseResolutions.should.include("Claim Defendant Win - Jury");
+        caseResolutions.should.deep.include({summary:"Claimant Win", specific:"Bench Trial"});
+        caseResolutions.should.deep.include({summary:"Procedural", specific:"Dismissal"});
+        caseResolutions.should.deep.include({summary:"Claim Defendant Win", specific:"Jury"});
 
     })
 })
