@@ -1,0 +1,67 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "i6vO8GM6odhAAns14FHnezbIzKcX",
+            "issued_at": 1661884975310,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "5a179086-db1c-45c5-9ecb-e09c07ed739f",
+            "content-length",
+            "157",
+            "date",
+            "Tue, 30 Aug 2022 18:42:55 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/list-events",
+        "body": "",
+        "status": 200,
+        "response": [
+            "Markman Hearing",
+            "Permanent Injuction",
+            "Summary Judgement",
+            "Dismiss (Contested)",
+            "Filed",
+            "Terminated"
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "6b3cfbc8f7744787874e288cc57fe768;o=1",
+            "date",
+            "Tue, 30 Aug 2022 18:42:55 GMT",
+            "content-length",
+            "104",
+            "x-request-id",
+            "41eba6f2-fc14-42f9-af5f-00f7fe3dbfb3",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

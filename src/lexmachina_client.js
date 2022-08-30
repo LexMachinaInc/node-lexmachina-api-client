@@ -87,6 +87,12 @@ module.exports = class LexMachinaClient {
         var config = { 'endpoint': '/list-damages' }
         return this.lmRequest.requestURL(config)
     }
+
+    async listEvents() {
+        var config = { 'endpoint': '/list-events' }
+        return this.lmRequest.requestURL(config)
+    }
+    
     async listJudgmentSources() {
         var config = { 'endpoint': '/list-judgment-sources' }
         return this.lmRequest.requestURL(config)
