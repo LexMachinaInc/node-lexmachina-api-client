@@ -17,9 +17,9 @@ describe('List Courts', () => {
         var courts = await client.listCourts();
 
         expect(courts).to.have.length.above(90);
-        courts.should.include.a.thing.with.deep.property("Abbreviation", "njd");
-        courts.should.include.a.thing.with.deep.property("Name", "U.S. District Court for the District of Columbia");
-        courts.should.include.a.thing.with.deep.property("ShortName", "D.Or.");
+        courts.should.include.a.thing.with.deep.property("abbreviation", "njd");
+        courts.should.include.a.thing.with.deep.property("name", "U.S. District Court for the District of Columbia");
+        courts.should.include.a.thing.with.deep.property("shortName", "D.Or.");
         nockDone();
     })
 })
