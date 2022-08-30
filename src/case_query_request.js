@@ -11,30 +11,30 @@ module.exports = class CasesQueryRequest {
     constructor() {
 
         this.queryObjectTemplate = {
-            "CaseStatus": "",
-            "CaseTypes": { "Include": [], "Exclude": [] },
-            "CaseTags": { "Include": [], "Exclude": [] },
-            "Dates": {
-                "Filed": { "OnOrAfter": "", "OnOrBefore": "" },
-                "Terminated": { "OnOrAfter": "", "OnOrBefore": "" },
-                "Trial": { "OnOrAfter": "", "OnOrBefore": "" },
-                "LastDocket": { "OnOrAfter": "", "OnOrBefore": "" }
+            "caseStatus": "",
+            "caseTypes": { "include": [], "exclude": [] },
+            "caseTags": { "include": [], "exclude": [] },
+            "dates": {
+                "filed": { "onOrAfter": "", "onOrBefore": "" },
+                "terminated": { "onOrAfter": "", "onOrBefore": "" },
+                "trial": { "onOrAfter": "", "onOrBefore": "" },
+                "lastDocket": { "onOrAfter": "", "onOrBefore": "" }
             },
-            "Judges": { "Include": [], "Exclude": [] },
-            "Magistrates": { "Include": [], "Exclude": [] },
-            "Events": { "IncludeEventTypes": [], "ExcludeEventTypes": [] },
-            "LawFirms": { "Include": [], "Exclude": [], "IncludePlaintiff": [], "ExcludePlaintiff": [], "IncludeDefendant": [], "ExcludeDefendant": [], "IncludeThirdParty": [], "ExcludeThirdParty": [] },
-            "Parties": { "Include": [], "Exclude": [], "IncludePlaintiff": [], "ExcludePlaintiff": [], "IncludeDefendant": [], "ExcludeDefendant": [], "IncludeThirdParty": [], "ExcludeThirdParty": [] },
-            "Courts": { "Include": [], "Exclude": [] },
-            "Resolutions": { "Include": [], "Exclude": [] },
-            "Findings": { "Include": { "AwardedToParties": [], "AwardedAgainstParties": [], "JudgmentSource": [], "PatentInvalidityReasons": [] } },
-            "Remedies": { "Include": { "AwardedToParties": [], "AwardedAgainstParties": [], "JudgmentSource": [] } },
-            "Damages": { "Include": { "InFavorOfParties": [], "AwardedAgainstParties": [], "MinimumAmount": 0, "Name": [], "Type": [], "JudgmentSource": [] } },
-            "Patents": { "Include": [], "Exclude": [] },
-            "MDL": { "Include": [], "Exclude": [] },
-            "Ordering": "ByFirstFiled",
-            "Page": 1,
-            "PageSize": 5
+            "judges": { "include": [], "exclude": [] },
+            "magistrates": { "include": [], "exclude": [] },
+            "events": { "includeEventTypes": [], "excludeEventTypes": [] },
+            "lawFirms": { "include": [], "exclude": [], "includePlaintiff": [], "excludePlaintiff": [], "includeDefendant": [], "excludeDefendant": [], "includeThirdParty": [], "excludeThirdParty": [] },
+            "parties": { "include": [], "exclude": [], "includePlaintiff": [], "excludePlaintiff": [], "includeDefendant": [], "excludeDefendant": [], "includeThirdParty": [], "excludeThirdParty": [] },
+            "courts": { "include": [], "exclude": [] },
+            "resolutions": { "include": [], "exclude": [] },
+            "findings": { "include": { "awardedToParties": [], "awardedAgainstParties": [], "judgmentSource": [], "patentInvalidityReasons": [] } },
+            "remedies": { "include": { "awardedToParties": [], "awardedAgainstParties": [], "judgmentSource": [] } },
+            "damages": { "include": { "inFavorOfParties": [], "awardedAgainstParties": [], "minimumAmount": 0, "name": [], "type": [], "judgmentSource": [] } },
+            "patents": { "include": [], "exclude": [] },
+            "mdl": { "include": [], "exclude": [] },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
         }
         this.queryObject = JSON.parse(JSON.stringify(this.queryObjectTemplate))
     }
@@ -71,14 +71,14 @@ module.exports = class CasesQueryRequest {
     }
 
     setCaseStatus(status) {
-        this.queryObject.CaseStatus = status
+        this.queryObject.caseStatus = status
     }
 
     addCaseTypesInclude(values) {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addCaseTypesInclude(value) })
         } else {
-            pushUnique(this.queryObject.CaseTypes.Include, values);
+            pushUnique(this.queryObject.caseTypes.include, values);
         }
     }
 
@@ -86,7 +86,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addCaseTypesExclude(value) })
         } else {
-            pushUnique(this.queryObject.CaseTypes.Exclude, values)
+            pushUnique(this.queryObject.caseTypes.exclude, values)
         }
     }
 
@@ -94,7 +94,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addCaseTagsInclude(value) })
         } else {
-            pushUnique(this.queryObject.CaseTags.Include, values)
+            pushUnique(this.queryObject.caseTags.include, values)
         }
     }
 
@@ -102,7 +102,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addCaseTagsExclude(value) })
         } else {
-            pushUnique(this.queryObject.CaseTags.Exclude, values)
+            pushUnique(this.queryObject.caseTags.exclude, values)
         }
     }
 
@@ -110,7 +110,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addJudgesInclude(id) })
         } else {
-            pushUnique(this.queryObject.Judges.Include, ids)
+            pushUnique(this.queryObject.judges.include, ids)
         }
     }
 
@@ -118,7 +118,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addJudgesExclude(id) })
         } else {
-            pushUnique(this.queryObject.Judges.Exclude, ids)
+            pushUnique(this.queryObject.judges.exclude, ids)
         }
     }
 
@@ -126,7 +126,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addMagistratesInclude(id) })
         } else {
-            pushUnique(this.queryObject.Magistrates.Include, ids)
+            pushUnique(this.queryObject.magistrates.include, ids)
         }
     }
 
@@ -134,7 +134,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addMagistratesExclude(id) })
         } else {
-            pushUnique(this.queryObject.Magistrates.Exclude, ids)
+            pushUnique(this.queryObject.magistrates.exclude, ids)
         }
     }
 
@@ -142,7 +142,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addEventTypesInclude(value) })
         } else {
-            pushUnique(this.queryObject.Events.IncludeEventTypes, values)
+            pushUnique(this.queryObject.events.includeEventTypes, values)
         }
     }
 
@@ -150,7 +150,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addEventTypesExclude(value) })
         } else {
-            pushUnique(this.queryObject.Events.ExcludeEventTypes, values)
+            pushUnique(this.queryObject.events.excludeEventTypes, values)
         }
     }
 
@@ -158,7 +158,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsInclude(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.Include, ids)
+            pushUnique(this.queryObject.lawFirms.include, ids)
         }
     }
 
@@ -166,7 +166,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsExclude(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.Exclude, ids)
+            pushUnique(this.queryObject.lawFirms.exclude, ids)
         }
     }
 
@@ -174,7 +174,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsIncludePlaintiff(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.IncludePlaintiff, ids)
+            pushUnique(this.queryObject.lawFirms.includePlaintiff, ids)
         }
     }
 
@@ -182,7 +182,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsExcludePlaintiff(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.ExcludePlaintiff, ids)
+            pushUnique(this.queryObject.lawFirms.excludePlaintiff, ids)
         }
     }
 
@@ -190,7 +190,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsIncludeDefendant(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.IncludeDefendant, ids)
+            pushUnique(this.queryObject.lawFirms.includeDefendant, ids)
         }
     }
 
@@ -198,7 +198,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsExcludeDefendant(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.ExcludeDefendant, ids)
+            pushUnique(this.queryObject.lawFirms.excludeDefendant, ids)
         }
     }
 
@@ -206,7 +206,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsIncludeThirdParty(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.IncludeThirdParty, ids)
+            pushUnique(this.queryObject.lawFirms.includeThirdParty, ids)
         }
     }
 
@@ -214,7 +214,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addLawFirmsExcludeThirdParty(id) })
         } else {
-            pushUnique(this.queryObject.LawFirms.ExcludeThirdParty, ids)
+            pushUnique(this.queryObject.lawFirms.excludeThirdParty, ids)
         }
     }
 
@@ -222,7 +222,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesInclude(id) })
         } else {
-            pushUnique(this.queryObject.Parties.Include, ids)
+            pushUnique(this.queryObject.parties.include, ids)
         }
     }
 
@@ -230,7 +230,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesExclude(id) })
         } else {
-            pushUnique(this.queryObject.Parties.Exclude, ids)
+            pushUnique(this.queryObject.parties.exclude, ids)
         }
     }
 
@@ -238,7 +238,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesIncludePlaintiff(id) })
         } else {
-            pushUnique(this.queryObject.Parties.IncludePlaintiff, ids)
+            pushUnique(this.queryObject.parties.includePlaintiff, ids)
         }
     }
 
@@ -246,7 +246,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesExcludePlaintiff(id) })
         } else {
-            pushUnique(this.queryObject.Parties.ExcludePlaintiff, ids)
+            pushUnique(this.queryObject.parties.excludePlaintiff, ids)
         }
     }
 
@@ -254,7 +254,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesIncludeDefendant(id) })
         } else {
-            pushUnique(this.queryObject.Parties.IncludeDefendant, ids)
+            pushUnique(this.queryObject.parties.includeDefendant, ids)
         }
     }
 
@@ -262,7 +262,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesExcludeDefendant(id) })
         } else {
-            pushUnique(this.queryObject.Parties.ExcludeDefendant, ids)
+            pushUnique(this.queryObject.parties.excludeDefendant, ids)
         }
     }
 
@@ -270,7 +270,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesIncludeThirdParty(id) })
         } else {
-            pushUnique(this.queryObject.Parties.IncludeThirdParty, ids)
+            pushUnique(this.queryObject.parties.includeThirdParty, ids)
         }
     }
 
@@ -278,7 +278,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addPartiesExcludeThirdParty(id) })
         } else {
-            pushUnique(this.queryObject.Parties.ExcludeThirdParty, ids)
+            pushUnique(this.queryObject.parties.excludeThirdParty, ids)
         }
     }
 
@@ -286,7 +286,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addCourtsInclude(value) })
         } else {
-            pushUnique(this.queryObject.Courts.Include, values)
+            pushUnique(this.queryObject.courts.include, values)
         }
     }
 
@@ -294,7 +294,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addCourtsExclude(value) })
         } else {
-            pushUnique(this.queryObject.Courts.Exclude, values)
+            pushUnique(this.queryObject.courts.exclude, values)
         }
     }
 
@@ -302,7 +302,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addResolutionsInclude(value) })
         } else {
-            pushUnique(this.queryObject.Resolutions.Include, values)
+            pushUnique(this.queryObject.resolutions.include, values)
         }
     }
 
@@ -310,7 +310,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addResolutionsExclude(value) })
         } else {
-            pushUnique(this.queryObject.Resolutions.Exclude, values)
+            pushUnique(this.queryObject.resolutions.exclude, values)
         }
     }
 
@@ -318,7 +318,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addFindingsIncludeAwardedToParties(id) })
         } else {
-            pushUnique(this.queryObject.Findings.Include.AwardedToParties, ids)
+            pushUnique(this.queryObject.findings.include.awardedToParties, ids)
         }
     }
 
@@ -326,7 +326,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addFindingsIncludeAwardedAgainstParties(id) })
         } else {
-            pushUnique(this.queryObject.Findings.Include.AwardedAgainstParties, ids)
+            pushUnique(this.queryObject.findings.include.awardedAgainstParties, ids)
         }
     }
 
@@ -334,7 +334,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addFindingsIncludeJudgmentSource(value) })
         } else {
-            pushUnique(this.queryObject.Findings.Include.JudgmentSource, values)
+            pushUnique(this.queryObject.findings.include.judgmentSource, values)
         }
     }
 
@@ -342,7 +342,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addFindingsIncludePatentInvalidityReasons(value) })
         } else {
-            pushUnique(this.queryObject.Findings.Include.PatentInvalidityReasons, values)
+            pushUnique(this.queryObject.findings.include.patentInvalidityReasons, values)
         }
     }
 
@@ -350,7 +350,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addRemediesIncludeAwardedToParties(id) })
         } else {
-            pushUnique(this.queryObject.Remedies.Include.AwardedToParties, ids)
+            pushUnique(this.queryObject.remedies.include.awardedToParties, ids)
         }
     }
 
@@ -358,7 +358,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addRemediesIncludeAwardedAgainstParties(id) })
         } else {
-            pushUnique(this.queryObject.Remedies.Include.AwardedAgainstParties, ids)
+            pushUnique(this.queryObject.remedies.include.awardedAgainstParties, ids)
         }
     }
 
@@ -366,7 +366,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addRemediesIncludeJudgmentSource(value) })
         } else {
-            pushUnique(this.queryObject.Remedies.Include.JudgmentSource, values)
+            pushUnique(this.queryObject.remedies.include.judgmentSource, values)
         }
     }
 
@@ -374,7 +374,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addDamagesIncludeInFavorOfParties(id) })
         } else {
-            pushUnique(this.queryObject.Damages.Include.InFavorOfParties, ids)
+            pushUnique(this.queryObject.damages.include.inFavorOfParties, ids)
         }
     }
 
@@ -382,7 +382,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addDamagesIncludeAwardedAgainstParties(id) })
         } else {
-            pushUnique(this.queryObject.Damages.Include.AwardedAgainstParties, ids)
+            pushUnique(this.queryObject.damages.include.awardedAgainstParties, ids)
         }
     }
 
@@ -390,7 +390,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addDamagesIncludeName(value) })
         } else {
-            pushUnique(this.queryObject.Damages.Include.Name, values)
+            pushUnique(this.queryObject.damages.include.name, values)
         }
     }
 
@@ -398,7 +398,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addDamagesIncludeType(value) })
         } else {
-            pushUnique(this.queryObject.Damages.Include.Type, values)
+            pushUnique(this.queryObject.damages.include.type, values)
         }
     }
 
@@ -406,7 +406,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addDamagesIncludeJudgmentSource(value) })
         } else {
-            pushUnique(this.queryObject.Damages.Include.JudgmentSource, values)
+            pushUnique(this.queryObject.damages.include.judgmentSource, values)
         }
     }
 
@@ -414,14 +414,14 @@ module.exports = class CasesQueryRequest {
         if (typeof amount != "number" || amount <= 0) {
             throw new Error("Damages amount must be a number greater than 0")
         }
-        this.queryObject.Damages.Include.MinimumAmount = amount
+        this.queryObject.damages.include.minimumAmount = amount
     }
 
     addPatentsInclude(values) {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addPatentsInclude(value) })
         } else {
-            pushUnique(this.queryObject.Patents.Include, values)
+            pushUnique(this.queryObject.patents.include, values)
         }
     }
 
@@ -429,7 +429,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addPatentsExclude(value) })
         } else {
-            pushUnique(this.queryObject.Patents.Exclude, values)
+            pushUnique(this.queryObject.patents.exclude, values)
         }
     }
 
@@ -437,7 +437,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addMDLInclude(value) })
         } else {
-            pushUnique(this.queryObject.MDL.Include, values)
+            pushUnique(this.queryObject.mdl.include, values)
         }
     }
 
@@ -445,7 +445,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addMDLExclude(value) })
         } else {
-            pushUnique(this.queryObject.MDL.Exclude, values)
+            pushUnique(this.queryObject.mdl.exclude, values)
         }
     }
 
@@ -453,30 +453,30 @@ module.exports = class CasesQueryRequest {
         if (!moment(value, 'YYYY-MM-DD', true).isValid()) {
             throw new Error("Dates must be in YYYY-MM-DD format: " + value)
         }
-        if (this.queryObject.Dates[field] == undefined) {
+        if (this.queryObject.dates[field] == undefined) {
             throw new Error("Not a valid field: " + field)
         }
-        if (this.queryObject.Dates[field][operator] == undefined) {
+        if (this.queryObject.dates[field][operator] == undefined) {
             throw new Error("Not a valid operator: " + operator)
         }
 
-        this.queryObject.Dates[field][operator] = value
+        this.queryObject.dates[field][operator] = value
     }
 
     setOrdering(order) {
-        this.queryObject.Ordering = order
+        this.queryObject.ordering = order
     }
 
     setPage(page) {
-        this.queryObject.Page = page
+        this.queryObject.page = page
     }
 
     setPageSize(size) {
-        this.queryObject.PageSize = size
+        this.queryObject.pageSize = size
     }
 
     nextPage() {
-        this.queryObject.Page++
+        this.queryObject.page++
     }
 
     clear() {
