@@ -7,3 +7,5 @@ History.md
 .node-persist
 .nyc_output
 .vscode
+.eslintrc.json
+config/config-auth.json
