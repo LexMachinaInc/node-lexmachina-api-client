@@ -15,7 +15,7 @@ module.exports = class LexMachinaClient {
         } else if (Array.isArray(attornies)) {
 
             config.endpoint = "/attorneys"
-            config.params = { attorney_ids: attornies }
+            config.params = { attorneyIds: attornies }
         } else {
             throw new Error("The attorney_id must be an integer or array of integers");
         }
@@ -110,45 +110,6 @@ module.exports = class LexMachinaClient {
             config.endpoint = '/parties/' + parties
         } else if (Array.isArray(parties)) {
             config.endpoint = "/parties"
-            config.params = { party_ids: parties }
-        } else {
-            throw new Error("The party_id must be an integer or array of integers")
-        }
-        return this.lmRequest.requestURL(config)
-    }
-
-    async resolveAttorneys(attornies) {
-        var config = {}
-        if (Number.isInteger(attornies)) {
-            config.endpoint = '/resolve-attorneys/' + attornies
-        } else if (Array.isArray(attornies)) {
-            config.endpoint = "/resolve-attorneys"
-            config.params = { attorney_ids: attornies }
-        } else {
-            throw new Error("The attorney_id must be an integer or array of integers")
-        }
-        return this.lmRequest.requestURL(config)
-    }
-
-    async resolveLawFirms(lawFirms) {
-        var config = {}
-        if (Number.isInteger(lawFirms)) {
-            config.endpoint = '/resolve-law-firms/' + lawFirms
-        } else if (Array.isArray(lawFirms)) {
-            config.endpoint = "/resolve-law-firms"
-            config.params = { law_firm_ids: lawFirms }
-        } else {
-            throw new Error("The party_id must be an integer or array of integers")
-        }
-        return this.lmRequest.requestURL(config)
-    }
-
-    async resolveParties(parties) {
-        var config = {}
-        if (Number.isInteger(parties)) {
-            config.endpoint = '/resolve-parties/' + parties
-        } else if (Array.isArray(parties)) {
-            config.endpoint = "/resolve-parties"
             config.params = { party_ids: parties }
         } else {
             throw new Error("The party_id must be an integer or array of integers")

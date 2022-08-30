@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "bpULcnobObe6gHxs0A9A9GA7UXNY",
-            "issued_at": 1658414020629,
+            "access_token": "4QuEThSLat5UawGpjzvIap5MdfzM",
+            "issued_at": 1661877748392,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "b9bc5ec7-1e98-4ec5-8d49-25c38f96a001",
+            "200dc78e-16e1-460a-ba27-979f53d83f84",
             "content-length",
             "157",
             "date",
-            "Thu, 21 Jul 2022 14:33:40 GMT",
+            "Tue, 30 Aug 2022 16:42:28 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,46 +33,34 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/attorneys?attorney_ids=110161257&attorney_ids=43337&attorney_ids=14974596",
+        "path": "/beta/attorneys?attorneyIds=110161257&attorneyIds=43337&attorneyIds=14974596",
         "body": "",
         "status": 200,
         "response": [
             {
-                "InputId": 110161257,
-                "Attorney": {
-                    "Name": "G. L. Spence",
-                    "AttorneyIds": 110161257,
-                    "AttorneyPguids": []
-                }
+                "name": "Gerry L. Spence",
+                "attorneyId": 110161257
             },
             {
-                "InputId": 43337,
-                "Attorney": {
-                    "Name": "J. M. Brownstone",
-                    "AttorneyIds": 43337,
-                    "AttorneyPguids": []
-                }
+                "name": "Justin M. Brownstone",
+                "attorneyId": 43337
             },
             {
-                "InputId": 14974596,
-                "Attorney": {
-                    "Name": "K. H. Sligh",
-                    "AttorneyIds": 14974596,
-                    "AttorneyPguids": []
-                }
+                "name": "Kathryn Harper Sligh",
+                "attorneyId": 14974596
             }
         ],
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "448b814448b905e0fd4647d63fc3ecc5;o=1",
+            "ef84e701386f558db94b4cad752befe9;o=1",
             "date",
-            "Thu, 21 Jul 2022 14:33:41 GMT",
+            "Tue, 30 Aug 2022 16:42:28 GMT",
             "content-length",
-            "297",
+            "156",
             "x-request-id",
-            "08493e6c-044d-4226-bb5a-e6566ceca834",
+            "e6f275c3-8e67-4af0-904d-b2186dcffb22",
             "Via",
             "1.1 google",
             "Alt-Svc",
