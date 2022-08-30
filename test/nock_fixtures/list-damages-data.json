@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "L4NVczvtSVQdHs5IRAjWcMGJKLa5",
-            "issued_at": 1657914628482,
+            "access_token": "N7GdH3TdnYQk54cAuQQaoeACzs0T",
+            "issued_at": 1661884276858,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "ce690a06-ef25-410a-b173-8091131b2e05",
+            "b48b8103-a169-403a-b31c-49e0d3b901a9",
             "content-length",
             "157",
             "date",
-            "Fri, 15 Jul 2022 19:50:28 GMT",
+            "Tue, 30 Aug 2022 18:31:16 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,7 +33,7 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/list-damages",
+        "path": "/beta/list-damages",
         "body": "",
         "status": 200,
         "response": {
@@ -173,20 +173,31 @@
                 "Civil Penalties",
                 "Restitution (False Claims)",
                 "Settled Claim Damages (False Claims)",
-                "Relator Share"
+                "Relator Share",
+                "Back Pay",
+                "Special Damages"
+            ],
+            "Internet": [
+                "Actual Damages / Disgorgement of Profits",
+                "Statutory Damages (Internet)",
+                "Punitive Damages (Internet)"
+            ],
+            "Surety Bond": [
+                "Contract Damages (Surety Bond)",
+                "Tort Compensatory Damages (Surety Bond)"
             ]
         },
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "51e9fbcfab886c00cc8e86cb09a98e73",
+            "e3808973682243b0a2d51b3ccfc5fc8b",
             "date",
-            "Fri, 15 Jul 2022 19:50:28 GMT",
+            "Tue, 30 Aug 2022 18:31:17 GMT",
             "content-length",
-            "3454",
+            "3691",
             "x-request-id",
-            "54a094b8-13f5-4ed3-a3e4-1d12dc353e0a",
+            "9c24f7af-9426-41b9-a403-1a1b544f344a",
             "Via",
             "1.1 google",
             "Alt-Svc",
