@@ -22,8 +22,8 @@ describe("Party Endpoints", () => {
             var party = await client.parties(partyId);
             nockDone();
 
-            expect(party.InputId).to.equal(partyId);
-            expect(party.Party.Name).to.equal("Neil Gaiman");
+            expect(party.partyId).to.equal(partyId);
+            expect(party.name).to.equal("Neil Gaiman");
         })
     })
 
@@ -37,11 +37,11 @@ describe("Party Endpoints", () => {
             nockDone();
             parties.should.have.length(partyIds.length)
             partyIds.forEach(party => {
-                parties.should.include.a.thing.with.deep.property("InputId", party);
+                parties.should.include.a.thing.with.deep.property("partyId", party);
             })
-            parties.should.include.a.thing.with.deep.nested.property("Party.Name", "Todd McFarlane");
-            parties.should.include.a.thing.with.deep.nested.property("Party.Name", "Stan Lee");
-            parties.should.include.a.thing.with.deep.nested.property("Party.Name", "Neil Gaiman");
+            parties.should.include.a.thing.with.deep.nested.property("name", "Todd McFarlane");
+            parties.should.include.a.thing.with.deep.nested.property("name", "Stan Lee");
+            parties.should.include.a.thing.with.deep.nested.property("name", "Neil Gaiman");
         })
     })
 

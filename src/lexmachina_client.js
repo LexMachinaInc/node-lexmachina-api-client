@@ -110,7 +110,7 @@ module.exports = class LexMachinaClient {
             config.endpoint = '/parties/' + parties
         } else if (Array.isArray(parties)) {
             config.endpoint = "/parties"
-            config.params = { party_ids: parties }
+            config.params = { partyIds: parties }
         } else {
             throw new Error("The party_id must be an integer or array of integers")
         }

@@ -1,44 +1,66 @@
 [
     {
         "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "9raeQa0eY5cupHdJgzqeVIpaT6lT",
+            "issued_at": 1661879707224,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "e19ab6aa-d35e-4b55-9a9d-af9c0a1e136a",
+            "content-length",
+            "157",
+            "date",
+            "Tue, 30 Aug 2022 17:15:07 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/parties?party_ids=216320&party_ids=196852&party_ids=56391",
+        "path": "/beta/parties?partyIds=216320&partyIds=196852&partyIds=56391",
         "body": "",
         "status": 200,
         "response": [
             {
-                "InputId": 216320,
-                "Party": {
-                    "Name": "Neil Gaiman",
-                    "PartyId": 216320
-                }
+                "name": "Neil Gaiman",
+                "partyId": 216320
             },
             {
-                "InputId": 196852,
-                "Party": {
-                    "Name": "Todd McFarlane",
-                    "PartyId": 196852
-                }
+                "name": "Todd McFarlane",
+                "partyId": 196852
             },
             {
-                "InputId": 56391,
-                "Party": {
-                    "Name": "Stan Lee",
-                    "PartyId": 56391
-                }
+                "name": "Stan Lee",
+                "partyId": 56391
             }
         ],
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "53622331e7b6bb53616e8a8f17e0ac53",
+            "0c917dd30cfd49c0f80f5ed88382e8ae",
             "date",
-            "Fri, 22 Jul 2022 14:57:11 GMT",
+            "Tue, 30 Aug 2022 17:15:07 GMT",
             "content-length",
-            "200",
+            "120",
             "x-request-id",
-            "f7034506-a843-436e-8ed5-7dd7525b00f1",
+            "de8104d5-f3df-47fc-b2f4-e3727f7f703e",
             "Via",
             "1.1 google",
             "Alt-Svc",
