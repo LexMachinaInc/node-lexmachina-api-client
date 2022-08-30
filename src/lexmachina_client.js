@@ -56,7 +56,7 @@ module.exports = class LexMachinaClient {
             config.endpoint = '/law-firms/' + lawFirms
         } else if (Array.isArray(lawFirms)) {
             config.endpoint = "/law-firms"
-            config.params = { law_firm_ids: lawFirms }
+            config.params = { lawFirmIds: lawFirms }
         } else {
             throw new Error("The law_firm_id must be an integer or array of integers")
         }

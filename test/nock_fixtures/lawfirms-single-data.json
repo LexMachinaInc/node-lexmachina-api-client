@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "Hxpl7GuUA0GRX4FoZdRzmjYcCsJA",
-            "issued_at": 1658500235038,
+            "access_token": "t8d4nhMxb3bpNSuaJbKKuiqD1oNS",
+            "issued_at": 1661879900996,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "2ea77d1d-1cfc-4ce0-846b-471010730f07",
+            "044151fd-92e1-4615-81c3-1c54d5b7f955",
             "content-length",
             "157",
             "date",
-            "Fri, 22 Jul 2022 14:30:34 GMT",
+            "Tue, 30 Aug 2022 17:18:20 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,27 +33,24 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/law-firms/1368",
+        "path": "/beta/law-firms/1368",
         "body": "",
         "status": 200,
         "response": {
-            "InputId": 1368,
-            "LawFirm": {
-                "Name": "Perkins Coie",
-                "LawFirmId": 1368
-            }
+            "name": "Perkins Coie",
+            "lawFirmId": 1368
         },
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "1ab4238bdc409112818be6d25d0d1ee9;o=1",
+            "4026ed065262cad8b63ff4ee9704c6df",
             "date",
-            "Fri, 22 Jul 2022 14:30:35 GMT",
+            "Tue, 30 Aug 2022 17:18:21 GMT",
             "content-length",
-            "67",
+            "40",
             "x-request-id",
-            "89d3391a-5350-4251-aedb-be8536226ff1",
+            "34fb123b-1369-4c23-977f-712e3bb6e037",
             "Via",
             "1.1 google",
             "Alt-Svc",

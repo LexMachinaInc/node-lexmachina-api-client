@@ -22,8 +22,8 @@ describe("Law Firm Endpoints", () => {
             var lawfirm = await client.lawFirm(lawfirmId);
             nockDone();
 
-            expect(lawfirm.InputId).to.equal(lawfirmId);
-            expect(lawfirm.LawFirm.Name).to.equal("Perkins Coie");
+            expect(lawfirm.lawFirmId).to.equal(lawfirmId);
+            expect(lawfirm.name).to.equal("Perkins Coie");
         })
     })
 
@@ -37,11 +37,11 @@ describe("Law Firm Endpoints", () => {
             nockDone();
             lawfirms.should.have.length(lawfirmIds.length)
             lawfirmIds.forEach(lawfirm => {
-                lawfirms.should.include.a.thing.with.deep.property("InputId", lawfirm);
+                lawfirms.should.include.a.thing.with.deep.property("lawFirmId", lawfirm);
             })
-            lawfirms.should.include.a.thing.with.deep.nested.property("LawFirm.Name", "Perkins Coie");
-            lawfirms.should.include.a.thing.with.deep.nested.property("LawFirm.Name", "Quinn Emanuel Urquhart & Sullivan");
-            lawfirms.should.include.a.thing.with.deep.nested.property("LawFirm.Name", "Sligh Law Firm");
+            lawfirms.should.include.a.thing.with.deep.nested.property("name", "Perkins Coie");
+            lawfirms.should.include.a.thing.with.deep.nested.property("name", "Quinn Emanuel Urquhart & Sullivan");
+            lawfirms.should.include.a.thing.with.deep.nested.property("name", "Sligh Law Firm");
         })
     })
 
