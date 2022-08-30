@@ -17,8 +17,8 @@ describe('Search Judges', () => {
         const client = new LexMachinaClient();
         var judges = await client.searchJudges(search_string);
         nockDone();
-        expect(judges.FederalJudges).to.have.length.above(1);
-        judges.FederalJudges.should.include.a.thing.with.deep.property("Name", "Philip A. Brimmer");
-        judges.FederalJudges.should.include.a.thing.with.deep.property("Initials", "PAB");
+        expect(judges.federalJudges).to.have.length.above(1);
+        judges.federalJudges.should.include.a.thing.with.deep.property("name", "Philip A. Brimmer");
+        judges.federalJudges.should.include.a.thing.with.deep.property("initials", "PAB");
     })
 })

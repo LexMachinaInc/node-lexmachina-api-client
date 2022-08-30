@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "ZwaApY1L2IEeAVGEo0LV53TALGUA",
-            "issued_at": 1658434823719,
+            "access_token": "qDK3euKHTCBwmdxepzJFAZBMNkO9",
+            "issued_at": 1661882679042,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "38f9fa41-02bc-4e6f-ac27-e0ee8a37e36d",
+            "13737287-7b3f-4c67-9e44-cbca78c0397b",
             "content-length",
             "157",
             "date",
-            "Thu, 21 Jul 2022 20:20:23 GMT",
+            "Tue, 30 Aug 2022 18:04:39 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,49 +33,49 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/search-judges?q=brim",
+        "path": "/beta/search-judges?q=brim",
         "body": "",
         "status": 200,
         "response": {
-            "FederalJudges": [
+            "federalJudges": [
                 {
-                    "Name": "Clarence Addison Brimmer Jr.",
-                    "Initials": "CAB",
-                    "FederalJudgeId": 260,
-                    "CaseCountByCourt": [
+                    "name": "Clarence Addison Brimmer Jr.",
+                    "federalJudgeId": 260,
+                    "initials": "CAB",
+                    "caseCountByCourt": [
                         {
-                            "Court": "total",
-                            "Count": 122
+                            "court": "total",
+                            "count": 122
                         }
                     ],
-                    "Url": "http://lawmachine-alpha-mralpoiyfa-uk.a.run.app/federal-judges/260"
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/federal-judges/260"
                 },
                 {
-                    "Name": "Philip A. Brimmer",
-                    "Initials": "PAB",
-                    "FederalJudgeId": 3191,
-                    "CaseCountByCourt": [
+                    "name": "Philip A. Brimmer",
+                    "federalJudgeId": 3191,
+                    "initials": "PAB",
+                    "caseCountByCourt": [
                         {
-                            "Court": "total",
-                            "Count": 3405
+                            "court": "total",
+                            "count": 3435
                         }
                     ],
-                    "Url": "http://lawmachine-alpha-mralpoiyfa-uk.a.run.app/federal-judges/3191"
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/federal-judges/3191"
                 }
             ],
-            "MagistrateJudges": []
+            "magistrateJudges": []
         },
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "0b6174991c57ed9dc366b938f6f005a5;o=1",
+            "559f64a8ad74710b5a7762db0fa94e94",
             "date",
-            "Thu, 21 Jul 2022 20:20:24 GMT",
+            "Tue, 30 Aug 2022 18:04:39 GMT",
             "content-length",
-            "441",
+            "439",
             "x-request-id",
-            "76e0e97b-43ae-4220-892f-f24e971fc78b",
+            "5a595cc0-1c6d-443d-bdab-7c7a43a41411",
             "Via",
             "1.1 google",
             "Alt-Svc",
