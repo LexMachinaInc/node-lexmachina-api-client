@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "IX2vcXAdiozFgGlFI3AV2gGFQp6D",
-            "issued_at": 1658346186595,
+            "access_token": "iwWyb4kFIACKCp9ghVb3wOaoE1ip",
+            "issued_at": 1661883791479,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "9ad6fd73-d187-4d9d-bc7a-afe81efa720d",
+            "5e95ff7b-8d17-4b30-b462-e60bc4f1f9ab",
             "content-length",
             "157",
             "date",
-            "Wed, 20 Jul 2022 19:43:06 GMT",
+            "Tue, 30 Aug 2022 18:23:10 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,24 +33,24 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/list-judgment-sources",
+        "path": "/beta/list-judgment-sources",
         "body": "",
         "status": 200,
         "response": {
-            "Damages": [
+            "damages": [
                 "No Type Specified",
                 "Default Judgment",
                 "Consent Judgment",
                 "Judgment on Merits",
                 "Jury Verdict"
             ],
-            "Remedies": [
+            "remedies": [
                 "No Type Specified",
                 "Default Judgment",
                 "Consent Judgment",
                 "Judgment on Merits"
             ],
-            "Findings": [
+            "findings": [
                 "No Type Specified",
                 "Bench Trial",
                 "Consent Judgment",
@@ -65,13 +65,13 @@
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "a9ce34f8a4ba11c1dfa6f28303b56331;o=1",
+            "3ac406eb88c53aeedc67599b3bfa520b",
             "date",
-            "Wed, 20 Jul 2022 19:43:06 GMT",
+            "Tue, 30 Aug 2022 18:23:11 GMT",
             "content-length",
             "369",
             "x-request-id",
-            "ca33a76c-847f-490e-a808-5c1a7116a582",
+            "efdabe1a-c152-46be-ba41-c2b294db606d",
             "Via",
             "1.1 google",
             "Alt-Svc",

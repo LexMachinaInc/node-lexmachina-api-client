@@ -9,7 +9,7 @@ const LexMachinaClient = require('../src/lexmachina_client')
 nockBack.setMode('record');
 
 describe('List Judgment Sources', () => {
-    var categories = ["Damages", "Remedies", "Findings"];
+    var categories = ["damages", "remedies", "findings"];
 
     it('should contain judgment sources', async () => {
         const { nockDone} = await nockBack('list-judgments-data.json');
