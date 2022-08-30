@@ -20,8 +20,8 @@ describe("District Case Endpoint", () => {
             var districtCase = await client.districtCases(caseId);
             nockDone();
 
-            expect(districtCase.CaseId).to.equal(caseId);
-            expect(districtCase.CaseTags).to.have.length.above(2);
+            expect(districtCase.caseId).to.equal(caseId);
+            expect(districtCase.caseTags).to.have.length.above(2);
         })
     })
 

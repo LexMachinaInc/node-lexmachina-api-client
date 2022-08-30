@@ -7,8 +7,8 @@
         "status": 200,
         "response": {
             "token_type": "Bearer",
-            "access_token": "bpULcnobObe6gHxs0A9A9GA7UXNY",
-            "issued_at": 1658414020629,
+            "access_token": "lUWbKW70P2TRIRoIVgZAGcD8E4oW",
+            "issued_at": 1661884320728,
             "expires_in": 3599,
             "scope": ""
         },
@@ -16,11 +16,11 @@
             "content-type",
             "application/json",
             "x-request-id",
-            "b9bc5ec7-1e98-4ec5-8d49-25c38f96a001",
+            "90bcf304-23ed-42d8-a272-cee30616939f",
             "content-length",
             "157",
             "date",
-            "Thu, 21 Jul 2022 14:33:40 GMT",
+            "Tue, 30 Aug 2022 18:32:00 GMT",
             "Via",
             "1.1 google",
             "Alt-Svc",
@@ -33,141 +33,151 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/district-cases/93617",
+        "path": "/beta/district-cases/93617",
         "body": "",
         "status": 200,
         "response": {
-            "CaseId": 93617,
-            "Title": "Gaiman, Neil v. McFarlane, Todd",
-            "Court": "U.S. District Court for the Western District of Wisconsin",
-            "CaseNo": "3:02-cv-00048-bbc",
-            "Status": "Terminated",
-            "CaseType": [
+            "caseId": 93617,
+            "title": "Gaiman, Neil v. McFarlane, Todd",
+            "court": "U.S. District Court for the Western District of Wisconsin",
+            "caseNo": "3:02-cv-00048-bbc",
+            "status": "Terminated",
+            "caseType": [
                 "Copyright"
             ],
-            "CaseTags": [
+            "caseTags": [
                 "Trial",
                 "Appealed",
                 "Order re: Dismiss (Contested)",
                 "Jury Trial"
             ],
-            "Dates": {
-                "Filed": "2002-01-24",
-                "Terminated": "2012-02-03",
-                "Trial": "2002-10-01",
-                "LastDocket": "2012-02-03"
+            "dates": {
+                "filed": "2002-01-24",
+                "terminated": "2012-02-03",
+                "trial": "2002-10-01",
+                "lastDocket": "2012-02-03"
             },
-            "Resolution": "Claimant Win: Trial",
-            "Events": [
+            "resolution": {
+                "summary": "Claimant Win",
+                "specific": "Trial"
+            },
+            "events": [
                 {
-                    "Type": "Filed",
-                    "Occurred": "2002-01-24"
+                    "type": "Filed",
+                    "occurred": "2002-01-24"
                 },
                 {
-                    "Type": "Dismiss (Contested)",
-                    "Occurred": "2002-05-06"
+                    "type": "Dismiss (Contested)",
+                    "occurred": "2002-05-06"
                 },
                 {
-                    "Type": "Terminated",
-                    "Occurred": "2012-02-03"
-                }
-            ],
-            "Judges": [
-                {
-                    "Name": "Barbara Brandriff Crabb",
-                    "FederalJudgeId": 530
-                }
-            ],
-            "MagistrateJudges": [
-                {
-                    "Name": "Stephen L Crocker",
-                    "MagistrateId": 628
+                    "type": "Trial",
+                    "occurred": "2002-10-01"
                 },
                 {
-                    "Name": "Peter A Oppeneer",
-                    "MagistrateId": 989
+                    "type": "Terminated",
+                    "occurred": "2012-02-03"
                 }
             ],
-            "Remedies": {
-                "Active": [
+            "judges": [
+                {
+                    "name": "Barbara Brandriff Crabb",
+                    "federalJudgeId": 530
+                }
+            ],
+            "magistrateJudges": [
+                {
+                    "name": "Stephen L Crocker",
+                    "magistrateJudgeId": 628
+                },
+                {
+                    "name": "Peter A Oppeneer",
+                    "magistrateJudgeId": 989
+                }
+            ],
+            "remedies": {
+                "active": [
                     {
-                        "Type": "General Permanent Injunction: Grant",
-                        "JudgmentSource": "Judgment on Merits",
-                        "AwardedToPartyIds": [
+                        "name": "Permanent Injunction: Grant",
+                        "type": "General",
+                        "judgmentSource": "Judgment on Merits",
+                        "awardedToPartyIds": [
                             216320,
                             216322
                         ],
-                        "AgainstPartyIds": [
+                        "againstPartyIds": [
                             20374402,
                             171787,
                             125836,
                             23006382,
                             196852
                         ],
-                        "DocketEntryFiled": "2002-10-17",
-                        "Negated": null,
-                        "Reinstated": null
+                        "docketEntryFiled": "2002-10-17",
+                        "negated": null,
+                        "reinstated": null
                     }
                 ],
-                "Voided": [],
-                "Reversed": []
+                "voided": [],
+                "reversed": []
             },
-            "Findings": {
-                "Active": [
+            "findings": {
+                "active": [
                     {
-                        "Type": "Copyright Ownership / Validity",
-                        "JudgmentSource": "Trial",
-                        "InFavorOfPartyIds": [
+                        "name": "Ownership / Validity",
+                        "type": "Copyright",
+                        "judgmentSource": "Trial",
+                        "inFavorOfPartyIds": [
                             216320,
                             216322
                         ],
-                        "PatentInvalidityReasons": [],
-                        "AgainstPartyIds": [
+                        "patentInvalidityReasons": [],
+                        "againstPartyIds": [
                             20374402,
                             171787,
                             125836,
                             23006382,
                             196852
                         ],
-                        "DocketEntryFiled": "2002-10-07",
-                        "Negated": null,
-                        "Reinstated": null
+                        "docketEntryFiled": "2002-10-07",
+                        "negated": null,
+                        "reinstated": null
                     },
                     {
-                        "Type": "Copyright Infringement",
-                        "JudgmentSource": "Trial",
-                        "InFavorOfPartyIds": [
+                        "name": "Infringement",
+                        "type": "Copyright",
+                        "judgmentSource": "Trial",
+                        "inFavorOfPartyIds": [
                             216320,
                             216322
                         ],
-                        "PatentInvalidityReasons": [],
-                        "AgainstPartyIds": [
+                        "patentInvalidityReasons": [],
+                        "againstPartyIds": [
                             20374402,
                             171787,
                             125836,
                             23006382,
                             196852
                         ],
-                        "DocketEntryFiled": "2002-10-07",
-                        "Negated": null,
-                        "Reinstated": null
+                        "docketEntryFiled": "2002-10-07",
+                        "negated": null,
+                        "reinstated": null
                     }
                 ],
-                "Voided": [],
-                "Reversed": []
+                "voided": [],
+                "reversed": []
             },
-            "LawFirms": [
+            "lawFirms": [
                 {
-                    "Name": "BakerHostetler",
-                    "LawFirmId": 57704,
-                    "ClientPartyIds": [
+                    "name": "BakerHostetler",
+                    "lawFirmId": 57704,
+                    "clientPartyIds": [
                         125836
                     ]
                 },
                 {
-                    "Name": "Godfrey & Kahn",
-                    "LawFirmId": 53294,
-                    "ClientPartyIds": [
+                    "name": "Godfrey & Kahn",
+                    "lawFirmId": 53294,
+                    "clientPartyIds": [
                         20374402,
                         171787,
                         196852,
@@ -175,17 +185,17 @@
                     ]
                 },
                 {
-                    "Name": "KENNETH F. LEVIN & ASSOCIATES",
-                    "LawFirmId": 2366654,
-                    "ClientPartyIds": [
+                    "name": "KENNETH F. LEVIN & ASSOCIATES",
+                    "lawFirmId": 2366654,
+                    "clientPartyIds": [
                         216320,
                         216322
                     ]
                 },
                 {
-                    "Name": "Bryan Cave Leighton Paisner",
-                    "LawFirmId": 228,
-                    "ClientPartyIds": [
+                    "name": "Bryan Cave Leighton Paisner",
+                    "lawFirmId": 228,
+                    "clientPartyIds": [
                         20374402,
                         171787,
                         196852,
@@ -193,9 +203,9 @@
                     ]
                 },
                 {
-                    "Name": "Husch Blackwell",
-                    "LawFirmId": 40720,
-                    "ClientPartyIds": [
+                    "name": "Husch Blackwell",
+                    "lawFirmId": 40720,
+                    "clientPartyIds": [
                         20374402,
                         171787,
                         196852,
@@ -203,29 +213,29 @@
                     ]
                 },
                 {
-                    "Name": "Crowell & Moring",
-                    "LawFirmId": 37287,
-                    "ClientPartyIds": [
+                    "name": "Crowell & Moring",
+                    "lawFirmId": 37287,
+                    "clientPartyIds": [
                         125836
                     ]
                 },
                 {
-                    "Name": "Foley & Lardner",
-                    "LawFirmId": 4856,
-                    "ClientPartyIds": [
+                    "name": "Foley & Lardner",
+                    "lawFirmId": 4856,
+                    "clientPartyIds": [
                         216320,
                         216322
                     ]
                 }
             ],
-            "Attorneys": [
+            "attorneys": [
                 {
-                    "Name": "James Alexander Grimsley",
-                    "AttorneyId": 260280,
-                    "LawFirmIds": [
+                    "name": "James Alexander Grimsley",
+                    "attorneyId": 260280,
+                    "lawFirmIds": [
                         228
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         20374402,
                         171787,
                         196852,
@@ -233,13 +243,13 @@
                     ]
                 },
                 {
-                    "Name": "Michael Alexander Kahn",
-                    "AttorneyId": 266411,
-                    "LawFirmIds": [
+                    "name": "Michael Alexander Kahn",
+                    "attorneyId": 266411,
+                    "lawFirmIds": [
                         40720,
                         228
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         20374402,
                         171787,
                         196852,
@@ -247,44 +257,44 @@
                     ]
                 },
                 {
-                    "Name": "Jeffrey Allan Simmons",
-                    "AttorneyId": 39202,
-                    "LawFirmIds": [
+                    "name": "Jeffrey Allan Simmons",
+                    "attorneyId": 39202,
+                    "lawFirmIds": [
                         4856
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         216320,
                         216322
                     ]
                 },
                 {
-                    "Name": "Allen Arthur Arntsen",
-                    "AttorneyId": 107742917,
-                    "LawFirmIds": [
+                    "name": "Allen Arthur Arntsen",
+                    "attorneyId": 107742917,
+                    "lawFirmIds": [
                         4856
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         216320,
                         216322
                     ]
                 },
                 {
-                    "Name": "Christine Elaine Cwiertny",
-                    "AttorneyId": 61352,
-                    "LawFirmIds": [
+                    "name": "Christine Elaine Cwiertny",
+                    "attorneyId": 61352,
+                    "lawFirmIds": [
                         37287
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         125836
                     ]
                 },
                 {
-                    "Name": "Todd Gregory Smith",
-                    "AttorneyId": 880485,
-                    "LawFirmIds": [
+                    "name": "Todd Gregory Smith",
+                    "attorneyId": 880485,
+                    "lawFirmIds": [
                         53294
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         20374402,
                         171787,
                         196852,
@@ -292,166 +302,166 @@
                     ]
                 },
                 {
-                    "Name": "Roger Scott Feldmann",
-                    "AttorneyId": 224206,
-                    "LawFirmIds": [
+                    "name": "Roger Scott Feldmann",
+                    "attorneyId": 224206,
+                    "lawFirmIds": [
                         57704,
                         37287
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         125836
                     ]
                 },
                 {
-                    "Name": "Kenneth F. Levin",
-                    "AttorneyId": 2366654,
-                    "LawFirmIds": [
+                    "name": "Kenneth F. Levin",
+                    "attorneyId": 2366654,
+                    "lawFirmIds": [
                         2366654
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         216320,
                         216322
                     ]
                 },
                 {
-                    "Name": "Thomas Edward Dietrich",
-                    "AttorneyId": 816999,
-                    "LawFirmIds": [
+                    "name": "Thomas Edward Dietrich",
+                    "attorneyId": 816999,
+                    "lawFirmIds": [
                         57704,
                         37287
                     ],
-                    "ClientsPartyIds": [
+                    "clientsPartyIds": [
                         125836
                     ]
                 }
             ],
-            "Parties": [
+            "parties": [
                 {
-                    "Name": "Image Comics, Inc.",
-                    "PartyId": 125836,
-                    "Role": "Defendant"
+                    "name": "Image Comics, Inc.",
+                    "partyId": 125836,
+                    "role": "Defendant"
                 },
                 {
-                    "Name": "TMP International, Inc.",
-                    "PartyId": 171787,
-                    "Role": "Defendant"
+                    "name": "TMP International, Inc.",
+                    "partyId": 171787,
+                    "role": "Defendant"
                 },
                 {
-                    "Name": "Todd McFarlane",
-                    "PartyId": 196852,
-                    "Role": "Defendant"
+                    "name": "Todd McFarlane",
+                    "partyId": 196852,
+                    "role": "Defendant"
                 },
                 {
-                    "Name": "Neil Gaiman",
-                    "PartyId": 216320,
-                    "Role": "Plaintiff"
+                    "name": "Neil Gaiman",
+                    "partyId": 216320,
+                    "role": "Plaintiff"
                 },
                 {
-                    "Name": "Marvels And Miracles, Llc",
-                    "PartyId": 216322,
-                    "Role": "Plaintiff"
+                    "name": "Marvels And Miracles, Llc",
+                    "partyId": 216322,
+                    "role": "Plaintiff"
                 },
                 {
-                    "Name": "McFarlane Worldwide, Inc.",
-                    "PartyId": 20374402,
-                    "Role": "Defendant"
+                    "name": "McFarlane Worldwide, Inc.",
+                    "partyId": 20374402,
+                    "role": "Defendant"
                 },
                 {
-                    "Name": "Todd Mcfarlane Productions, Inc.",
-                    "PartyId": 23006382,
-                    "Role": "Defendant"
+                    "name": "Todd Mcfarlane Productions, Inc.",
+                    "partyId": 23006382,
+                    "role": "Defendant"
                 }
             ],
-            "Damages": {
-                "Active": [
+            "damages": {
+                "active": [
                     {
-                        "Name": "Attorneys' Fees / Costs",
-                        "Type": "General",
-                        "JudgmentSource": "Judgment on Merits",
-                        "AwardedToPartyId": [
+                        "name": "Attorneys' Fees / Costs",
+                        "type": "General",
+                        "judgmentSource": "Judgment on Merits",
+                        "awardedToPartyId": [
                             216320,
                             216322
                         ],
-                        "AwardedAgainstPartyIds": [
+                        "awardedAgainstPartyIds": [
                             20374402,
                             171787,
                             125836,
                             23006382,
                             196852
                         ],
-                        "Amount": 33639.4,
-                        "Awarded": "2003-01-09",
-                        "Negated": null,
-                        "Reinstated": null
+                        "amount": 33639.4,
+                        "awarded": "2003-01-09",
+                        "negated": null,
+                        "reinstated": null
                     },
                     {
-                        "Name": "Attorneys' Fees / Costs",
-                        "Type": "General",
-                        "JudgmentSource": "Judgment on Merits",
-                        "AwardedToPartyId": [
+                        "name": "Attorneys' Fees / Costs",
+                        "type": "General",
+                        "judgmentSource": "Judgment on Merits",
+                        "awardedToPartyId": [
                             216320,
                             216322
                         ],
-                        "AwardedAgainstPartyIds": [
+                        "awardedAgainstPartyIds": [
                             20374402,
                             171787,
                             125836,
                             23006382,
                             196852
                         ],
-                        "Amount": 33342.08,
-                        "Awarded": "2003-02-03",
-                        "Negated": null,
-                        "Reinstated": null
+                        "amount": 33342.08,
+                        "awarded": "2003-02-03",
+                        "negated": null,
+                        "reinstated": null
                     },
                     {
-                        "Name": "Other / Mixed Damage Types",
-                        "Type": "General",
-                        "JudgmentSource": "Jury Verdict",
-                        "AwardedToPartyId": [
+                        "name": "Other / Mixed Damage Types",
+                        "type": "General",
+                        "judgmentSource": "Jury Verdict",
+                        "awardedToPartyId": [
                             216320,
                             216322
                         ],
-                        "AwardedAgainstPartyIds": [
+                        "awardedAgainstPartyIds": [
                             20374402,
                             171787,
                             125836,
                             23006382,
                             196852
                         ],
-                        "Amount": 45000,
-                        "Awarded": "2002-10-07",
-                        "Negated": null,
-                        "Reinstated": null
+                        "amount": 45000,
+                        "awarded": "2002-10-07",
+                        "negated": null,
+                        "reinstated": null
                     }
                 ],
-                "Voided": [],
-                "Reversed": []
+                "voided": [],
+                "reversed": []
             },
-            "Patents": [],
-            "Orders": {
-                "ExpertWitnessesAdmissibilityOrders": {
-                    "Active": [],
-                    "Voided": [],
-                    "Reversed": []
+            "patents": [],
+            "orders": {
+                "expertWitnessesAdmissibilityOrders": {
+                    "active": [],
+                    "voided": [],
+                    "reversed": []
                 }
             },
-            "MDL": {
-                "MdlNo": [],
-                "MasterCaseIds": []
+            "mdl": {
+                "mdlNo": [],
+                "masterCaseIds": []
             }
         },
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "1c6ef7499db42f75bb4040a413539893;o=1",
+            "55a2826af00fa2d4580ae761d7791c5f;o=1",
             "date",
-            "Thu, 21 Jul 2022 20:50:04 GMT",
+            "Tue, 30 Aug 2022 18:32:01 GMT",
             "content-length",
-            "4738",
+            "4840",
             "x-request-id",
-            "820ad258-56a8-4415-b6e3-d64d4030354b",
+            "2a12cab5-8863-4bad-b82a-2d2006193376",
             "Via",
             "1.1 google",
             "Alt-Svc",
