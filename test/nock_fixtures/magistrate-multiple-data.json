@@ -1,41 +1,87 @@
 [
     {
         "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "vc9Vawz1yABeqCNtYcimLukNQq3T",
+            "issued_at": 1661880536864,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "a7c65775-b83e-4375-b036-fda80a71eea9",
+            "content-length",
+            "157",
+            "date",
+            "Tue, 30 Aug 2022 17:28:56 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/magistrates?magistrate_ids=333&magistrate_ids=141&magistrate_ids=131",
+        "path": "/beta/magistrate-judges?magistrateJudgeIds=333&magistrateJudgeIds=141&magistrateJudgeIds=131",
         "body": "",
         "status": 200,
         "response": [
             {
-                "Name": "Hildy Bowbeer",
-                "Initials": "HB",
-                "CaseCount": 3907,
-                "MagistrateId": 333
+                "name": "Hildy Bowbeer",
+                "magistrateJudgeId": 333,
+                "initials": "HB",
+                "caseCountByCourt": [
+                    {
+                        "court": "total",
+                        "count": 3907
+                    }
+                ]
             },
             {
-                "Name": "Nita L Stormes",
-                "Initials": "NLS",
-                "CaseCount": 3940,
-                "MagistrateId": 141
+                "name": "Nita L Stormes",
+                "magistrateJudgeId": 141,
+                "initials": "NLS",
+                "caseCountByCourt": [
+                    {
+                        "court": "total",
+                        "count": 3950
+                    }
+                ]
             },
             {
-                "Name": "Nathanael M Cousins",
-                "Initials": "NMC",
-                "CaseCount": 8171,
-                "MagistrateId": 131
+                "name": "Nathanael M Cousins",
+                "magistrateJudgeId": 131,
+                "initials": "NMC",
+                "caseCountByCourt": [
+                    {
+                        "court": "total",
+                        "count": 8257
+                    }
+                ]
             }
         ],
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "eeb8c7fd5631426592e65b35ba05a030",
+            "7cc56f9b23433ec979a4beb548b1b0da;o=1",
             "date",
-            "Fri, 22 Jul 2022 14:38:59 GMT",
+            "Tue, 30 Aug 2022 17:28:57 GMT",
             "content-length",
-            "241",
+            "361",
             "x-request-id",
-            "515fc3ed-3db2-4794-baeb-6ac0f30a120c",
+            "51179383-accb-4cdd-a218-c7813cab0ee8",
             "Via",
             "1.1 google",
             "Alt-Svc",

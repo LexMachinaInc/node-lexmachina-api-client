@@ -22,8 +22,8 @@ describe("Magistrate Endpoints", () => {
             var magistrate = await client.magistrates(magistrateId);
             nockDone();
 
-            expect(magistrate.MagistrateId).to.equal(magistrateId);
-            expect(magistrate.Name).to.equal("Hildy Bowbeer");
+            expect(magistrate.magistrateJudgeId).to.equal(magistrateId);
+            expect(magistrate.name).to.equal("Hildy Bowbeer");
         })
     })
 
@@ -37,11 +37,11 @@ describe("Magistrate Endpoints", () => {
             nockDone();
             magistrates.should.have.length(magistrateIds.length)
             magistrateIds.forEach(magistrate => {
-                magistrates.should.include.a.thing.with.deep.property("MagistrateId", magistrate);
+                magistrates.should.include.a.thing.with.deep.property("magistrateJudgeId", magistrate);
             })
-            magistrates.should.include.a.thing.with.deep.nested.property("Name", "Hildy Bowbeer");
-            magistrates.should.include.a.thing.with.deep.nested.property("Name", "Nita L Stormes");
-            magistrates.should.include.a.thing.with.deep.nested.property("Name", "Nathanael M Cousins");
+            magistrates.should.include.a.thing.with.deep.nested.property("name", "Hildy Bowbeer");
+            magistrates.should.include.a.thing.with.deep.nested.property("name", "Nita L Stormes");
+            magistrates.should.include.a.thing.with.deep.nested.property("name", "Nathanael M Cousins");
         })
     })
 

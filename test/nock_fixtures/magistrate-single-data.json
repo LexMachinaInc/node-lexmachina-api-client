@@ -1,27 +1,63 @@
 [
     {
         "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "v9ILbn3XvcLXNPTlsWxiiKa3huwy",
+            "issued_at": 1661880369813,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "24c887ef-caba-451c-9f17-1b930cad1c98",
+            "content-length",
+            "157",
+            "date",
+            "Tue, 30 Aug 2022 17:26:09 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/alpha/magistrates/333",
+        "path": "/beta/magistrate-judges/333",
         "body": "",
         "status": 200,
         "response": {
-            "Name": "Hildy Bowbeer",
-            "Initials": "HB",
-            "CaseCount": 3907,
-            "MagistrateId": 333
+            "name": "Hildy Bowbeer",
+            "magistrateJudgeId": 333,
+            "initials": "HB",
+            "caseCountByCourt": [
+                {
+                    "court": "total",
+                    "count": 3907
+                }
+            ]
         },
         "rawHeaders": [
             "content-type",
             "application/json",
             "x-cloud-trace-context",
-            "9e32ff43b950176c42d64973f282ec39;o=1",
+            "13c62ba844be81933428115d68b25bfb",
             "date",
-            "Fri, 22 Jul 2022 14:38:57 GMT",
+            "Tue, 30 Aug 2022 17:26:10 GMT",
             "content-length",
-            "76",
+            "116",
             "x-request-id",
-            "ea0d3664-77c3-4749-a59e-14841948ffce",
+            "e39e5026-c9ce-4261-9ebb-865d8363ee26",
             "Via",
             "1.1 google",
             "Alt-Svc",

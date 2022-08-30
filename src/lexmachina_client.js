@@ -94,10 +94,10 @@ module.exports = class LexMachinaClient {
     async magistrates(magistrates) {
         var config = {}
         if (Number.isInteger(magistrates)) {
-            config.endpoint = '/magistrates/' + magistrates
+            config.endpoint = '/magistrate-judges/' + magistrates
         } else if (Array.isArray(magistrates)) {
-            config.endpoint = "/magistrates"
-            config.params = { magistrate_ids: magistrates }
+            config.endpoint = "/magistrate-judges"
+            config.params = { magistrateJudgeIds: magistrates }
         } else {
             throw new Error("The magistrate_id must be an integer or array of integers")
         }
