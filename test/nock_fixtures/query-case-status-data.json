@@ -1,0 +1,82 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "caseStatus": "Open",
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                2001578207,
+                2001656684,
+                2001591544,
+                2001650142,
+                2004330625
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "a812a502de458cd62bad6564b823702d",
+            "date",
+            "Mon, 12 Sep 2022 22:06:40 GMT",
+            "content-length",
+            "68",
+            "x-request-id",
+            "9871c2a1-0030-45ed-94dc-56dd8f49ef57",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "caseStatus": "Terminated",
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "8b4167a53bb7cfe223d48690b1b50ea8",
+            "date",
+            "Mon, 12 Sep 2022 22:06:40 GMT",
+            "content-length",
+            "39",
+            "x-request-id",
+            "ed420f95-2b61-4663-bb45-d34cef8dbc15",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

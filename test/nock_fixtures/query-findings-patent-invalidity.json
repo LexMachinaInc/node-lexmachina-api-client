@@ -1,0 +1,98 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "patentInvalidityReasons": {
+                        "include": [
+                            "Invalidity: 103 Obviousness"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                2,
+                3699,
+                5803,
+                16888,
+                5956
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "d45d379dcceefaa4e95aa877c33317cc",
+            "date",
+            "Mon, 12 Sep 2022 21:06:36 GMT",
+            "content-length",
+            "36",
+            "x-request-id",
+            "f29045b0-28d8-43c9-a5dc-a23a0e1e3e55",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "patentInvalidityReasons": {
+                        "include": [
+                            "Invalidity: 101 Subject Matter"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                6196,
+                23255,
+                10685,
+                6831,
+                18290
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "aa9348d0fdff6d9fdebe4ebac039b88e",
+            "date",
+            "Mon, 12 Sep 2022 21:06:36 GMT",
+            "content-length",
+            "41",
+            "x-request-id",
+            "32edfe5f-9cd5-4124-857f-2a4b70ed59df",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

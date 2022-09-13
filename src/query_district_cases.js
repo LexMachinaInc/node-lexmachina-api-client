@@ -7,14 +7,17 @@ module.exports = class QueryDistrictCases {
     }
 
     async queryOnePage(query, options) {
-        var config = options;
+        var config = options || {};
         config.endpoint = '/query-district-cases'
         config.method = 'post'
         config.data = query.getPostBody()
 
         var result = await this.lmRequest.requestURL(config)
-
-        return result.CaseIds
+        if (result) {
+            return result.caseIds
+        } else {
+            return  [];
+        }
     }
 
     async queryAllPages(query, options) {

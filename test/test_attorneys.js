@@ -34,7 +34,7 @@ describe("Attorney Endpoints", () => {
             nock.enableNetConnect();
             const client = new LexMachinaClient();
             var attorneys = await client.attorneys(attorneyIds);
-            console.log(attorneys)
+            //console.log(attorneys)
             nockDone();
             attorneys.should.have.length(attorneyIds.length)
             attorneyIds.forEach(attorney => {

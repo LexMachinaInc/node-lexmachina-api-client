@@ -1,0 +1,49 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "date": {
+                        "onOrAfter": "2010-01-01",
+                        "onOrBefore": "2011-01-01"
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                2006506298,
+                2000707601,
+                2002171699,
+                2000708129,
+                14940
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "aa7c50a252db58ae4104bb7d6695bd55",
+            "date",
+            "Mon, 12 Sep 2022 21:06:36 GMT",
+            "content-length",
+            "63",
+            "x-request-id",
+            "e4169998-a1ad-4014-b4ee-501b1ec20467",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

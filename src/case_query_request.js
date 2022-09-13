@@ -1,7 +1,8 @@
 const moment = require('moment')
 
 function pushUnique(array, item) {
-    if (!array.includes(item)) {
+    if (!array.some((arrayItem) => JSON.stringify(item) == JSON.stringify(arrayItem))) {
+//    if (!array.includes(item)) {
         array.push(item)
     }
 }
@@ -27,10 +28,10 @@ module.exports = class CasesQueryRequest {
             "parties": { "include": [], "exclude": [], "includePlaintiff": [], "excludePlaintiff": [], "includeDefendant": [], "excludeDefendant": [], "includeThirdParty": [], "excludeThirdParty": [] },
             "courts": { "include": [], "exclude": [] },
             "resolutions": { "include": [], "exclude": [] },
-            "findings": { "include": { "awardedToParties": [], "awardedAgainstParties": [], "judgmentSource": [], "patentInvalidityReasons": [] } },
-            "remedies": { "include": { "awardedToParties": [], "awardedAgainstParties": [], "judgmentSource": [] } },
-            "damages": { "include": { "inFavorOfParties": [], "awardedAgainstParties": [], "minimumAmount": 0, "name": [], "type": [], "judgmentSource": [] } },
-            "patents": { "include": [], "exclude": [] },
+            "findings": [{ "judgmentSource": {"include": [], "exclude": []}, "nameType": {"include":[], "exclude":[]}, "date": {"onOrAfter":"", "onOrBefore":""}, "awardedToParties": [], "awardedAgainstParties":[], "patentInvalidityReasons": {"include":[]} } ],
+            "remedies": [{ "judgmentSource": {"include": [], "exclude": []}, "nameType": {"include":[], "exclude":[]}, "date": {"onOrAfter":"", "onOrBefore":""}, "awardedToParties": [], "awardedAgainstParties":[] } ],
+            "damages":  [{ "judgmentSource": {"include": [], "exclude": []}, "nameType": {"include":[], "exclude":[]}, "date": {"onOrAfter":"", "onOrBefore":""}, "awardedToParties": [], "awardedAgainstParties":[], "minimumAmount": 0 } ],
+           "patents": { "include": [], "exclude": [] },
             "mdl": { "include": [], "exclude": [] },
             "ordering": "ByFirstFiled",
             "page": 1,
@@ -47,8 +48,13 @@ module.exports = class CasesQueryRequest {
                 // see if the array is empty
                 if (item.length > 0) {
                     this.removeEmptyValues(item);
-                } else {
+                } 
+                if (item.length == 0) {
                     // remove this item from the parent object
+                    delete data[key];
+                }
+                if (item.length == 1 && item[0]== undefined) {
+                    // if the one items is an empty object
                     delete data[key];
                 }
                 // if this item is an object, then recurse into it 
@@ -298,27 +304,21 @@ module.exports = class CasesQueryRequest {
         }
     }
 
-    addResolutionsInclude(values) {
-        if (Array.isArray(values)) {
-            values.forEach(value => { this.addResolutionsInclude(value) })
-        } else {
-            pushUnique(this.queryObject.resolutions.include, values)
-        }
+    addResolutionsInclude(summary, specific ) {
+        var object = {"summary": summary, "specific": specific};
+        pushUnique(this.queryObject.resolutions.include, object)
     }
 
-    addResolutionsExclude(values) {
-        if (Array.isArray(values)) {
-            values.forEach(value => { this.addResolutionsExclude(value) })
-        } else {
-            pushUnique(this.queryObject.resolutions.exclude, values)
-        }
+    addResolutionsExclude(summary, specific ) {
+        var object = {"summary": summary, "specific": specific};
+        pushUnique(this.queryObject.resolutions.exclude, object)
     }
 
     addFindingsIncludeAwardedToParties(ids) {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addFindingsIncludeAwardedToParties(id) })
         } else {
-            pushUnique(this.queryObject.findings.include.awardedToParties, ids)
+            pushUnique(this.queryObject.findings[0].awardedToParties, ids)
         }
     }
 
@@ -326,7 +326,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addFindingsIncludeAwardedAgainstParties(id) })
         } else {
-            pushUnique(this.queryObject.findings.include.awardedAgainstParties, ids)
+            pushUnique(this.queryObject.findings[0].awardedAgainstParties, ids)
         }
     }
 
@@ -334,23 +334,52 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addFindingsIncludeJudgmentSource(value) })
         } else {
-            pushUnique(this.queryObject.findings.include.judgmentSource, values)
+            // dhs 2022-09-12 
+            // For now just going to assume array of 1 item when adding attributes to findings queries
+            pushUnique(this.queryObject.findings[0].judgmentSource.include, values)
         }
     }
+
+    addFindingsExcludeJudgmentSource(values) {
+        if (Array.isArray(values)) {
+            values.forEach(value => { this.addFindingsExcludeJudgmentSource(value) })
+        } else {
+            // dhs 2022-09-12 
+            // For now just going to assume array of 1 item when adding attributes to findings queries
+            pushUnique(this.queryObject.findings[0].judgmentSource.exclude, values)
+        }
+    }
+
 
     addFindingsIncludePatentInvalidityReasons(values) {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addFindingsIncludePatentInvalidityReasons(value) })
         } else {
-            pushUnique(this.queryObject.findings.include.patentInvalidityReasons, values)
+            pushUnique(this.queryObject.findings[0].patentInvalidityReasons.include, values)
         }
     }
+
+    addFindingsIncludeNameType(name, type) {
+        var object = {"name":name, "type":type};
+        pushUnique(this.queryObject.findings[0].nameType.include, object);
+    }
+
+    addFindingsExcludeNameType(name, type) {
+        var object = {"name":name, "type":type};
+        pushUnique(this.queryObject.findings[0].nameType.exclude, object);
+    }
+
+    addFindingsDate(value, operator) {
+        this.setDate(value, this.queryObject.findings[0].date, operator)
+    }
+
+
 
     addRemediesIncludeAwardedToParties(ids) {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addRemediesIncludeAwardedToParties(id) })
         } else {
-            pushUnique(this.queryObject.remedies.include.awardedToParties, ids)
+            pushUnique(this.queryObject.remedies[0].awardedToParties, ids)
         }
     }
 
@@ -358,7 +387,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addRemediesIncludeAwardedAgainstParties(id) })
         } else {
-            pushUnique(this.queryObject.remedies.include.awardedAgainstParties, ids)
+            pushUnique(this.queryObject.remedies[0].awardedAgainstParties, ids)
         }
     }
 
@@ -366,15 +395,40 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addRemediesIncludeJudgmentSource(value) })
         } else {
-            pushUnique(this.queryObject.remedies.include.judgmentSource, values)
+            pushUnique(this.queryObject.remedies[0].judgmentSource.include, values)
         }
     }
 
-    addDamagesIncludeInFavorOfParties(ids) {
-        if (Array.isArray(ids)) {
-            ids.forEach(id => { this.addDamagesIncludeInFavorOfParties(id) })
+
+    addRemediesExcludeJudgmentSource(values) {
+        if (Array.isArray(values)) {
+            values.forEach(value => { this.addRemediesExcludeJudgmentSource(value) })
         } else {
-            pushUnique(this.queryObject.damages.include.inFavorOfParties, ids)
+            pushUnique(this.queryObject.remedies[0].judgmentSource.exclude, values)
+        }
+    }
+
+  
+    addRemediesIncludeNameType(name, type) {
+        var object = {"name":name, "type":type};
+        pushUnique(this.queryObject.remedies[0].nameType.include, object);
+    }
+
+    addRemediesExcludeNameType(name, type) {
+        var object = {"name":name, "type":type};
+        pushUnique(this.queryObject.remedies[0].nameType.exclude, object);
+    }
+
+    addRemediesDate(value, operator) {
+        this.setDate(value, this.queryObject.remedies[0].date, operator)
+    }
+
+
+    addDamagesIncludeAwardedToParties(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addDamagesIncludeAwardedToParties(id) })
+        } else {
+            pushUnique(this.queryObject.damages[0].awardedToParties, ids)
         }
     }
 
@@ -382,39 +436,46 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(ids)) {
             ids.forEach(id => { this.addDamagesIncludeAwardedAgainstParties(id) })
         } else {
-            pushUnique(this.queryObject.damages.include.awardedAgainstParties, ids)
+            pushUnique(this.queryObject.damages[0].awardedAgainstParties, ids)
         }
     }
 
-    addDamagesIncludeName(values) {
-        if (Array.isArray(values)) {
-            values.forEach(value => { this.addDamagesIncludeName(value) })
-        } else {
-            pushUnique(this.queryObject.damages.include.name, values)
-        }
+    addDamagesIncludeNameType(name, type) {
+        var object = {"name":name, "type":type};
+        pushUnique(this.queryObject.damages[0].nameType.include, object);
     }
 
-    addDamagesIncludeType(values) {
-        if (Array.isArray(values)) {
-            values.forEach(value => { this.addDamagesIncludeType(value) })
-        } else {
-            pushUnique(this.queryObject.damages.include.type, values)
-        }
+    addDamagesExcludeNameType(name, type) {
+        var object = {"name":name, "type":type};
+        pushUnique(this.queryObject.damages[0].nameType.exclude, object);
     }
 
     addDamagesIncludeJudgmentSource(values) {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addDamagesIncludeJudgmentSource(value) })
         } else {
-            pushUnique(this.queryObject.damages.include.judgmentSource, values)
+            pushUnique(this.queryObject.damages[0].judgmentSource.include, values)
         }
     }
+
+    addDamagesExcludeJudgmentSource(values) {
+        if (Array.isArray(values)) {
+            values.forEach(value => { this.addDamagesExcludeJudgmentSource(value) })
+        } else {
+            pushUnique(this.queryObject.damages[0].judgmentSource.exclude, values)
+        }
+    }
+
+    addDamagesDate(value, operator) {
+        this.setDate(value, this.queryObject.damages[0].date, operator)
+    }
+
 
     setDamagesMinimumAmount(amount) {
         if (typeof amount != "number" || amount <= 0) {
             throw new Error("Damages amount must be a number greater than 0")
         }
-        this.queryObject.damages.include.minimumAmount = amount
+        this.queryObject.damages[0].minimumAmount = amount
     }
 
     addPatentsInclude(values) {
@@ -449,18 +510,28 @@ module.exports = class CasesQueryRequest {
         }
     }
 
+
+
     setDate(value, field, operator) {
+        var object ;
+
+        if (typeof field === 'string') {
+            object = this.queryObject.dates[field];
+        } else {
+            object = field
+        }
+        //console.log("In setDate using object=%s", JSON.stringify(object) );
         if (!moment(value, 'YYYY-MM-DD', true).isValid()) {
             throw new Error("Dates must be in YYYY-MM-DD format: " + value)
         }
-        if (this.queryObject.dates[field] == undefined) {
+        if (object == undefined) {
             throw new Error("Not a valid field: " + field)
         }
-        if (this.queryObject.dates[field][operator] == undefined) {
+        if (object[operator] == undefined) {
             throw new Error("Not a valid operator: " + operator)
         }
 
-        this.queryObject.dates[field][operator] = value
+        object[operator] = value
     }
 
     setOrdering(order) {

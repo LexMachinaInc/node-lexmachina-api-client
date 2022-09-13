@@ -1,0 +1,103 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "dates": {
+                "filed": {
+                    "onOrAfter": "2022-01-01",
+                    "onOrBefore": "2022-01-01"
+                }
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 100
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                2007625272,
+                2007625273,
+                2007631031,
+                2007631032,
+                2007631033,
+                2007631035,
+                2007631039,
+                2007631040,
+                2007631075,
+                2007631078,
+                2007631079,
+                2007631086,
+                2007631087,
+                2007631098,
+                2007631101,
+                2007631104,
+                2007631114,
+                2007631119,
+                2007631128,
+                2007631763,
+                2007633164,
+                2007691573
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "0f4dd802deb3a2b67c4baabfb7d57192",
+            "date",
+            "Tue, 13 Sep 2022 20:36:56 GMT",
+            "content-length",
+            "255",
+            "x-request-id",
+            "d53f581f-0e92-4d47-8e04-18dd3c75e635",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "dates": {
+                "filed": {
+                    "onOrAfter": "2022-01-01",
+                    "onOrBefore": "2022-01-01"
+                }
+            },
+            "ordering": "ByFirstFiled",
+            "page": 2,
+            "pageSize": 100
+        },
+        "status": 200,
+        "response": {
+            "caseIds": []
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "afa16ce969f059e0c47e3f53161d09d4",
+            "date",
+            "Tue, 13 Sep 2022 20:36:56 GMT",
+            "content-length",
+            "14",
+            "x-request-id",
+            "ec0ae508-ba28-4ee6-9a76-ef234e657485",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

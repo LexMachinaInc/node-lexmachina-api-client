@@ -1,0 +1,628 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/list-judgment-sources",
+        "body": "",
+        "status": 200,
+        "response": {
+            "damages": [
+                "Jury Verdict",
+                "Judgment on Merits",
+                "Consent Judgment",
+                "Default Judgment",
+                "No Type Specified"
+            ],
+            "remedies": [
+                "Consent Judgment",
+                "Default Judgment",
+                "Judgment on Merits",
+                "No Type Specified"
+            ],
+            "findings": [
+                "Summary Judgment",
+                "Judgment as a Matter of Law",
+                "Judgment on the Pleadings",
+                "Consent Judgment",
+                "Trial",
+                "Default Judgment",
+                "No Type Specified"
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "49d3e55b6f97c93c21eaa540c30a1e5a",
+            "date",
+            "Mon, 12 Sep 2022 21:06:29 GMT",
+            "content-length",
+            "355",
+            "x-request-id",
+            "c4e6ef07-c27f-4209-b38c-ed8469509bc8",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "include": [
+                            "Consent Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                18965,
+                11426,
+                5826,
+                18637,
+                5985
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "0dbcdf84c62fcdff5522245683dfa670",
+            "date",
+            "Mon, 12 Sep 2022 21:06:30 GMT",
+            "content-length",
+            "41",
+            "x-request-id",
+            "d8f582f6-e3ab-4da1-9829-b0dce09486d5",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "include": [
+                            "Default Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                5916,
+                5788,
+                14103,
+                13896,
+                15627
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "544c29b78842e3e9da0b827f716a3076",
+            "date",
+            "Mon, 12 Sep 2022 21:06:30 GMT",
+            "content-length",
+            "41",
+            "x-request-id",
+            "0ee1ae7f-1202-4aa7-affa-b31a579cdbce",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "include": [
+                            "Judgment as a Matter of Law"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                3704,
+                2001383107,
+                16888,
+                2000707761,
+                998
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "d4a662282e24f1c96f1a9ef5da77fd4c",
+            "date",
+            "Mon, 12 Sep 2022 21:06:30 GMT",
+            "content-length",
+            "50",
+            "x-request-id",
+            "36cdaeb7-b401-4dda-adfd-30400c816d16",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "include": [
+                            "Judgment on the Pleadings"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                2006506298,
+                2001583881,
+                2001816187,
+                2000707219,
+                17557
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "ea22874ffa7bde5a097f8705165268f9",
+            "date",
+            "Mon, 12 Sep 2022 21:06:30 GMT",
+            "content-length",
+            "63",
+            "x-request-id",
+            "2901abdc-056c-4652-87af-efb8ef7d146a",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "include": [
+                            "Summary Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                3704,
+                2000097589,
+                5833,
+                3774,
+                16189
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "f1ec6e3f6eda1d8df4ab81b4f32b98dd",
+            "date",
+            "Mon, 12 Sep 2022 21:06:31 GMT",
+            "content-length",
+            "45",
+            "x-request-id",
+            "54014feb-0176-462c-bd08-e57b760ceddb",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "include": [
+                            "Trial"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                3704,
+                972,
+                2001812700,
+                3739,
+                2000707898
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "069d075b6e8f4fb4c21281e84cf69ef2",
+            "date",
+            "Mon, 12 Sep 2022 21:06:31 GMT",
+            "content-length",
+            "49",
+            "x-request-id",
+            "576ed96e-a426-4210-b10a-f8f311b04e2f",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "exclude": [
+                            "Consent Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                3704,
+                2000097589,
+                5833,
+                3774,
+                5916
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "0ebbccec18162dacf12418ba2a0eb43c",
+            "date",
+            "Mon, 12 Sep 2022 21:06:31 GMT",
+            "content-length",
+            "44",
+            "x-request-id",
+            "5830e705-c103-4fda-80e0-8785cc428ccc",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "exclude": [
+                            "Default Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                18965,
+                11426,
+                3704,
+                5826,
+                2000097589
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "47e8974a9af828c53a3e75e6553dde42",
+            "date",
+            "Mon, 12 Sep 2022 21:06:31 GMT",
+            "content-length",
+            "46",
+            "x-request-id",
+            "efd8c8a5-5f63-445e-9dee-beeb230566b9",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "exclude": [
+                            "Judgment as a Matter of Law"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                18965,
+                11426,
+                3704,
+                5826,
+                2000097589
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "76565eb3f69acf9610cdcdc4465a6088",
+            "date",
+            "Mon, 12 Sep 2022 21:06:31 GMT",
+            "content-length",
+            "46",
+            "x-request-id",
+            "59d4920d-b262-4823-a4da-fc3a2cf25015",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "exclude": [
+                            "Judgment on the Pleadings"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                18965,
+                11426,
+                3704,
+                5826,
+                2000097589
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "2a7404b53ac7945447dfda7c1c67f529",
+            "date",
+            "Mon, 12 Sep 2022 21:06:31 GMT",
+            "content-length",
+            "46",
+            "x-request-id",
+            "83682e21-3065-4cec-a0c2-fc7c3245a50a",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "exclude": [
+                            "Summary Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                18965,
+                11426,
+                3704,
+                5826,
+                18637
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "09aa18827023c5daac1d57110aa26c5d",
+            "date",
+            "Mon, 12 Sep 2022 21:06:32 GMT",
+            "content-length",
+            "41",
+            "x-request-id",
+            "40aba700-4213-4a20-824e-3f2c6eb46680",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/beta/query-district-cases",
+        "body": {
+            "findings": [
+                {
+                    "judgmentSource": {
+                        "exclude": [
+                            "Trial"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                18965,
+                11426,
+                3704,
+                5826,
+                2000097589
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "c5fa264ad2ef6294a788346a9e36cb73",
+            "date",
+            "Mon, 12 Sep 2022 21:06:32 GMT",
+            "content-length",
+            "46",
+            "x-request-id",
+            "87a8f263-cd2c-4241-9b42-9b7bc0c30350",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]
