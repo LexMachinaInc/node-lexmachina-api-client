@@ -57,7 +57,6 @@ var client = new LexMachinaClient("../config/config.json");
 The functions provided fall into several classes:
 1. Lists of resources
 1. Lookup by ID
-1. Resolvers of normalized data
 1. Searches
 
 ## Lists of Resources
@@ -67,7 +66,9 @@ These functions are available from LexMachinaClient. Each returns an array or JS
 - LexMachinaClient.listCaseResolutions()
 - LexMachinaClient.listCaseTags()
 - LexMachinaClient.listCaseTypes()
+- LexMachinaClient.listCourts()
 - LexMachinaClient.listDamages()
+- LexMachinaClient.listEvents()
 - LexMachinaClient.listJudgmentSources()
 
 ## Lookup by ID(s)
@@ -79,16 +80,6 @@ These functions are available from LexMachinaClient. Each takes a single integer
 - LexMachinaClient.lawFirm()
 - LexMachinaClient.magistrates()
 - LexMachinaClient.parties()
-
-## Resolvers
-The Lex Machina data comes from a variety of inputs, sometimes with different spellings for the same thing. Our process normalizes and combines differently spelled names when they refer to the same person or organization. It is uncommon but possible that a different entity becomes the new normalized ID if that spelling becomes more common. By passing in any ID previously used this endpoint will always return the current normalized ID for that entity. This answer will typically be the same ID used as input.
-
-These functions all accept either an integer of a previously used ID or an array of integers.
-
-- LexMachinaClient.resolveAttorneys()
-- LexMachinaClient.resolveLawFirms()
-- LexMachinaClient.resolveParties()
-
 
 ## Search Functions
 
@@ -152,15 +143,19 @@ The following methods add criteria based on aspects of the case. In most of thes
 - CaseQueryRequest.addFindingsIncludeAwardedToParties()
 - CaseQueryRequest.addFindingsIncludeAwardedAgainstParties()
 - CaseQueryRequest.addFindingsIncludeJudgmentSource()
+- CaseQueryRequest.addFindingsExcludeJudgmentSource()
 - CaseQueryRequest.addFindingsIncludePatentInvalidityReasons()
 - CaseQueryRequest.addRemediesIncludeAwardedToParties()
 - CaseQueryRequest.addRemediesIncludeAwardedAgainstParties()
 - CaseQueryRequest.addRemediesIncludeJudgmentSource()
-- CaseQueryRequest.addDamagesIncludeInFavorOfParties()
+- CaseQueryRequest.addRemediesExcludeJudgmentSource()
+- CaseQueryRequest.addDamagesIncludeAwardedToParties()
 - CaseQueryRequest.addDamagesIncludeAwardedAgainstParties()
-- CaseQueryRequest.addDamagesIncludeName()
-- CaseQueryRequest.addDamagesIncludeType()
+- CaseQueryRequest.addDamagesIncludeNameType()
+- CaseQueryRequest.addDamagesExcludeNameType()
 - CaseQueryRequest.addDamagesIncludeJudgmentSource()
+- CaseQueryRequest.addDamagesExcludeJudgmentSource()
+- CaseQueryRequest.addDamagesDate()
 - CaseQueryRequest.setDamagesMinimumAmount()
 - CaseQueryRequest.addPatentsInclude()
 - CaseQueryRequest.addPatentsExclude()
