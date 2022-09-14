@@ -1,4 +1,4 @@
-const BaseLexMachinaRequest = require('./base_lm_request')
+const BaseLexMachinaRequest = require('./base_lm_request');
 
 module.exports = class QueryDistrictCases {
 
@@ -8,37 +8,37 @@ module.exports = class QueryDistrictCases {
 
     async queryOnePage(query, options) {
         var config = options || {};
-        config.endpoint = '/query-district-cases'
-        config.method = 'post'
-        config.data = query.getPostBody()
+        config.endpoint = '/query-district-cases';
+        config.method = 'post';
+        config.data = query.getPostBody();
 
-        var result = await this.lmRequest.requestURL(config)
+        var result = await this.lmRequest.requestURL(config);
         if (result) {
-            return result.caseIds
+            return result.caseIds;
         } else {
             return  [];
         }
     }
 
     async queryAllPages(query, options) {
-        var cases = []
-        var page_cases = []
-        query.setPageSize(100)
+        var cases = [];
+        var page_cases = [];
+        query.setPageSize(100);
         do {
-            page_cases = await this.queryOnePage(query, options)
+            page_cases = await this.queryOnePage(query, options);
             cases = [...new Set([...cases, ...page_cases])];
-            query.nextPage()
-        } while (page_cases.length > 0)
-        return cases
+            query.nextPage();
+        } while (page_cases.length > 0);
+        return cases;
     }
 
     async queryDistrictCases(query, options) {
-        query.finalize()
+        query.finalize();
 
         if (options && options.pageThrough) {
-            return await this.queryAllPages(query, options)
+            return await this.queryAllPages(query, options);
         } else {
-            return await this.queryOnePage(query, options)
+            return await this.queryOnePage(query, options);
         }
     }
-}
+};

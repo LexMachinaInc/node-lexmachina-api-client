@@ -4,8 +4,8 @@ chai.should();
 chai.use(require('chai-things'));
 const nock = require('nock');
 const nockBack = require('nock').back;
-nockBack.fixtures = "./test/nock_fixtures/"
-const LexMachinaClient = require('../src/lexmachina_client')
+nockBack.fixtures = './test/nock_fixtures/';
+const LexMachinaClient = require('../src/lexmachina_client');
 nockBack.setMode('record');
 
 describe('List Events', () => {
@@ -18,7 +18,7 @@ describe('List Events', () => {
         nockDone();
         expect(events).to.have.length.above(5);
 
-        events.should.include("Filed");
-        events.should.include("Terminated");
-    })
-})
+        events.should.include('Filed');
+        events.should.include('Terminated');
+    });
+});

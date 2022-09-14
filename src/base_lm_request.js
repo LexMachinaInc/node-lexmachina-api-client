@@ -1,15 +1,15 @@
 const axios =  require('axios');
-const AccessTokenUtils =  require('./access_token_utils.js')
+const AccessTokenUtils =  require('./access_token_utils.js');
 const BASE_URL = 'https://api.lexmachina.com/beta';
 
 module.exports = class BaseLexMachinaRequest {
 
     constructor(token_config_file_path) {
-        this.token_config_file_path = token_config_file_path
+        this.token_config_file_path = token_config_file_path;
         try {
-        this.atu = new AccessTokenUtils(token_config_file_path);
+            this.atu = new AccessTokenUtils(token_config_file_path);
         } catch (e) {
-            console.log(e +" : Cannot load authentication config file");
+            console.log(e +' : Cannot load authentication config file');
             process.exit(1);
         }
 
@@ -19,25 +19,25 @@ module.exports = class BaseLexMachinaRequest {
         const rax = await import('retry-axios');
         rax.attach();
 
-        var returnValue = null
-        var urlParams = null
+        var returnValue = null;
+        var urlParams = null;
         if (!config.endpoint) {
-            throw new Error("endpoint must be defined")
+            throw new Error('endpoint must be defined');
         }
 
-        var url = config.endpoint
+        var url = config.endpoint;
         var token = await this.atu.getAccessToken();
         if (config.params) {
             urlParams = new URLSearchParams();
             Object.keys(config.params).forEach(key => {
                 if (Array.isArray(config.params[key])) {
                     config.params[key].forEach(value => {
-                        urlParams.append(key, value)
-                    })
+                        urlParams.append(key, value);
+                    });
                 } else {
-                    urlParams.append(key, config.params[key])
+                    urlParams.append(key, config.params[key]);
                 }
-            })
+            });
         }
 
         var options = {
@@ -53,18 +53,18 @@ module.exports = class BaseLexMachinaRequest {
             }};
 
         if (config.method) {
-            options.method = config.method
+            options.method = config.method;
         }
         if (config.data) {
-            options.data = config.data
+            options.data = config.data;
         }
     
         try {
-            var response = await axios(url, options)
-            returnValue = response.data
+            var response = await axios(url, options);
+            returnValue = response.data;
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
-        return returnValue
+        return returnValue;
     }
-}
+};

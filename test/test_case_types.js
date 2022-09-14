@@ -4,8 +4,8 @@ chai.should();
 chai.use(require('chai-things'));
 const nock = require('nock');
 const nockBack = require('nock').back;
-nockBack.fixtures = "./test/nock_fixtures/"
-const LexMachinaClient = require('../src/lexmachina_client')
+nockBack.fixtures = './test/nock_fixtures/';
+const LexMachinaClient = require('../src/lexmachina_client');
 nockBack.setMode('record');
 
 describe('List Case Types', () => {
@@ -17,9 +17,9 @@ describe('List Case Types', () => {
         var caseTypes = await client.listCaseTypes();
 
         expect(caseTypes).to.have.length.above(15);
-        caseTypes.should.include("ERISA");
-        caseTypes.should.include("Civil Rights");
-        caseTypes.should.include("Torts");
+        caseTypes.should.include('ERISA');
+        caseTypes.should.include('Civil Rights');
+        caseTypes.should.include('Torts');
         nockDone();
-    })
-})
+    });
+});

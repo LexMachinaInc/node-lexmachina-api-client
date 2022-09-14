@@ -4,8 +4,8 @@ chai.should();
 chai.use(require('chai-things'));
 const nock = require('nock');
 const nockBack = require('nock').back;
-nockBack.fixtures = "./test/nock_fixtures/"
-const LexMachinaClient = require('../src/lexmachina_client')
+nockBack.fixtures = './test/nock_fixtures/';
+const LexMachinaClient = require('../src/lexmachina_client');
 nockBack.setMode('record');
 
 describe('List Case Tags', () => {
@@ -18,8 +18,8 @@ describe('List Case Tags', () => {
         nockDone();
         expect(caseTypes).to.have.length.above(50);
 
-        caseTypes.should.include("Trial");
-        caseTypes.should.include("Motor Vehicle");
-        caseTypes.should.include("Chapter 11");
-    })
-})
+        caseTypes.should.include('Trial');
+        caseTypes.should.include('Motor Vehicle');
+        caseTypes.should.include('Chapter 11');
+    });
+});

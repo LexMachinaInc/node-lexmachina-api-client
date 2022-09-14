@@ -4,8 +4,8 @@ chai.should();
 chai.use(require('chai-things'));
 const nock = require('nock');
 const nockBack = require('nock').back;
-nockBack.fixtures = "./test/nock_fixtures/"
-const LexMachinaClient = require('../src/lexmachina_client')
+nockBack.fixtures = './test/nock_fixtures/';
+const LexMachinaClient = require('../src/lexmachina_client');
 nockBack.setMode('record');
 
 describe('List Case Resolutions', () => {
@@ -18,9 +18,9 @@ describe('List Case Resolutions', () => {
         nockDone();
         expect(caseResolutions).to.have.length.above(20);
 
-        caseResolutions.should.deep.include({summary:"Claimant Win", specific:"Bench Trial"});
-        caseResolutions.should.deep.include({summary:"Procedural", specific:"Dismissal"});
-        caseResolutions.should.deep.include({summary:"Claim Defendant Win", specific:"Jury"});
+        caseResolutions.should.deep.include({summary:'Claimant Win', specific:'Bench Trial'});
+        caseResolutions.should.deep.include({summary:'Procedural', specific:'Dismissal'});
+        caseResolutions.should.deep.include({summary:'Claim Defendant Win', specific:'Jury'});
 
-    })
-})
+    });
+});
