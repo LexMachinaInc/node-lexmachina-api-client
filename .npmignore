@@ -9,3 +9,4 @@ History.md
 .vscode
 .eslintrc.json
 config/config-auth.json
+config/config-notdefault.json
