@@ -22,18 +22,17 @@ This package provides a client to access the Lex Machina API for legal analytics
     }
     ```
 
-1. To execute API calls you will use the three classes of this package. Each is discussed in full below.
+1. To execute API calls you will use the two classes of this package. Both are discussed in detail later.
 
-    1. For the GET endpoints, LexMachinaClient provides those functions.
-    1. To do the POST based query, the QueryDistrictCases provides that function.
-    1. In order to specify the query use  CaseQueryRequest to add criteria to the query.
+    1. For accessing all GET and POST endpoints, LexMachinaClient provides those functions.
+    1. In order to specify the query use CaseQueryRequest to add criteria to the query.
 
 For each of these, you first create the object then call the functions on that object.
 
 
 # Lex Machina Client
 
-The LexMachinaClient object is the main way to interact with the GET functions of the Lex Machina API.
+The LexMachinaClient object is the main way to interact with the GET and POST functions of the Lex Machina API.
 
 
 
