@@ -199,13 +199,16 @@ The following methods control aspects of the query and operation of the query. B
 
 # Executing the Query
 
-After creating a CaseQueryRequest with the desired criteria, the query must be executed. This requires a QueryDistrictCases object.
+After creating a CaseQueryRequest with the desired criteria, the query must be executed. This is done with the LexMachinaClient object. To execute the query, pass in the CaseQueryRequest object. 
+
 
 ```javascript
-var queryClient = QueryDistrictCases()
+var client = new LexMachinaClient();
+var query = new CasesQueryRequest(); // Add criteria to this
+var cases = await client.queryDistrictCases(query)
 ```
 
-To execute the query, pass in the CaseQueryRequest object. There is an optional second parameter that is a JSON object for options. This takes a single value at present. If absent, the query will be executed with the page and page size in the query object. If this option object is present:
+There is an optional second parameter that is a JSON object for options. This takes a single value at present. If absent, the query will be executed with the page and page size in the query object. If this option object is present:
 
 ```json
 {pageThrough: true}
