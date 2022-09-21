@@ -1,6 +1,7 @@
 support
 test
 examples
+dist
 .gitignore
 History.md
 *.tgz

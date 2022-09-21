@@ -1,0 +1,132 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/search-law-firms?q=slusher&pageSize=500&pageNumber=1",
+        "body": "",
+        "status": 200,
+        "response": {
+            "totalCount": 13,
+            "page": 1,
+            "nextPage": null,
+            "lawFirms": [
+                {
+                    "name": "Skelton Slusher Barnhill Watkins Wells",
+                    "lawFirmId": 9133778,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/9133778"
+                },
+                {
+                    "name": "Rodney B Slusher",
+                    "lawFirmId": 18620057,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/18620057"
+                },
+                {
+                    "name": "Holder, Susan, Slusher, & Oxenhandler",
+                    "lawFirmId": 29024883,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/29024883"
+                },
+                {
+                    "name": "Slusher & Rosenblum",
+                    "lawFirmId": 53936949,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/53936949"
+                },
+                {
+                    "name": "Slusher & Associates",
+                    "lawFirmId": 104345547,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104345547"
+                },
+                {
+                    "name": "Harry R. Slusher",
+                    "lawFirmId": 104588230,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104588230"
+                },
+                {
+                    "name": "Jeffrey L. Slusher",
+                    "lawFirmId": 104622586,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104622586"
+                },
+                {
+                    "name": "Lee B. Slusher",
+                    "lawFirmId": 104674814,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104674814"
+                },
+                {
+                    "name": "Terry A. Slusher",
+                    "lawFirmId": 104815093,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104815093"
+                },
+                {
+                    "name": "Villareal & Slusher",
+                    "lawFirmId": 104837226,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104837226"
+                },
+                {
+                    "name": "Wilkins & Slusher",
+                    "lawFirmId": 104845865,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104845865"
+                },
+                {
+                    "name": "Holder, Susan, Slusher Law Firm",
+                    "lawFirmId": 104988414,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104988414"
+                },
+                {
+                    "name": "The Law & Mediation Office Of Kennedy Slusher",
+                    "lawFirmId": 150380498,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/150380498"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "de5bedc529c1b5379319d73b30f156c1",
+            "date",
+            "Wed, 21 Sep 2022 16:50:07 GMT",
+            "content-length",
+            "1768",
+            "x-request-id",
+            "15f788ce-fbe3-412a-994f-2beffa2aef66",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/search-law-firms?q=slusher&pageSize=500&pageNumber=2",
+        "body": "",
+        "status": 200,
+        "response": {
+            "totalCount": 13,
+            "page": 2,
+            "nextPage": null,
+            "lawFirms": []
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "02ba06700f2a7b293ecd0a5dd386dd36",
+            "date",
+            "Wed, 21 Sep 2022 16:50:07 GMT",
+            "content-length",
+            "56",
+            "x-request-id",
+            "b64d7f6d-9c37-467f-b9b7-34c451677cab",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -130,6 +130,70 @@ module.exports = class LexMachinaClient {
         return this.lmRequest.requestURL(config);
     }
 
+    async getOneSearchPage(options, resultFieldName) {
+        var config = options || {};
+
+
+        var result = await this.lmRequest.requestURL(config);
+        //console.log(result);
+        if (result) {
+            return result[resultFieldName];
+        } else {
+            return  [];
+        }
+    }
+
+    async searchParties(searchString, options) {
+        var pageNumber = 1;
+        var parties = [];
+        var page_parties = [];
+        options = options || {};
+        options.endpoint = '/search-parties';
+        options.method = 'get';
+        options.params = {'q': searchString, 'pageSize': 500};
+        do {
+            options.params.pageNumber = pageNumber;
+            page_parties = await this.getOneSearchPage(options, 'parties');
+            parties = [...new Set([...parties, ...page_parties])];
+            pageNumber++;
+        } while (page_parties.length > 0);
+        return parties;
+    }
+
+    async searchLawFirms(searchString, options) {
+        var pageNumber = 1;
+        var lawFirms = [];
+        var page_law_firms = [];
+        options = options || {};
+        options.endpoint = '/search-law-firms';
+        options.method = 'get';
+        options.params = {'q': searchString, 'pageSize': 500};
+        do {
+            options.params.pageNumber = pageNumber;
+            page_law_firms = await this.getOneSearchPage(options, 'lawFirms');
+            lawFirms = [...new Set([...lawFirms, ...page_law_firms])];
+            pageNumber++;
+        } while (page_law_firms.length > 0);
+        return lawFirms;
+    }
+
+    async searchAttorneys(searchString, options) {
+        var pageNumber = 1;
+        var attorneys = [];
+        var page_attorneys = [];
+        options = options || {};
+        options.endpoint = '/search-attorneys';
+        options.method = 'get';
+        options.params = {'q': searchString, 'pageSize': 500};
+        do {
+            options.params.pageNumber = pageNumber;
+            page_attorneys = await this.getOneSearchPage(options, 'attorneys');
+            attorneys = [...new Set([...attorneys, ...page_attorneys])];
+            pageNumber++;
+        } while (page_attorneys.length > 0);
+        return attorneys;
+    }
+
     async queryDistrictCases(query, options) {
         return this.queryEngine.queryDistrictCases(query, options);
     }

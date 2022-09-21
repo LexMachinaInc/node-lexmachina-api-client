@@ -1,0 +1,128 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth/client_credential/accesstoken",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "Bearer",
+            "access_token": "nbUz2Pa8rSx8R5jmsLS23dFpCMYa",
+            "issued_at": 1663777975530,
+            "expires_in": 3599,
+            "scope": ""
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-request-id",
+            "50fe8571-81a5-4d89-8176-9fbe5cb880bf",
+            "content-length",
+            "157",
+            "date",
+            "Wed, 21 Sep 2022 16:32:55 GMT",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/search-parties?q=gaiman&pageSize=500&pageNumber=1",
+        "body": "",
+        "status": 200,
+        "response": {
+            "totalCount": 6,
+            "page": 1,
+            "nextPage": null,
+            "parties": [
+                {
+                    "name": "Neil Gaiman",
+                    "partyId": 216320,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/216320"
+                },
+                {
+                    "name": "Michael Gaiman",
+                    "partyId": 223143,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/223143"
+                },
+                {
+                    "name": "Jacqueline Gaiman",
+                    "partyId": 2878022,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/2878022"
+                },
+                {
+                    "name": "Jacqueline E Gaiman",
+                    "partyId": 3228449,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/3228449"
+                },
+                {
+                    "name": "Gaiman",
+                    "partyId": 58870942,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/58870942"
+                },
+                {
+                    "name": "Shaoxingaimansha",
+                    "partyId": 64536849,
+                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/64536849"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "a4106c504afb7b229cf1a671a100e47e;o=1",
+            "date",
+            "Wed, 21 Sep 2022 16:32:58 GMT",
+            "content-length",
+            "742",
+            "x-request-id",
+            "1ed27358-5c49-47d5-a382-03ab9439ca8c",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/search-parties?q=gaiman&pageSize=500&pageNumber=2",
+        "body": "",
+        "status": 200,
+        "response": {
+            "totalCount": 6,
+            "page": 2,
+            "nextPage": null,
+            "parties": []
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "7170465599831f2cc73b03370ce654dd",
+            "date",
+            "Wed, 21 Sep 2022 16:33:01 GMT",
+            "content-length",
+            "54",
+            "x-request-id",
+            "30ca60a6-4581-4d49-a929-692de7861463",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]
