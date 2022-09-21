@@ -82,9 +82,12 @@ These functions are available from LexMachinaClient. Each takes a single integer
 
 ## Search Functions
 
-Search functions take a string input and match items. These searches match only the beginning of strings. When searching for a name, the search query "hof" will match the name "Hoffman" but will not match "Schofield".
+Search functions take a string input and return lists of JSON objects. These searches match substrings on the names being searched for.
 
+- LexMachinaClient.searchAttorneys()
 - LexMachinaClient.searchJudges()
+- LexMachinaClient.searchLawFirms()
+- LexMachinaClient.searchParties()
 
 # Case Query Object
 
