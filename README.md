@@ -1,5 +1,5 @@
 # node-lexmachina-api-client
-Client for Lex Machina Litigation Analytics API
+Client for Lex Machina Legal Analytics API
 
 This package provides a client to access the Lex Machina API for legal analytics. Access and documentation are provided at the [Lex Machina API Developer Portal](https://developer.lexmachina.com/).
 
