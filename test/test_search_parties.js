@@ -2,6 +2,7 @@ var chai = require('chai');
 const expect = require('chai').expect;
 chai.should();
 chai.use(require('chai-things'));
+chai.use(require('chai-as-promised'));
 const nock = require('nock');
 const nockBack = require('nock').back;
 nockBack.fixtures = './test/nock_fixtures/';
@@ -30,5 +31,11 @@ describe('Search Parties', () => {
         var parties = await client.searchParties(search_string);
         nockDone();
         expect(parties).to.have.length.above(501);
+    });
+
+
+    it('should gracefully fail empty input', async () => {
+        const client = new LexMachinaClient();
+        await expect( client.searchParties('')).to.be.rejectedWith(Error);
     });
 });

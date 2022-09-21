@@ -32,4 +32,9 @@ describe('Search Law Firms', () => {
         nockDone();
         expect(lawFirms).to.have.length.above(501);
     });
+
+    it('should gracefully fail empty input', async () => {
+        const client = new LexMachinaClient();
+        await expect( client.searchLawFirms('')).to.be.rejectedWith(Error);
+    });
 });

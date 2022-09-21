@@ -132,8 +132,9 @@ module.exports = class LexMachinaClient {
 
     async getOneSearchPage(options, resultFieldName) {
         var config = options || {};
-
-
+        if (config.params.q == "") {
+            throw new Error('The search query cannot be empty');
+        }
         var result = await this.lmRequest.requestURL(config);
         //console.log(result);
         if (result) {
@@ -144,6 +145,7 @@ module.exports = class LexMachinaClient {
     }
 
     async searchParties(searchString, options) {
+
         var pageNumber = 1;
         var parties = [];
         var page_parties = [];

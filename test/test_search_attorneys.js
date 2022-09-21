@@ -31,4 +31,9 @@ describe('Search Attorneys', () => {
         nockDone();
         expect(attorneys).to.have.length.above(501);
     });
+
+    it('should gracefully fail empty input', async () => {
+        const client = new LexMachinaClient();
+        await expect( client.searchAttorneys('')).to.be.rejectedWith(Error);
+    });
 });
