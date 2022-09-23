@@ -9,7 +9,7 @@ describe('Add and Remove Query Statements', () => {
     describe('Case Status', () => {
         it('should be able to add and remove Case Status', () => {
             var caseQuery = new CasesQueryRequest();
-            ['Open', 'close'].forEach(caseStatus => {
+            ['open', 'close'].forEach(caseStatus => {
                 caseQuery.setCaseStatus(caseStatus);
                 expect(caseQuery.queryObject.caseStatus).to.equal(caseStatus);
             });
@@ -1464,6 +1464,898 @@ describe('Date Operation', () => {
             //console.log("After clearing, object is %s", JSON.stringify(caseQuery.queryObject));
             expect(Object.keys(caseQuery.queryObject)).to.have.lengthOf(3);
         });
+
     });
+
+    describe('Chaining Constraints', () => {
+        var includeStringArray = ['includeString1', 'includeString2', 'includeString3'];
+        var excludeStringArray = ['excludeString1', 'excludeString2', 'excludeString3'];
+        var includeIntegerArray = [12345, 23456, 34567];
+        var excludeIntegerArray = [54321, 65432, 76543];
+
+
+
+        describe('chaining constraint functions should add all constraints', () => {
+            var caseQuery = new CasesQueryRequest();
+            expect(caseQuery.queryObject.caseTags.include).to.be.empty;
+            expect(caseQuery.queryObject.caseTags.exclude).to.be.empty;
+            
+            it('chaining constraint functions should set case status and add tags', () => {
+
+                caseQuery.setCaseStatus('TestValue')
+                    .addCaseTagsInclude('TagInclude')
+                    .addCaseTagsExclude('TagExclude')
+                    .addCaseTagsInclude('TagInclude2');
+                expect(caseQuery.queryObject.caseStatus).to.equal('TestValue');
+                expect(caseQuery.queryObject.caseTags.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.caseTags.include).to.contain('TagInclude');
+                expect(caseQuery.queryObject.caseTags.include).to.contain('TagInclude2');
+                expect(caseQuery.queryObject.caseTags.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.caseTags.exclude).to.contain('TagExclude');
+                caseQuery.clear();
+
+                caseQuery.addCaseTagsInclude(includeStringArray)
+                    .addCaseTagsExclude(excludeStringArray)
+                    .addCaseTagsInclude('TagInclude');
+                expect(caseQuery.queryObject.caseTags.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.caseTags.include).to.contain('TagInclude');
+                includeStringArray.forEach(caseTag => {
+                    expect(caseQuery.queryObject.caseTags.include).to.contain(caseTag);
+                });
+                expect(caseQuery.queryObject.caseTags.exclude).to.have.lengthOf(3);
+                excludeStringArray.forEach(caseTag => {
+                    expect(caseQuery.queryObject.caseTags.exclude).to.contain(caseTag);
+                });      
+            });       
+
+            it('chaining constraint functions should add case types', () => {
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.caseTypes.include).to.be.empty;
+                expect(caseQuery.queryObject.caseTypes.exclude).to.be.empty;
+            
+                caseQuery.addCaseTypesInclude('TypeInclude')
+                    .addCaseTypesExclude('TypeExclude')
+                    .addCaseTypesInclude('TypeInclude2');
+                expect(caseQuery.queryObject.caseTypes.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.caseTypes.include).to.contain('TypeInclude');
+                expect(caseQuery.queryObject.caseTypes.include).to.contain('TypeInclude2');
+                expect(caseQuery.queryObject.caseTypes.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.caseTypes.exclude).to.contain('TypeExclude');
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.caseTypes.include).to.be.empty;
+                expect(caseQuery.queryObject.caseTypes.exclude).to.be.empty;
+
+                caseQuery.addCaseTypesInclude(includeStringArray)
+                    .addCaseTypesExclude(excludeStringArray)
+                    .addCaseTypesInclude('TypeInclude');
+                expect(caseQuery.queryObject.caseTypes.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.caseTypes.include).to.contain('TypeInclude');
+                includeStringArray.forEach(caseType => {
+                    expect(caseQuery.queryObject.caseTypes.include).to.contain(caseType);
+                });
+                expect(caseQuery.queryObject.caseTypes.exclude).to.have.lengthOf(3);
+                excludeStringArray.forEach(caseType => {
+                    expect(caseQuery.queryObject.caseTypes.exclude).to.contain(caseType);
+                });            
+            }); 
+
+            it('chaining constraint functions should add event types', () => {
+
+                caseQuery.clear();
+
+                caseQuery.addEventTypesInclude('EventTypeInclude')
+                    .addEventTypesExclude('EventTypeExclude')
+                    .addEventTypesInclude('EventTypeInclude2');
+                expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.events.includeEventTypes).to.contain('EventTypeInclude');
+                expect(caseQuery.queryObject.events.includeEventTypes).to.contain('EventTypeInclude2');
+                expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.events.excludeEventTypes).to.contain('EventTypeExclude');
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.events.includeEventTypes).to.be.empty;
+                expect(caseQuery.queryObject.events.excludeEventTypes).to.be.empty;
+
+                caseQuery.addEventTypesInclude(includeStringArray)
+                    .addEventTypesExclude(excludeStringArray)
+                    .addEventTypesInclude('EventTypeInclude');
+                expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.events.includeEventTypes).to.contain('EventTypeInclude');
+                includeStringArray.forEach(eventType => {
+                    expect(caseQuery.queryObject.events.includeEventTypes).to.contain(eventType);
+                });
+                expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(3);
+                excludeStringArray.forEach(eventType => {
+                    expect(caseQuery.queryObject.events.excludeEventTypes).to.contain(eventType);
+                });             
+            });
+
+            it('chaining constraint functions should add courts', () => {
+
+                caseQuery.clear();
+
+
+                expect(caseQuery.queryObject.courts.include).to.be.empty;
+                expect(caseQuery.queryObject.courts.exclude).to.be.empty;
+            
+                caseQuery.addCourtsInclude('CourtInclude')
+                    .addCourtsExclude('CourtExclude')
+                    .addCourtsInclude('CourtInclude2');
+                expect(caseQuery.queryObject.courts.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.courts.include).to.contain('CourtInclude');
+                expect(caseQuery.queryObject.courts.include).to.contain('CourtInclude2');
+                expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.courts.exclude).to.contain('CourtExclude');
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.courts.include).to.be.empty;
+                expect(caseQuery.queryObject.courts.exclude).to.be.empty;
+
+                caseQuery.addCourtsInclude(includeStringArray)
+                    .addCourtsExclude(excludeStringArray)
+                    .addCourtsInclude('CourtInclude');
+                expect(caseQuery.queryObject.courts.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.courts.include).to.contain('CourtInclude');
+                includeStringArray.forEach(court => {
+                    expect(caseQuery.queryObject.courts.include).to.contain(court);
+                });
+                expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(3);
+                excludeStringArray.forEach(court => {
+                    expect(caseQuery.queryObject.courts.exclude).to.contain(court);
+                });             
+            });
+
+            it('chaining constraint functions should add judges', () => {
+
+                caseQuery.clear();
+
+   
+
+                expect(caseQuery.queryObject.judges.include).to.be.empty;
+                expect(caseQuery.queryObject.judges.exclude).to.be.empty;
+
+                caseQuery.addJudgesInclude(3434)
+                    .addJudgesExclude(4545)
+                    .addJudgesInclude(5656);
+                expect(caseQuery.queryObject.judges.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.judges.include).to.contain(3434);
+                expect(caseQuery.queryObject.judges.include).to.contain(5656);
+                expect(caseQuery.queryObject.judges.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.judges.exclude).to.contain(4545);
+                caseQuery.clear();
+
+                caseQuery.addJudgesInclude(includeIntegerArray)
+                    .addJudgesExclude(excludeIntegerArray)
+                    .addJudgesInclude(333);
+                expect(caseQuery.queryObject.judges.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.judges.include).to.contain(333);
+                includeIntegerArray.forEach(judge => {
+                    expect(caseQuery.queryObject.judges.include).to.contain(judge);
+                });
+                expect(caseQuery.queryObject.judges.exclude).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(judge => {
+                    expect(caseQuery.queryObject.judges.exclude).to.contain(judge);
+                });             
+            });
+
+            it('chaining constraint functions should add magistrates', () => {
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.magistrates.include).to.be.empty;
+                expect(caseQuery.queryObject.magistrates.exclude).to.be.empty;
+
+                caseQuery.addMagistratesInclude(3434)
+                    .addMagistratesExclude(4545)
+                    .addMagistratesInclude(5656);
+                expect(caseQuery.queryObject.magistrates.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.magistrates.include).to.contain(3434);
+                expect(caseQuery.queryObject.magistrates.include).to.contain(5656);
+                expect(caseQuery.queryObject.magistrates.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.magistrates.exclude).to.contain(4545);
+                caseQuery.clear();
+
+                caseQuery.addMagistratesInclude(includeIntegerArray)
+                    .addMagistratesExclude(excludeIntegerArray)
+                    .addMagistratesInclude(333);
+                expect(caseQuery.queryObject.magistrates.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.magistrates.include).to.contain(333);
+                includeIntegerArray.forEach(magistrate => {
+                    expect(caseQuery.queryObject.magistrates.include).to.contain(magistrate);
+                });
+                expect(caseQuery.queryObject.magistrates.exclude).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(magistrate => {
+                    expect(caseQuery.queryObject.magistrates.exclude).to.contain(magistrate);
+                });             
+            });
+
+            it('chaining constraint functions should add law firms', () => {
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.lawFirms.include).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.exclude).to.be.empty;
+
+                caseQuery.addLawFirmsInclude(3434)
+                    .addLawFirmsExclude(4545)
+                    .addLawFirmsInclude(5656);
+                expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.lawFirms.include).to.contain(3434);
+                expect(caseQuery.queryObject.lawFirms.include).to.contain(5656);
+                expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.lawFirms.exclude).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.lawFirms.include).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.exclude).to.be.empty;
+
+                caseQuery.addLawFirmsInclude(includeIntegerArray)
+                    .addLawFirmsExclude(excludeIntegerArray)
+                    .addLawFirmsInclude(333);
+                expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.lawFirms.include).to.contain(333);
+                includeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.include).to.contain(lawFirm);
+                });
+                expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.exclude).to.contain(lawFirm);
+                });             
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.be.empty;
+
+                caseQuery.addLawFirmsIncludePlaintiff(3434)
+                    .addLawFirmsExcludePlaintiff(4545)
+                    .addLawFirmsIncludePlaintiff(5656);
+                expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.contain(3434);
+                expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.contain(5656);
+                expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.be.empty;
+
+                caseQuery.addLawFirmsIncludePlaintiff(includeIntegerArray)
+                    .addLawFirmsExcludePlaintiff(excludeIntegerArray)
+                    .addLawFirmsIncludePlaintiff(333);
+                expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.contain(333);
+                includeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.contain(lawFirm);
+                });
+                expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.contain(lawFirm);
+                });             
+                caseQuery.clear();
+                expect(caseQuery.queryObject.lawFirms.includeDefendant).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.be.empty;
+
+                caseQuery.addLawFirmsIncludeDefendant(3434)
+                    .addLawFirmsExcludeDefendant(4545)
+                    .addLawFirmsIncludeDefendant(5656);
+                expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.lawFirms.includeDefendant).to.contain(3434);
+                expect(caseQuery.queryObject.lawFirms.includeDefendant).to.contain(5656);
+                expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.lawFirms.includeDefendant).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.be.empty;
+
+                caseQuery.addLawFirmsIncludeDefendant(includeIntegerArray)
+                    .addLawFirmsExcludeDefendant(excludeIntegerArray)
+                    .addLawFirmsIncludeDefendant(333);
+                expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.lawFirms.includeDefendant).to.contain(333);
+                includeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.includeDefendant).to.contain(lawFirm);
+                });
+                expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.contain(lawFirm);
+                });             
+                caseQuery.clear();
+                expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.be.empty;
+
+                caseQuery.addLawFirmsIncludeThirdParty(3434)
+                    .addLawFirmsExcludeThirdParty(4545)
+                    .addLawFirmsIncludeThirdParty(5656);
+                expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.contain(3434);
+                expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.contain(5656);
+                expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.be.empty;
+                expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.be.empty;
+
+                caseQuery.addLawFirmsIncludeThirdParty(includeIntegerArray)
+                    .addLawFirmsExcludeThirdParty(excludeIntegerArray)
+                    .addLawFirmsIncludeThirdParty(333);
+                expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.contain(333);
+                includeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.contain(lawFirm);
+                });
+                expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(lawFirm => {
+                    expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.contain(lawFirm);
+                });             
+            });
+
+            it('chaining constraint functions should add parties', () => {
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.parties.include).to.be.empty;
+                expect(caseQuery.queryObject.parties.exclude).to.be.empty;
+
+                caseQuery.addPartiesInclude(3434)
+                    .addPartiesExclude(4545)
+                    .addPartiesInclude(5656);
+                expect(caseQuery.queryObject.parties.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.parties.include).to.contain(3434);
+                expect(caseQuery.queryObject.parties.include).to.contain(5656);
+                expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.parties.exclude).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.parties.include).to.be.empty;
+                expect(caseQuery.queryObject.parties.exclude).to.be.empty;
+
+                caseQuery.addPartiesInclude(includeIntegerArray)
+                    .addPartiesExclude(excludeIntegerArray)
+                    .addPartiesInclude(333);
+                expect(caseQuery.queryObject.parties.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.parties.include).to.contain(333);
+                includeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.include).to.contain(party);
+                });
+                expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.exclude).to.contain(party);
+                });             
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.parties.includePlaintiff).to.be.empty;
+                expect(caseQuery.queryObject.parties.excludePlaintiff).to.be.empty;
+
+                caseQuery.addPartiesIncludePlaintiff(3434)
+                    .addPartiesExcludePlaintiff(4545)
+                    .addPartiesIncludePlaintiff(5656);
+                expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.parties.includePlaintiff).to.contain(3434);
+                expect(caseQuery.queryObject.parties.includePlaintiff).to.contain(5656);
+                expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.parties.excludePlaintiff).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.parties.includePlaintiff).to.be.empty;
+                expect(caseQuery.queryObject.parties.excludePlaintiff).to.be.empty;
+
+                caseQuery.addPartiesIncludePlaintiff(includeIntegerArray)
+                    .addPartiesExcludePlaintiff(excludeIntegerArray)
+                    .addPartiesIncludePlaintiff(333);
+                expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.parties.includePlaintiff).to.contain(333);
+                includeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.includePlaintiff).to.contain(party);
+                });
+                expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.excludePlaintiff).to.contain(party);
+                });             
+                caseQuery.clear();
+                expect(caseQuery.queryObject.parties.includeDefendant).to.be.empty;
+                expect(caseQuery.queryObject.parties.excludeDefendant).to.be.empty;
+
+                caseQuery.addPartiesIncludeDefendant(3434)
+                    .addPartiesExcludeDefendant(4545)
+                    .addPartiesIncludeDefendant(5656);
+                expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.parties.includeDefendant).to.contain(3434);
+                expect(caseQuery.queryObject.parties.includeDefendant).to.contain(5656);
+                expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.parties.excludeDefendant).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.parties.includeDefendant).to.be.empty;
+                expect(caseQuery.queryObject.parties.excludeDefendant).to.be.empty;
+
+                caseQuery.addPartiesIncludeDefendant(includeIntegerArray)
+                    .addPartiesExcludeDefendant(excludeIntegerArray)
+                    .addPartiesIncludeDefendant(333);
+                expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.parties.includeDefendant).to.contain(333);
+                includeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.includeDefendant).to.contain(party);
+                });
+                expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.excludeDefendant).to.contain(party);
+                });             
+                caseQuery.clear();
+                expect(caseQuery.queryObject.parties.includeThirdParty).to.be.empty;
+                expect(caseQuery.queryObject.parties.excludeThirdParty).to.be.empty;
+
+                caseQuery.addPartiesIncludeThirdParty(3434)
+                    .addPartiesExcludeThirdParty(4545)
+                    .addPartiesIncludeThirdParty(5656);
+                expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.parties.includeThirdParty).to.contain(3434);
+                expect(caseQuery.queryObject.parties.includeThirdParty).to.contain(5656);
+                expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.parties.excludeThirdParty).to.contain(4545);
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.parties.includeThirdParty).to.be.empty;
+                expect(caseQuery.queryObject.parties.excludeThirdParty).to.be.empty;
+
+                caseQuery.addPartiesIncludeThirdParty(includeIntegerArray)
+                    .addPartiesExcludeThirdParty(excludeIntegerArray)
+                    .addPartiesIncludeThirdParty(333);
+                expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.parties.includeThirdParty).to.contain(333);
+                includeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.includeThirdParty).to.contain(party);
+                });
+                expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(3);
+                excludeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.parties.excludeThirdParty).to.contain(party);
+                });             
+            });
+
+            it('chaining constraint functions should add resolutions', () => {
+
+                caseQuery.clear();     
+
+                var summary1 = 'Claimant Win';
+                var specific1 = 'Contested Dismissal';
+                var summary2 = 'Procedural';
+                var specific2 = 'Severance';
+                var summary3 = 'Likely Settlement';
+                var specific3 = 'Likely Settlement';
+    
+ 
+                expect(caseQuery.queryObject.resolutions.include).to.be.empty;
+                expect(caseQuery.queryObject.resolutions.exclude).to.be.empty;
+    
+                caseQuery.addResolutionsInclude(summary1, specific1)
+                    .addResolutionsExclude(summary2, specific2)
+                    .addResolutionsInclude(summary3, specific3);
+                expect(caseQuery.queryObject.resolutions.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.resolutions.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.resolutions.include).to.contain.an.item.with.property('summary', summary1);
+                expect(caseQuery.queryObject.resolutions.include).to.contain.an.item.with.property('specific', specific1);
+                expect(caseQuery.queryObject.resolutions.include).to.contain.an.item.with.property('summary', summary3);
+                expect(caseQuery.queryObject.resolutions.include).to.contain.an.item.with.property('specific', specific3);
+                expect(caseQuery.queryObject.resolutions.exclude).to.contain.an.item.with.property('summary', summary2);
+                expect(caseQuery.queryObject.resolutions.exclude).to.contain.an.item.with.property('specific', specific2);
+            });
+
+            it('chaining constraint functions should add findings', () => {
+
+                caseQuery.clear();
+    
+                expect(caseQuery.queryObject.findings[0].awardedToParties).to.be.empty;
+                expect(caseQuery.queryObject.findings[0].awardedAgainstParties).to.be.empty;
+    
+                caseQuery.addFindingsIncludeAwardedToParties(1234)
+                    .addFindingsIncludeAwardedAgainstParties(2345)
+                    .addFindingsIncludeAwardedToParties(3456);
+                expect(caseQuery.queryObject.findings[0].awardedToParties).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.findings[0].awardedAgainstParties).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.findings[0].awardedToParties).to.contain(1234);
+                expect(caseQuery.queryObject.findings[0].awardedToParties).to.contain(3456);
+                expect(caseQuery.queryObject.findings[0].awardedAgainstParties).to.contain(2345);
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.findings[0].awardedToParties).to.be.empty;
+                expect(caseQuery.queryObject.findings[0].awardedAgainstParties).to.be.empty;
+    
+                caseQuery.addFindingsIncludeAwardedToParties(includeIntegerArray)
+                    .addFindingsIncludeAwardedAgainstParties(excludeIntegerArray)
+                    .addFindingsIncludeAwardedToParties(3456);
+                expect(caseQuery.queryObject.findings[0].awardedToParties).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.findings[0].awardedAgainstParties).to.have.lengthOf(3);
+                expect(caseQuery.queryObject.findings[0].awardedToParties).to.contain(3456);
+                includeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.findings[0].awardedToParties).to.contain(party);
+                });
+                excludeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.findings[0].awardedAgainstParties).to.contain(party);
+                });
+                caseQuery.clear();
+  
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.be.empty;
+                expect(caseQuery.queryObject.findings[0].judgmentSource.exclude).to.be.empty;
+                caseQuery.addFindingsIncludeJudgmentSource('IncludeJudgment')
+                    .addFindingsExcludeJudgmentSource('ExcludeJudgment')
+                    .addFindingsIncludeJudgmentSource('IncludeJudgment2');
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.findings[0].judgmentSource.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.contain('IncludeJudgment');
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.contain('IncludeJudgment2');
+                expect(caseQuery.queryObject.findings[0].judgmentSource.exclude).to.contain('ExcludeJudgment');
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.be.empty;
+                expect(caseQuery.queryObject.findings[0].judgmentSource.exclude).to.be.empty;
+    
+                caseQuery.addFindingsIncludeJudgmentSource(includeStringArray)
+                    .addFindingsExcludeJudgmentSource(excludeStringArray)
+                    .addFindingsIncludeJudgmentSource('IncludeJudgment2');
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.findings[0].judgmentSource.exclude).to.have.lengthOf(3);
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.contain('IncludeJudgment2');
+                includeStringArray.forEach(source => {
+                    expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.contain(source);
+                });
+                excludeStringArray.forEach(source => {
+                    expect(caseQuery.queryObject.findings[0].judgmentSource.exclude).to.contain(source);
+                });
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.findings[0].patentInvalidityReasons.include).to.be.empty;
+    
+                caseQuery.addFindingsIncludePatentInvalidityReasons('Reason1')
+                    .addFindingsIncludePatentInvalidityReasons(includeStringArray)
+                    .addFindingsIncludePatentInvalidityReasons('Reason2');
+                expect(caseQuery.queryObject.findings[0].patentInvalidityReasons.include).to.have.lengthOf(5);
+                expect(caseQuery.queryObject.findings[0].patentInvalidityReasons.include).to.contain('Reason1');
+                expect(caseQuery.queryObject.findings[0].patentInvalidityReasons.include).to.contain('Reason2');
+                includeStringArray.forEach(reason => {
+                    expect(caseQuery.queryObject.findings[0].patentInvalidityReasons.include).to.contain(reason);
+                });
+                caseQuery.clear();
+                expect(caseQuery.queryObject.findings[0].nameType.include).to.be.empty;
+                expect(caseQuery.queryObject.findings[0].nameType.exclude).to.be.empty;
+    
+                caseQuery.addFindingsIncludeNameType('includeName', 'includeType')
+                    .addFindingsExcludeNameType('excludeName', 'excludeType')
+                    .addFindingsIncludeNameType('includeName1', 'includeType1');
+                expect(caseQuery.queryObject.findings[0].nameType.include).to.contain.an.item.with.property('name', 'includeName');
+                expect(caseQuery.queryObject.findings[0].nameType.include).to.contain.an.item.with.property('type', 'includeType');
+                expect(caseQuery.queryObject.findings[0].nameType.exclude).to.contain.an.item.with.property('name', 'excludeName');
+                expect(caseQuery.queryObject.findings[0].nameType.exclude).to.contain.an.item.with.property('type', 'excludeType');
+                expect(caseQuery.queryObject.findings[0].nameType.include).to.contain.an.item.with.property('name', 'includeName1');
+                expect(caseQuery.queryObject.findings[0].nameType.include).to.contain.an.item.with.property('type', 'includeType1');
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.findings[0].date.onOrAfter).to.be.empty;
+                expect(caseQuery.queryObject.findings[0].date.onOrBefore).to.be.empty;
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.be.empty;
+
+                caseQuery.addFindingsDate('2022-01-01', 'onOrAfter')
+                    .addFindingsIncludeJudgmentSource('IncludeJudgment');
+                expect(caseQuery.queryObject.findings[0].date).to.have.property('onOrAfter', '2022-01-01');
+                expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.contain('IncludeJudgment');
+
+
+            });
+            
+            it('chaining constraint functions should add remedies', () => {
+
+                caseQuery.clear();
+    
+                expect(caseQuery.queryObject.remedies[0].awardedToParties).to.be.empty;
+                expect(caseQuery.queryObject.remedies[0].awardedAgainstParties).to.be.empty;
+    
+                caseQuery.addRemediesIncludeAwardedToParties(1234)
+                    .addRemediesIncludeAwardedAgainstParties(2345)
+                    .addRemediesIncludeAwardedToParties(3456);
+                expect(caseQuery.queryObject.remedies[0].awardedToParties).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.remedies[0].awardedAgainstParties).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.remedies[0].awardedToParties).to.contain(1234);
+                expect(caseQuery.queryObject.remedies[0].awardedToParties).to.contain(3456);
+                expect(caseQuery.queryObject.remedies[0].awardedAgainstParties).to.contain(2345);
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.remedies[0].awardedToParties).to.be.empty;
+                expect(caseQuery.queryObject.remedies[0].awardedAgainstParties).to.be.empty;
+    
+                caseQuery.addRemediesIncludeAwardedToParties(includeIntegerArray)
+                    .addRemediesIncludeAwardedAgainstParties(excludeIntegerArray)
+                    .addRemediesIncludeAwardedToParties(3456);
+                expect(caseQuery.queryObject.remedies[0].awardedToParties).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.remedies[0].awardedAgainstParties).to.have.lengthOf(3);
+                expect(caseQuery.queryObject.remedies[0].awardedToParties).to.contain(3456);
+                includeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.remedies[0].awardedToParties).to.contain(party);
+                });
+                excludeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.remedies[0].awardedAgainstParties).to.contain(party);
+                });
+                caseQuery.clear();
+  
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.be.empty;
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.exclude).to.be.empty;
+                caseQuery.addRemediesIncludeJudgmentSource('IncludeJudgment')
+                    .addRemediesExcludeJudgmentSource('ExcludeJudgment')
+                    .addRemediesIncludeJudgmentSource('IncludeJudgment2');
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.contain('IncludeJudgment');
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.contain('IncludeJudgment2');
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.exclude).to.contain('ExcludeJudgment');
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.be.empty;
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.exclude).to.be.empty;
+    
+                caseQuery.addRemediesIncludeJudgmentSource(includeStringArray)
+                    .addRemediesExcludeJudgmentSource(excludeStringArray)
+                    .addRemediesIncludeJudgmentSource('IncludeJudgment2');
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.exclude).to.have.lengthOf(3);
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.contain('IncludeJudgment2');
+                includeStringArray.forEach(source => {
+                    expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.contain(source);
+                });
+                excludeStringArray.forEach(source => {
+                    expect(caseQuery.queryObject.remedies[0].judgmentSource.exclude).to.contain(source);
+                });
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.remedies[0].nameType.include).to.be.empty;
+                expect(caseQuery.queryObject.remedies[0].nameType.exclude).to.be.empty;
+    
+                caseQuery.addRemediesIncludeNameType('includeName', 'includeType')
+                    .addRemediesExcludeNameType('excludeName', 'excludeType')
+                    .addRemediesIncludeNameType('includeName1', 'includeType1');
+                expect(caseQuery.queryObject.remedies[0].nameType.include).to.contain.an.item.with.property('name', 'includeName');
+                expect(caseQuery.queryObject.remedies[0].nameType.include).to.contain.an.item.with.property('type', 'includeType');
+                expect(caseQuery.queryObject.remedies[0].nameType.exclude).to.contain.an.item.with.property('name', 'excludeName');
+                expect(caseQuery.queryObject.remedies[0].nameType.exclude).to.contain.an.item.with.property('type', 'excludeType');
+                expect(caseQuery.queryObject.remedies[0].nameType.include).to.contain.an.item.with.property('name', 'includeName1');
+                expect(caseQuery.queryObject.remedies[0].nameType.include).to.contain.an.item.with.property('type', 'includeType1');
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.remedies[0].date.onOrAfter).to.be.empty;
+                expect(caseQuery.queryObject.remedies[0].date.onOrBefore).to.be.empty;
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.be.empty;
+
+                caseQuery.addRemediesDate('2022-01-01', 'onOrAfter')
+                    .addRemediesIncludeJudgmentSource('IncludeJudgment');
+                expect(caseQuery.queryObject.remedies[0].date).to.have.property('onOrAfter', '2022-01-01');
+                expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.contain('IncludeJudgment');
+
+
+            });        
+            
+            it('chaining constraint functions should add damages', () => {
+
+                caseQuery.clear();
+    
+                expect(caseQuery.queryObject.damages[0].awardedToParties).to.be.empty;
+                expect(caseQuery.queryObject.damages[0].awardedAgainstParties).to.be.empty;
+    
+                caseQuery.addDamagesIncludeAwardedToParties(1234)
+                    .addDamagesIncludeAwardedAgainstParties(2345)
+                    .addDamagesIncludeAwardedToParties(3456);
+                expect(caseQuery.queryObject.damages[0].awardedToParties).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.damages[0].awardedAgainstParties).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.damages[0].awardedToParties).to.contain(1234);
+                expect(caseQuery.queryObject.damages[0].awardedToParties).to.contain(3456);
+                expect(caseQuery.queryObject.damages[0].awardedAgainstParties).to.contain(2345);
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.damages[0].awardedToParties).to.be.empty;
+                expect(caseQuery.queryObject.damages[0].awardedAgainstParties).to.be.empty;
+    
+                caseQuery.addDamagesIncludeAwardedToParties(includeIntegerArray)
+                    .addDamagesIncludeAwardedAgainstParties(excludeIntegerArray)
+                    .addDamagesIncludeAwardedToParties(3456);
+                expect(caseQuery.queryObject.damages[0].awardedToParties).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.damages[0].awardedAgainstParties).to.have.lengthOf(3);
+                expect(caseQuery.queryObject.damages[0].awardedToParties).to.contain(3456);
+                includeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.damages[0].awardedToParties).to.contain(party);
+                });
+                excludeIntegerArray.forEach(party => {
+                    expect(caseQuery.queryObject.damages[0].awardedAgainstParties).to.contain(party);
+                });
+                caseQuery.clear();
+  
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.be.empty;
+                expect(caseQuery.queryObject.damages[0].judgmentSource.exclude).to.be.empty;
+                caseQuery.addDamagesIncludeJudgmentSource('IncludeJudgment')
+                    .addDamagesExcludeJudgmentSource('ExcludeJudgment')
+                    .addDamagesIncludeJudgmentSource('IncludeJudgment2');
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.damages[0].judgmentSource.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.contain('IncludeJudgment');
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.contain('IncludeJudgment2');
+                expect(caseQuery.queryObject.damages[0].judgmentSource.exclude).to.contain('ExcludeJudgment');
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.be.empty;
+                expect(caseQuery.queryObject.damages[0].judgmentSource.exclude).to.be.empty;
+    
+                caseQuery.addDamagesIncludeJudgmentSource(includeStringArray)
+                    .addDamagesExcludeJudgmentSource(excludeStringArray)
+                    .addDamagesIncludeJudgmentSource('IncludeJudgment2');
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.damages[0].judgmentSource.exclude).to.have.lengthOf(3);
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.contain('IncludeJudgment2');
+                includeStringArray.forEach(source => {
+                    expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.contain(source);
+                });
+                excludeStringArray.forEach(source => {
+                    expect(caseQuery.queryObject.damages[0].judgmentSource.exclude).to.contain(source);
+                });
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.damages[0].nameType.include).to.be.empty;
+                expect(caseQuery.queryObject.damages[0].nameType.exclude).to.be.empty;
+    
+                caseQuery.addDamagesIncludeNameType('includeName', 'includeType')
+                    .addDamagesExcludeNameType('excludeName', 'excludeType')
+                    .addDamagesIncludeNameType('includeName1', 'includeType1');
+                expect(caseQuery.queryObject.damages[0].nameType.include).to.contain.an.item.with.property('name', 'includeName');
+                expect(caseQuery.queryObject.damages[0].nameType.include).to.contain.an.item.with.property('type', 'includeType');
+                expect(caseQuery.queryObject.damages[0].nameType.exclude).to.contain.an.item.with.property('name', 'excludeName');
+                expect(caseQuery.queryObject.damages[0].nameType.exclude).to.contain.an.item.with.property('type', 'excludeType');
+                expect(caseQuery.queryObject.damages[0].nameType.include).to.contain.an.item.with.property('name', 'includeName1');
+                expect(caseQuery.queryObject.damages[0].nameType.include).to.contain.an.item.with.property('type', 'includeType1');
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.damages[0].date.onOrAfter).to.be.empty;
+                expect(caseQuery.queryObject.damages[0].date.onOrBefore).to.be.empty;
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.be.empty;
+
+                caseQuery.addDamagesDate('2022-01-01', 'onOrAfter')
+                    .addDamagesIncludeJudgmentSource('IncludeJudgment');
+                expect(caseQuery.queryObject.damages[0].date).to.have.property('onOrAfter', '2022-01-01');
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.contain('IncludeJudgment');
+
+                caseQuery.clear();
+                expect(caseQuery.queryObject.damages[0].minimumAmount).to.equal(0);
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.be.empty;
+
+                caseQuery.setDamagesMinimumAmount(7552)
+                    .addDamagesIncludeJudgmentSource('IncludeJudgment');
+                expect(caseQuery.queryObject.damages[0].minimumAmount).to.equal(7552);
+                expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.contain('IncludeJudgment');
+
+
+            });      
+
+
+            it('chaining constraint functions should add patents', () => {
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.patents.include).to.be.empty;
+                expect(caseQuery.queryObject.patents.exclude).to.be.empty;
+            
+                caseQuery.addPatentsInclude('PatentInclude')
+                    .addPatentsExclude('PatentExclude')
+                    .addPatentsInclude('PatentInclude2');
+                expect(caseQuery.queryObject.patents.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.patents.include).to.contain('PatentInclude');
+                expect(caseQuery.queryObject.patents.include).to.contain('PatentInclude2');
+                expect(caseQuery.queryObject.patents.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.patents.exclude).to.contain('PatentExclude');
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.patents.include).to.be.empty;
+                expect(caseQuery.queryObject.patents.exclude).to.be.empty;
+
+                caseQuery.addPatentsInclude(includeStringArray)
+                    .addPatentsExclude(excludeStringArray)
+                    .addPatentsInclude('PatentInclude');
+                expect(caseQuery.queryObject.patents.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.patents.include).to.contain('PatentInclude');
+                includeStringArray.forEach(caseType => {
+                    expect(caseQuery.queryObject.patents.include).to.contain(caseType);
+                });
+                expect(caseQuery.queryObject.patents.exclude).to.have.lengthOf(3);
+                excludeStringArray.forEach(caseType => {
+                    expect(caseQuery.queryObject.patents.exclude).to.contain(caseType);
+                });            
+            }); 
+
+
+            it('chaining constraint functions should add MDL', () => {
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.mdl.include).to.be.empty;
+                expect(caseQuery.queryObject.mdl.exclude).to.be.empty;
+            
+                caseQuery.addMDLInclude(12345)
+                    .addMDLExclude(23456)
+                    .addMDLInclude(34567);
+                expect(caseQuery.queryObject.mdl.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.mdl.include).to.contain(12345);
+                expect(caseQuery.queryObject.mdl.include).to.contain(34567);
+                expect(caseQuery.queryObject.mdl.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.mdl.exclude).to.contain(23456);
+
+                caseQuery.clear();
+
+                expect(caseQuery.queryObject.mdl.include).to.be.empty;
+                expect(caseQuery.queryObject.mdl.exclude).to.be.empty;
+
+                caseQuery.addMDLInclude(includeStringArray)
+                    .addMDLExclude(excludeStringArray)
+                    .addMDLInclude(12345);
+                expect(caseQuery.queryObject.mdl.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.mdl.include).to.contain(12345);
+                includeStringArray.forEach(caseType => {
+                    expect(caseQuery.queryObject.mdl.include).to.contain(caseType);
+                });
+                expect(caseQuery.queryObject.mdl.exclude).to.have.lengthOf(3);
+                excludeStringArray.forEach(caseType => {
+                    expect(caseQuery.queryObject.mdl.exclude).to.contain(caseType);
+                });      
+                caseQuery.clear();
+
+            });     
+
+            it('chaining date function should set dates', () => {
+                caseQuery.clear();
+
+                caseQuery.setDate('2011-01-01', 'filed', 'onOrAfter')
+                    .setDate('2012-02-02', 'terminated', 'onOrBefore')
+                    .setDate('2013-03-03','lastDocket', 'onOrAfter' );
+
+                expect(caseQuery.queryObject.dates['filed']['onOrAfter']).to.equal('2011-01-01');
+                expect(caseQuery.queryObject.dates['terminated']['onOrBefore']).to.equal('2012-02-02');
+                expect(caseQuery.queryObject.dates['lastDocket']['onOrAfter']).to.equal('2013-03-03');
+             
+            });
+
+            it('chaining control functions should change values', () => {
+                caseQuery.clear();
+
+                caseQuery.setOrdering('ordering')
+                    .setPage(7)
+                    .setPageSize(44);
+
+                expect(caseQuery.queryObject.pageSize).to.equal(44);
+                expect(caseQuery.queryObject.page).to.equal(7);
+                expect(caseQuery.queryObject.ordering).to.equal('ordering');
+             
+                caseQuery.clear();
+
+                caseQuery.setPage(9)
+                    .setPageSize(55)
+                    .setOrdering('different');
+                expect(caseQuery.queryObject.pageSize).to.equal(55);
+                expect(caseQuery.queryObject.page).to.equal(9);
+                expect(caseQuery.queryObject.ordering).to.equal('different');
+                            
+                caseQuery.clear();         
+                expect(caseQuery.queryObject.page).to.equal(1);
+                caseQuery.nextPage().nextPage().nextPage();
+                expect(caseQuery.queryObject.page).to.equal(4);
+        
+            });
+        
+        }); 
+
+
+    });
+
 
 });

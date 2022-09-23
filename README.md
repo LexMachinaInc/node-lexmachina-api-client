@@ -97,12 +97,21 @@ Querying for cases is an operation with enough complexity that it warrants its o
 
 All operations on the CaseQueryRequest add criteria to the query. There are no methods to remove individual criteria but the object can be returned to empty at any time via the .clear() method.
 
+The constraint methods can be chained so all constraints can be added in a single line such as:
+
+```javascript
+  const query = new CasesQueryRequest()
+     .setDate("2022-09-01", "filed", "onOrAfter")
+     .addLawFirmsIncludeDefendant(123)
+     .setPageSize(100);
+```
+
 Following is a list of operations available in the CaseQueryRequest without discussion of the meaning of each. For a detailed discussion of the concepts used in querying the Lex Machina API see [this post on the developer portal](https://developer.lexmachina.com/querying-via-the-api).
 
 
 ## Participant Criteria
 
-The following methods add criteria based on participants in a case and their role. Each takes an integer or array of integers that correspond to the Lex Machina ID for each participant type.
+The following methods add criteria based on participants in a case and their role. Each takes an integer or array of integers that correspond to the Lex Machina ID for each participant type. These function calls can be chained.
 
 - CaseQueryRequest.addJudgesInclude()
 - CaseQueryRequest.addJudgesExclude()
@@ -131,7 +140,10 @@ The following methods add criteria based on participants in a case and their rol
 
 ## Case Aspect Criteria
 
-The following methods add criteria based on aspects of the case. In most of these, the list of valid inputs is available via the corresponding API list functionality, such as LexMachinaClient.listCaseTypes()
+The following methods add criteria based on aspects of the case. In most of these, the list of valid inputs is available via the corresponding API list functionality, such as LexMachinaClient.listCaseTypes() . 
+
+All of the add functions will take either a single value or an array of values. The set functions require a single value. These function calls can be chained.
+
 
 - CaseQueryRequest.setCaseStatus()
 - CaseQueryRequest.addCaseTypesInclude()
@@ -166,7 +178,8 @@ The following methods add criteria based on aspects of the case. In most of thes
 
 ## Date Criteria
 
-The setDate() method uses a different pattern. It takes three parameters: date value, a field and an operator. The date value must be a string in valid date format of "YYYY-MM-DD". The field is one of the below string values.
+The setDate() method uses a different pattern. It takes three parameters: date value, a field and an operator. The date value must be a string in valid date format of "YYYY-MM-DD". The field is one of the below string values. This function call can be chained.
+
 
 - Filed
 - Terminated
@@ -190,7 +203,8 @@ CaseQueryRequest.setDate("2019-01-01", "Filed", "OnOrAfter");
 
 ## Query aspects
 
-The following methods control aspects of the query and operation of the query. By default the page size is 5 cases and it can be increased to a maximum of 100.
+The following methods control aspects of the query and operation of the query. By default the page size is 5 cases and it can be increased to a maximum of 100. These function calls can be chained.
+
 
 - CaseQueryRequest.setOrdering()
 - CaseQueryRequest.setPage()

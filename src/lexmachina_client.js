@@ -132,7 +132,7 @@ module.exports = class LexMachinaClient {
 
     async getOneSearchPage(options, resultFieldName) {
         var config = options || {};
-        if (config.params.q == "") {
+        if (config.params.q == '') {
             throw new Error('The search query cannot be empty');
         }
         var result = await this.lmRequest.requestURL(config);

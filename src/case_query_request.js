@@ -78,6 +78,7 @@ module.exports = class CasesQueryRequest {
 
     setCaseStatus(status) {
         this.queryObject.caseStatus = status;
+        return this;
     }
 
     addCaseTypesInclude(values) {
@@ -86,6 +87,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.caseTypes.include, values);
         }
+        return this;
     }
 
     addCaseTypesExclude(values) {
@@ -94,6 +96,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.caseTypes.exclude, values);
         }
+        return this;
     }
 
     addCaseTagsInclude(values) {
@@ -102,6 +105,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.caseTags.include, values);
         }
+        return this;
     }
 
     addCaseTagsExclude(values) {
@@ -110,6 +114,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.caseTags.exclude, values);
         }
+        return this;
     }
 
     addJudgesInclude(ids) {
@@ -118,6 +123,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.judges.include, ids);
         }
+        return this;
     }
 
     addJudgesExclude(ids) {
@@ -126,6 +132,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.judges.exclude, ids);
         }
+        return this;
     }
 
     addMagistratesInclude(ids) {
@@ -134,6 +141,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.magistrates.include, ids);
         }
+        return this;
     }
 
     addMagistratesExclude(ids) {
@@ -142,6 +150,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.magistrates.exclude, ids);
         }
+        return this;
     }
 
     addEventTypesInclude(values) {
@@ -150,6 +159,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.events.includeEventTypes, values);
         }
+        return this;
     }
 
     addEventTypesExclude(values) {
@@ -158,6 +168,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.events.excludeEventTypes, values);
         }
+        return this;
     }
 
     addLawFirmsInclude(ids) {
@@ -166,6 +177,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.lawFirms.include, ids);
         }
+        return this;
     }
 
     addLawFirmsExclude(ids) {
@@ -174,6 +186,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.lawFirms.exclude, ids);
         }
+        return this;
     }
 
     addLawFirmsIncludePlaintiff(ids) {
@@ -182,6 +195,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.lawFirms.includePlaintiff, ids);
         }
+        return this;
     }
 
     addLawFirmsExcludePlaintiff(ids) {
@@ -190,6 +204,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.lawFirms.excludePlaintiff, ids);
         }
+        return this;
     }
 
     addLawFirmsIncludeDefendant(ids) {
@@ -198,6 +213,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.lawFirms.includeDefendant, ids);
         }
+        return this;
     }
 
     addLawFirmsExcludeDefendant(ids) {
@@ -205,7 +221,9 @@ module.exports = class CasesQueryRequest {
             ids.forEach(id => { this.addLawFirmsExcludeDefendant(id); });
         } else {
             pushUnique(this.queryObject.lawFirms.excludeDefendant, ids);
+            return this;
         }
+        return this;
     }
 
     addLawFirmsIncludeThirdParty(ids) {
@@ -214,6 +232,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.lawFirms.includeThirdParty, ids);
         }
+        return this;
     }
 
     addLawFirmsExcludeThirdParty(ids) {
@@ -222,6 +241,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.lawFirms.excludeThirdParty, ids);
         }
+        return this;
     }
 
     addPartiesInclude(ids) {
@@ -230,6 +250,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.include, ids);
         }
+        return this;
     }
 
     addPartiesExclude(ids) {
@@ -238,6 +259,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.exclude, ids);
         }
+        return this;
     }
 
     addPartiesIncludePlaintiff(ids) {
@@ -246,6 +268,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.includePlaintiff, ids);
         }
+        return this;
     }
 
     addPartiesExcludePlaintiff(ids) {
@@ -254,6 +277,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.excludePlaintiff, ids);
         }
+        return this;
     }
 
     addPartiesIncludeDefendant(ids) {
@@ -262,6 +286,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.includeDefendant, ids);
         }
+        return this;
     }
 
     addPartiesExcludeDefendant(ids) {
@@ -270,6 +295,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.excludeDefendant, ids);
         }
+        return this;
     }
 
     addPartiesIncludeThirdParty(ids) {
@@ -278,6 +304,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.includeThirdParty, ids);
         }
+        return this;
     }
 
     addPartiesExcludeThirdParty(ids) {
@@ -286,6 +313,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.parties.excludeThirdParty, ids);
         }
+        return this;
     }
 
     addCourtsInclude(values) {
@@ -294,6 +322,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.courts.include, values);
         }
+        return this;
     }
 
     addCourtsExclude(values) {
@@ -302,16 +331,19 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.courts.exclude, values);
         }
+        return this;
     }
 
     addResolutionsInclude(summary, specific ) {
         var object = {'summary': summary, 'specific': specific};
         pushUnique(this.queryObject.resolutions.include, object);
+        return this;
     }
 
     addResolutionsExclude(summary, specific ) {
         var object = {'summary': summary, 'specific': specific};
         pushUnique(this.queryObject.resolutions.exclude, object);
+        return this;
     }
 
     addFindingsIncludeAwardedToParties(ids) {
@@ -320,6 +352,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.findings[0].awardedToParties, ids);
         }
+        return this;
     }
 
     addFindingsIncludeAwardedAgainstParties(ids) {
@@ -328,6 +361,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.findings[0].awardedAgainstParties, ids);
         }
+        return this;
     }
 
     addFindingsIncludeJudgmentSource(values) {
@@ -338,6 +372,7 @@ module.exports = class CasesQueryRequest {
             // For now just going to assume array of 1 item when adding attributes to findings queries
             pushUnique(this.queryObject.findings[0].judgmentSource.include, values);
         }
+        return this;
     }
 
     addFindingsExcludeJudgmentSource(values) {
@@ -348,8 +383,8 @@ module.exports = class CasesQueryRequest {
             // For now just going to assume array of 1 item when adding attributes to findings queries
             pushUnique(this.queryObject.findings[0].judgmentSource.exclude, values);
         }
+        return this;
     }
-
 
     addFindingsIncludePatentInvalidityReasons(values) {
         if (Array.isArray(values)) {
@@ -357,23 +392,25 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.findings[0].patentInvalidityReasons.include, values);
         }
+        return this;
     }
 
     addFindingsIncludeNameType(name, type) {
         var object = {'name':name, 'type':type};
         pushUnique(this.queryObject.findings[0].nameType.include, object);
+        return this;
     }
 
     addFindingsExcludeNameType(name, type) {
         var object = {'name':name, 'type':type};
         pushUnique(this.queryObject.findings[0].nameType.exclude, object);
+        return this;
     }
 
     addFindingsDate(value, operator) {
         this.setDate(value, this.queryObject.findings[0].date, operator);
+        return this;
     }
-
-
 
     addRemediesIncludeAwardedToParties(ids) {
         if (Array.isArray(ids)) {
@@ -381,6 +418,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.remedies[0].awardedToParties, ids);
         }
+        return this;
     }
 
     addRemediesIncludeAwardedAgainstParties(ids) {
@@ -389,6 +427,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.remedies[0].awardedAgainstParties, ids);
         }
+        return this;
     }
 
     addRemediesIncludeJudgmentSource(values) {
@@ -397,8 +436,8 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.remedies[0].judgmentSource.include, values);
         }
+        return this;
     }
-
 
     addRemediesExcludeJudgmentSource(values) {
         if (Array.isArray(values)) {
@@ -406,23 +445,25 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.remedies[0].judgmentSource.exclude, values);
         }
+        return this;
     }
-
   
     addRemediesIncludeNameType(name, type) {
         var object = {'name':name, 'type':type};
         pushUnique(this.queryObject.remedies[0].nameType.include, object);
+        return this;
     }
 
     addRemediesExcludeNameType(name, type) {
         var object = {'name':name, 'type':type};
         pushUnique(this.queryObject.remedies[0].nameType.exclude, object);
+        return this;
     }
 
     addRemediesDate(value, operator) {
         this.setDate(value, this.queryObject.remedies[0].date, operator);
+        return this;
     }
-
 
     addDamagesIncludeAwardedToParties(ids) {
         if (Array.isArray(ids)) {
@@ -430,6 +471,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.damages[0].awardedToParties, ids);
         }
+        return this;
     }
 
     addDamagesIncludeAwardedAgainstParties(ids) {
@@ -438,16 +480,19 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.damages[0].awardedAgainstParties, ids);
         }
+        return this;
     }
 
     addDamagesIncludeNameType(name, type) {
         var object = {'name':name, 'type':type};
         pushUnique(this.queryObject.damages[0].nameType.include, object);
+        return this;
     }
 
     addDamagesExcludeNameType(name, type) {
         var object = {'name':name, 'type':type};
         pushUnique(this.queryObject.damages[0].nameType.exclude, object);
+        return this;
     }
 
     addDamagesIncludeJudgmentSource(values) {
@@ -456,6 +501,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.damages[0].judgmentSource.include, values);
         }
+        return this;
     }
 
     addDamagesExcludeJudgmentSource(values) {
@@ -464,18 +510,20 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.damages[0].judgmentSource.exclude, values);
         }
+        return this;
     }
 
     addDamagesDate(value, operator) {
         this.setDate(value, this.queryObject.damages[0].date, operator);
+        return this;
     }
-
 
     setDamagesMinimumAmount(amount) {
         if (typeof amount != 'number' || amount <= 0) {
             throw new Error('Damages amount must be a number greater than 0');
         }
         this.queryObject.damages[0].minimumAmount = amount;
+        return this;
     }
 
     addPatentsInclude(values) {
@@ -484,6 +532,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.patents.include, values);
         }
+        return this;
     }
 
     addPatentsExclude(values) {
@@ -492,6 +541,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.patents.exclude, values);
         }
+        return this;
     }
 
     addMDLInclude(values) {
@@ -500,7 +550,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.mdl.include, values);
         }
-    }
+        return this;    }
 
     addMDLExclude(values) {
         if (Array.isArray(values)) {
@@ -508,9 +558,7 @@ module.exports = class CasesQueryRequest {
         } else {
             pushUnique(this.queryObject.mdl.exclude, values);
         }
-    }
-
-
+        return this;    }
 
     setDate(value, field, operator) {
         var object ;
@@ -532,22 +580,27 @@ module.exports = class CasesQueryRequest {
         }
 
         object[operator] = value;
+        return this;
     }
 
     setOrdering(order) {
         this.queryObject.ordering = order;
+        return this;
     }
 
     setPage(page) {
         this.queryObject.page = page;
+        return this;
     }
 
     setPageSize(size) {
         this.queryObject.pageSize = size;
+        return this;
     }
 
     nextPage() {
         this.queryObject.page++;
+        return this;
     }
 
     clear() {
