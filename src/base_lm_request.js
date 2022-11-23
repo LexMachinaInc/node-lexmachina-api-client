@@ -1,4 +1,5 @@
 const axios =  require('axios');
+const package_json = require('../package.json')
 const AccessTokenUtils =  require('./access_token_utils.js');
 const BASE_URL = 'https://api.lexmachina.com/beta';
 
@@ -43,13 +44,14 @@ module.exports = class BaseLexMachinaRequest {
         var options = {
             baseURL: BASE_URL,
             headers: {
-                Authorization: 'Bearer ' + token
+                'Authorization': 'Bearer ' + token,
+                'User-Agent': 'Lex-Machina-JavaScript-Client/' + package_json.version
             },
             params: urlParams,
             raxConfig: {
                 retry: 3,
                 httpMethodsToRetry: ['GET', 'HEAD', 'OPTIONS', 'DELETE', 'PUT', 'POST'],
-                statusCodesToRetry: [[100, 199], [500, 599]],
+                statusCodesToRetry: [[100, 199], 401, [500, 599]],
             }};
 
         if (config.method) {
@@ -57,6 +59,9 @@ module.exports = class BaseLexMachinaRequest {
         }
         if (config.data) {
             options.data = config.data;
+        }
+        if (config.base_url) {
+            options.baseURL = config.base_url;
         }
     
         try {
