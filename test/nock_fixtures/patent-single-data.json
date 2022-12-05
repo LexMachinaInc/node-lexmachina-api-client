@@ -1,0 +1,48 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/patents/7304635",
+        "body": "",
+        "status": 200,
+        "response": {
+            "number": "7304635",
+            "title": "Programmable virtual book system",
+            "abstract": "An electronic information browsing system that provides a book-like interface—a virtual book—for presenting electronic contents. Specifically, an electronic information browsing system that allows users to configure its behavior via data and program specification encapsulated in a dynamic file format. Configurable behavior includes but not limited to the kind of contents to be displayed in the virtual book, the sources of the contents to be displayed, the static aspects of the virtual book such as the book dimensions and the dynamic aspects of the virtual book such as when a page is to be flipped, how the flipping of pages is contingent upon the execution of certain pre-specified events, etc.",
+            "inventors": {
+                "inventors": [
+                    "SEET CHERN HWAY",
+                    "HO SENG BENG"
+                ],
+                "originalAssignee": [
+                    "E BOOK SYSTEMS PTE LTD"
+                ],
+                "filingDate": "2005-12-29",
+                "issueDate": "2007-12-04"
+            },
+            "districtCourtCases": {
+                "numberOfCases": 5,
+                "findings": []
+            }
+        },
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "96952cfbce7e22e393252f69ae8be8a2",
+            "date",
+            "Mon, 05 Dec 2022 16:11:26 GMT",
+            "content-length",
+            "995",
+            "x-request-id",
+            "85e1de99-fbf2-4892-b8d0-e490c6a19a69",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

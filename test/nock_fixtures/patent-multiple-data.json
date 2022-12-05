@@ -1,0 +1,88 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/beta/patents/?patentNumbers=7304635&patentNumbers=4703017&patentNumbers=6003252",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "number": "7304635",
+                "title": "Programmable virtual book system",
+                "abstract": "An electronic information browsing system that provides a book-like interface—a virtual book—for presenting electronic contents. Specifically, an electronic information browsing system that allows users to configure its behavior via data and program specification encapsulated in a dynamic file format. Configurable behavior includes but not limited to the kind of contents to be displayed in the virtual book, the sources of the contents to be displayed, the static aspects of the virtual book such as the book dimensions and the dynamic aspects of the virtual book such as when a page is to be flipped, how the flipping of pages is contingent upon the execution of certain pre-specified events, etc.",
+                "inventors": {
+                    "inventors": [
+                        "SEET CHERN HWAY",
+                        "HO SENG BENG"
+                    ],
+                    "originalAssignee": [
+                        "E BOOK SYSTEMS PTE LTD"
+                    ],
+                    "filingDate": "2005-12-29",
+                    "issueDate": "2007-12-04"
+                },
+                "districtCourtCases": {
+                    "numberOfCases": 5,
+                    "findings": []
+                }
+            },
+            {
+                "number": "4703017",
+                "title": "Solid phase assay with visual readout",
+                "abstract": "Solid phase assay for an analyte wherein binder is supported on a solid support, such as nitrocellulose, and the tracer is comprised of ligand labeled with a colored particulate label, such as a liposome including a dye. The assay has a high sensitivity, and the tracer is visible on the support under assay conditions, whereby tracer can be determined, without instrumentation, and without further treatment thereof.",
+                "inventors": {
+                    "inventors": [
+                        "CAMPBELL ROBERT L",
+                        "WAGNER DANIEL B",
+                        "O'CONNELL JAMES P"
+                    ],
+                    "originalAssignee": [
+                        "BECTON DICKINSON CO"
+                    ],
+                    "filingDate": "1984-02-14",
+                    "issueDate": "1987-10-27"
+                },
+                "districtCourtCases": {
+                    "numberOfCases": 1,
+                    "findings": []
+                }
+            },
+            {
+                "number": "6003252",
+                "title": "Conversion apparatus and method for use with excavator and crane devices",
+                "abstract": "A crane-excavator apparatus and method is provided. More particularly, the present invention relates to a mobile apparatus adaptable for use as a crane and as an excavator, and an associated method. The crane includes a lower crawler adapted for use with an excavator, an upper body adapted for use with an excavator, a boom adapted to engage a crane body, and an adapter for engaging a receptacle of the excavator upper body. Typically, the receptacle would accept an excavator boom. The adaptor and the receptacle are fixedly secured together such that the adaptor defines a connector for receiving the crane boom in the same manner as the crane boom would be accepted by a crane body for providing a range of boom angles comparable to the range of boom angles available to the boom connected to the crane body. The method for adapting an excavator for use as a crane is provided. Typically, the excavator includes a lower crawler, an upper body and a receptacle secured to the upper body for receiving an excavation boom associated with an excavation implement. A crane boom associated with a crane implement is also utilized in the method. The method starts with disengaging, if connected, the excavator boom from the receptacle. Then, the adaptor is engaged with the receptacle secured to the upper excavator body. The adaptor defines a connector for receiving the crane boom in the same manner as the crane boom would be accepted by a crane body, in other words, providing a range of boom angles comparable to the range of boom angles available to the boom connected to the crane body. The crane boom is engaged with the connector.",
+                "inventors": {
+                    "inventors": [
+                        "DAVIS DANIEL E"
+                    ],
+                    "originalAssignee": [],
+                    "filingDate": "1998-08-05",
+                    "issueDate": "1999-12-21"
+                },
+                "districtCourtCases": {
+                    "numberOfCases": 1,
+                    "findings": []
+                }
+            }
+        ],
+        "rawHeaders": [
+            "content-type",
+            "application/json",
+            "x-cloud-trace-context",
+            "dfd2e806f95bda25dc5d1fd0c5f5da69",
+            "date",
+            "Mon, 05 Dec 2022 16:11:27 GMT",
+            "content-length",
+            "3660",
+            "x-request-id",
+            "cabb9c64-c3c2-4908-940c-08305bfaeaa0",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

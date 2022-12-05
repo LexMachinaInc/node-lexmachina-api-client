@@ -123,6 +123,19 @@ module.exports = class LexMachinaClient {
         return this.lmRequest.requestURL(config);
     }
 
+    async patents(patents) {
+        var config = {};
+        if (typeof(patents) == 'string') {
+            config.endpoint = '/patents/' + patents;
+        } else if (Array.isArray(patents)) {
+            config.endpoint = '/patents/';
+            config.params = { patentNumbers: patents };
+        } else {
+            throw new Error('The patent_id must be a string or array of strings');
+        }
+        return this.lmRequest.requestURL(config);
+    }
+
     async searchJudges(judge_string) {
         var config = {};
         config.endpoint = '/search-judges';
