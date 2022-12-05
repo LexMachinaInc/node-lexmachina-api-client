@@ -79,6 +79,8 @@ These functions are available from LexMachinaClient. Each takes a single integer
 - LexMachinaClient.lawFirm()
 - LexMachinaClient.magistrates()
 - LexMachinaClient.parties()
+- LexMachinaClient.patents()
+
 
 ## Search Functions
 
