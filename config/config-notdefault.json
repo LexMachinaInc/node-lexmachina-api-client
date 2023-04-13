@@ -4,7 +4,7 @@
     "secret": "fake-secret"
   },
   "auth": {
-    "tokenHost": "https://api.lexmachina.com",
-    "tokenPath": "/oauth/client_credential/accesstoken"
+    "tokenHost": "https://api.beta.lexmachina.com",
+    "tokenPath": "/oauth2/token"
   }
 }
