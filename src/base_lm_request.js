@@ -1,7 +1,7 @@
 const axios =  require('axios');
 const package_json = require('../package.json');
 const AccessTokenUtils =  require('./access_token_utils.js');
-const BASE_URL = 'https://api.lexmachina.com/beta';
+const BASE_URL = 'https://api.beta.lexmachina.com/';
 
 module.exports = class BaseLexMachinaRequest {
 
