@@ -2,6 +2,7 @@ var chai = require('chai');
 const expect = require('chai').expect;
 chai.should();
 chai.use(require('chai-things'));
+chai.use(require('chai-as-promised'));
 const nock = require('nock');
 const nockBack = require('nock').back;
 nockBack.fixtures = './test/nock_fixtures/';
