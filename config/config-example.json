@@ -4,7 +4,7 @@
     "secret": "CLIENT SECRET"
   },
   "auth": {
-    "tokenHost": "https://api.lexmachina.com",
+    "tokenHost": "https://api.beta.lexmachina.com",
     "tokenPath": "/oauth2/token"
   }
 }
