@@ -1,39 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "N7GdH3TdnYQk54cAuQQaoeACzs0T",
-            "issued_at": 1661884276858,
-            "expires_in": 3599,
-            "scope": ""
+            "token_type": "bearer",
+            "access_token": "rJJfQe2F9aJUv4mafZjcGvq7bFN37Yxp",
+            "expires_in": 3600
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "b48b8103-a169-403a-b31c-49e0d3b901a9",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 18:31:16 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Thu, 13 Apr 2023 20:28:08 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "15",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/list-damages",
+        "path": "/list-damages",
         "body": "",
         "status": 200,
         "response": {
@@ -61,7 +63,8 @@
                 "SEC / CFTC Penalties",
                 "Disgorgement (Securities)",
                 "Other Securities Damages",
-                "Approved Class Action Settlement (Securities)"
+                "Approved Class Action Settlement (Securities)",
+                "Shareholder Derivative Settlement"
             ],
             "Antitrust": [
                 "Antitrust Violation Damages",
@@ -164,6 +167,7 @@
             "Civil Rights": [
                 "Compensatory Damages (Civil Rights)",
                 "State Statutory Damages (Civil Rights)",
+                "Nominal Damages (Civil Rights)",
                 "Nominal Damages",
                 "Punitive Damages (Civil Rights)"
             ],
@@ -175,35 +179,56 @@
                 "Settled Claim Damages (False Claims)",
                 "Relator Share",
                 "Back Pay",
-                "Special Damages"
+                "Special Damages (False Claims)"
             ],
             "Internet": [
-                "Actual Damages / Disgorgement of Profits",
+                "Actual Damages / Disgorgement",
                 "Statutory Damages (Internet)",
                 "Punitive Damages (Internet)"
             ],
             "Surety Bond": [
                 "Contract Damages (Surety Bond)",
                 "Tort Compensatory Damages (Surety Bond)"
+            ],
+            "Real Property": [
+                "Contract Damages (Real Property)",
+                "Contract Damages ",
+                "Compensatory Damages (Real Property)",
+                "Actual Damages",
+                "Actual Damages (Real Property)",
+                "Restitution (Real Property)",
+                "Restitution ",
+                "Punitive Damages (Real Property)",
+                "Punitive Damages ",
+                "Settled Claim Damages (Real Property)",
+                "Settled Claim Damages "
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "e3808973682243b0a2d51b3ccfc5fc8b",
-            "date",
-            "Tue, 30 Aug 2022 18:31:17 GMT",
-            "content-length",
-            "3691",
-            "x-request-id",
-            "9c24f7af-9426-41b9-a403-1a1b544f344a",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Content-Length",
+            "4091",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "d3e653df975da1a7e42453e1c0ab4394ea4bf99d4935aef0c9a3f39ddcfd7372",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "3932a390cf6ecff41457fed3b9398165;o=1",
+            "Date",
+            "Thu, 13 Apr 2023 20:28:08 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "18",
+            "X-Kong-Proxy-Latency",
+            "17",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

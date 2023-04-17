@@ -1,39 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "nbUz2Pa8rSx8R5jmsLS23dFpCMYa",
-            "issued_at": 1663777975530,
-            "expires_in": 3599,
-            "scope": ""
+            "expires_in": 3600,
+            "access_token": "uiH8Jd7FgPqAY2pywTMLUHnyP8XbqxJ0",
+            "token_type": "bearer"
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "50fe8571-81a5-4d89-8176-9fbe5cb880bf",
-            "content-length",
-            "157",
-            "date",
-            "Wed, 21 Sep 2022 16:32:55 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Mon, 17 Apr 2023 19:33:48 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "20",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/search-parties?q=gaiman&pageSize=500&pageNumber=1",
+        "path": "/search-parties?q=gaiman&pageSize=500&pageNumber=1",
         "body": "",
         "status": 200,
         "response": {
@@ -44,59 +46,69 @@
                 {
                     "name": "Neil Gaiman",
                     "partyId": 216320,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/216320"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/parties/216320"
                 },
                 {
                     "name": "Michael Gaiman",
                     "partyId": 223143,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/223143"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/parties/223143"
                 },
                 {
                     "name": "Jacqueline Gaiman",
                     "partyId": 2878022,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/2878022"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/parties/2878022"
                 },
                 {
                     "name": "Jacqueline E Gaiman",
                     "partyId": 3228449,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/3228449"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/parties/3228449"
                 },
                 {
                     "name": "Gaiman",
                     "partyId": 58870942,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/58870942"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/parties/58870942"
                 },
                 {
                     "name": "Shaoxingaimansha",
                     "partyId": 64536849,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/parties/64536849"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/parties/64536849"
                 }
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "a4106c504afb7b229cf1a671a100e47e;o=1",
-            "date",
-            "Wed, 21 Sep 2022 16:32:58 GMT",
-            "content-length",
-            "742",
-            "x-request-id",
-            "1ed27358-5c49-47d5-a382-03ab9439ca8c",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "550b11da278f086afe1aaead697baa8b109e9119252f62914d758476cf8be754",
+            "Server",
+            "Google Frontend",
+            "X-Cache-Status",
+            "Hit",
+            "X-Cloud-Trace-Context",
+            "2436f29722c5d506dfd80083e1f3c760;o=1",
+            "Age",
+            "41",
+            "Date",
+            "Mon, 17 Apr 2023 19:33:07 GMT",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Length",
+            "742",
+            "X-Kong-Upstream-Latency",
+            "0",
+            "X-Kong-Proxy-Latency",
+            "6",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/search-parties?q=gaiman&pageSize=500&pageNumber=2",
+        "path": "/search-parties?q=gaiman&pageSize=500&pageNumber=2",
         "body": "",
         "status": 200,
         "response": {
@@ -106,22 +118,32 @@
             "parties": []
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "7170465599831f2cc73b03370ce654dd",
-            "date",
-            "Wed, 21 Sep 2022 16:33:01 GMT",
-            "content-length",
-            "54",
-            "x-request-id",
-            "30ca60a6-4581-4d49-a929-692de7861463",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "12c779a63764ab9911087bf134a83b39ec5008611d0b8b7c70a1cdafbe78a155",
+            "Server",
+            "Google Frontend",
+            "X-Cache-Status",
+            "Hit",
+            "X-Cloud-Trace-Context",
+            "ffae1fc57124f4d3f028b1f9f78094a5",
+            "Age",
+            "38",
+            "Date",
+            "Mon, 17 Apr 2023 19:33:10 GMT",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Length",
+            "54",
+            "X-Kong-Upstream-Latency",
+            "0",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

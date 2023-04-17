@@ -1,8 +1,8 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
         "body": {
             "lawFirms": {
                 "include": [
@@ -24,29 +24,85 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "83235a22df1156d72ee24807a50545c4",
-            "date",
-            "Tue, 13 Sep 2022 18:18:07 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "4c886f9b-3377-4d5a-97ab-b7537f70ad88",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "8065d7b4b8465763ff263907dd8f4c53",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:10 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "61",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "exclude": [
+                    "Chapter 15"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "39",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "cf699bcc3359df3b9ca7c588b2565941",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "63",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "lawFirms": {
                 "include": [
@@ -68,29 +124,135 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "705e5d5536b9de1470f2f4bd773aef97",
-            "date",
-            "Tue, 13 Sep 2022 18:18:07 GMT",
-            "content-length",
+            "Content-Length",
             "68",
-            "x-request-id",
-            "26935158-e738-4c46-8449-719ab5bd7af6",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "26b4249b17b92d8b64a8a76ef605b129",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "86",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "exclude": [
+                    "Chapter 7"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "39",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "1ef00c42588edd556b3ea023a611a2fb",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "97",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "exclude": [
+                    "Chapter 9"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "39",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "1bee1e05b523185410c06f571b6a3a0d",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "53",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "lawFirms": {
                 "include": [
@@ -112,29 +274,85 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "8e9684b6b3800af51c8ebfee52f496bc",
-            "date",
-            "Tue, 13 Sep 2022 18:18:07 GMT",
-            "content-length",
+            "Content-Length",
             "63",
-            "x-request-id",
-            "f5cf5f32-bd58-4eb8-8bd9-27579c5af48b",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "a93ad02a80e41e51288d1d7219efcd3d",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "308",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "exclude": [
+                    "Claim Construction Hearing"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "39",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "ecc5e9e22cc509fdffb7fbcb60d70cb3",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "50",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "lawFirms": {
                 "exclude": [
@@ -156,29 +374,85 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "408129198d92dac71524eebe5729f3e5",
-            "date",
-            "Tue, 13 Sep 2022 18:18:07 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "64030192-2e55-4f10-a42b-b9d87a9d86c9",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "0cc16c42b3d07359103d64b83bb9a57d",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "52",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "exclude": [
+                    "Claim Denial (ERISA)"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "39",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "1ab0e490602f6dcac8453ef14ed49161",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "50",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "lawFirms": {
                 "exclude": [
@@ -200,29 +474,85 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "d4d2f96a4d664ba02cc89bd9269ec832",
-            "date",
-            "Tue, 13 Sep 2022 18:18:08 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "5a30243f-91e1-460d-8c8a-25bdf7d8df0e",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "e5504186f398f1bb1436ca3f39b0216e",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "70",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "exclude": [
+                    "Class Action"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "39",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "b31778d64cc077a36f3bae420182d7b6",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:12 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "51",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "lawFirms": {
                 "exclude": [
@@ -244,22 +574,28 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "dea951ebf5399f8045e3cac7af3eeb76",
-            "date",
-            "Tue, 13 Sep 2022 18:18:08 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "f54c9b7d-ead8-47a2-a1ef-38d19c5efcea",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "ee43bfbb055987dbba163c8f9c4b4959",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:12 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "58",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

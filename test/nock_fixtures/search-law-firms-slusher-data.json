@@ -1,8 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "expires_in": 3600,
+            "access_token": "B9rLLT3zBOV6modp7BLCnA6SoRnywd6L",
+            "token_type": "bearer"
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Apr 2023 19:32:36 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "6",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/search-law-firms?q=slusher&pageSize=500&pageNumber=1",
+        "path": "/search-law-firms?q=slusher&pageSize=500&pageNumber=1",
         "body": "",
         "status": 200,
         "response": {
@@ -13,94 +46,102 @@
                 {
                     "name": "Skelton Slusher Barnhill Watkins Wells",
                     "lawFirmId": 9133778,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/9133778"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/9133778"
                 },
                 {
                     "name": "Rodney B Slusher",
                     "lawFirmId": 18620057,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/18620057"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/18620057"
                 },
                 {
                     "name": "Holder, Susan, Slusher, & Oxenhandler",
                     "lawFirmId": 29024883,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/29024883"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/29024883"
                 },
                 {
                     "name": "Slusher & Rosenblum",
                     "lawFirmId": 53936949,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/53936949"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/53936949"
                 },
                 {
                     "name": "Slusher & Associates",
                     "lawFirmId": 104345547,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104345547"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104345547"
                 },
                 {
                     "name": "Harry R. Slusher",
                     "lawFirmId": 104588230,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104588230"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104588230"
                 },
                 {
                     "name": "Jeffrey L. Slusher",
                     "lawFirmId": 104622586,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104622586"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104622586"
                 },
                 {
                     "name": "Lee B. Slusher",
                     "lawFirmId": 104674814,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104674814"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104674814"
                 },
                 {
                     "name": "Terry A. Slusher",
                     "lawFirmId": 104815093,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104815093"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104815093"
                 },
                 {
                     "name": "Villareal & Slusher",
                     "lawFirmId": 104837226,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104837226"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104837226"
                 },
                 {
                     "name": "Wilkins & Slusher",
                     "lawFirmId": 104845865,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104845865"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104845865"
                 },
                 {
                     "name": "Holder, Susan, Slusher Law Firm",
                     "lawFirmId": 104988414,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/104988414"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/104988414"
                 },
                 {
                     "name": "The Law & Mediation Office Of Kennedy Slusher",
                     "lawFirmId": 150380498,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/law-firms/150380498"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/law-firms/150380498"
                 }
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "de5bedc529c1b5379319d73b30f156c1",
-            "date",
-            "Wed, 21 Sep 2022 16:50:07 GMT",
-            "content-length",
+            "Content-Length",
             "1768",
-            "x-request-id",
-            "15f788ce-fbe3-412a-994f-2beffa2aef66",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "f53f2a0f9ad6ff5348441568392aa8ce62a3def9496ce3d3468a37f81de314bd",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "41cf3c5454800a3c5e7334a074e66848;o=1",
+            "Date",
+            "Mon, 17 Apr 2023 19:32:37 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "267",
+            "X-Kong-Proxy-Latency",
+            "26",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/search-law-firms?q=slusher&pageSize=500&pageNumber=2",
+        "path": "/search-law-firms?q=slusher&pageSize=500&pageNumber=2",
         "body": "",
         "status": 200,
         "response": {
@@ -110,22 +151,30 @@
             "lawFirms": []
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "02ba06700f2a7b293ecd0a5dd386dd36",
-            "date",
-            "Wed, 21 Sep 2022 16:50:07 GMT",
-            "content-length",
+            "Content-Length",
             "56",
-            "x-request-id",
-            "b64d7f6d-9c37-467f-b9b7-34c451677cab",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "234f54582096df0bf852af821740b1f03912416b75fb9f2519c5fc6fcb3734a2",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "29ed95c9ff19c83c4b91a60de82ca717",
+            "Date",
+            "Mon, 17 Apr 2023 19:32:37 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "187",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

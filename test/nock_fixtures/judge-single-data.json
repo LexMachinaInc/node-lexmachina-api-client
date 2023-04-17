@@ -1,39 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "fTA6Tx44GPAtwye5FAXOlhaGc2pk",
-            "issued_at": 1661878227697,
-            "expires_in": 3599,
-            "scope": ""
+            "token_type": "bearer",
+            "access_token": "w6NikWF1zL0WmZT7sRhmQPzelULpFSo1",
+            "expires_in": 3600
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "edec2167-1ee0-44f1-815f-0648dcafbe15",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 16:50:27 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Thu, 13 Apr 2023 20:28:57 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "7",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/federal-judges/3349",
+        "path": "/federal-judges/3349",
         "body": "",
         "status": 200,
         "response": {
@@ -44,28 +46,36 @@
             "caseCountByCourt": [
                 {
                     "court": "total",
-                    "count": 1634
+                    "count": 1758
                 }
             ],
             "nominatingPresident": "Barack Obama"
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "9c55bb5cef13cd24c5eafa1afde2eef1;o=1",
-            "date",
-            "Tue, 30 Aug 2022 16:50:27 GMT",
-            "content-length",
+            "Content-Length",
             "185",
-            "x-request-id",
-            "16d4821c-df29-4d5f-9103-a13c8f0f47aa",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "c7b0169b26dfcd383550b98a04e64f16fd389c761236c6cec96342b9f193c487",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "325e0709099217ffc0c38df953f91f89;o=1",
+            "Date",
+            "Thu, 13 Apr 2023 20:28:57 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "138",
+            "X-Kong-Proxy-Latency",
+            "32",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

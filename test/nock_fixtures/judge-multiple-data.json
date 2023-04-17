@@ -1,39 +1,8 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "token_type": "Bearer",
-            "access_token": "0etDpLmRupFxF9aSsPwrNnKRNNzw",
-            "issued_at": 1661878985422,
-            "expires_in": 3599,
-            "scope": ""
-        },
-        "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "3a6d4592-cfd3-4fe8-8a63-4af10cfb88af",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 17:03:05 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
-            "Connection",
-            "close"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/federal-judges?federalJudgeIds=3349&federalJudgeIds=3488&federalJudgeIds=2877",
+        "path": "/federal-judges?federalJudgeIds=3349&federalJudgeIds=3488&federalJudgeIds=2877",
         "body": "",
         "status": 200,
         "response": [
@@ -45,7 +14,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 1634
+                        "count": 1758
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -58,7 +27,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 3503
+                        "count": 3791
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -71,29 +40,37 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 6037
+                        "count": 6165
                     }
                 ],
                 "nominatingPresident": "William J. Clinton"
             }
         ],
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "610ee1bc497f83760b956a0071ffd98d;o=1",
-            "date",
-            "Tue, 30 Aug 2022 17:03:05 GMT",
-            "content-length",
+            "Content-Length",
             "564",
-            "x-request-id",
-            "aeb46c64-0c31-46b3-8d40-026a758adde6",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "91048f2511a647291d3455f96d76c89ee6457526ca719b1d168d5f971426a068",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "1cca9e528fb70dc63f088fdeffea0b7f",
+            "Date",
+            "Thu, 13 Apr 2023 20:28:57 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "138",
+            "X-Kong-Proxy-Latency",
+            "21",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

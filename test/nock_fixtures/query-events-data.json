@@ -1,8 +1,8 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/list-events",
+        "path": "/list-events",
         "body": "",
         "status": 200,
         "response": [
@@ -14,29 +14,37 @@
             "Terminated"
         ],
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "7c88a7f60139fa4a2ab201bd960a0a7b;o=1",
-            "date",
-            "Mon, 12 Sep 2022 22:16:51 GMT",
-            "content-length",
+            "Content-Length",
             "104",
-            "x-request-id",
-            "562909b4-cb08-9423-bbac-ea020af5a4d8",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "8b6b44cec2787853052b3df6adcc5cc0a1d059c84d48f55b45bc633d6df42871",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "7f6c0c1bd4fbcf204e363344a50c21d3",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:23 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "9",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
         "body": {
             "events": {
                 "includeEventTypes": [
@@ -58,29 +66,35 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "87d6488228700979e165b101cf21c85f",
-            "date",
-            "Mon, 12 Sep 2022 22:16:51 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "4b118845-097b-4cbe-87be-3d49dccc9740",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "d91570f8e3623593413ce3ed84e03703",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:24 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "47",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
         "body": {
             "events": {
                 "excludeEventTypes": [
@@ -102,29 +116,85 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "4b155da06a1dab3693b1925c0fc08589",
-            "date",
-            "Mon, 12 Sep 2022 22:16:51 GMT",
-            "content-length",
+            "Content-Length",
             "44",
-            "x-request-id",
-            "c044237d-d67a-480e-8392-f02aef3b1fc2",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "3533e93e005c0b4c1797936644a4590b",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:24 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "59",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "include": [
+                    "Chapter 13"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                2000707591,
+                2000707581,
+                2000707690,
+                2000707646,
+                2000707666
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "68",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "c6c7d84b6e005889ef5ea6ded0fa8267",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:24 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "162",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "events": {
                 "includeEventTypes": [
@@ -146,29 +216,35 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "5d57a8f94cb26ea316bf9dd6a19e125b",
-            "date",
-            "Mon, 12 Sep 2022 22:16:51 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "0b85e5c7-bf60-467d-b9e5-8faeb539c2d7",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "f370f56ca04b62819e1b282c00e90efb",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:24 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "47",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
         "body": {
             "events": {
                 "includeEventTypes": [
@@ -190,29 +266,35 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "e7d4c6117d39967b2fc83c723bf52cb0",
-            "date",
-            "Mon, 12 Sep 2022 22:16:51 GMT",
-            "content-length",
+            "Content-Length",
             "45",
-            "x-request-id",
-            "6740ae44-7b79-4d32-894d-a4f6e190fe2e",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "6c4047de3c10c640dfe8a2b497602ec0",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:24 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "45",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
         "body": {
             "events": {
                 "excludeEventTypes": [
@@ -234,29 +316,85 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "d9b0d2ee53b3011cf55d2224ceaf33e5",
-            "date",
-            "Mon, 12 Sep 2022 22:16:51 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "e8ad08f2-db10-4ad1-a437-d87108deb4f7",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "20d57e957d3f5ec66e67c84d5342313e",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:24 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "55",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "include": [
+                    "Chapter 15"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                2000690030,
+                2000689833,
+                2000649455,
+                2000648994,
+                2000649277
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "68",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "871b51d155ef685d39363be82af8c2f4",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:25 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "511",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "events": {
                 "includeEventTypes": [
@@ -278,29 +416,35 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "45f227c630859a1bb59f2916a8a7e99d",
-            "date",
-            "Mon, 12 Sep 2022 22:16:52 GMT",
-            "content-length",
+            "Content-Length",
             "39",
-            "x-request-id",
-            "98628412-58e1-4f93-957b-407f2dbfa8c8",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "57278ba77d69431342ee5df24ff0ab0f",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:25 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "51",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
         "body": {
             "events": {
                 "excludeEventTypes": [
@@ -322,22 +466,28 @@
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "f194eb9def183c177175f3957dc69171",
-            "date",
-            "Mon, 12 Sep 2022 22:16:52 GMT",
-            "content-length",
+            "Content-Length",
             "68",
-            "x-request-id",
-            "e91b10f0-4234-4954-863c-ae31f0f0cc13",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "6248b4212fb48d7460f3995eece7e49a",
+            "Date",
+            "Mon, 17 Apr 2023 19:37:25 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "43",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

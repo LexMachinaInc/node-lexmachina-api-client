@@ -1,39 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "lUWbKW70P2TRIRoIVgZAGcD8E4oW",
-            "issued_at": 1661884320728,
-            "expires_in": 3599,
-            "scope": ""
+            "expires_in": 3600,
+            "access_token": "BanKce4oXsNCqutm4nnfU2XmvUlas3xT",
+            "token_type": "bearer"
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "90bcf304-23ed-42d8-a272-cee30616939f",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 18:32:00 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Thu, 13 Apr 2023 20:28:19 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "16",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/district-cases/93617",
+        "path": "/district-cases/93617",
         "body": "",
         "status": 200,
         "response": {
@@ -43,12 +45,17 @@
             "caseNo": "3:02-cv-00048-bbc",
             "status": "Terminated",
             "caseType": [
-                "Copyright"
+                "Contracts",
+                "Copyright",
+                "Trademark"
             ],
             "caseTags": [
-                "Trial",
+                "Commercial",
+                "Business Tort",
                 "Appealed",
+                "Trial",
                 "Order re: Dismiss (Contested)",
+                "Breach of Contract",
                 "Jury Trial"
             ],
             "dates": {
@@ -87,12 +94,12 @@
             ],
             "magistrateJudges": [
                 {
-                    "name": "Stephen L Crocker",
-                    "magistrateJudgeId": 628
-                },
-                {
                     "name": "Peter A Oppeneer",
                     "magistrateJudgeId": 989
+                },
+                {
+                    "name": "Stephen L Crocker",
+                    "magistrateJudgeId": 628
                 }
             ],
             "remedies": {
@@ -122,6 +129,25 @@
             },
             "findings": {
                 "active": [
+                    {
+                        "name": "No Fraud / Misrepresentation",
+                        "type": "Contracts",
+                        "judgmentSource": "Judgment on the Pleadings",
+                        "inFavorOfPartyIds": [
+                            20374402,
+                            171787,
+                            196852,
+                            23006382
+                        ],
+                        "patentInvalidityReasons": [],
+                        "againstPartyIds": [
+                            216320,
+                            216322
+                        ],
+                        "docketEntryFiled": "2002-07-18",
+                        "negated": null,
+                        "reinstated": null
+                    },
                     {
                         "name": "Ownership / Validity",
                         "type": "Copyright",
@@ -168,31 +194,6 @@
             },
             "lawFirms": [
                 {
-                    "name": "BakerHostetler",
-                    "lawFirmId": 57704,
-                    "clientPartyIds": [
-                        125836
-                    ]
-                },
-                {
-                    "name": "Godfrey & Kahn",
-                    "lawFirmId": 53294,
-                    "clientPartyIds": [
-                        20374402,
-                        171787,
-                        196852,
-                        23006382
-                    ]
-                },
-                {
-                    "name": "KENNETH F. LEVIN & ASSOCIATES",
-                    "lawFirmId": 2366654,
-                    "clientPartyIds": [
-                        216320,
-                        216322
-                    ]
-                },
-                {
                     "name": "Bryan Cave Leighton Paisner",
                     "lawFirmId": 228,
                     "clientPartyIds": [
@@ -200,6 +201,21 @@
                         171787,
                         196852,
                         23006382
+                    ]
+                },
+                {
+                    "name": "Foley & Lardner",
+                    "lawFirmId": 4856,
+                    "clientPartyIds": [
+                        216320,
+                        216322
+                    ]
+                },
+                {
+                    "name": "Crowell & Moring",
+                    "lawFirmId": 37287,
+                    "clientPartyIds": [
+                        125836
                     ]
                 },
                 {
@@ -213,15 +229,25 @@
                     ]
                 },
                 {
-                    "name": "Crowell & Moring",
-                    "lawFirmId": 37287,
+                    "name": "Godfrey & Kahn",
+                    "lawFirmId": 53294,
+                    "clientPartyIds": [
+                        20374402,
+                        171787,
+                        196852,
+                        23006382
+                    ]
+                },
+                {
+                    "name": "BakerHostetler",
+                    "lawFirmId": 57704,
                     "clientPartyIds": [
                         125836
                     ]
                 },
                 {
-                    "name": "Foley & Lardner",
-                    "lawFirmId": 4856,
+                    "name": "KENNETH F. LEVIN & ASSOCIATES",
+                    "lawFirmId": 2366654,
                     "clientPartyIds": [
                         216320,
                         216322
@@ -229,6 +255,51 @@
                 }
             ],
             "attorneys": [
+                {
+                    "name": "Jeffrey Allan Simmons",
+                    "attorneyId": 39202,
+                    "lawFirmIds": [
+                        4856
+                    ],
+                    "clientsPartyIds": [
+                        216320,
+                        216322
+                    ]
+                },
+                {
+                    "name": "Christine Elaine Cwiertny",
+                    "attorneyId": 61352,
+                    "lawFirmIds": [
+                        37287
+                    ],
+                    "clientsPartyIds": [
+                        125836
+                    ]
+                },
+                {
+                    "name": "Eugenia G. Carter",
+                    "attorneyId": 101890,
+                    "lawFirmIds": [
+                        53294
+                    ],
+                    "clientsPartyIds": [
+                        20374402,
+                        171787,
+                        196852,
+                        23006382
+                    ]
+                },
+                {
+                    "name": "Roger Scott Feldmann",
+                    "attorneyId": 224206,
+                    "lawFirmIds": [
+                        57704,
+                        37287
+                    ],
+                    "clientsPartyIds": [
+                        125836
+                    ]
+                },
                 {
                     "name": "James Alexander Grimsley",
                     "attorneyId": 260280,
@@ -257,31 +328,10 @@
                     ]
                 },
                 {
-                    "name": "Jeffrey Allan Simmons",
-                    "attorneyId": 39202,
+                    "name": "Thomas Edward Dietrich",
+                    "attorneyId": 816999,
                     "lawFirmIds": [
-                        4856
-                    ],
-                    "clientsPartyIds": [
-                        216320,
-                        216322
-                    ]
-                },
-                {
-                    "name": "Allen Arthur Arntsen",
-                    "attorneyId": 107742917,
-                    "lawFirmIds": [
-                        4856
-                    ],
-                    "clientsPartyIds": [
-                        216320,
-                        216322
-                    ]
-                },
-                {
-                    "name": "Christine Elaine Cwiertny",
-                    "attorneyId": 61352,
-                    "lawFirmIds": [
+                        57704,
                         37287
                     ],
                     "clientsPartyIds": [
@@ -302,17 +352,6 @@
                     ]
                 },
                 {
-                    "name": "Roger Scott Feldmann",
-                    "attorneyId": 224206,
-                    "lawFirmIds": [
-                        57704,
-                        37287
-                    ],
-                    "clientsPartyIds": [
-                        125836
-                    ]
-                },
-                {
                     "name": "Kenneth F. Levin",
                     "attorneyId": 2366654,
                     "lawFirmIds": [
@@ -324,14 +363,14 @@
                     ]
                 },
                 {
-                    "name": "Thomas Edward Dietrich",
-                    "attorneyId": 816999,
+                    "name": "Allen Arthur Arntsen",
+                    "attorneyId": 107742917,
                     "lawFirmIds": [
-                        57704,
-                        37287
+                        4856
                     ],
                     "clientsPartyIds": [
-                        125836
+                        216320,
+                        216322
                     ]
                 }
             ],
@@ -452,22 +491,30 @@
             }
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "55a2826af00fa2d4580ae761d7791c5f;o=1",
-            "date",
-            "Tue, 30 Aug 2022 18:32:01 GMT",
-            "content-length",
-            "4840",
-            "x-request-id",
-            "2a12cab5-8863-4bad-b82a-2d2006193376",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Content-Length",
+            "5322",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "f998889c1db1bf6dfd5706a3d5cb2239ed00bd61572d43a7bbeb9b4540dd7abc",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "44adab33d1f1e6ab2f8666c1e87bd786;o=1",
+            "Date",
+            "Thu, 13 Apr 2023 20:28:19 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "476",
+            "X-Kong-Proxy-Latency",
+            "25",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

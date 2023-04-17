@@ -1,8 +1,8 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
         "body": {
             "dates": {
                 "filed": {
@@ -36,35 +36,92 @@
                 2007631114,
                 2007631119,
                 2007631128,
+                2007631717,
                 2007631763,
                 2007633164,
                 2007691573
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "0f4dd802deb3a2b67c4baabfb7d57192",
-            "date",
-            "Tue, 13 Sep 2022 20:36:56 GMT",
-            "content-length",
-            "255",
-            "x-request-id",
-            "d53f581f-0e92-4d47-8e04-18dd3c75e635",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Content-Length",
+            "266",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "7d02c97b0fa3e601bd410b65a5fcd0ba",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:31 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "53",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/beta/query-district-cases",
+        "path": "/query-district-cases",
+        "body": {
+            "caseTags": {
+                "exclude": [
+                    "Unfair / Deceptive Trade Practices"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "caseIds": [
+                966,
+                5791,
+                5937,
+                12323,
+                13213
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "39",
+            "Connection",
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "e82099c84306666c924e5d5fbb799789",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:31 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "94",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.beta.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-district-cases",
         "body": {
             "dates": {
                 "filed": {
@@ -81,22 +138,28 @@
             "caseIds": []
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "afa16ce969f059e0c47e3f53161d09d4",
-            "date",
-            "Tue, 13 Sep 2022 20:36:56 GMT",
-            "content-length",
+            "Content-Length",
             "14",
-            "x-request-id",
-            "ec0ae508-ba28-4ee6-9a76-ef234e657485",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Status",
+            "Bypass",
+            "X-Cloud-Trace-Context",
+            "a1dc794cf9fd9ddc8facea217b388441",
+            "Date",
+            "Mon, 17 Apr 2023 19:38:31 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "34",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

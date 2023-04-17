@@ -1,39 +1,8 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "token_type": "Bearer",
-            "access_token": "vc9Vawz1yABeqCNtYcimLukNQq3T",
-            "issued_at": 1661880536864,
-            "expires_in": 3599,
-            "scope": ""
-        },
-        "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "a7c65775-b83e-4375-b036-fda80a71eea9",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 17:28:56 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
-            "Connection",
-            "close"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/magistrate-judges?magistrateJudgeIds=333&magistrateJudgeIds=141&magistrateJudgeIds=131",
+        "path": "/magistrate-judges?magistrateJudgeIds=333&magistrateJudgeIds=141&magistrateJudgeIds=131",
         "body": "",
         "status": 200,
         "response": [
@@ -44,7 +13,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 3907
+                        "count": 3906
                     }
                 ]
             },
@@ -55,7 +24,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 3950
+                        "count": 4011
                     }
                 ]
             },
@@ -66,28 +35,36 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 8257
+                        "count": 8579
                     }
                 ]
             }
         ],
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "7cc56f9b23433ec979a4beb548b1b0da;o=1",
-            "date",
-            "Tue, 30 Aug 2022 17:28:57 GMT",
-            "content-length",
+            "Content-Length",
             "361",
-            "x-request-id",
-            "51179383-accb-4cdd-a218-c7813cab0ee8",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "75f0c83d4ef41216e060d77987140162145222ef29514c1c6619b9ca95626223",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "d0f871e377dce7a1dece72ae7ecc42c6",
+            "Date",
+            "Thu, 13 Apr 2023 20:29:56 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1073",
+            "X-Kong-Proxy-Latency",
+            "33",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

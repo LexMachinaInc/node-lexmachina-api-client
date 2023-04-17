@@ -1,39 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "v9ILbn3XvcLXNPTlsWxiiKa3huwy",
-            "issued_at": 1661880369813,
-            "expires_in": 3599,
-            "scope": ""
+            "expires_in": 3600,
+            "access_token": "X9FH4dY5k5KNcuX4Syyi0cmDanM7WYPw",
+            "token_type": "bearer"
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "24c887ef-caba-451c-9f17-1b930cad1c98",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 17:26:09 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Thu, 13 Apr 2023 20:29:53 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "29",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/magistrate-judges/333",
+        "path": "/magistrate-judges/333",
         "body": "",
         "status": 200,
         "response": {
@@ -43,27 +45,35 @@
             "caseCountByCourt": [
                 {
                     "court": "total",
-                    "count": 3907
+                    "count": 3906
                 }
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "13c62ba844be81933428115d68b25bfb",
-            "date",
-            "Tue, 30 Aug 2022 17:26:10 GMT",
-            "content-length",
+            "Content-Length",
             "116",
-            "x-request-id",
-            "e39e5026-c9ce-4261-9ebb-865d8363ee26",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "e9acf8004ae5f9c1f424a9bb1b0b120f0bf154e29af0ae0e28ff1153f1d49fa2",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "a2b2b2dd0e417d69377702e31883a309;o=1",
+            "Date",
+            "Thu, 13 Apr 2023 20:29:54 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1255",
+            "X-Kong-Proxy-Latency",
+            "31",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

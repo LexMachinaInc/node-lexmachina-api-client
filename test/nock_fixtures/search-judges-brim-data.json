@@ -1,39 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "qDK3euKHTCBwmdxepzJFAZBMNkO9",
-            "issued_at": 1661882679042,
-            "expires_in": 3599,
-            "scope": ""
+            "token_type": "bearer",
+            "access_token": "LKIcRHbocp8QZtKrIrZGGfNzXuwYN71F",
+            "expires_in": 3600
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "13737287-7b3f-4c67-9e44-cbca78c0397b",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 18:04:39 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Mon, 17 Apr 2023 19:32:00 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "17",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/search-judges?q=brim",
+        "path": "/search-judges?q=brim",
         "body": "",
         "status": 200,
         "response": {
@@ -48,7 +50,7 @@
                             "count": 122
                         }
                     ],
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/federal-judges/260"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/federal-judges/260"
                 },
                 {
                     "name": "Philip A. Brimmer",
@@ -57,31 +59,41 @@
                     "caseCountByCourt": [
                         {
                             "court": "total",
-                            "count": 3435
+                            "count": 3564
                         }
                     ],
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/federal-judges/3191"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/federal-judges/3191"
                 }
             ],
             "magistrateJudges": []
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "559f64a8ad74710b5a7762db0fa94e94",
-            "date",
-            "Tue, 30 Aug 2022 18:04:39 GMT",
-            "content-length",
-            "439",
-            "x-request-id",
-            "5a595cc0-1c6d-443d-bdab-7c7a43a41411",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "aab7cb97507c3eab05be264215283a591741e3aaf8dbddf8c39343e925597560",
+            "Date",
+            "Mon, 17 Apr 2023 19:29:58 GMT",
+            "X-Cloud-Trace-Context",
+            "f94c087a453c2c296f34585d3ffabc6f;o=1",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Cache-Status",
+            "Hit",
+            "Age",
+            "122",
+            "Server",
+            "Google Frontend",
+            "Content-Length",
+            "439",
+            "X-Kong-Upstream-Latency",
+            "0",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

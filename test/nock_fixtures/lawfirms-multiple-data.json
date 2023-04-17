@@ -1,39 +1,8 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "token_type": "Bearer",
-            "access_token": "xxkyPQag10fPZoggkxDGmxZTrw65",
-            "issued_at": 1661879972691,
-            "expires_in": 3599,
-            "scope": ""
-        },
-        "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "2a56d3d6-2a15-49e0-82a1-3cfcb7cd1ef1",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 17:19:32 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
-            "Connection",
-            "close"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/law-firms?lawFirmIds=1368&lawFirmIds=920&lawFirmIds=101693204",
+        "path": "/law-firms?lawFirmIds=1368&lawFirmIds=920&lawFirmIds=101693204",
         "body": "",
         "status": 200,
         "response": [
@@ -51,22 +20,30 @@
             }
         ],
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "588b19b6e8b42b31546699c1e207e205;o=1",
-            "date",
-            "Tue, 30 Aug 2022 17:19:32 GMT",
-            "content-length",
+            "Content-Length",
             "151",
-            "x-request-id",
-            "2e7ddad3-976a-4fbb-8ea0-d3fb8ad65689",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "54c6e7fc4d104f5de71ee7c3ff53b10940704f07bc6361cdc99753cd419e02e7",
+            "X-Cache-Status",
+            "Miss",
+            "X-Cloud-Trace-Context",
+            "59b371113b41ea741113b9efb4b8f736",
+            "Date",
+            "Thu, 13 Apr 2023 20:29:16 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "52",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

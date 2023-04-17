@@ -1,129 +1,67 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "ireN6DSxRkwwyBiAjGbGu1meANdV",
-            "issued_at": 1661883092444,
-            "expires_in": 3599,
-            "scope": ""
+            "expires_in": 3600,
+            "access_token": "gvCaRC9HH7yfJaGCT1YRctI8vbGTf3ya",
+            "token_type": "bearer"
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "8fd139ec-b2a6-4598-adee-bf59c6609401",
-            "content-length",
-            "157",
-            "date",
-            "Tue, 30 Aug 2022 18:11:32 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Thu, 13 Apr 2023 20:06:02 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "15",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/list-case-resolutions",
+        "path": "/list-case-resolutions",
         "body": "",
         "status": 200,
         "response": [
             {
-                "summary": "Claimant Win",
-                "specific": "Bench Trial"
+                "summary": "Procedural",
+                "specific": "Stay"
             },
             {
-                "summary": "Claimant Win",
-                "specific": "Jury"
-            },
-            {
-                "summary": "Claimant Win",
-                "specific": "Trial"
-            },
-            {
-                "summary": "Claimant Win",
-                "specific": "Judgment as a Matter of Law"
-            },
-            {
-                "summary": "Claimant Win",
-                "specific": "Summary Judgment"
-            },
-            {
-                "summary": "Claimant Win",
-                "specific": "Judgment on the Pleadings"
-            },
-            {
-                "summary": "Claimant Win",
-                "specific": "Consent Judgment"
-            },
-            {
-                "summary": "Claimant Win",
-                "specific": "Default Judgment"
-            },
-            {
-                "summary": "Claimant Win",
-                "specific": "Decision on Bankruptcy Appeal"
-            },
-            {
-                "summary": "Claim Defendant Win",
-                "specific": "Bench Trial"
-            },
-            {
-                "summary": "Claim Defendant Win",
-                "specific": "Jury"
-            },
-            {
-                "summary": "Claim Defendant Win",
-                "specific": "Trial"
-            },
-            {
-                "summary": "Claim Defendant Win",
-                "specific": "Judgment as a Matter of Law"
-            },
-            {
-                "summary": "Claim Defendant Win",
-                "specific": "Summary Judgment"
+                "summary": "Procedural",
+                "specific": "Interdistrict Transfer"
             },
             {
                 "summary": "Claim Defendant Win",
                 "specific": "Judgment on the Pleadings"
             },
             {
-                "summary": "Claim Defendant Win",
-                "specific": "Consent Judgment"
-            },
-            {
-                "summary": "Claim Defendant Win",
+                "summary": "Claimant Win",
                 "specific": "Default Judgment"
             },
             {
                 "summary": "Claim Defendant Win",
-                "specific": "Decision on Bankruptcy Appeal"
+                "specific": "Consent Judgment"
             },
             {
-                "summary": "Likely Settlement",
-                "specific": "Likely Settlement"
-            },
-            {
-                "summary": "Procedural",
-                "specific": "Contested Dismissal"
-            },
-            {
-                "summary": "Procedural",
-                "specific": "Dismissal"
-            },
-            {
-                "summary": "Procedural",
-                "specific": "Consolidation"
+                "summary": "Claimant Win",
+                "specific": "Judgment on the Pleadings"
             },
             {
                 "summary": "Procedural",
@@ -131,38 +69,96 @@
             },
             {
                 "summary": "Procedural",
-                "specific": "Interdistrict Transfer"
+                "specific": "Contested Dismissal"
+            },
+            {
+                "summary": "Claim Defendant Win",
+                "specific": "Decision on Bankruptcy Appeal"
+            },
+            {
+                "summary": "Procedural",
+                "specific": "Dismissal"
+            },
+            {
+                "summary": "Claim Defendant Win",
+                "specific": "Judgment as a Matter of Law"
+            },
+            {
+                "summary": "Claim Defendant Win",
+                "specific": "Summary Judgment"
+            },
+            {
+                "summary": "Claim Defendant Win",
+                "specific": "Trial"
+            },
+            {
+                "summary": "Claimant Win",
+                "specific": "Consent Judgment"
+            },
+            {
+                "summary": "Procedural",
+                "specific": "Consolidation"
+            },
+            {
+                "summary": "Procedural",
+                "specific": "Multidistrict Litigation"
             },
             {
                 "summary": "Procedural",
                 "specific": "Intradistrict Transfer"
             },
             {
-                "summary": "Procedural",
-                "specific": "Stay"
+                "summary": "Claimant Win",
+                "specific": "Decision on Bankruptcy Appeal"
             },
             {
-                "summary": "Procedural",
-                "specific": "Multidistrict Litigation"
+                "summary": "Claimant Win",
+                "specific": "Judgment as a Matter of Law"
+            },
+            {
+                "summary": "Likely Settlement",
+                "specific": "Likely Settlement"
+            },
+            {
+                "summary": "Claim Defendant Win",
+                "specific": "Default Judgment"
+            },
+            {
+                "summary": "Claimant Win",
+                "specific": "Summary Judgment"
+            },
+            {
+                "summary": "Claimant Win",
+                "specific": "Trial"
             }
         ],
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "dedf9258e6bd5545f53b429ad1e2df9e;o=1",
-            "date",
-            "Tue, 30 Aug 2022 18:11:33 GMT",
-            "content-length",
-            "1597",
-            "x-request-id",
-            "6cbcf7a0-04b4-41c2-9ef8-b2e31f4d93d5",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "d0e8a4fbeb882751ce66317849d1372f66f46db1d40ed49f51a5282940d81c0d",
+            "Server",
+            "Google Frontend",
+            "X-Cache-Status",
+            "Hit",
+            "Age",
+            "159",
+            "X-Cloud-Trace-Context",
+            "27e2a5a6aa988d3c32b20ea085fdb278;o=1",
+            "Date",
+            "Thu, 13 Apr 2023 20:03:23 GMT",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Length",
+            "1389",
+            "X-Kong-Upstream-Latency",
+            "0",
+            "X-Kong-Proxy-Latency",
+            "4",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

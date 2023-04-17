@@ -1,39 +1,41 @@
 [
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "POST",
-        "path": "/oauth/client_credential/accesstoken",
+        "path": "/oauth2/token",
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "token_type": "Bearer",
-            "access_token": "6kM3GguJEZuhtSNLkVCmdDcnurih",
-            "issued_at": 1663779237440,
-            "expires_in": 3599,
-            "scope": ""
+            "expires_in": 3600,
+            "access_token": "PWvvXRJoMWJ9e3IOU53d3rrwfd7gzhhE",
+            "token_type": "bearer"
         },
         "rawHeaders": [
-            "content-type",
-            "application/json",
-            "x-request-id",
-            "3e228359-7d0e-4bd2-a4e8-537659604187",
-            "content-length",
-            "157",
-            "date",
-            "Wed, 21 Sep 2022 16:53:56 GMT",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "Date",
+            "Mon, 17 Apr 2023 19:27:24 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
             "Connection",
-            "close"
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "14",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/search-attorneys?q=sligh&pageSize=500&pageNumber=1",
+        "path": "/search-attorneys?q=sligh&pageSize=500&pageNumber=1",
         "body": "",
         "status": 200,
         "response": {
@@ -44,99 +46,109 @@
                 {
                     "name": "Crosslight Promotion",
                     "attorneyId": 1216107,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/1216107"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/1216107"
                 },
                 {
                     "name": "Joseph R. Slights III",
                     "attorneyId": 9993143,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/9993143"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/9993143"
                 },
                 {
                     "name": "Kathryn Harper Sligh",
                     "attorneyId": 14974596,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/14974596"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/14974596"
                 },
                 {
                     "name": "David Richard Sligh",
                     "attorneyId": 15193508,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/15193508"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/15193508"
                 },
                 {
                     "name": "Ellen W. Slights",
                     "attorneyId": 16289669,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/16289669"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/16289669"
                 },
                 {
                     "name": "Bradley S. Slighting",
                     "attorneyId": 54566248,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/54566248"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/54566248"
                 },
                 {
                     "name": "John A. Sligh Jr.",
                     "attorneyId": 105438064,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/105438064"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/105438064"
                 },
                 {
                     "name": "Lynn T. Slight",
                     "attorneyId": 105438065,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/105438065"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/105438065"
                 },
                 {
                     "name": "Jesse J. Sligh",
                     "attorneyId": 105438066,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/105438066"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/105438066"
                 },
                 {
                     "name": "Peter L. Grosslight",
                     "attorneyId": 105758505,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/105758505"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/105758505"
                 },
                 {
                     "name": "Kathryn H. Sligh",
                     "attorneyId": 106831204,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/106831204"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/106831204"
                 },
                 {
                     "name": "Rayford Sligh Jr.",
                     "attorneyId": 114196054,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/114196054"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/114196054"
                 },
                 {
                     "name": "Anna V. Short-Slightom",
                     "attorneyId": 137446639,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/137446639"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/137446639"
                 },
                 {
                     "name": "Rachel A. Sligh",
                     "attorneyId": 143290563,
-                    "url": "http://lawmachine-beta-mralpoiyfa-uk.a.run.app/attorneys/143290563"
+                    "url": "http://lawmachine-beta-ovxin55ppa-uk.a.run.app/attorneys/143290563"
                 }
             ]
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "10ad0838c70eef67dbb96e29c01ced6d;o=1",
-            "date",
-            "Wed, 21 Sep 2022 16:53:58 GMT",
-            "content-length",
-            "1830",
-            "x-request-id",
-            "3f90426c-e104-4294-9ccf-d47aafa76a5c",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "b1f8a8faa22c9c21fd7148d0918d214b415eff6b6b58accb3cb830727cf03860",
+            "Server",
+            "Google Frontend",
+            "X-Cache-Status",
+            "Hit",
+            "X-Cloud-Trace-Context",
+            "7e391b218ee43d39a584111325e1cfae;o=1",
+            "Age",
+            "880",
+            "Date",
+            "Mon, 17 Apr 2023 19:12:44 GMT",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Length",
+            "1830",
+            "X-Kong-Upstream-Latency",
+            "0",
+            "X-Kong-Proxy-Latency",
+            "4",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "https://api.lexmachina.com:443",
+        "scope": "https://api.beta.lexmachina.com:443",
         "method": "GET",
-        "path": "/beta/search-attorneys?q=sligh&pageSize=500&pageNumber=2",
+        "path": "/search-attorneys?q=sligh&pageSize=500&pageNumber=2",
         "body": "",
         "status": 200,
         "response": {
@@ -146,22 +158,32 @@
             "attorneys": []
         },
         "rawHeaders": [
-            "content-type",
+            "Content-Type",
             "application/json",
-            "x-cloud-trace-context",
-            "9c7c8b11e13b74a1acc2fbadba642250",
-            "date",
-            "Wed, 21 Sep 2022 16:53:58 GMT",
-            "content-length",
-            "57",
-            "x-request-id",
-            "c2c7fc15-9477-45c5-9bf4-bd0c0c38c90c",
-            "Via",
-            "1.1 google",
-            "Alt-Svc",
-            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
             "Connection",
-            "close"
+            "close",
+            "X-Cache-Key",
+            "c610f41c8792c529273b11f400a44c6adf9e3f4d57976b6790ebf88b08f39508",
+            "Server",
+            "Google Frontend",
+            "X-Cache-Status",
+            "Hit",
+            "X-Cloud-Trace-Context",
+            "46c5dc3f3d8857d7fb542d24b260ec57",
+            "Age",
+            "879",
+            "Date",
+            "Mon, 17 Apr 2023 19:12:45 GMT",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Length",
+            "57",
+            "X-Kong-Upstream-Latency",
+            "0",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }
