@@ -137,6 +137,10 @@ module.exports = class LexMachinaClient {
     }
 
     async searchJudges(judge_string) {
+        if (judge_string == '') {
+            throw new Error('The search query cannot be empty');
+        }
+
         var config = {};
         config.endpoint = '/search-judges';
         config.params = { q: judge_string };
