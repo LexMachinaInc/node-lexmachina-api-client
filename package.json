@@ -4,7 +4,7 @@
   "description": "Library to access the Lex Machina API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --timeout 100000",
     "lint": "eslint **/*.js"
   },
   "devDependencies": {
