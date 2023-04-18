@@ -16,8 +16,8 @@ This package provides a client to access the Lex Machina API for legal analytics
         "secret": "CLIENT SECRET"
     },
     "auth": {
-        "tokenHost": "https://api.lexmachina.com",
-        "tokenPath": "/oauth/client_credential/accesstoken"
+        "tokenHost": "https://api.beta/lexmachina.com",
+        "tokenPath": "/oauth2/token"
      }
     }
     ```
