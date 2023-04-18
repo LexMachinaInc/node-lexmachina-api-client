@@ -5,7 +5,7 @@ This package provides a client to access the Lex Machina API for legal analytics
 
 # Getting Started
 
-1. Create an app and get the client key and secret via the [directions here](https://developer.lexmachina.com/get-your-api-keys).
+1. Create an app and get the client key and secret via the [directions here](https://developer.lexmachina.com/default/docs/generating_oauth_credentials).
 
 1. In your project directory create a directory /config and inside that create a file named config.json . Populate using the below values and the key and secret from above:
 
@@ -108,7 +108,7 @@ The constraint methods can be chained so all constraints can be added in a singl
      .setPageSize(100);
 ```
 
-Following is a list of operations available in the CaseQueryRequest without discussion of the meaning of each. For a detailed discussion of the concepts used in querying the Lex Machina API see [this post on the developer portal](https://developer.lexmachina.com/querying-via-the-api).
+Following is a list of operations available in the CaseQueryRequest without discussion of the meaning of each. For a detailed discussion of the concepts used in querying the Lex Machina API see [this post on the developer portal](https://developer.lexmachina.com/default/docs/query_usage_portal_post).
 
 
 ## Participant Criteria
