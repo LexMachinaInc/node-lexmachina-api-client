@@ -1,6 +1,6 @@
 {
   "name": "@lexmachina/lexmachina-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library to access the Lex Machina API",
   "main": "index.js",
   "scripts": {
