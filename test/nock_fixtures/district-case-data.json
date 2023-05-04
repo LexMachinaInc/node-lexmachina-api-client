@@ -1,45 +1,12 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth2/token",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "expires_in": 3600,
-            "access_token": "BanKce4oXsNCqutm4nnfU2XmvUlas3xT",
-            "token_type": "bearer"
-        },
-        "rawHeaders": [
-            "Date",
-            "Thu, 13 Apr 2023 20:28:19 GMT",
-            "Content-Type",
-            "application/json; charset=utf-8",
-            "Connection",
-            "close",
-            "cache-control",
-            "no-store",
-            "pragma",
-            "no-cache",
-            "Content-Length",
-            "91",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Response-Latency",
-            "16",
-            "Server",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
         "path": "/district-cases/93617",
         "body": "",
         "status": 200,
         "response": {
-            "caseId": 93617,
+            "districtCaseId": 93617,
             "title": "Gaiman, Neil v. McFarlane, Todd",
             "court": "U.S. District Court for the Western District of Wisconsin",
             "caseNo": "3:02-cv-00048-bbc",
@@ -417,7 +384,7 @@
                         "name": "Attorneys' Fees / Costs",
                         "type": "General",
                         "judgmentSource": "Judgment on Merits",
-                        "awardedToPartyId": [
+                        "awardedToPartyIds": [
                             216320,
                             216322
                         ],
@@ -437,7 +404,7 @@
                         "name": "Attorneys' Fees / Costs",
                         "type": "General",
                         "judgmentSource": "Judgment on Merits",
-                        "awardedToPartyId": [
+                        "awardedToPartyIds": [
                             216320,
                             216322
                         ],
@@ -457,7 +424,7 @@
                         "name": "Other / Mixed Damage Types",
                         "type": "General",
                         "judgmentSource": "Jury Verdict",
-                        "awardedToPartyId": [
+                        "awardedToPartyIds": [
                             216320,
                             216322
                         ],
@@ -491,30 +458,16 @@
             }
         },
         "rawHeaders": [
-            "Content-Type",
+            "date",
+            "Thu, 04 May 2023 16:16:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "5333",
+            "content-type",
             "application/json",
-            "Content-Length",
-            "5322",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "f998889c1db1bf6dfd5706a3d5cb2239ed00bd61572d43a7bbeb9b4540dd7abc",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "44adab33d1f1e6ab2f8666c1e87bd786;o=1",
-            "Date",
-            "Thu, 13 Apr 2023 20:28:19 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "476",
-            "X-Kong-Proxy-Latency",
-            "25",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

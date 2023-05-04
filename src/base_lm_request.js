@@ -5,15 +5,10 @@ const BASE_URL = 'https://api.beta.lexmachina.com/';
 
 module.exports = class BaseLexMachinaRequest {
 
-    constructor(token_config_file_path) {
-        this.token_config_file_path = token_config_file_path;
-        try {
-            this.atu = new AccessTokenUtils(token_config_file_path);
-        } catch (e) {
-            console.log(e +' : Cannot load authentication config file');
-            process.exit(1);
-        }
-
+    constructor(config) {
+        this.config = config;
+        this.atu = new AccessTokenUtils(config);
+        this.baseURL = config.baseURL;
     }
 
     async requestURL(config) {
@@ -42,7 +37,7 @@ module.exports = class BaseLexMachinaRequest {
         }
 
         var options = {
-            baseURL: BASE_URL,
+            baseURL: this.baseURL || BASE_URL,
             headers: {
                 'Authorization': 'Bearer ' + token,
                 'User-Agent': 'Lex-Machina-JavaScript-Client/' + package_json.version
@@ -66,6 +61,7 @@ module.exports = class BaseLexMachinaRequest {
     
         try {
             var response = await axios(url, options);
+            //console.log(response)
             returnValue = response.data;
         } catch (error) {
             console.log(error);

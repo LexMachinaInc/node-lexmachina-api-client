@@ -1,0 +1,294 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "parties": {
+                "include": [
+                    54101417
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005478766",
+                    "stateCaseId": 2005478766
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005426448",
+                    "stateCaseId": 2005426448
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:27 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "173",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "parties": {
+                "include": [
+                    2912953
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005448534",
+                    "stateCaseId": 2005448534
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:27 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "92",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "parties": {
+                "include": [
+                    66088502
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005478766",
+                    "stateCaseId": 2005478766
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:28 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "92",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "parties": {
+                "exclude": [
+                    54101417
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005413379",
+                    "stateCaseId": 2005413379
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005410926",
+                    "stateCaseId": 2005410926
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005412253",
+                    "stateCaseId": 2005412253
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005415669",
+                    "stateCaseId": 2005415669
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005416750",
+                    "stateCaseId": 2005416750
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:29 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "parties": {
+                "exclude": [
+                    2912953
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005413379",
+                    "stateCaseId": 2005413379
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005410926",
+                    "stateCaseId": 2005410926
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005412253",
+                    "stateCaseId": 2005412253
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005415669",
+                    "stateCaseId": 2005415669
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005416750",
+                    "stateCaseId": 2005416750
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:29 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "parties": {
+                "exclude": [
+                    66088502
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005413379",
+                    "stateCaseId": 2005413379
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005410926",
+                    "stateCaseId": 2005410926
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005412253",
+                    "stateCaseId": 2005412253
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005415669",
+                    "stateCaseId": 2005415669
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005416750",
+                    "stateCaseId": 2005416750
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:30 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

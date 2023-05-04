@@ -1,0 +1,5399 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-courts/State",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "name": "Los Angeles County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Sacramento County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "San Bernardino County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Riverside County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Orange County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "San Diego County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Alameda County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Court of Chancery",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "New Castle County Superior Court",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "Kent County Superior Court",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "Sussex County Superior Court",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "DeKalb County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "DeKalb County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Fulton County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Fulton County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Chatham County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Chatham County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Clayton County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Gwinnett County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Bibb County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Cherokee County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Douglas County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Floyd County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Henry County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Lowndes County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Forsyth County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Rockdale County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Spalding County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Effingham County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Cherokee County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Gwinnett County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Forsyth County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Houston County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Lowndes County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Rockdale County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Spalding County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Effingham County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Clark County District Court",
+                "type": "State",
+                "state": "NV"
+            },
+            {
+                "name": "New York County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Kings County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Queens County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Bronx County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Richmond County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Multnomah County Circuit Court",
+                "type": "State",
+                "state": "OR"
+            },
+            {
+                "name": "Harris County District Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "Harris County Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "Fort Bend County Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "Fort Bend County District Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "King County Superior Court",
+                "type": "State",
+                "state": "WA"
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:52 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "3326",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "include": [
+                    "Los Angeles County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:52 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "include": [
+                    "Sacramento County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003475179",
+                    "stateCaseId": 2003475179
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003480227",
+                    "stateCaseId": 2003480227
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003483683",
+                    "stateCaseId": 2003483683
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003493838",
+                    "stateCaseId": 2003493838
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003498630",
+                    "stateCaseId": 2003498630
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:53 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "include": [
+                    "San Bernardino County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003806414",
+                    "stateCaseId": 2003806414
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003806416",
+                    "stateCaseId": 2003806416
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003806417",
+                    "stateCaseId": 2003806417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003806418",
+                    "stateCaseId": 2003806418
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003806420",
+                    "stateCaseId": 2003806420
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:54 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "include": [
+                    "Riverside County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003650043",
+                    "stateCaseId": 2003650043
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003650079",
+                    "stateCaseId": 2003650079
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003653241",
+                    "stateCaseId": 2003653241
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003655476",
+                    "stateCaseId": 2003655476
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003655488",
+                    "stateCaseId": 2003655488
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:54 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "include": [
+                    "Orange County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006289794",
+                    "stateCaseId": 2006289794
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006289795",
+                    "stateCaseId": 2006289795
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006289796",
+                    "stateCaseId": 2006289796
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006289797",
+                    "stateCaseId": 2006289797
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006289798",
+                    "stateCaseId": 2006289798
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:55 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "include": [
+                    "San Diego County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004715035",
+                    "stateCaseId": 2004715035
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004715036",
+                    "stateCaseId": 2004715036
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004715047",
+                    "stateCaseId": 2004715047
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004715051",
+                    "stateCaseId": 2004715051
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004715056",
+                    "stateCaseId": 2004715056
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:55 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "include": [
+                    "Alameda County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006123833",
+                    "stateCaseId": 2006123833
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006123839",
+                    "stateCaseId": 2006123839
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006123844",
+                    "stateCaseId": 2006123844
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006123846",
+                    "stateCaseId": 2006123846
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006123849",
+                    "stateCaseId": 2006123849
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:56 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "include": [
+                    "Court of Chancery"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006856336",
+                    "stateCaseId": 2006856336
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856392",
+                    "stateCaseId": 2006856392
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856453",
+                    "stateCaseId": 2006856453
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875906",
+                    "stateCaseId": 2006875906
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875907",
+                    "stateCaseId": 2006875907
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:56 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "include": [
+                    "New Castle County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007511197",
+                    "stateCaseId": 2007511197
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007443897",
+                    "stateCaseId": 2007443897
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007445750",
+                    "stateCaseId": 2007445750
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007446316",
+                    "stateCaseId": 2007446316
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007460638",
+                    "stateCaseId": 2007460638
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:57 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "include": [
+                    "Kent County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007581293",
+                    "stateCaseId": 2007581293
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007572858",
+                    "stateCaseId": 2007572858
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007583024",
+                    "stateCaseId": 2007583024
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007561760",
+                    "stateCaseId": 2007561760
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007563418",
+                    "stateCaseId": 2007563418
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:58 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "include": [
+                    "Sussex County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007593912",
+                    "stateCaseId": 2007593912
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007575433",
+                    "stateCaseId": 2007575433
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007576199",
+                    "stateCaseId": 2007576199
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007583693",
+                    "stateCaseId": 2007583693
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007598281",
+                    "stateCaseId": 2007598281
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:58 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "DeKalb County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005579017",
+                    "stateCaseId": 2005579017
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005579034",
+                    "stateCaseId": 2005579034
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005579038",
+                    "stateCaseId": 2005579038
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005579053",
+                    "stateCaseId": 2005579053
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005579059",
+                    "stateCaseId": 2005579059
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:59 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "DeKalb County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005590463",
+                    "stateCaseId": 2005590463
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005590454",
+                    "stateCaseId": 2005590454
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005590456",
+                    "stateCaseId": 2005590456
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005590459",
+                    "stateCaseId": 2005590459
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005590460",
+                    "stateCaseId": 2005590460
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:59 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Fulton County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005650509",
+                    "stateCaseId": 2005650509
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005650521",
+                    "stateCaseId": 2005650521
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005650526",
+                    "stateCaseId": 2005650526
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005650534",
+                    "stateCaseId": 2005650534
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005650535",
+                    "stateCaseId": 2005650535
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:00 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Fulton County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006551659",
+                    "stateCaseId": 2006551659
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006551660",
+                    "stateCaseId": 2006551660
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006551661",
+                    "stateCaseId": 2006551661
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006551662",
+                    "stateCaseId": 2006551662
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006555135",
+                    "stateCaseId": 2006555135
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:00 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Chatham County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008183522",
+                    "stateCaseId": 2008183522
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008183523",
+                    "stateCaseId": 2008183523
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008183674",
+                    "stateCaseId": 2008183674
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008183678",
+                    "stateCaseId": 2008183678
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008183518",
+                    "stateCaseId": 2008183518
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:01 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Chatham County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008285204",
+                    "stateCaseId": 2008285204
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008285205",
+                    "stateCaseId": 2008285205
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008285241",
+                    "stateCaseId": 2008285241
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008285299",
+                    "stateCaseId": 2008285299
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008285212",
+                    "stateCaseId": 2008285212
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:02 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Clayton County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008200791",
+                    "stateCaseId": 2008200791
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008200792",
+                    "stateCaseId": 2008200792
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008200795",
+                    "stateCaseId": 2008200795
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008200793",
+                    "stateCaseId": 2008200793
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008200794",
+                    "stateCaseId": 2008200794
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:02 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Gwinnett County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008276201",
+                    "stateCaseId": 2008276201
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008276205",
+                    "stateCaseId": 2008276205
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008276244",
+                    "stateCaseId": 2008276244
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008276258",
+                    "stateCaseId": 2008276258
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008276116",
+                    "stateCaseId": 2008276116
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:22 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Bibb County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008203656",
+                    "stateCaseId": 2008203656
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008205646",
+                    "stateCaseId": 2008205646
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008205644",
+                    "stateCaseId": 2008205644
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008205645",
+                    "stateCaseId": 2008205645
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008204668",
+                    "stateCaseId": 2008204668
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:23 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Cherokee County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008206375",
+                    "stateCaseId": 2008206375
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008206326",
+                    "stateCaseId": 2008206326
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008206378",
+                    "stateCaseId": 2008206378
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008206335",
+                    "stateCaseId": 2008206335
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008206404",
+                    "stateCaseId": 2008206404
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:27 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Douglas County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008226445",
+                    "stateCaseId": 2008226445
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008226304",
+                    "stateCaseId": 2008226304
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008225501",
+                    "stateCaseId": 2008225501
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008225502",
+                    "stateCaseId": 2008225502
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008225503",
+                    "stateCaseId": 2008225503
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:27 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Floyd County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008227164",
+                    "stateCaseId": 2008227164
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008228714",
+                    "stateCaseId": 2008228714
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008228715",
+                    "stateCaseId": 2008228715
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008672629",
+                    "stateCaseId": 2008672629
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008227846",
+                    "stateCaseId": 2008227846
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:29 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Henry County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008229737",
+                    "stateCaseId": 2008229737
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008229736",
+                    "stateCaseId": 2008229736
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008229502",
+                    "stateCaseId": 2008229502
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008229432",
+                    "stateCaseId": 2008229432
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008229123",
+                    "stateCaseId": 2008229123
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:29 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Lowndes County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008231258",
+                    "stateCaseId": 2008231258
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587301",
+                    "stateCaseId": 2008587301
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008229951",
+                    "stateCaseId": 2008229951
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008229950",
+                    "stateCaseId": 2008229950
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008229949",
+                    "stateCaseId": 2008229949
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:30 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Forsyth County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008236855",
+                    "stateCaseId": 2008236855
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008236852",
+                    "stateCaseId": 2008236852
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008236857",
+                    "stateCaseId": 2008236857
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008236847",
+                    "stateCaseId": 2008236847
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008236849",
+                    "stateCaseId": 2008236849
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:31 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Rockdale County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278566",
+                    "stateCaseId": 2008278566
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:31 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Spalding County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008298136",
+                    "stateCaseId": 2008298136
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008298142",
+                    "stateCaseId": 2008298142
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008298149",
+                    "stateCaseId": 2008298149
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008298152",
+                    "stateCaseId": 2008298152
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008298147",
+                    "stateCaseId": 2008298147
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:32 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Effingham County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008298834",
+                    "stateCaseId": 2008298834
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008299140",
+                    "stateCaseId": 2008299140
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008299038",
+                    "stateCaseId": 2008299038
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008299120",
+                    "stateCaseId": 2008299120
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008299139",
+                    "stateCaseId": 2008299139
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:32 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Cherokee County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008304825",
+                    "stateCaseId": 2008304825
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008304826",
+                    "stateCaseId": 2008304826
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008304827",
+                    "stateCaseId": 2008304827
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008304828",
+                    "stateCaseId": 2008304828
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008304829",
+                    "stateCaseId": 2008304829
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:33 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Gwinnett County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008331276",
+                    "stateCaseId": 2008331276
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008331277",
+                    "stateCaseId": 2008331277
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008331278",
+                    "stateCaseId": 2008331278
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008331279",
+                    "stateCaseId": 2008331279
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008331280",
+                    "stateCaseId": 2008331280
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:34 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Forsyth County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008374914",
+                    "stateCaseId": 2008374914
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008374915",
+                    "stateCaseId": 2008374915
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008374920",
+                    "stateCaseId": 2008374920
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008374912",
+                    "stateCaseId": 2008374912
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008374916",
+                    "stateCaseId": 2008374916
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:34 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Houston County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008386297",
+                    "stateCaseId": 2008386297
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008386298",
+                    "stateCaseId": 2008386298
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008386299",
+                    "stateCaseId": 2008386299
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008386300",
+                    "stateCaseId": 2008386300
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008386301",
+                    "stateCaseId": 2008386301
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:35 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Lowndes County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008389832",
+                    "stateCaseId": 2008389832
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008387524",
+                    "stateCaseId": 2008387524
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008388412",
+                    "stateCaseId": 2008388412
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008388413",
+                    "stateCaseId": 2008388413
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008388414",
+                    "stateCaseId": 2008388414
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:36 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Rockdale County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008403168",
+                    "stateCaseId": 2008403168
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008403170",
+                    "stateCaseId": 2008403170
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008403283",
+                    "stateCaseId": 2008403283
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008403169",
+                    "stateCaseId": 2008403169
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Spalding County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008409222",
+                    "stateCaseId": 2008409222
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008409223",
+                    "stateCaseId": 2008409223
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008409229",
+                    "stateCaseId": 2008409229
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008409232",
+                    "stateCaseId": 2008409232
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008409233",
+                    "stateCaseId": 2008409233
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "include": [
+                    "Effingham County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008410116",
+                    "stateCaseId": 2008410116
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008410391",
+                    "stateCaseId": 2008410391
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008410392",
+                    "stateCaseId": 2008410392
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008410165",
+                    "stateCaseId": 2008410165
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008410164",
+                    "stateCaseId": 2008410164
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:38 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NV",
+                "include": [
+                    "Clark County District Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940414",
+                    "stateCaseId": 2003940414
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003945132",
+                    "stateCaseId": 2003945132
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940413",
+                    "stateCaseId": 2003940413
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940417",
+                    "stateCaseId": 2003940417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940418",
+                    "stateCaseId": 2003940418
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:39 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "include": [
+                    "New York County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004595182",
+                    "stateCaseId": 2004595182
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004595480",
+                    "stateCaseId": 2004595480
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004595490",
+                    "stateCaseId": 2004595490
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004543606",
+                    "stateCaseId": 2004543606
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004543607",
+                    "stateCaseId": 2004543607
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:39 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "include": [
+                    "Kings County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004928845",
+                    "stateCaseId": 2004928845
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928847",
+                    "stateCaseId": 2004928847
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928851",
+                    "stateCaseId": 2004928851
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928855",
+                    "stateCaseId": 2004928855
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928859",
+                    "stateCaseId": 2004928859
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:40 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "include": [
+                    "Queens County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005351305",
+                    "stateCaseId": 2005351305
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005351317",
+                    "stateCaseId": 2005351317
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005323892",
+                    "stateCaseId": 2005323892
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005323893",
+                    "stateCaseId": 2005323893
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005344310",
+                    "stateCaseId": 2005344310
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:40 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "include": [
+                    "Bronx County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005749957",
+                    "stateCaseId": 2005749957
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005776967",
+                    "stateCaseId": 2005776967
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005776975",
+                    "stateCaseId": 2005776975
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005776989",
+                    "stateCaseId": 2005776989
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005710705",
+                    "stateCaseId": 2005710705
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:41 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "include": [
+                    "Richmond County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006089793",
+                    "stateCaseId": 2006089793
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006089798",
+                    "stateCaseId": 2006089798
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006089799",
+                    "stateCaseId": 2006089799
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006089803",
+                    "stateCaseId": 2006089803
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006089804",
+                    "stateCaseId": 2006089804
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:42 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "OR",
+                "include": [
+                    "Multnomah County Circuit Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007212718",
+                    "stateCaseId": 2007212718
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007212701",
+                    "stateCaseId": 2007212701
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007212702",
+                    "stateCaseId": 2007212702
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007212703",
+                    "stateCaseId": 2007212703
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007212704",
+                    "stateCaseId": 2007212704
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:42 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "include": [
+                    "Harris County District Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002947480",
+                    "stateCaseId": 2002947480
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002912075",
+                    "stateCaseId": 2002912075
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002914509",
+                    "stateCaseId": 2002914509
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002915189",
+                    "stateCaseId": 2002915189
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002917341",
+                    "stateCaseId": 2002917341
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:43 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "include": [
+                    "Harris County Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003381551",
+                    "stateCaseId": 2003381551
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381508",
+                    "stateCaseId": 2003381508
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381542",
+                    "stateCaseId": 2003381542
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381543",
+                    "stateCaseId": 2003381543
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381544",
+                    "stateCaseId": 2003381544
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:43 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "include": [
+                    "Fort Bend County Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003461042",
+                    "stateCaseId": 2003461042
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003647575",
+                    "stateCaseId": 2003647575
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003647576",
+                    "stateCaseId": 2003647576
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003647577",
+                    "stateCaseId": 2003647577
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003647578",
+                    "stateCaseId": 2003647578
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:44 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "include": [
+                    "Fort Bend County District Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003442288",
+                    "stateCaseId": 2003442288
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003442286",
+                    "stateCaseId": 2003442286
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003442287",
+                    "stateCaseId": 2003442287
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003442289",
+                    "stateCaseId": 2003442289
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003442290",
+                    "stateCaseId": 2003442290
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:45 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "WA",
+                "include": [
+                    "King County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005413379",
+                    "stateCaseId": 2005413379
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005410926",
+                    "stateCaseId": 2005410926
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005412253",
+                    "stateCaseId": 2005412253
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005415669",
+                    "stateCaseId": 2005415669
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005416750",
+                    "stateCaseId": 2005416750
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:45 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "exclude": [
+                    "Los Angeles County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003475179",
+                    "stateCaseId": 2003475179
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003480227",
+                    "stateCaseId": 2003480227
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003483683",
+                    "stateCaseId": 2003483683
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003493838",
+                    "stateCaseId": 2003493838
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003498630",
+                    "stateCaseId": 2003498630
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:46 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "exclude": [
+                    "Sacramento County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:46 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "exclude": [
+                    "San Bernardino County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:47 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "exclude": [
+                    "Riverside County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:47 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "exclude": [
+                    "Orange County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:48 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "exclude": [
+                    "San Diego County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:49 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA",
+                "exclude": [
+                    "Alameda County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:49 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "exclude": [
+                    "Court of Chancery"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007511197",
+                    "stateCaseId": 2007511197
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007443897",
+                    "stateCaseId": 2007443897
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007445750",
+                    "stateCaseId": 2007445750
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007446316",
+                    "stateCaseId": 2007446316
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007460638",
+                    "stateCaseId": 2007460638
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:50 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "exclude": [
+                    "New Castle County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006856336",
+                    "stateCaseId": 2006856336
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856392",
+                    "stateCaseId": 2006856392
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856453",
+                    "stateCaseId": 2006856453
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875906",
+                    "stateCaseId": 2006875906
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875907",
+                    "stateCaseId": 2006875907
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:50 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "exclude": [
+                    "Kent County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006856336",
+                    "stateCaseId": 2006856336
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856392",
+                    "stateCaseId": 2006856392
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856453",
+                    "stateCaseId": 2006856453
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875906",
+                    "stateCaseId": 2006875906
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875907",
+                    "stateCaseId": 2006875907
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:51 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "DE",
+                "exclude": [
+                    "Sussex County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2006856336",
+                    "stateCaseId": 2006856336
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856392",
+                    "stateCaseId": 2006856392
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006856453",
+                    "stateCaseId": 2006856453
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875906",
+                    "stateCaseId": 2006875906
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006875907",
+                    "stateCaseId": 2006875907
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:51 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "DeKalb County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:52 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "DeKalb County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:53 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Fulton County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:53 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Fulton County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:54 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Chatham County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:55 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Chatham County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:55 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Clayton County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:56 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Gwinnett County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:56 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Bibb County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:57 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Cherokee County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:58 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Douglas County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:58 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Floyd County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:59 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Henry County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:25:59 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Lowndes County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:00 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Forsyth County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:00 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Rockdale County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005590463",
+                    "stateCaseId": 2005590463
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005579017",
+                    "stateCaseId": 2005579017
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005579034",
+                    "stateCaseId": 2005579034
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005579038",
+                    "stateCaseId": 2005579038
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:01 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Spalding County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:02 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Effingham County Superior Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:02 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Cherokee County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:03 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Gwinnett County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:03 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Forsyth County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:04 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Houston County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:05 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Lowndes County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:05 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Rockdale County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005590463",
+                    "stateCaseId": 2005590463
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:06 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Spalding County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:06 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "GA",
+                "exclude": [
+                    "Effingham County State Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2008278564",
+                    "stateCaseId": 2008278564
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278583",
+                    "stateCaseId": 2008278583
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008278586",
+                    "stateCaseId": 2008278586
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008587334",
+                    "stateCaseId": 2008587334
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2008594874",
+                    "stateCaseId": 2008594874
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:07 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "exclude": [
+                    "New York County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004928845",
+                    "stateCaseId": 2004928845
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928847",
+                    "stateCaseId": 2004928847
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928851",
+                    "stateCaseId": 2004928851
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928855",
+                    "stateCaseId": 2004928855
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005351305",
+                    "stateCaseId": 2005351305
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:08 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "exclude": [
+                    "Kings County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005351305",
+                    "stateCaseId": 2005351305
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005351317",
+                    "stateCaseId": 2005351317
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005749957",
+                    "stateCaseId": 2005749957
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004595182",
+                    "stateCaseId": 2004595182
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004595480",
+                    "stateCaseId": 2004595480
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:08 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "exclude": [
+                    "Queens County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004928845",
+                    "stateCaseId": 2004928845
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928847",
+                    "stateCaseId": 2004928847
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928851",
+                    "stateCaseId": 2004928851
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928855",
+                    "stateCaseId": 2004928855
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005749957",
+                    "stateCaseId": 2005749957
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:09 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "exclude": [
+                    "Bronx County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004928845",
+                    "stateCaseId": 2004928845
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928847",
+                    "stateCaseId": 2004928847
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928851",
+                    "stateCaseId": 2004928851
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928855",
+                    "stateCaseId": 2004928855
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005351305",
+                    "stateCaseId": 2005351305
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:09 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "NY",
+                "exclude": [
+                    "Richmond County Supreme Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004928845",
+                    "stateCaseId": 2004928845
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928847",
+                    "stateCaseId": 2004928847
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928851",
+                    "stateCaseId": 2004928851
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004928855",
+                    "stateCaseId": 2004928855
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005351305",
+                    "stateCaseId": 2005351305
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:10 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "exclude": [
+                    "Harris County District Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003381551",
+                    "stateCaseId": 2003381551
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003442288",
+                    "stateCaseId": 2003442288
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381508",
+                    "stateCaseId": 2003381508
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381542",
+                    "stateCaseId": 2003381542
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381543",
+                    "stateCaseId": 2003381543
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:11 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "exclude": [
+                    "Harris County Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002947480",
+                    "stateCaseId": 2002947480
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003442288",
+                    "stateCaseId": 2003442288
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002912075",
+                    "stateCaseId": 2002912075
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002914509",
+                    "stateCaseId": 2002914509
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002915189",
+                    "stateCaseId": 2002915189
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:11 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "exclude": [
+                    "Fort Bend County Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002947480",
+                    "stateCaseId": 2002947480
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381551",
+                    "stateCaseId": 2003381551
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003442288",
+                    "stateCaseId": 2003442288
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002912075",
+                    "stateCaseId": 2002912075
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002914509",
+                    "stateCaseId": 2002914509
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:12 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "TX",
+                "exclude": [
+                    "Fort Bend County District Court"
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002947480",
+                    "stateCaseId": 2002947480
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003381551",
+                    "stateCaseId": 2003381551
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002912075",
+                    "stateCaseId": 2002912075
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002914509",
+                    "stateCaseId": 2002914509
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002915189",
+                    "stateCaseId": 2002915189
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:12 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

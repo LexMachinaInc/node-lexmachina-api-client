@@ -1,6 +1,6 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "POST",
         "path": "/query-district-cases",
         "body": {
@@ -18,37 +18,40 @@
         },
         "status": 200,
         "response": {
-            "caseIds": [
-                2002223010,
-                2000707601,
-                2000707734,
-                2000096394,
-                2000095605
+            "cases": [
+                {
+                    "url": "https://localhost:8000/district-cases/2002223010",
+                    "districtCaseId": 2002223010
+                },
+                {
+                    "url": "https://localhost:8000/district-cases/2000707601",
+                    "districtCaseId": 2000707601
+                },
+                {
+                    "url": "https://localhost:8000/district-cases/2000707734",
+                    "districtCaseId": 2000707734
+                },
+                {
+                    "url": "https://localhost:8000/district-cases/2000096394",
+                    "districtCaseId": 2000096394
+                },
+                {
+                    "url": "https://localhost:8000/district-cases/2000095605",
+                    "districtCaseId": 2000095605
+                }
             ]
         },
         "rawHeaders": [
-            "Content-Type",
+            "date",
+            "Thu, 04 May 2023 16:21:41 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "446",
+            "content-type",
             "application/json",
-            "Content-Length",
-            "68",
-            "Connection",
-            "close",
-            "X-Cache-Status",
-            "Bypass",
-            "X-Cloud-Trace-Context",
-            "76bd869b4804ea34b47163bd3297d188",
-            "Date",
-            "Mon, 17 Apr 2023 19:38:04 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "148",
-            "X-Kong-Proxy-Latency",
-            "3",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

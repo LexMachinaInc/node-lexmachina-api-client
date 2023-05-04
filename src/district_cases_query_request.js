@@ -7,7 +7,7 @@ function pushUnique(array, item) {
     }
 }
 
-module.exports = class CasesQueryRequest {
+module.exports = class DistrictCasesQueryRequest {
 
     constructor() {
 
@@ -23,8 +23,9 @@ module.exports = class CasesQueryRequest {
             },
             'judges': { 'include': [], 'exclude': [] },
             'magistrates': { 'include': [], 'exclude': [] },
-            'events': { 'includeEventTypes': [], 'excludeEventTypes': [] },
+            'events': { 'include': [], 'exclude': [] },
             'lawFirms': { 'include': [], 'exclude': [], 'includePlaintiff': [], 'excludePlaintiff': [], 'includeDefendant': [], 'excludeDefendant': [], 'includeThirdParty': [], 'excludeThirdParty': [] },
+            'attorneys': { 'include': [], 'exclude': [], 'includePlaintiff': [], 'excludePlaintiff': [], 'includeDefendant': [], 'excludeDefendant': [], 'includeThirdParty': [], 'excludeThirdParty': [] },
             'parties': { 'include': [], 'exclude': [], 'includePlaintiff': [], 'excludePlaintiff': [], 'includeDefendant': [], 'excludeDefendant': [], 'includeThirdParty': [], 'excludeThirdParty': [] },
             'courts': { 'include': [], 'exclude': [] },
             'resolutions': { 'include': [], 'exclude': [] },
@@ -157,7 +158,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addEventTypesInclude(value); });
         } else {
-            pushUnique(this.queryObject.events.includeEventTypes, values);
+            pushUnique(this.queryObject.events.include, values);
         }
         return this;
     }
@@ -166,7 +167,7 @@ module.exports = class CasesQueryRequest {
         if (Array.isArray(values)) {
             values.forEach(value => { this.addEventTypesExclude(value); });
         } else {
-            pushUnique(this.queryObject.events.excludeEventTypes, values);
+            pushUnique(this.queryObject.events.exclude, values);
         }
         return this;
     }
@@ -243,6 +244,81 @@ module.exports = class CasesQueryRequest {
         }
         return this;
     }
+
+    addAttorneysInclude(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysInclude(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.include, ids);
+        }
+        return this;
+    }
+
+    addAttorneysExclude(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysExclude(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.exclude, ids);
+        }
+        return this;
+    }
+
+    addAttorneysIncludePlaintiff(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysIncludePlaintiff(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.includePlaintiff, ids);
+        }
+        return this;
+    }
+
+    addAttorneysExcludePlaintiff(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysExcludePlaintiff(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.excludePlaintiff, ids);
+        }
+        return this;
+    }
+
+    addAttorneysIncludeDefendant(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysIncludeDefendant(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.includeDefendant, ids);
+        }
+        return this;
+    }
+
+    addAttorneysExcludeDefendant(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysExcludeDefendant(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.excludeDefendant, ids);
+            return this;
+        }
+        return this;
+    }
+
+    addAttorneysIncludeThirdParty(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysIncludeThirdParty(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.includeThirdParty, ids);
+        }
+        return this;
+    }
+
+    addAttorneysExcludeThirdParty(ids) {
+        if (Array.isArray(ids)) {
+            ids.forEach(id => { this.addAttorneysExcludeThirdParty(id); });
+        } else {
+            pushUnique(this.queryObject.attorneys.excludeThirdParty, ids);
+        }
+        return this;
+    }
+
+
 
     addPartiesInclude(ids) {
         if (Array.isArray(ids)) {

@@ -1,0 +1,338 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includePlaintiff": [
+                    48517370
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940440",
+                    "stateCaseId": 2003940440
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003941132",
+                    "stateCaseId": 2003941132
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003943978",
+                    "stateCaseId": 2003943978
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003944181",
+                    "stateCaseId": 2003944181
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003944348",
+                    "stateCaseId": 2003944348
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:46 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includePlaintiff": [
+                    2834399
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940442",
+                    "stateCaseId": 2003940442
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940837",
+                    "stateCaseId": 2003940837
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003946447",
+                    "stateCaseId": 2003946447
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003947385",
+                    "stateCaseId": 2003947385
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003958047",
+                    "stateCaseId": 2003958047
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:47 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includePlaintiff": [
+                    659361
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940453",
+                    "stateCaseId": 2003940453
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003943428",
+                    "stateCaseId": 2003943428
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003943429",
+                    "stateCaseId": 2003943429
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003944829",
+                    "stateCaseId": 2003944829
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003958472",
+                    "stateCaseId": 2003958472
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:47 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludePlaintiff": [
+                    48517370
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940414",
+                    "stateCaseId": 2003940414
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003945132",
+                    "stateCaseId": 2003945132
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940413",
+                    "stateCaseId": 2003940413
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940417",
+                    "stateCaseId": 2003940417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940418",
+                    "stateCaseId": 2003940418
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:48 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludePlaintiff": [
+                    2834399
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940414",
+                    "stateCaseId": 2003940414
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003945132",
+                    "stateCaseId": 2003945132
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940413",
+                    "stateCaseId": 2003940413
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940417",
+                    "stateCaseId": 2003940417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940418",
+                    "stateCaseId": 2003940418
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:48 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludePlaintiff": [
+                    659361
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940414",
+                    "stateCaseId": 2003940414
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003945132",
+                    "stateCaseId": 2003945132
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940413",
+                    "stateCaseId": 2003940413
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940417",
+                    "stateCaseId": 2003940417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940418",
+                    "stateCaseId": 2003940418
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:49 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

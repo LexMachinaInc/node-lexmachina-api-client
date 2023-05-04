@@ -1,6 +1,6 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
         "path": "/law-firms?lawFirmIds=1368&lawFirmIds=920&lawFirmIds=101693204",
         "body": "",
@@ -20,30 +20,16 @@
             }
         ],
         "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
+            "date",
+            "Thu, 04 May 2023 16:16:44 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
             "151",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "54c6e7fc4d104f5de71ee7c3ff53b10940704f07bc6361cdc99753cd419e02e7",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "59b371113b41ea741113b9efb4b8f736",
-            "Date",
-            "Thu, 13 Apr 2023 20:29:16 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "52",
-            "X-Kong-Proxy-Latency",
-            "2",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

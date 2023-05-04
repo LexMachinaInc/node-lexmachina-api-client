@@ -10,9 +10,8 @@ const LexMachinaClient = require('../src/lexmachina_client');
 nockBack.setMode('record');
 
 describe('Magistrate Endpoints', () => {
-    var magistrateId = 333;
-    var magistrateIds = [333, 141, 131];
-
+    var magistrateId = 1507;
+    var magistrateIds = [1507, 1536, 1385];
     describe('Lookup Magistrate', () => {
 
         it('should contain single magistrate information', async () => {
@@ -23,8 +22,8 @@ describe('Magistrate Endpoints', () => {
             nockDone();
 
             expect(magistrate.magistrateJudgeId).to.equal(magistrateId);
-            expect(magistrate.name).to.equal('Hildy Bowbeer');
-        });
+            expect(magistrate.name).to.equal('Beryl Alaine Howell');
+        }); 
     });
 
     describe('Lookup Magistrates', () => {
@@ -39,9 +38,9 @@ describe('Magistrate Endpoints', () => {
             magistrateIds.forEach(magistrate => {
                 magistrates.should.include.a.thing.with.deep.property('magistrateJudgeId', magistrate);
             });
-            magistrates.should.include.a.thing.with.deep.nested.property('name', 'Hildy Bowbeer');
-            magistrates.should.include.a.thing.with.deep.nested.property('name', 'Nita L Stormes');
-            magistrates.should.include.a.thing.with.deep.nested.property('name', 'Nathanael M Cousins');
+            magistrates.should.include.a.thing.with.deep.nested.property('name', 'Zahid N Quraishi');
+            magistrates.should.include.a.thing.with.deep.nested.property('name', 'Ajmel A Quereshi');
+            magistrates.should.include.a.thing.with.deep.nested.property('name', 'Craig S Denney');
         });
     });
 
@@ -58,9 +57,9 @@ describe('Magistrate Endpoints', () => {
             magistrateBadInput = client.magistrates('Invalid String Input');
             magistratesInput = client.magistrates(magistrateId);
             nockDone();
-            await expect(magistratesInput).to.be.fulfilled;
-            await expect(magistratesNoInput).to.be.rejected;
-            await expect(magistrateBadInput).to.be.rejected;
+            expect(magistratesInput).to.be.fulfilled;
+            expect(magistratesNoInput).to.be.rejected;
+            expect(magistrateBadInput).to.be.rejected;
         });
     });
 });

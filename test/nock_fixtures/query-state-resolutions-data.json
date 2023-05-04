@@ -1,0 +1,130 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-case-resolutions/State",
+        "body": "",
+        "status": 200,
+        "response": {
+            "court": {
+                "name": "All State Courts",
+                "type": "State"
+            },
+            "caseResolutions": [
+                {
+                    "summary": "Plaintiff Win",
+                    "specific": "Jury Verdict"
+                },
+                {
+                    "summary": "Plaintiff Win",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Plaintiff Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Plaintiff Win",
+                    "specific": "Bench Trial"
+                },
+                {
+                    "summary": "Plaintiff Win",
+                    "specific": "Other Judgment"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Bench Trial"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Other Judgment"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Jury Verdict"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Bench Trial"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Other Judgment"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Jury Verdict"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Bench Trial"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Other Judgment"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Jury Verdict"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Indeterminable",
+                    "specific": "Jury Verdict"
+                },
+                {
+                    "summary": "Indeterminable",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Indeterminable",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Indeterminable",
+                    "specific": "Bench Trial"
+                },
+                {
+                    "summary": "Indeterminable",
+                    "specific": "Other Judgment"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:36 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "1477",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

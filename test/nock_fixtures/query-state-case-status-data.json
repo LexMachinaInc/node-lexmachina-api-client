@@ -1,0 +1,106 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseStatus": "Open",
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002784346",
+                    "stateCaseId": 2002784346
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002792849",
+                    "stateCaseId": 2002792849
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003517707",
+                    "stateCaseId": 2003517707
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:14 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseStatus": "Terminated",
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650305",
+                    "stateCaseId": 2002650305
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:18 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

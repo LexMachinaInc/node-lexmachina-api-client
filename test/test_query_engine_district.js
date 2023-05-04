@@ -1,4 +1,4 @@
-const CasesQueryRequest = require('../src/case_query_request');
+const DistrictCasesQueryRequest = require('../src/district_cases_query_request');
 const LexMachinaClient = require('../src/lexmachina_client');
 var chai = require('chai');
 const expect = chai.expect;
@@ -11,16 +11,16 @@ nockBack.setMode('record');
 
 
 describe('Execute Queries',   () => {
-    var client = new LexMachinaClient('config/config-auth.json');
+    var client = new LexMachinaClient('config/config.json');
 
 
     describe('Query Case Status', () => {
         it('should be able to execute queries with case status',  async () => {
-            const { nockDone} = await nockBack('query-case-status-data.json');
+            const { nockDone} = await nockBack('query-district-case-status-data.json');
 
             nock.enableNetConnect();
         
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var caseStatus;
             var index;
             var cases;
@@ -46,11 +46,12 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-case-types-data.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var caseType;
             var index;
             var cases;
-            var types = await client.listCaseTypes();
+            var types = await client.listDistrictCaseTypes();
+            types = types[0].caseTypes;
             for (index=0; index < types.length; index++) {
                 caseType = types[index];
                 caseQuery.addCaseTypesInclude(caseType);
@@ -80,11 +81,12 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-case-tags-data.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var caseTag;
             var index;
             var cases;
-            var tags = await client.listCaseTags();
+            var tags = await client.listDistrictCaseTags();
+            tags = tags[0].caseTags;
             tags.sort();
 
             for (index=0; index < tags.length; index++) {
@@ -118,11 +120,13 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-events-data.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var index;
             var cases;
-            var events = await client.listEvents();
+            var events = await client.listDistrictEvents();
+            events = events.events;
             events.sort();
+            //console.log("Events = " + events);
 
             for (index=0; index < events.length; index++) 
             {
@@ -156,11 +160,12 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-resolutions-data.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var resolution;
             var index;
             var cases;
-            var resolutions = await client.listCaseResolutions();
+            var resolutions = await client.listDistrictCaseResolutions();
+            resolutions = resolutions.caseResolutions;
             for (index=0; index < resolutions.length; index++) {
                 resolution = resolutions[index];
                 caseQuery.addResolutionsInclude(resolution.summary, resolution.specific);
@@ -194,7 +199,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-findings-judgment-sources.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var source;
             var index;
             var cases;
@@ -235,7 +240,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-findings-parties.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var parties = [1334, 2273, 266];
             var party;
             var index;
@@ -267,7 +272,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-findings-patent-invalidity.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var index;
             var cases;
             var patentInvalidityReasons = ['Invalidity: 103 Obviousness', 'Invalidity: 101 Subject Matter'];
@@ -291,7 +296,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-findings-date.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var cases;
 
             caseQuery.addFindingsDate('2010-01-01', 'onOrAfter');
@@ -314,7 +319,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-remedies-judgment-sources.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var judgmentSources = await client.listJudgmentSources();
             var remedySources = judgmentSources.remedies;
             remedySources.sort();
@@ -354,7 +359,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-remedies-parties.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var parties = [1334, 2273, 266];
             var party;
             var index;
@@ -388,7 +393,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-remedies-date.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
 
             caseQuery.addRemediesDate('2010-01-01', 'onOrAfter');
             caseQuery.addRemediesDate('2011-01-01', 'onOrBefore');
@@ -410,7 +415,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-damages-judgment-sources.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var judgmentSources = await client.listJudgmentSources();
             var damageSources = judgmentSources.damages;
             damageSources.sort();
@@ -450,7 +455,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-damages-parties.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var parties = [1334, 2273, 266];
             var party;
             var index;
@@ -484,7 +489,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-damages-date.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
 
             caseQuery.addDamagesDate('2010-01-01', 'onOrAfter');
             caseQuery.addDamagesDate('2011-01-01', 'onOrBefore');
@@ -506,7 +511,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-patents.json');
             nock.enableNetConnect();
             
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             var patents = [	10560500, 7171615, 8984393];
             var patent;
             var index;
@@ -543,7 +548,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-judges.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.judges.include).to.be.empty;
             expect(caseQuery.queryObject.judges.exclude).to.be.empty;
 
@@ -582,7 +587,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-magistrates.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.magistrates.include).to.be.empty;
             expect(caseQuery.queryObject.magistrates.exclude).to.be.empty;
      
@@ -621,7 +626,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-courts.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.courts.include).to.be.empty;
             expect(caseQuery.queryObject.courts.exclude).to.be.empty;
 
@@ -661,7 +666,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-lawfirms.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.lawFirms.include).to.be.empty;
             expect(caseQuery.queryObject.lawFirms.exclude).to.be.empty;
 
@@ -697,7 +702,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-lawfirms-plaintiff.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.be.empty;
             expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.be.empty;
 
@@ -732,7 +737,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-lawfirms-defendant.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.lawFirms.includeDefendant).to.be.empty;
             expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.be.empty;
 
@@ -767,7 +772,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-lawfirms-third-party.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.be.empty;
             expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.be.empty;
 
@@ -809,7 +814,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-parties.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.parties.include).to.be.empty;
             expect(caseQuery.queryObject.parties.exclude).to.be.empty;
 
@@ -845,7 +850,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-parties-plaintiff.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.parties.includePlaintiff).to.be.empty;
             expect(caseQuery.queryObject.parties.excludePlaintiff).to.be.empty;
 
@@ -879,7 +884,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-parties-defendant.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.parties.includeDefendant).to.be.empty;
             expect(caseQuery.queryObject.parties.excludeDefendant).to.be.empty;
 
@@ -913,7 +918,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-parties-third-party.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.parties.includeThirdParty).to.be.empty;
             expect(caseQuery.queryObject.parties.excludeThirdParty).to.be.empty;
     
@@ -952,7 +957,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-mdl.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.mdl.include).to.be.empty;
             expect(caseQuery.queryObject.mdl.exclude).to.be.empty;
 
@@ -990,7 +995,7 @@ describe('Execute Queries',   () => {
             const { nockDone} = await nockBack('query-misc.json');
             nock.enableNetConnect();
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.setDate('2022-01-01', 'filed', 'onOrAfter');
             caseQuery.setDate('2022-01-01', 'filed', 'onOrBefore');
             caseQuery.setPageSize(500);

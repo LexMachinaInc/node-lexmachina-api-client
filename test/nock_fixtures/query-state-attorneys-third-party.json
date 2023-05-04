@@ -1,0 +1,226 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includeThirdParty": [
+                    18589436
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940426",
+                    "stateCaseId": 2003940426
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003961115",
+                    "stateCaseId": 2003961115
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004013842",
+                    "stateCaseId": 2004013842
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006111339",
+                    "stateCaseId": 2006111339
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006111342",
+                    "stateCaseId": 2006111342
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:53 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includeThirdParty": [
+                    40252858
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940427",
+                    "stateCaseId": 2003940427
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940428",
+                    "stateCaseId": 2003940428
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940855",
+                    "stateCaseId": 2003940855
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940993",
+                    "stateCaseId": 2003940993
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003941223",
+                    "stateCaseId": 2003941223
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:54 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludeThirdParty": [
+                    18589436
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940414",
+                    "stateCaseId": 2003940414
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003945132",
+                    "stateCaseId": 2003945132
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940413",
+                    "stateCaseId": 2003940413
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940417",
+                    "stateCaseId": 2003940417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940418",
+                    "stateCaseId": 2003940418
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:54 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludeThirdParty": [
+                    40252858
+                ]
+            },
+            "courts": {
+                "state": "NV"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003940414",
+                    "stateCaseId": 2003940414
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003945132",
+                    "stateCaseId": 2003945132
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940413",
+                    "stateCaseId": 2003940413
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940417",
+                    "stateCaseId": 2003940417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003940418",
+                    "stateCaseId": 2003940418
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:55 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

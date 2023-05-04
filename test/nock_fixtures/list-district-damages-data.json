@@ -1,0 +1,194 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-damages/FederalDistrict",
+        "body": "",
+        "status": 200,
+        "response": {
+            "damagesByPraticeArea": {
+                "General": [
+                    "Other / Mixed Damage Types",
+                    "Attorneys' Fees / Costs",
+                    "Prejudgment Interest"
+                ],
+                "Copyright": [
+                    "Actual Damages / Infringer's Profits (Copyright)",
+                    "Statutory Damages (Copyright)"
+                ],
+                "Patent": [
+                    "Reasonable Royalty",
+                    "Lost Profits (Patent)",
+                    "Enhanced Damages (Patent)"
+                ],
+                "Trademark": [
+                    "Actual Damages / Infringer's Profits (Trademark)",
+                    "Statutory Damages (Trademark)",
+                    "Enhanced Damages (Trademark)",
+                    "Mass Counterfeiter Default Damages"
+                ],
+                "Securities": [
+                    "SEC / CFTC Penalties",
+                    "Disgorgement (Securities)",
+                    "Other Securities Damages",
+                    "Approved Class Action Settlement (Securities)",
+                    "Shareholder Derivative Settlement"
+                ],
+                "Antitrust": [
+                    "Antitrust Violation Damages",
+                    "Approved Class Action Settlement (Antitrust)",
+                    "Enhanced Damages (Antitrust)"
+                ],
+                "Employment": [
+                    "Backpay",
+                    "Front Pay",
+                    "Liquidated Damages (Employment)",
+                    "Other Compensatory Damages (Employment)",
+                    "Civil Money Penalties (Employment)",
+                    "State Statutory Penalties (Employment)",
+                    "Emotional Distress",
+                    "Punitive Damages (Employment)",
+                    "Approved Class Action Settlement (Employment)",
+                    "Collective Action Settlement",
+                    "EEOC Class Settlement",
+                    "Enhanced Damages (Employment)"
+                ],
+                "Product Liability": [
+                    "Personal Injury: Economic",
+                    "Personal Injury: Non-Economic",
+                    "Personal Injury: Unspecified",
+                    "Property Damages",
+                    "Other Product Liability Damages",
+                    "Punitive Damages (Product Liability)",
+                    "Approved Class Action Settlement (Product Liability)"
+                ],
+                "Bankruptcy": [
+                    "Actual Damages (Bankruptcy)",
+                    "Other Bankruptcy Damages",
+                    "Punitive Damages (Bankruptcy)"
+                ],
+                "Trade Secret": [
+                    "Actual Damages / Lost Profits",
+                    "Punitive / Willfulness Damages",
+                    "Reasonable Royalty (Trade Secret)"
+                ],
+                "Insurance": [
+                    "Contract Damages (Insurance)",
+                    "Restitution (Insurance)",
+                    "Emotional Distress Damages",
+                    "Tort Damages",
+                    "Punitive Damages (Insurance)",
+                    "Enhanced Damages (Insurance)",
+                    "Approved Class Action Settlement (Insurance)"
+                ],
+                "ERISA": [
+                    "ERISA Plan Benefits",
+                    "Liquidated Damages (ERISA)",
+                    "Interest on Unpaid Contributions",
+                    "Administrative Fees",
+                    "Disclosure Penalties",
+                    "Disgorgement (ERISA)",
+                    "Restitution (ERISA)",
+                    "Civil Money Penalties (ERISA)",
+                    "Approved Class Action Settlement (ERISA)"
+                ],
+                "Contracts": [
+                    "Contract Damages (Contracts)",
+                    "Liquidated Damages (Contracts)",
+                    "Restitution (Contracts)",
+                    "Tort Compensatory Damages (Contracts)",
+                    "Punitive Damages (Contracts)",
+                    "Enhanced Damages (Contracts)",
+                    "Approved Class Action Settlement (Contracts)"
+                ],
+                "Environmental": [
+                    "CERCLA Cost Recovery / Contribution",
+                    "Natural Resource Damages / Assessment Costs",
+                    "Civil Money Penalties (Environmental)",
+                    "Environmental Project / Mitigation Fund",
+                    "Punitive Damages (Environmental)"
+                ],
+                "Tax": [
+                    "Tax / Penalty Assessed",
+                    "Refund"
+                ],
+                "Consumer Protection": [
+                    "Statutory Damages (Consumer Protection)",
+                    "Compensatory Damages (Consumer Protection)",
+                    "Enhanced / Trebled Damages",
+                    "Punitive Damages (Consumer Protection)",
+                    "Civil Money Penalties (Consumer Protection)",
+                    "Restitution (Consumer Protection)",
+                    "Settled Claim Damages (Consumer Protection)",
+                    "Approved Class Action Settlement (Consumer Protection)"
+                ],
+                "Torts": [
+                    "Lost Wages (Torts)",
+                    "Medical Expenses (Torts)",
+                    "Pain and Suffering (Torts)",
+                    "Loss of Support",
+                    "Survivor Expenses",
+                    "Loss of Consortium (Torts)",
+                    "General Compensatory Damages",
+                    "Punitive Damages (Torts)"
+                ],
+                "Civil Rights": [
+                    "Compensatory Damages (Civil Rights)",
+                    "State Statutory Damages (Civil Rights)",
+                    "Nominal Damages (Civil Rights)",
+                    "Nominal Damages",
+                    "Punitive Damages (Civil Rights)"
+                ],
+                "False Claims": [
+                    "Actual Damages (False Claims)",
+                    "Treble Damages",
+                    "Civil Penalties",
+                    "Restitution (False Claims)",
+                    "Settled Claim Damages (False Claims)",
+                    "Relator Share",
+                    "Back Pay",
+                    "Special Damages (False Claims)"
+                ],
+                "Internet": [
+                    "Actual Damages / Disgorgement",
+                    "Statutory Damages (Internet)",
+                    "Punitive Damages (Internet)"
+                ],
+                "Surety Bond": [
+                    "Contract Damages (Surety Bond)",
+                    "Tort Compensatory Damages (Surety Bond)"
+                ],
+                "Real Property": [
+                    "Contract Damages (Real Property)",
+                    "Contract Damages ",
+                    "Compensatory Damages (Real Property)",
+                    "Actual Damages",
+                    "Actual Damages (Real Property)",
+                    "Restitution (Real Property)",
+                    "Restitution ",
+                    "Punitive Damages (Real Property)",
+                    "Punitive Damages ",
+                    "Settled Claim Damages (Real Property)",
+                    "Settled Claim Damages "
+                ]
+            },
+            "court": {
+                "name": "All Federal District Courts",
+                "type": "FederalDistrict"
+            }
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:16:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "4188",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

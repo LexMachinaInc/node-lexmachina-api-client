@@ -1,0 +1,269 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-courts/State",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "name": "Los Angeles County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Sacramento County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "San Bernardino County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Riverside County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Orange County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "San Diego County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Alameda County Superior Court",
+                "type": "State",
+                "state": "CA"
+            },
+            {
+                "name": "Court of Chancery",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "New Castle County Superior Court",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "Kent County Superior Court",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "Sussex County Superior Court",
+                "type": "State",
+                "state": "DE"
+            },
+            {
+                "name": "DeKalb County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "DeKalb County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Fulton County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Fulton County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Chatham County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Chatham County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Clayton County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Gwinnett County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Bibb County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Cherokee County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Douglas County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Floyd County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Henry County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Lowndes County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Forsyth County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Rockdale County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Spalding County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Effingham County Superior Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Cherokee County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Gwinnett County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Forsyth County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Houston County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Lowndes County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Rockdale County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Spalding County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Effingham County State Court",
+                "type": "State",
+                "state": "GA"
+            },
+            {
+                "name": "Clark County District Court",
+                "type": "State",
+                "state": "NV"
+            },
+            {
+                "name": "New York County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Kings County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Queens County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Bronx County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Richmond County Supreme Court",
+                "type": "State",
+                "state": "NY"
+            },
+            {
+                "name": "Multnomah County Circuit Court",
+                "type": "State",
+                "state": "OR"
+            },
+            {
+                "name": "Harris County District Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "Harris County Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "Fort Bend County Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "Fort Bend County District Court",
+                "type": "State",
+                "state": "TX"
+            },
+            {
+                "name": "King County Superior Court",
+                "type": "State",
+                "state": "WA"
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:16:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "3326",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

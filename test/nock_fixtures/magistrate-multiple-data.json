@@ -1,70 +1,56 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
-        "path": "/magistrate-judges?magistrateJudgeIds=333&magistrateJudgeIds=141&magistrateJudgeIds=131",
+        "path": "/magistrate-judges?magistrateJudgeIds=1507&magistrateJudgeIds=1536&magistrateJudgeIds=1385",
         "body": "",
         "status": 200,
         "response": [
             {
-                "name": "Hildy Bowbeer",
-                "magistrateJudgeId": 333,
-                "initials": "HB",
+                "name": "Craig S Denney",
+                "magistrateJudgeId": 1507,
+                "initials": "CSD",
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 3906
+                        "count": 460
                     }
                 ]
             },
             {
-                "name": "Nita L Stormes",
-                "magistrateJudgeId": 141,
-                "initials": "NLS",
+                "name": "Ajmel A Quereshi",
+                "magistrateJudgeId": 1536,
+                "initials": "AAQ",
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 4011
+                        "count": 478
                     }
                 ]
             },
             {
-                "name": "Nathanael M Cousins",
-                "magistrateJudgeId": 131,
-                "initials": "NMC",
+                "name": "Zahid N Quraishi",
+                "magistrateJudgeId": 1385,
+                "initials": "ZNQ",
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 8579
+                        "count": 1757
                     }
                 ]
             }
         ],
         "rawHeaders": [
-            "Content-Type",
+            "date",
+            "Thu, 04 May 2023 16:50:45 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "363",
+            "content-type",
             "application/json",
-            "Content-Length",
-            "361",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "75f0c83d4ef41216e060d77987140162145222ef29514c1c6619b9ca95626223",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "d0f871e377dce7a1dece72ae7ecc42c6",
-            "Date",
-            "Thu, 13 Apr 2023 20:29:56 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "1073",
-            "X-Kong-Proxy-Latency",
-            "33",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

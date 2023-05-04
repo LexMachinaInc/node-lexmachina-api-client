@@ -18,42 +18,33 @@ describe('Base LexMachina Request', () => {
     describe('User Agent', () => {
         it('should include version in user agent', () => {
             const client = new LexMachinaClient();
-            const atu = new AccessTokenUtils();
-            expect(atu.token_config).to.not.be.empty;
+            expect(client.lmRequest.atu.token_config).to.not.be.empty;
         });
 
         it('should be able to access non-default file constructor', () => {
-            var atu = new AccessTokenUtils('./config/config-notdefault.json');
-            expect(atu.token_config).to.not.be.empty;
+            const client = new LexMachinaClient('./config/config-notdefault.json');
+            expect(client.lmRequest.atu.token_config).to.not.be.empty;
         });
 
         it('should be able to access relative path file constructor', () => {
-            var atu = new AccessTokenUtils('./config/config-notdefault.json');
-            expect(atu.token_config).to.not.be.empty;
+            const client = new LexMachinaClient('./config/config-notdefault.json');
+            expect(client.lmRequest.atu.token_config).to.not.be.empty;
         });
 
         it('should throw error with nonexistent file constructor', () => {
             function badConfigFile() {
-                var atu = new AccessTokenUtils('../config/nonexistent.json');
-                atu;
+                const client = new LexMachinaClient('../config/nonexistent.json');
             }
             expect(badConfigFile).to.throw();
         });
 
-        it('should throw error with nonexistent file constructor', () => {
-            function badConfigFile() {
-                var atu = new AccessTokenUtils('../config/nonexistent.json');
-                atu;
-            }
-            expect(badConfigFile).to.throw();
-        });
     });
 
     describe('FetchTokenIntoStorage', () => {
         it('should get token from API and store via node-persist', async () => {
-            var atu = new AccessTokenUtils();
+            const client = new LexMachinaClient();
             nock.enableNetConnect();
-            const doFetch = atu.fetchTokenIntoStorage();
+            const doFetch = client.lmRequest.atu.fetchTokenIntoStorage();
             const { nockDone} = await nockBack('access-token-success.json');
             await expect(doFetch).to.be.fulfilled;
             nockDone();

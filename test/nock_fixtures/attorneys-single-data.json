@@ -1,39 +1,6 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth2/token",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "token_type": "bearer",
-            "access_token": "HEc8FA5RIX0nL7QPeQMK0T555hL4MtYC",
-            "expires_in": 3600
-        },
-        "rawHeaders": [
-            "Date",
-            "Thu, 13 Apr 2023 20:26:46 GMT",
-            "Content-Type",
-            "application/json; charset=utf-8",
-            "Connection",
-            "close",
-            "cache-control",
-            "no-store",
-            "pragma",
-            "no-cache",
-            "Content-Length",
-            "91",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Response-Latency",
-            "7",
-            "Server",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
         "path": "/attorneys/110161257",
         "body": "",
@@ -43,30 +10,16 @@
             "attorneyId": 110161257
         },
         "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
+            "date",
+            "Thu, 04 May 2023 16:16:34 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
             "49",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "6b5c8d2863a8ac414ac9088b9368bcc658157d56d6f3a728608ba81709446d30",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "535a95d64adf86082f477650fa615dfb;o=1",
-            "Date",
-            "Thu, 13 Apr 2023 20:26:46 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "87",
-            "X-Kong-Proxy-Latency",
-            "28",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

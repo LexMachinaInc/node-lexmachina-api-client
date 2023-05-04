@@ -1,0 +1,13 @@
+{
+  "baseURL": "http:localhost:8000",
+"authParameters":{
+    "client": {
+    "id": "WYoGWQQljHTePLtH8skUcOMea74wDs5c",
+    "secret": "WF6hYl9mvKY8g9a9RjMuH7nhLWR0wVov"
+  },
+  "auth": {
+    "tokenHost": "https://api.beta.lexmachina.com",
+    "tokenPath": "/oauth2/token"
+  }
+}
+}

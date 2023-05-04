@@ -1,0 +1,322 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includeDefendant": [
+                    141150476
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005448263",
+                    "stateCaseId": 2005448263
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:49 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "92",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includeDefendant": [
+                    15808253
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005472510",
+                    "stateCaseId": 2005472510
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005520652",
+                    "stateCaseId": 2005520652
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005479126",
+                    "stateCaseId": 2005479126
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007300056",
+                    "stateCaseId": 2007300056
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005448349",
+                    "stateCaseId": 2005448349
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:50 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "includeDefendant": [
+                    107853708
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005484874",
+                    "stateCaseId": 2005484874
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005470280",
+                    "stateCaseId": 2005470280
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005450087",
+                    "stateCaseId": 2005450087
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005422549",
+                    "stateCaseId": 2005422549
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005456129",
+                    "stateCaseId": 2005456129
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:51 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludeDefendant": [
+                    141150476
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005413379",
+                    "stateCaseId": 2005413379
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005410926",
+                    "stateCaseId": 2005410926
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005412253",
+                    "stateCaseId": 2005412253
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005415669",
+                    "stateCaseId": 2005415669
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005416750",
+                    "stateCaseId": 2005416750
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:51 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludeDefendant": [
+                    15808253
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005413379",
+                    "stateCaseId": 2005413379
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005410926",
+                    "stateCaseId": 2005410926
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005412253",
+                    "stateCaseId": 2005412253
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005415669",
+                    "stateCaseId": 2005415669
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005416750",
+                    "stateCaseId": 2005416750
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:52 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "attorneys": {
+                "excludeDefendant": [
+                    107853708
+                ]
+            },
+            "courts": {
+                "state": "WA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2005413379",
+                    "stateCaseId": 2005413379
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005410926",
+                    "stateCaseId": 2005410926
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005412253",
+                    "stateCaseId": 2005412253
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005415669",
+                    "stateCaseId": 2005415669
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2005416750",
+                    "stateCaseId": 2005416750
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:26:52 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

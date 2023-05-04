@@ -1,39 +1,6 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth2/token",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "token_type": "bearer",
-            "access_token": "2xqBdWmqwozhpULvv9jHMAQY0tHQYpd1",
-            "expires_in": 3600
-        },
-        "rawHeaders": [
-            "Date",
-            "Thu, 13 Apr 2023 20:30:19 GMT",
-            "Content-Type",
-            "application/json; charset=utf-8",
-            "Connection",
-            "close",
-            "cache-control",
-            "no-store",
-            "pragma",
-            "no-cache",
-            "Content-Length",
-            "91",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Response-Latency",
-            "8",
-            "Server",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
         "path": "/patents/7304635",
         "body": "",
@@ -59,30 +26,16 @@
             }
         },
         "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
+            "date",
+            "Thu, 04 May 2023 16:16:46 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
             "995",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "e4bf6968994944c58b32faf5256f1a2cde4df9d5f8209badf73684da19ae40f6",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "fb1c890b36617773e29cc6807b088a82;o=1",
-            "Date",
-            "Thu, 13 Apr 2023 20:30:19 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "117",
-            "X-Kong-Proxy-Latency",
-            "4",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

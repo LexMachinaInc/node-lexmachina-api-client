@@ -1,0 +1,61 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "date": {
+                        "onOrAfter": "2020-01-01",
+                        "onOrBefore": "2022-01-01"
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003760201",
+                    "stateCaseId": 2003760201
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006293032",
+                    "stateCaseId": 2006293032
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002652743",
+                    "stateCaseId": 2002652743
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006293161",
+                    "stateCaseId": 2006293161
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004709002",
+                    "stateCaseId": 2004709002
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:48 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

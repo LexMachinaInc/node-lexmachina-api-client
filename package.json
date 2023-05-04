@@ -1,10 +1,10 @@
 {
   "name": "@lexmachina/lexmachina-client",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Library to access the Lex Machina API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 100000",
+    "test": "mocha --timeout 200000",
     "lint": "eslint **/*.js"
   },
   "devDependencies": {

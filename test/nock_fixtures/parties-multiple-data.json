@@ -1,6 +1,6 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
         "path": "/parties?partyIds=216320&partyIds=196852&partyIds=56391",
         "body": "",
@@ -20,30 +20,16 @@
             }
         ],
         "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
+            "date",
+            "Thu, 04 May 2023 16:16:46 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
             "120",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "d0f54f8c91343c273921f72d40b379804bf867facb070f2d7f8cf89b44c918c7",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "62a7941f09c7a03bd2eedbf8265ac8dc",
-            "Date",
-            "Thu, 13 Apr 2023 20:30:05 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "44",
-            "X-Kong-Proxy-Latency",
-            "3",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

@@ -1,0 +1,230 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/state-cases/2007659138",
+        "body": "",
+        "status": 200,
+        "response": {
+            "stateCaseId": 2007659138,
+            "title": "SYNCHRONY BANK VS CLAUDIA ROSAS",
+            "state": "California",
+            "court": "Los Angeles County Superior Court",
+            "caseNo": "22NWLC01489",
+            "status": "Terminated",
+            "caseType": [
+                "Contracts (CA)"
+            ],
+            "caseTags": [
+                "Limited Jurisdiction",
+                "Collections (CA)",
+                "Trial"
+            ],
+            "dates": {
+                "filed": "2022-01-19",
+                "terminated": "2023-01-25",
+                "trial": "2023-01-25"
+            },
+            "resolution": {
+                "summary": "Plaintiff Win",
+                "specific": "Bench Trial"
+            },
+            "events": [
+                {
+                    "type": "Filed",
+                    "occurred": "2022-01-19"
+                },
+                {
+                    "type": "Trial",
+                    "occurred": "2023-01-25"
+                },
+                {
+                    "type": "Terminated",
+                    "occurred": "2023-01-25"
+                }
+            ],
+            "judges": [
+                {
+                    "name": "Maria Andrea Davalos",
+                    "stateJudgeId": 399
+                }
+            ],
+            "rulings": {
+                "active": [
+                    {
+                        "judgmentEvent": "Bench Trial",
+                        "awardedToPartyIds": [
+                            473505
+                        ],
+                        "awardedAgainstPartyIds": [
+                            54966924
+                        ],
+                        "awarded": "2023-01-25"
+                    }
+                ]
+            },
+            "lawFirms": [
+                {
+                    "name": "Suttell & Hammer",
+                    "lawFirmId": 54335638,
+                    "clientPartyIds": [
+                        473505
+                    ]
+                }
+            ],
+            "attorneys": [
+                {
+                    "name": "Hootan Atefyekta",
+                    "attorneyId": 154939122,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Erin E. Patterson",
+                    "attorneyId": 80537178,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Sunny S.J. Lee",
+                    "attorneyId": 9452800,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Jason W. Tang",
+                    "attorneyId": 80536108,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Shane T. Wate",
+                    "attorneyId": 118631852,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Patrick James Layman",
+                    "attorneyId": 81113718,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Carina M. Jordan",
+                    "attorneyId": 80557927,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Thomas J. Sebourn",
+                    "attorneyId": 80536571,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Nicholas John Babilis",
+                    "attorneyId": 80753924,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Julie M. VanderNoor Urner",
+                    "attorneyId": 153890112,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                }
+            ],
+            "parties": [
+                {
+                    "name": "SYNCHRONY BANK",
+                    "partyId": 473505,
+                    "role": "Plaintiff"
+                },
+                {
+                    "name": "CLAUDIA ROSAS",
+                    "partyId": 54966924,
+                    "role": "Defendant"
+                }
+            ],
+            "damages": {
+                "active": [
+                    {
+                        "name": "General Damages (Judgment on Merits)",
+                        "awardedToPartyId": [
+                            473505
+                        ],
+                        "awardedAgainstPartyIds": [
+                            54966924
+                        ],
+                        "amount": 6406.12,
+                        "awarded": "2023-01-25"
+                    },
+                    {
+                        "name": "Attorneys' Fees / Costs",
+                        "awardedToPartyId": [
+                            473505
+                        ],
+                        "awardedAgainstPartyIds": [
+                            54966924
+                        ],
+                        "amount": 296,
+                        "awarded": "2023-01-25"
+                    }
+                ]
+            }
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:37:04 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "2334",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

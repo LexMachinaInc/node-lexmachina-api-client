@@ -1,0 +1,1511 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-case-types/State",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "court": {
+                    "name": "Los Angeles County Superior Court",
+                    "type": "State",
+                    "state": "CA"
+                },
+                "caseTypes": [
+                    "Torts (Non-Vehicle) (CA)",
+                    "Other Civil (CA)",
+                    "Contracts (CA)",
+                    "Employment (CA)",
+                    "Real Property (CA)",
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Harris County District Court",
+                    "type": "State",
+                    "state": "TX"
+                },
+                "caseTypes": [
+                    "Contract (TX)",
+                    "Employment (TX)",
+                    "Injury or Damage (TX)",
+                    "Multi-District Litigation (MDL) (TX)",
+                    "Other Civil (TX)",
+                    "Real Property (TX)",
+                    "Related to Criminal Matters (TX)",
+                    "Tax (TX)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Harris County Court",
+                    "type": "State",
+                    "state": "TX"
+                },
+                "caseTypes": [
+                    "Injury or Damage (TX_HC)",
+                    "Other / Legacy / Administrative (TX_HC)",
+                    "Real Property (TX_HC)",
+                    "Tax (TX_HC)",
+                    "Other Civil (TX)",
+                    "Related to Criminal Matters (TX)",
+                    "Appealed from Lower Courts (TX_HC)",
+                    "Related to Criminal Matters (TX_HC)",
+                    "Contract (TX_HC)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Court of Chancery",
+                    "type": "State",
+                    "state": "DE"
+                },
+                "caseTypes": [
+                    "DCC Administrative Law",
+                    "DCC Commercial Law",
+                    "DCC Consent Trust Petitions",
+                    "DCC Constitutional Law",
+                    "DCC Corporation Law",
+                    "DCC Labor Law",
+                    "DCC Partition",
+                    "DCC Rapid Arbitration",
+                    "DCC Real Property",
+                    "DCC Trade Secret / IP",
+                    "DCC Trusts, Wills and Estates",
+                    "DCC Uniform Arbitration Act",
+                    "DCC Zoning",
+                    "DCC § 348 Deed Restrictions",
+                    "DCC Other Field of Law",
+                    "DCC Not Indicated"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Fort Bend County Court",
+                    "type": "State",
+                    "state": "TX"
+                },
+                "caseTypes": [
+                    "Contract (TX)",
+                    "Injury or Damage (TX)",
+                    "Other Civil (TX)",
+                    "Real Property (TX)",
+                    "Related to Criminal Matters (TX)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Fort Bend County District Court",
+                    "type": "State",
+                    "state": "TX"
+                },
+                "caseTypes": [
+                    "Contract (TX)",
+                    "Injury or Damage (TX)",
+                    "Other Civil (TX)",
+                    "Real Property (TX)",
+                    "Related to Criminal Matters (TX)",
+                    "Tax (TX)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Sacramento County Superior Court",
+                    "type": "State",
+                    "state": "CA"
+                },
+                "caseTypes": [
+                    "Torts (Non-Vehicle) (CA)",
+                    "Other Civil (CA)",
+                    "Contracts (CA)",
+                    "Employment (CA)",
+                    "Real Property (CA)",
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "San Bernardino County Superior Court",
+                    "type": "State",
+                    "state": "CA"
+                },
+                "caseTypes": [
+                    "Torts (Non-Vehicle) (CA)",
+                    "Other Civil (CA)",
+                    "Contracts (CA)",
+                    "Employment (CA)",
+                    "Real Property (CA)",
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Riverside County Superior Court",
+                    "type": "State",
+                    "state": "CA"
+                },
+                "caseTypes": [
+                    "Torts (Non-Vehicle) (CA)",
+                    "Other Civil (CA)",
+                    "Contracts (CA)",
+                    "Employment (CA)",
+                    "Real Property (CA)",
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Orange County Superior Court",
+                    "type": "State",
+                    "state": "CA"
+                },
+                "caseTypes": [
+                    "Torts (Non-Vehicle) (CA)",
+                    "Other Civil (CA)",
+                    "Contracts (CA)",
+                    "Employment (CA)",
+                    "Real Property (CA)",
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Clark County District Court",
+                    "type": "State",
+                    "state": "NV"
+                },
+                "caseTypes": [
+                    "Business Court (NV)",
+                    "Civil Writ (NV)",
+                    "Construction Defect & Contract (NV)",
+                    "Judicial Review / Appeal (NV)",
+                    "Other Civil Filing (NV)",
+                    "Real Property (NV)",
+                    "Torts (NV)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "San Diego County Superior Court",
+                    "type": "State",
+                    "state": "CA"
+                },
+                "caseTypes": [
+                    "Torts (Non-Vehicle) (CA)",
+                    "Other Civil (CA)",
+                    "Contracts (CA)",
+                    "Employment (CA)",
+                    "Real Property (CA)",
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "King County Superior Court",
+                    "type": "State",
+                    "state": "WA"
+                },
+                "caseTypes": [
+                    "Appeal / Judicial Review (WA)",
+                    "Contract / Commercial (WA)",
+                    "Property Rights (WA)",
+                    "Other Complaint / Petition (WA)",
+                    "Torts (Non-Vehicle) (WA)",
+                    "Torts (Vehicle) (WA)",
+                    "Medical Malpractice (WA)",
+                    "Asbestos (WA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "DeKalb County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "DeKalb County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Fulton County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Fulton County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Alameda County Superior Court",
+                    "type": "State",
+                    "state": "CA"
+                },
+                "caseTypes": [
+                    "Torts (Non-Vehicle) (CA)",
+                    "Other Civil (CA)",
+                    "Contracts (CA)",
+                    "Employment (CA)",
+                    "Real Property (CA)",
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Multnomah County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "New Castle County Superior Court",
+                    "type": "State",
+                    "state": "DE"
+                },
+                "caseTypes": [
+                    "Torts (Medical Malpractice) (DE)",
+                    "Torts (Non-Vehicle) (DE)",
+                    "Torts (Products Liability) (DE)",
+                    "Torts (Vehicle) (DE)",
+                    "Appeal / Judicial Review (DE)",
+                    "Appealed from Lower Courts (DE)",
+                    "Asbestos (DE)",
+                    "Complex Commercial Litigation Division (DE)",
+                    "Contract (DE)",
+                    "Other Civil (DE)",
+                    "Real Property (DE)",
+                    "Torts (Legal Malpractice) (DE)",
+                    "Torts (Mass) (DE)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Kent County Superior Court",
+                    "type": "State",
+                    "state": "DE"
+                },
+                "caseTypes": [
+                    "Torts (Medical Malpractice) (DE)",
+                    "Torts (Non-Vehicle) (DE)",
+                    "Torts (Products Liability) (DE)",
+                    "Torts (Vehicle) (DE)",
+                    "Appeal / Judicial Review (DE)",
+                    "Appealed from Lower Courts (DE)",
+                    "Asbestos (DE)",
+                    "Complex Commercial Litigation Division (DE)",
+                    "Contract (DE)",
+                    "Other Civil (DE)",
+                    "Real Property (DE)",
+                    "Torts (Legal Malpractice) (DE)",
+                    "Torts (Mass) (DE)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Sussex County Superior Court",
+                    "type": "State",
+                    "state": "DE"
+                },
+                "caseTypes": [
+                    "Torts (Medical Malpractice) (DE)",
+                    "Torts (Non-Vehicle) (DE)",
+                    "Torts (Products Liability) (DE)",
+                    "Torts (Vehicle) (DE)",
+                    "Appeal / Judicial Review (DE)",
+                    "Appealed from Lower Courts (DE)",
+                    "Asbestos (DE)",
+                    "Complex Commercial Litigation Division (DE)",
+                    "Contract (DE)",
+                    "Other Civil (DE)",
+                    "Real Property (DE)",
+                    "Torts (Legal Malpractice) (DE)",
+                    "Torts (Mass) (DE)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "New York County Supreme Court",
+                    "type": "State",
+                    "state": "NY"
+                },
+                "caseTypes": [
+                    "Asbestos (NY)",
+                    "Commercial (NY)",
+                    "Commercial Division (NY)",
+                    "Emergency Applications re: Coronavirus (NY)",
+                    "Employment / Labor (NY)",
+                    "Other Matters (NY)",
+                    "Real Property (NY)",
+                    "Special Proceedings (NY)",
+                    "Tax Certiorari (NY)",
+                    "Torts (NY)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Kings County Supreme Court",
+                    "type": "State",
+                    "state": "NY"
+                },
+                "caseTypes": [
+                    "Commercial (NY)",
+                    "Commercial Division (NY)",
+                    "Emergency Applications re: Coronavirus (NY)",
+                    "Employment / Labor (NY)",
+                    "Other Matters (NY)",
+                    "Real Property (NY)",
+                    "Special Proceedings (NY)",
+                    "Tax Certiorari (NY)",
+                    "Torts (NY)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Queens County Supreme Court",
+                    "type": "State",
+                    "state": "NY"
+                },
+                "caseTypes": [
+                    "Commercial (NY)",
+                    "Commercial Division (NY)",
+                    "Emergency Applications re: Coronavirus (NY)",
+                    "Employment / Labor (NY)",
+                    "Other Matters (NY)",
+                    "Real Property (NY)",
+                    "Special Proceedings (NY)",
+                    "Tax Certiorari (NY)",
+                    "Torts (NY)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Bronx County Supreme Court",
+                    "type": "State",
+                    "state": "NY"
+                },
+                "caseTypes": [
+                    "Commercial (NY)",
+                    "Emergency Applications re: Coronavirus (NY)",
+                    "Employment / Labor (NY)",
+                    "Other Matters (NY)",
+                    "Real Property (NY)",
+                    "Special Proceedings (NY)",
+                    "Tax Certiorari (NY)",
+                    "Torts (NY)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Richmond County Supreme Court",
+                    "type": "State",
+                    "state": "NY"
+                },
+                "caseTypes": [
+                    "Commercial (NY)",
+                    "Emergency Applications re: Coronavirus (NY)",
+                    "Employment / Labor (NY)",
+                    "Other Matters (NY)",
+                    "Real Property (NY)",
+                    "Special Proceedings (NY)",
+                    "Tax Certiorari (NY)",
+                    "Torts (NY)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Chatham County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Chatham County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Clayton County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Gwinnett County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Bibb County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Cherokee County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Douglas County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Floyd County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Henry County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lowndes County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Forsyth County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Rockdale County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Spalding County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Effingham County Superior Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Cherokee County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Gwinnett County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Forsyth County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Houston County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lowndes County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Rockdale County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Spalding County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Effingham County State Court",
+                    "type": "State",
+                    "state": "GA"
+                },
+                "caseTypes": [
+                    "Other Civil (GA)",
+                    "Torts (GA)",
+                    "Civil Writ (GA)",
+                    "Appeal / Judicial Review (GA)",
+                    "Tax Appeal (GA)",
+                    "Property (GA)",
+                    "Contract (GA)"
+                ]
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:19 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "12589",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "include": [
+                    "Torts (Non-Vehicle) (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002650305",
+                    "stateCaseId": 2002650305
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650308",
+                    "stateCaseId": 2002650308
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650315",
+                    "stateCaseId": 2002650315
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650937",
+                    "stateCaseId": 2002650937
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650943",
+                    "stateCaseId": 2002650943
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:19 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "include": [
+                    "Other Civil (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002651041",
+                    "stateCaseId": 2002651041
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002768929",
+                    "stateCaseId": 2002768929
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002768930",
+                    "stateCaseId": 2002768930
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002768931",
+                    "stateCaseId": 2002768931
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002768932",
+                    "stateCaseId": 2002768932
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:19 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "include": [
+                    "Contracts (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650633",
+                    "stateCaseId": 2002650633
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650935",
+                    "stateCaseId": 2002650935
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:20 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "include": [
+                    "Employment (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650306",
+                    "stateCaseId": 2002650306
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650933",
+                    "stateCaseId": 2002650933
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651007",
+                    "stateCaseId": 2002651007
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651035",
+                    "stateCaseId": 2002651035
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:21 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "include": [
+                    "Real Property (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650634",
+                    "stateCaseId": 2002650634
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651120",
+                    "stateCaseId": 2002651120
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651220",
+                    "stateCaseId": 2002651220
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651247",
+                    "stateCaseId": 2002651247
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:22 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "include": [
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002650628",
+                    "stateCaseId": 2002650628
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650632",
+                    "stateCaseId": 2002650632
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650639",
+                    "stateCaseId": 2002650639
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650659",
+                    "stateCaseId": 2002650659
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650928",
+                    "stateCaseId": 2002650928
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:22 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "exclude": [
+                    "Torts (Non-Vehicle) (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:23 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "exclude": [
+                    "Other Civil (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:23 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "exclude": [
+                    "Contracts (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650305",
+                    "stateCaseId": 2002650305
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650306",
+                    "stateCaseId": 2002650306
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650308",
+                    "stateCaseId": 2002650308
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:24 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "exclude": [
+                    "Employment (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650305",
+                    "stateCaseId": 2002650305
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:25 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "exclude": [
+                    "Real Property (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002650305",
+                    "stateCaseId": 2002650305
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:25 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "caseTypes": {
+                "exclude": [
+                    "Torts (Vehicle) (CA)"
+                ]
+            },
+            "courts": {
+                "state": "CA"
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002814596",
+                    "stateCaseId": 2002814596
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814597",
+                    "stateCaseId": 2002814597
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814599",
+                    "stateCaseId": 2002814599
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002814603",
+                    "stateCaseId": 2002814603
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002825104",
+                    "stateCaseId": 2002825104
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:26 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

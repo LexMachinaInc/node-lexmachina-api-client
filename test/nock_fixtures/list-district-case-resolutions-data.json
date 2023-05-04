@@ -1,0 +1,122 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-case-resolutions/FederalDistrict",
+        "body": "",
+        "status": 200,
+        "response": {
+            "court": {
+                "name": "All Federal District Courts",
+                "type": "FederalDistrict"
+            },
+            "caseResolutions": [
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Judgment as a Matter of Law"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Judgment on the Pleadings"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Decision on Bankruptcy Appeal"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Trial"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Summary Judgment"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Judgment as a Matter of Law"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Judgment on the Pleadings"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Decision on Bankruptcy Appeal"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Trial"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Summary Judgment"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Likely Settlement"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Contested Dismissal"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Interdistrict Transfer"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Intradistrict Transfer"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Multidistrict Litigation"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Dismissal"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Stay"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Consolidation"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Severance"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:16:36 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "1481",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-events/FederalDistrict",
+        "body": "",
+        "status": 200,
+        "response": {
+            "court": {
+                "name": "All Federal District Courts",
+                "type": "FederalDistrict"
+            },
+            "events": [
+                "Markman Hearing",
+                "Permanent Injuction",
+                "Summary Judgement",
+                "Dismiss (Contested)",
+                "Filed",
+                "Terminated"
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:16:41 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "187",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

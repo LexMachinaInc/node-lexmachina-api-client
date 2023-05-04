@@ -1,0 +1,33 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-damages/State",
+        "body": "",
+        "status": 200,
+        "response": {
+            "damages": [
+                "General Damages (Judgment on Merits)",
+                "General Damages (Jury Verdict)",
+                "Attorneys' Fees / Costs"
+            ],
+            "court": {
+                "name": "All State Courts",
+                "type": "State"
+            }
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:16:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "162",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

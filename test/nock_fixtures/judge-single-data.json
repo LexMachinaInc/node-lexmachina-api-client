@@ -1,39 +1,6 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth2/token",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "token_type": "bearer",
-            "access_token": "w6NikWF1zL0WmZT7sRhmQPzelULpFSo1",
-            "expires_in": 3600
-        },
-        "rawHeaders": [
-            "Date",
-            "Thu, 13 Apr 2023 20:28:57 GMT",
-            "Content-Type",
-            "application/json; charset=utf-8",
-            "Connection",
-            "close",
-            "cache-control",
-            "no-store",
-            "pragma",
-            "no-cache",
-            "Content-Length",
-            "91",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Response-Latency",
-            "7",
-            "Server",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
         "path": "/federal-judges/3349",
         "body": "",
@@ -46,36 +13,22 @@
             "caseCountByCourt": [
                 {
                     "court": "total",
-                    "count": 1758
+                    "count": 1773
                 }
             ],
             "nominatingPresident": "Barack Obama"
         },
         "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
+            "date",
+            "Thu, 04 May 2023 16:16:42 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
             "185",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "c7b0169b26dfcd383550b98a04e64f16fd389c761236c6cec96342b9f193c487",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "325e0709099217ffc0c38df953f91f89;o=1",
-            "Date",
-            "Thu, 13 Apr 2023 20:28:57 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "138",
-            "X-Kong-Proxy-Latency",
-            "32",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

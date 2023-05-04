@@ -1,0 +1,393 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "GET",
+        "path": "/list-damages/State",
+        "body": "",
+        "status": 200,
+        "response": {
+            "damages": [
+                "General Damages (Judgment on Merits)",
+                "General Damages (Jury Verdict)",
+                "Attorneys' Fees / Costs"
+            ],
+            "court": {
+                "name": "All State Courts",
+                "type": "State"
+            }
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "162",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "name": {
+                        "include": [
+                            "Attorneys' Fees / Costs"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "stateCaseId": 2002651250
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651203",
+                    "stateCaseId": 2002651203
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651348",
+                    "stateCaseId": 2002651348
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651434",
+                    "stateCaseId": 2002651434
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:37 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "name": {
+                        "include": [
+                            "General Damages (Judgment on Merits)"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "stateCaseId": 2002651250
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004707060",
+                    "stateCaseId": 2004707060
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006291819",
+                    "stateCaseId": 2006291819
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006291859",
+                    "stateCaseId": 2006291859
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:40 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "name": {
+                        "include": [
+                            "General Damages (Jury Verdict)"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2002651302",
+                    "stateCaseId": 2002651302
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004707078",
+                    "stateCaseId": 2004707078
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004707417",
+                    "stateCaseId": 2004707417
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006292033",
+                    "stateCaseId": 2006292033
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651348",
+                    "stateCaseId": 2002651348
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:41 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "name": {
+                        "exclude": [
+                            "Attorneys' Fees / Costs"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "stateCaseId": 2002651250
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651302",
+                    "stateCaseId": 2002651302
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004707060",
+                    "stateCaseId": 2004707060
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004707078",
+                    "stateCaseId": 2004707078
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:42 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "name": {
+                        "exclude": [
+                            "General Damages (Judgment on Merits)"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "stateCaseId": 2002651250
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651302",
+                    "stateCaseId": 2002651302
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004707078",
+                    "stateCaseId": 2004707078
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651203",
+                    "stateCaseId": 2002651203
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:43 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "name": {
+                        "exclude": [
+                            "General Damages (Jury Verdict)"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "stateCaseId": 2002651250
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2004707060",
+                    "stateCaseId": 2004707060
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006291819",
+                    "stateCaseId": 2006291819
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006291859",
+                    "stateCaseId": 2006291859
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:43 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

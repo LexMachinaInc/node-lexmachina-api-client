@@ -18,7 +18,7 @@ describe('List Judgment Sources', () => {
         var judgmentSources = await client.listJudgmentSources();
         nockDone();
 
-        expect(Object.keys(judgmentSources)).to.have.lengthOf(3);
+        expect(Object.keys(judgmentSources)).to.have.lengthOf(4);
         categories.forEach(category => {
             judgmentSources.should.include.key(category);
             judgmentSources[category].should.include('Default Judgment');

@@ -1,4 +1,4 @@
-const CasesQueryRequest = require('../src/case_query_request.js');
+const DistrictCasesQueryRequest = require('../src/district_cases_query_request.js');
 var chai = require('chai');
 const expect = chai.expect;
 chai.should();
@@ -8,7 +8,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Case Status', () => {
         it('should be able to add and remove Case Status', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             ['open', 'close'].forEach(caseStatus => {
                 caseQuery.setCaseStatus(caseStatus);
                 expect(caseQuery.queryObject.caseStatus).to.equal(caseStatus);
@@ -20,7 +20,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Case Types', () => {
         it('should be able to add and remove case Types includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.caseTypes.include).to.be.empty;
             expect(caseQuery.queryObject.caseTypes.exclude).to.be.empty;
 
@@ -45,7 +45,7 @@ describe('Add and Remove Query Statements', () => {
         });
 
         it('adding the same Case Type to includes and excludes should not duplicate entries', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addCaseTypesInclude('Antitrust');
             expect(caseQuery.queryObject.caseTypes.include).to.have.lengthOf(1);
             caseQuery.addCaseTypesInclude('Antitrust');
@@ -80,7 +80,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Case Tags', () => {
         it('should be able to add and remove case Tags includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.caseTags.include).to.be.empty;
             expect(caseQuery.queryObject.caseTags.exclude).to.be.empty;
 
@@ -105,7 +105,7 @@ describe('Add and Remove Query Statements', () => {
         });
 
         it('adding the same Case Tag to includes and excludes should not duplicate entries', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addCaseTagsInclude('Trial');
             expect(caseQuery.queryObject.caseTags.include).to.have.lengthOf(1);
             caseQuery.addCaseTagsInclude('Trial');
@@ -140,67 +140,67 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Events', () => {
         it('should be able to add and remove events includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
-            expect(caseQuery.queryObject.events.includeEventTypes).to.be.empty;
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.be.empty;
+            var caseQuery = new DistrictCasesQueryRequest();
+            expect(caseQuery.queryObject.events.include).to.be.empty;
+            expect(caseQuery.queryObject.events.exclude).to.be.empty;
 
             caseQuery.addEventTypesInclude('Filed');
-            expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(1);
+            expect(caseQuery.queryObject.events.include).to.have.lengthOf(1);
             caseQuery.clear();
-            expect(caseQuery.queryObject.events.includeEventTypes).to.be.empty;
+            expect(caseQuery.queryObject.events.include).to.be.empty;
             caseQuery.addEventTypesInclude(['Markman Hearing', 'Permanent Injuction', 'Summary Judgement']);
-            expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(3);
+            expect(caseQuery.queryObject.events.include).to.have.lengthOf(3);
             caseQuery.finalize();
             caseQuery.clear();
-            expect(caseQuery.queryObject.events.includeEventTypes).to.be.empty;
+            expect(caseQuery.queryObject.events.include).to.be.empty;
 
             caseQuery.addEventTypesExclude('Filed');
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(1);
+            expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(1);
             caseQuery.clear();
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.be.empty;
+            expect(caseQuery.queryObject.events.exclude).to.be.empty;
             caseQuery.addEventTypesExclude(['Markman Hearing', 'Permanent Injuction', 'Summary Judgement']);
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(3);
+            expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(3);
             caseQuery.clear();
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.be.empty;
+            expect(caseQuery.queryObject.events.exclude).to.be.empty;
         });
 
         it('adding the same events to includes and excludes should not duplicate entries', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addEventTypesInclude('Filed');
-            expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(1);
+            expect(caseQuery.queryObject.events.include).to.have.lengthOf(1);
             caseQuery.addEventTypesInclude('Filed');
-            expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(1);
+            expect(caseQuery.queryObject.events.include).to.have.lengthOf(1);
             caseQuery.clear();
 
             caseQuery.addEventTypesExclude('Filed');
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(1);
+            expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(1);
             caseQuery.addEventTypesExclude('Filed');
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(1);
+            expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(1);
             caseQuery.clear();
 
             var array1 = ['Markman Hearing', 'Permanent Injuction', 'Summary Judgement'];
             var array2 = ['Permanent Injuction', 'Summary Judgement', 'Dismiss (Contested)'];
             caseQuery.addEventTypesInclude(array1);
-            expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(3);
+            expect(caseQuery.queryObject.events.include).to.have.lengthOf(3);
             caseQuery.addEventTypesInclude(array2);
-            expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(4);
+            expect(caseQuery.queryObject.events.include).to.have.lengthOf(4);
             caseQuery.addEventTypesInclude('Markman Hearing');
-            expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(4);
+            expect(caseQuery.queryObject.events.include).to.have.lengthOf(4);
             caseQuery.clear();
 
             caseQuery.addEventTypesExclude(array1);
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(3);
+            expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(3);
             caseQuery.addEventTypesExclude(array2);
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(4);
+            expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(4);
             caseQuery.addEventTypesExclude('Markman Hearing');
-            expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(4);
+            expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(4);
             caseQuery.clear();
         });
     });
 
     describe('Findings', () => {
         it('should be able to add and remove findings includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.findings[0].awardedToParties).to.be.empty;
             expect(caseQuery.queryObject.findings[0].awardedAgainstParties).to.be.empty;
             expect(caseQuery.queryObject.findings[0].judgmentSource.include).to.be.empty;
@@ -270,7 +270,7 @@ describe('Add and Remove Query Statements', () => {
 
         it('adding the same findings IDs to includes should not duplicate entries', () => {
             //Awarded To Parties
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addFindingsIncludeAwardedToParties(1234);
             expect(caseQuery.queryObject.findings[0].awardedToParties).to.have.lengthOf(1);
             caseQuery.addFindingsIncludeAwardedToParties(1234);
@@ -339,7 +339,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Remedies', () => {
         it('should be able to add and remove remedies includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.remedies[0].awardedToParties).to.be.empty;
             expect(caseQuery.queryObject.remedies[0].awardedAgainstParties).to.be.empty;
             expect(caseQuery.queryObject.remedies[0].judgmentSource.include).to.be.empty;
@@ -397,7 +397,7 @@ describe('Add and Remove Query Statements', () => {
 
         it('adding the same remedy IDs to includes should not duplicate entries', () => {
             //Awarded To Parties
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addRemediesIncludeAwardedToParties(1234);
             expect(caseQuery.queryObject.remedies[0].awardedToParties).to.have.lengthOf(1);
             caseQuery.addRemediesIncludeAwardedToParties(1234);
@@ -448,7 +448,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Damages', () => {
         it('should be able to add and remove damage includes ', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.damages[0].awardedToParties).to.be.empty;
             expect(caseQuery.queryObject.damages[0].awardedAgainstParties).to.be.empty;
             expect(caseQuery.queryObject.damages[0].judgmentSource.include).to.be.empty;
@@ -508,7 +508,7 @@ describe('Add and Remove Query Statements', () => {
 
         it('adding the same findings IDs to includes should not duplicate entries', () => {
             //Awarded To Parties
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addDamagesIncludeAwardedToParties(1234);
             expect(caseQuery.queryObject.damages[0].awardedToParties).to.have.lengthOf(1);
             caseQuery.addDamagesIncludeAwardedToParties(1234);
@@ -560,7 +560,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Patents', () => {
         it('should be able to add and remove case Types includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.patents.include).to.be.empty;
             expect(caseQuery.queryObject.patents.exclude).to.be.empty;
 
@@ -585,7 +585,7 @@ describe('Add and Remove Query Statements', () => {
         });
 
         it('adding the same Case Type to includes and excludes should not duplicate entries', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addPatentsInclude(1234);
             expect(caseQuery.queryObject.patents.include).to.have.lengthOf(1);
             caseQuery.addPatentsInclude(1234);
@@ -620,7 +620,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Judges', () => {
         it('should be able to add and remove judges includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.judges.include).to.be.empty;
             expect(caseQuery.queryObject.judges.exclude).to.be.empty;
 
@@ -648,7 +648,7 @@ describe('Add and Remove Query Statements', () => {
             var array1 = [1234, 2345, 3456];
             var array2 = [2345, 3456, 4567];
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addJudgesInclude(1234);
             expect(caseQuery.queryObject.judges.include).to.have.lengthOf(1);
             caseQuery.addJudgesInclude(1234);
@@ -681,7 +681,7 @@ describe('Add and Remove Query Statements', () => {
 
     describe('Magistrates', () => {
         it('should be able to add and remove magistrate includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.magistrates.include).to.be.empty;
             expect(caseQuery.queryObject.magistrates.exclude).to.be.empty;
 
@@ -710,7 +710,7 @@ describe('Add and Remove Query Statements', () => {
             var array1 = [1234, 2345, 3456];
             var array2 = [2345, 3456, 4567];
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addMagistratesInclude(magistrate);
             expect(caseQuery.queryObject.magistrates.include).to.have.lengthOf(1);
             caseQuery.addMagistratesInclude(magistrate);
@@ -741,68 +741,256 @@ describe('Add and Remove Query Statements', () => {
         });
     });
 
-    describe('Courts', () => {
-        var court = 'njd';
-        var array1 = ['njd', 'dcd', 'ord'];
+// Attorneys
 
-        it('should be able to add and remove courts includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
-            expect(caseQuery.queryObject.courts.include).to.be.empty;
-            expect(caseQuery.queryObject.courts.exclude).to.be.empty;
+    describe('Attorneys', () => {
+        it('should be able to add and remove law firm includes and excludes', () => {
+            var caseQuery = new DistrictCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.include).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.exclude).to.be.empty;
 
-            caseQuery.addCourtsInclude(court);
-            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(1);
+            caseQuery.addAttorneysInclude(1234);
+            expect(caseQuery.queryObject.attorneys.include).to.have.lengthOf(1);
             caseQuery.clear();
-            expect(caseQuery.queryObject.courts.include).to.be.empty;
-            caseQuery.addCourtsInclude(array1);
-            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(3);
+            expect(caseQuery.queryObject.attorneys.include).to.be.empty;
+            caseQuery.addAttorneysInclude([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.include).to.have.lengthOf(3);
             caseQuery.finalize();
             caseQuery.clear();
-            expect(caseQuery.queryObject.courts.include).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.include).to.be.empty;
 
-            caseQuery.addCourtsExclude(court);
-            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(1);
+            caseQuery.addAttorneysExclude(1234);
+            expect(caseQuery.queryObject.attorneys.exclude).to.have.lengthOf(1);
             caseQuery.clear();
-            expect(caseQuery.queryObject.courts.exclude).to.be.empty;
-            caseQuery.addCourtsExclude(array1);
-            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(3);
+            expect(caseQuery.queryObject.attorneys.exclude).to.be.empty;
+            caseQuery.addAttorneysExclude([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.exclude).to.have.lengthOf(3);
             caseQuery.clear();
-            expect(caseQuery.queryObject.courts.exclude).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.exclude).to.be.empty;
         });
 
-        it('adding the same court to includes and excludes should not duplicate entries', () => {
-            var court = 'njd';
-            var array1 = ['njd', 'dcd', 'ord'];
-            var array2 = ['dcd', 'ord', 'alsd'];
+        it('adding the same law firm to includes and excludes should not duplicate entries', () => {
+            var array1 = [1234, 2345, 3456];
+            var array2 = [2345, 3456, 4567];
 
-            var caseQuery = new CasesQueryRequest();
-            caseQuery.addCourtsInclude(court);
-            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(1);
-            caseQuery.addCourtsInclude(court);
-            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(1);
+            var caseQuery = new DistrictCasesQueryRequest();
+            caseQuery.addAttorneysInclude(1234);
+            expect(caseQuery.queryObject.attorneys.include).to.have.lengthOf(1);
+            caseQuery.addAttorneysInclude(1234);
+            expect(caseQuery.queryObject.attorneys.include).to.have.lengthOf(1);
             caseQuery.clear();
 
-            caseQuery.addCourtsExclude(court);
-            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(1);
-            caseQuery.addCourtsExclude(court);
-            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(1);
+            caseQuery.addAttorneysExclude(1234);
+            expect(caseQuery.queryObject.attorneys.exclude).to.have.lengthOf(1);
+            caseQuery.addAttorneysExclude(1234);
+            expect(caseQuery.queryObject.attorneys.exclude).to.have.lengthOf(1);
             caseQuery.clear();
 
-            caseQuery.addCourtsInclude(array1);
-            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(3);
-            caseQuery.addCourtsInclude(array2);
-            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(4);
-            caseQuery.addCourtsInclude(court);
-            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(4);
+            caseQuery.addAttorneysInclude(array1);
+            expect(caseQuery.queryObject.attorneys.include).to.have.lengthOf(3);
+            caseQuery.addAttorneysInclude(array2);
+            expect(caseQuery.queryObject.attorneys.include).to.have.lengthOf(4);
+            caseQuery.addAttorneysInclude(1234);
+            expect(caseQuery.queryObject.attorneys.include).to.have.lengthOf(4);
             caseQuery.clear();
 
-            caseQuery.addCourtsExclude(array1);
-            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(3);
-            caseQuery.addCourtsExclude(array2);
-            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(4);
-            caseQuery.addCourtsExclude(court);
-            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(4);
+            caseQuery.addAttorneysExclude(array1);
+            expect(caseQuery.queryObject.attorneys.exclude).to.have.lengthOf(3);
+            caseQuery.addAttorneysExclude(array2);
+            expect(caseQuery.queryObject.attorneys.exclude).to.have.lengthOf(4);
+            caseQuery.addAttorneysExclude(1234);
+            expect(caseQuery.queryObject.attorneys.exclude).to.have.lengthOf(4);
             caseQuery.clear();
+
+
+        });
+
+        // Plaintiff
+
+        it('should be able to add and remove law firm plaintiff includes and excludes', () => {
+            var caseQuery = new DistrictCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.be.empty;
+
+            caseQuery.addAttorneysIncludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.be.empty;
+            caseQuery.addAttorneysIncludePlaintiff([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.have.lengthOf(3);
+            caseQuery.finalize();
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.be.empty;
+
+            caseQuery.addAttorneysExcludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.be.empty;
+            caseQuery.addAttorneysExcludePlaintiff([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.have.lengthOf(3);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.be.empty;
+        });
+
+        it('adding the same law firm to includes and excludes should not duplicate entries', () => {
+            var array1 = [1234, 2345, 3456];
+            var array2 = [2345, 3456, 4567];
+
+            var caseQuery = new DistrictCasesQueryRequest();
+            caseQuery.addAttorneysIncludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.have.lengthOf(1);
+            caseQuery.addAttorneysIncludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysExcludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.have.lengthOf(1);
+            caseQuery.addAttorneysExcludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysIncludePlaintiff(array1);
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.have.lengthOf(3);
+            caseQuery.addAttorneysIncludePlaintiff(array2);
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.have.lengthOf(4);
+            caseQuery.addAttorneysIncludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.includePlaintiff).to.have.lengthOf(4);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysExcludePlaintiff(array1);
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.have.lengthOf(3);
+            caseQuery.addAttorneysExcludePlaintiff(array2);
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.have.lengthOf(4);
+            caseQuery.addAttorneysExcludePlaintiff(1234);
+            expect(caseQuery.queryObject.attorneys.excludePlaintiff).to.have.lengthOf(4);
+            caseQuery.clear();
+
+
+        });
+
+        // Defendant
+
+        it('should be able to add and remove law firm includes and excludes', () => {
+            var caseQuery = new DistrictCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.be.empty;
+
+            caseQuery.addAttorneysIncludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.be.empty;
+            caseQuery.addAttorneysIncludeDefendant([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.have.lengthOf(3);
+            caseQuery.finalize();
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.be.empty;
+
+            caseQuery.addAttorneysExcludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.be.empty;
+            caseQuery.addAttorneysExcludeDefendant([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.have.lengthOf(3);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.be.empty;
+        });
+
+        it('adding the same law firm to includes and excludes should not duplicate entries', () => {
+            var array1 = [1234, 2345, 3456];
+            var array2 = [2345, 3456, 4567];
+
+            var caseQuery = new DistrictCasesQueryRequest();
+            caseQuery.addAttorneysIncludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.have.lengthOf(1);
+            caseQuery.addAttorneysIncludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysExcludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.have.lengthOf(1);
+            caseQuery.addAttorneysExcludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysIncludeDefendant(array1);
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.have.lengthOf(3);
+            caseQuery.addAttorneysIncludeDefendant(array2);
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.have.lengthOf(4);
+            caseQuery.addAttorneysIncludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.includeDefendant).to.have.lengthOf(4);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysExcludeDefendant(array1);
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.have.lengthOf(3);
+            caseQuery.addAttorneysExcludeDefendant(array2);
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.have.lengthOf(4);
+            caseQuery.addAttorneysExcludeDefendant(1234);
+            expect(caseQuery.queryObject.attorneys.excludeDefendant).to.have.lengthOf(4);
+            caseQuery.clear();
+
+
+        });
+        // Third Party
+
+        it('should be able to add and remove law firm includes and excludes', () => {
+            var caseQuery = new DistrictCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.be.empty;
+
+            caseQuery.addAttorneysIncludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.be.empty;
+            caseQuery.addAttorneysIncludeThirdParty([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.have.lengthOf(3);
+            caseQuery.finalize();
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.be.empty;
+
+            caseQuery.addAttorneysExcludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.be.empty;
+            caseQuery.addAttorneysExcludeThirdParty([1234, 2345, 3456]);
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.have.lengthOf(3);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.be.empty;
+        });
+
+        it('adding the same law firm to includes and excludes should not duplicate entries', () => {
+            var array1 = [1234, 2345, 3456];
+            var array2 = [2345, 3456, 4567];
+
+            var caseQuery = new DistrictCasesQueryRequest();
+            caseQuery.addAttorneysIncludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.have.lengthOf(1);
+            caseQuery.addAttorneysIncludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysExcludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.have.lengthOf(1);
+            caseQuery.addAttorneysExcludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysIncludeThirdParty(array1);
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.have.lengthOf(3);
+            caseQuery.addAttorneysIncludeThirdParty(array2);
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.have.lengthOf(4);
+            caseQuery.addAttorneysIncludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.have.lengthOf(4);
+            caseQuery.clear();
+
+            caseQuery.addAttorneysExcludeThirdParty(array1);
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.have.lengthOf(3);
+            caseQuery.addAttorneysExcludeThirdParty(array2);
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.have.lengthOf(4);
+            caseQuery.addAttorneysExcludeThirdParty(1234);
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.have.lengthOf(4);
+            caseQuery.clear();
+
+
         });
     });
 
@@ -811,7 +999,7 @@ describe('Add and Remove Query Statements', () => {
         var array1 = [1234, 2345, 3456];
 
         it('should be able to add and remove lawFirms includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.lawFirms.include).to.be.empty;
             expect(caseQuery.queryObject.lawFirms.exclude).to.be.empty;
             expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.be.empty;
@@ -903,7 +1091,7 @@ describe('Add and Remove Query Statements', () => {
             var array1 = [1234, 2345, 3456];
             var array2 = [2345, 3456, 4567];
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addLawFirmsInclude(lawFirm);
             expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(1);
             caseQuery.addLawFirmsInclude(lawFirm);
@@ -1023,7 +1211,7 @@ describe('Add and Remove Query Statements', () => {
         var array1 = [1234, 2345, 3456];
 
         it('should be able to add and remove parties includes and excludes', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.parties.include).to.be.empty;
             expect(caseQuery.queryObject.parties.exclude).to.be.empty;
             expect(caseQuery.queryObject.parties.includePlaintiff).to.be.empty;
@@ -1115,7 +1303,7 @@ describe('Add and Remove Query Statements', () => {
             var array1 = [1234, 2345, 3456];
             var array2 = [2345, 3456, 4567];
 
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addPartiesInclude(party);
             expect(caseQuery.queryObject.parties.include).to.have.lengthOf(1);
             caseQuery.addPartiesInclude(party);
@@ -1230,6 +1418,74 @@ describe('Add and Remove Query Statements', () => {
         });
     });
 
+
+   
+    describe('Courts', () => {
+        var court = 'njd';
+        var array1 = ['njd', 'dcd', 'ord'];
+
+        it('should be able to add and remove courts includes and excludes', () => {
+            var caseQuery = new DistrictCasesQueryRequest();
+            expect(caseQuery.queryObject.courts.include).to.be.empty;
+            expect(caseQuery.queryObject.courts.exclude).to.be.empty;
+
+            caseQuery.addCourtsInclude(court);
+            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.courts.include).to.be.empty;
+            caseQuery.addCourtsInclude(array1);
+            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(3);
+            caseQuery.finalize();
+            caseQuery.clear();
+            expect(caseQuery.queryObject.courts.include).to.be.empty;
+
+            caseQuery.addCourtsExclude(court);
+            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(1);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.courts.exclude).to.be.empty;
+            caseQuery.addCourtsExclude(array1);
+            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(3);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.courts.exclude).to.be.empty;
+        });
+
+        it('adding the same court to includes and excludes should not duplicate entries', () => {
+            var court = 'njd';
+            var array1 = ['njd', 'dcd', 'ord'];
+            var array2 = ['dcd', 'ord', 'alsd'];
+
+            var caseQuery = new DistrictCasesQueryRequest();
+            caseQuery.addCourtsInclude(court);
+            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(1);
+            caseQuery.addCourtsInclude(court);
+            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addCourtsExclude(court);
+            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(1);
+            caseQuery.addCourtsExclude(court);
+            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(1);
+            caseQuery.clear();
+
+            caseQuery.addCourtsInclude(array1);
+            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(3);
+            caseQuery.addCourtsInclude(array2);
+            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(4);
+            caseQuery.addCourtsInclude(court);
+            expect(caseQuery.queryObject.courts.include).to.have.lengthOf(4);
+            caseQuery.clear();
+
+            caseQuery.addCourtsExclude(array1);
+            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(3);
+            caseQuery.addCourtsExclude(array2);
+            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(4);
+            caseQuery.addCourtsExclude(court);
+            expect(caseQuery.queryObject.courts.exclude).to.have.lengthOf(4);
+            caseQuery.clear();
+        });
+    });
+
+
     describe('Resolutions', () => {
         var summary1 = 'Claimant Win';
         var specific1 = 'Contested Dismissal';
@@ -1240,7 +1496,7 @@ describe('Add and Remove Query Statements', () => {
 
 
         it('should be able to add and remove resolution', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.resolutions.include).to.be.empty;
             expect(caseQuery.queryObject.resolutions.exclude).to.be.empty;
 
@@ -1274,7 +1530,7 @@ describe('Add and Remove Query Statements', () => {
         var array2 = [2345, 3456, 4567];
 
         it('should be able to add and remove MDLs', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.mdl.include).to.be.empty;
             expect(caseQuery.queryObject.mdl.exclude).to.be.empty;
 
@@ -1299,7 +1555,7 @@ describe('Add and Remove Query Statements', () => {
         });
 
         it('adding the same MDL to include and excludes should not double', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.addMDLInclude(mdl);
             expect(caseQuery.queryObject.mdl.include).to.have.lengthOf(1);
             caseQuery.addMDLInclude(mdl);
@@ -1332,7 +1588,7 @@ describe('Add and Remove Query Statements', () => {
 });
 
 describe('Set/unset attributes', () => {
-    var caseQuery = new CasesQueryRequest();
+    var caseQuery = new DistrictCasesQueryRequest();
 
     describe('Damages', () => {
         var amount1 = 1237777;
@@ -1407,7 +1663,7 @@ describe('Set/unset attributes', () => {
 });
 
 describe('Date Operation', () => {
-    var caseQuery = new CasesQueryRequest();
+    var caseQuery = new DistrictCasesQueryRequest();
     var operators = ['onOrAfter', 'onOrBefore'];
     var fields = ['filed', 'terminated', 'lastDocket', 'trial'];
     var goodDate = '2021-01-01';
@@ -1452,14 +1708,14 @@ describe('Date Operation', () => {
 
     describe('Post Body', () => {
         it('should be able to retrieve POST body', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.getPostBody()).to.not.be.empty;
         });
     });
 
     describe('Clear Empty Values', () => {
         it('clearing empty query should leave no fields', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             caseQuery.finalize();
             //console.log("After clearing, object is %s", JSON.stringify(caseQuery.queryObject));
             expect(Object.keys(caseQuery.queryObject)).to.have.lengthOf(3);
@@ -1476,7 +1732,7 @@ describe('Date Operation', () => {
 
 
         describe('chaining constraint functions should add all constraints', () => {
-            var caseQuery = new CasesQueryRequest();
+            var caseQuery = new DistrictCasesQueryRequest();
             expect(caseQuery.queryObject.caseTags.include).to.be.empty;
             expect(caseQuery.queryObject.caseTags.exclude).to.be.empty;
             
@@ -1550,28 +1806,28 @@ describe('Date Operation', () => {
                 caseQuery.addEventTypesInclude('EventTypeInclude')
                     .addEventTypesExclude('EventTypeExclude')
                     .addEventTypesInclude('EventTypeInclude2');
-                expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(2);
-                expect(caseQuery.queryObject.events.includeEventTypes).to.contain('EventTypeInclude');
-                expect(caseQuery.queryObject.events.includeEventTypes).to.contain('EventTypeInclude2');
-                expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(1);
-                expect(caseQuery.queryObject.events.excludeEventTypes).to.contain('EventTypeExclude');
+                expect(caseQuery.queryObject.events.include).to.have.lengthOf(2);
+                expect(caseQuery.queryObject.events.include).to.contain('EventTypeInclude');
+                expect(caseQuery.queryObject.events.include).to.contain('EventTypeInclude2');
+                expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(1);
+                expect(caseQuery.queryObject.events.exclude).to.contain('EventTypeExclude');
 
                 caseQuery.clear();
 
-                expect(caseQuery.queryObject.events.includeEventTypes).to.be.empty;
-                expect(caseQuery.queryObject.events.excludeEventTypes).to.be.empty;
+                expect(caseQuery.queryObject.events.include).to.be.empty;
+                expect(caseQuery.queryObject.events.exclude).to.be.empty;
 
                 caseQuery.addEventTypesInclude(includeStringArray)
                     .addEventTypesExclude(excludeStringArray)
                     .addEventTypesInclude('EventTypeInclude');
-                expect(caseQuery.queryObject.events.includeEventTypes).to.have.lengthOf(4);
-                expect(caseQuery.queryObject.events.includeEventTypes).to.contain('EventTypeInclude');
+                expect(caseQuery.queryObject.events.include).to.have.lengthOf(4);
+                expect(caseQuery.queryObject.events.include).to.contain('EventTypeInclude');
                 includeStringArray.forEach(eventType => {
-                    expect(caseQuery.queryObject.events.includeEventTypes).to.contain(eventType);
+                    expect(caseQuery.queryObject.events.include).to.contain(eventType);
                 });
-                expect(caseQuery.queryObject.events.excludeEventTypes).to.have.lengthOf(3);
+                expect(caseQuery.queryObject.events.exclude).to.have.lengthOf(3);
                 excludeStringArray.forEach(eventType => {
-                    expect(caseQuery.queryObject.events.excludeEventTypes).to.contain(eventType);
+                    expect(caseQuery.queryObject.events.exclude).to.contain(eventType);
                 });             
             });
 

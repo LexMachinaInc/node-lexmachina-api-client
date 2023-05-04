@@ -11,12 +11,29 @@ nockBack.setMode('record');
 describe('List Events', () => {
 
     it('should contain case tags', async () => {
-        const { nockDone} = await nockBack('list-events-data.json');
+        const { nockDone} = await nockBack('list-district-events-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
-        var events = await client.listEvents();
+        var eventsObjects = await client.listDistrictEvents();
+        var events = eventsObjects.events;
         nockDone();
         expect(events).to.have.length.above(5);
+
+        events.should.include('Filed');
+        events.should.include('Terminated');
+    });
+});
+
+describe('List State Events', () => {
+
+    it('should contain case tags', async () => {
+        const { nockDone} = await nockBack('list-state-events-data.json');
+        nock.enableNetConnect();
+        const client = new LexMachinaClient();
+        var eventsObject = await client.listStateEvents();
+        var events = eventsObject.events;
+        nockDone();
+        expect(events).to.have.length.above(2);
 
         events.should.include('Filed');
         events.should.include('Terminated');

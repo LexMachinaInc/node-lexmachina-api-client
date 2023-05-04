@@ -1,6 +1,6 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
         "path": "/federal-judges?federalJudgeIds=3349&federalJudgeIds=3488&federalJudgeIds=2877",
         "body": "",
@@ -14,7 +14,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 1758
+                        "count": 1773
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -27,7 +27,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 3791
+                        "count": 3808
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -40,37 +40,23 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 6165
+                        "count": 6183
                     }
                 ],
                 "nominatingPresident": "William J. Clinton"
             }
         ],
         "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
+            "date",
+            "Thu, 04 May 2023 16:16:43 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
             "564",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "91048f2511a647291d3455f96d76c89ee6457526ca719b1d168d5f971426a068",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "1cca9e528fb70dc63f088fdeffea0b7f",
-            "Date",
-            "Thu, 13 Apr 2023 20:28:57 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "138",
-            "X-Kong-Proxy-Latency",
-            "21",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

@@ -1,11 +1,32 @@
 const BaseLexMachinaRequest = require('./base_lm_request.js');
-const QueryDistrictCases = require('./query_district_cases.js');
+const QueryDistrictCases = require('./query_cases.js');
+const path = require('path');
 
 module.exports = class LexMachinaClient {
 
-    constructor(config_path) {
-        this.lmRequest = new BaseLexMachinaRequest(config_path);
-        this.queryEngine = new QueryDistrictCases(config_path);
+    constructor(input_config_file_path) {
+            var config_file_path='';
+            if (!input_config_file_path) {
+                config_file_path =  '../config/config.json';
+            } else {
+                if (!path.isAbsolute(input_config_file_path)) {
+                    config_file_path = path.join(process.cwd(), input_config_file_path);
+                } else {
+                    config_file_path = input_config_file_path;
+                }
+            }
+    
+            try {
+                var config =  require(config_file_path);
+                this.token_config = config.authParameters;
+            } catch (e){
+                console.log(' Cannot load config file at ' + config_file_path);
+                throw (e);
+            }
+        
+        
+        this.lmRequest = new BaseLexMachinaRequest(config);
+        this.queryEngine = new QueryDistrictCases(config);
     }
 
     async attorneys(attornies) {
@@ -26,6 +47,16 @@ module.exports = class LexMachinaClient {
         var config = {};
         if (Number.isInteger(cases)) {
             config.endpoint = '/district-cases/' + cases;
+        } else {
+            throw new Error('The case_id must be an integer');
+        }
+        return this.lmRequest.requestURL(config);
+    }
+
+    async stateCases(cases) {
+        var config = {};
+        if (Number.isInteger(cases)) {
+            config.endpoint = '/state-cases/' + cases;
         } else {
             throw new Error('The case_id must be an integer');
         }
@@ -63,38 +94,67 @@ module.exports = class LexMachinaClient {
         return this.lmRequest.requestURL(config);
     }
 
-    async listCaseResolutions() {
-        var config = { 'endpoint': '/list-case-resolutions' };
+    async listDistrictCaseResolutions() {
+        var config = { 'endpoint': '/list-case-resolutions/FederalDistrict' };
         return this.lmRequest.requestURL(config);
     }
 
-    async listCaseTags() {
-        var config = { 'endpoint': '/list-case-tags' };
+    async listStateCaseResolutions() {
+        var config = { 'endpoint': '/list-case-resolutions/State' };
         return this.lmRequest.requestURL(config);
     }
 
-    async listCaseTypes() {
-        var config = { 'endpoint': '/list-case-types' };
+    async listDistrictCaseTags() {
+        var config = { 'endpoint': '/list-case-tags/FederalDistrict' };
+        return this.lmRequest.requestURL(config);
+    }    
+    
+    async listStateCaseTags() {
+        var config = { 'endpoint': '/list-case-tags/State' };
         return this.lmRequest.requestURL(config);
     }
 
-    async listCourts() {
-        var config = { 'endpoint': '/list-courts' };
+    async listDistrictCaseTypes() {
+        var config = { 'endpoint': '/list-case-types/FederalDistrict' };
         return this.lmRequest.requestURL(config);
     }
 
-    async listDamages() {
-        var config = { 'endpoint': '/list-damages' };
+    async listStateCaseTypes() {
+        var config = { 'endpoint': '/list-case-types/State' };
         return this.lmRequest.requestURL(config);
     }
 
-    async listEvents() {
-        var config = { 'endpoint': '/list-events' };
+    async listDistrictCourts() {
+        var config = { 'endpoint': '/list-courts/FederalDistrict' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listStateCourts() {
+        var config = { 'endpoint': '/list-courts/State' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listDistrictDamages() {
+        var config = { 'endpoint': '/list-damages/FederalDistrict' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listStateDamages() {
+        var config = { 'endpoint': '/list-damages/State' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listDistrictEvents() {
+        var config = { 'endpoint': '/list-events/FederalDistrict' };
         return this.lmRequest.requestURL(config);
     }
     
+    async listStateEvents() {
+        var config = { 'endpoint': '/list-events/State' };
+        return this.lmRequest.requestURL(config);
+    }
     async listJudgmentSources() {
-        var config = { 'endpoint': '/list-judgment-sources' };
+        var config = { 'endpoint': '/list-judgment-sources/FederalDistrict' };
         return this.lmRequest.requestURL(config);
     }
     async magistrates(magistrates) {
@@ -214,6 +274,10 @@ module.exports = class LexMachinaClient {
     }
 
     async queryDistrictCases(query, options) {
-        return this.queryEngine.queryDistrictCases(query, options);
+        return this.queryEngine.queryCases("district", query, options);
+    }
+
+    async queryStateCases(query, options) {
+        return this.queryEngine.queryCases("state", query, options);
     }
 };

@@ -1,0 +1,306 @@
+[
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "awardedToParties": [
+                        25344
+                    ]
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2004712427",
+                    "stateCaseId": 2004712427
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003150462",
+                    "stateCaseId": 2003150462
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2006297560",
+                    "stateCaseId": 2006297560
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003813416",
+                    "stateCaseId": 2003813416
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003191293",
+                    "stateCaseId": 2003191293
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:44 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "awardedToParties": [
+                        3957
+                    ]
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003139342",
+                    "stateCaseId": 2003139342
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003272082",
+                    "stateCaseId": 2003272082
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003272105",
+                    "stateCaseId": 2003272105
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003283452",
+                    "stateCaseId": 2003283452
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003286016",
+                    "stateCaseId": 2003286016
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:45 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "awardedToParties": [
+                        473505
+                    ]
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2003214979",
+                    "stateCaseId": 2003214979
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003218605",
+                    "stateCaseId": 2003218605
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003223727",
+                    "stateCaseId": 2003223727
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003264190",
+                    "stateCaseId": 2003264190
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2003263175",
+                    "stateCaseId": 2003263175
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:45 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "416",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "awardedAgainstParties": [
+                        68452930
+                    ]
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007673579",
+                    "stateCaseId": 2007673579
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:46 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "92",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "awardedAgainstParties": [
+                        47684565
+                    ]
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007044542",
+                    "stateCaseId": 2007044542
+                },
+                {
+                    "url": "https://localhost:8000/state-cases/2007640989",
+                    "stateCaseId": 2007640989
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:46 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "173",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:8000",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "damages": [
+                {
+                    "awardedAgainstParties": [
+                        54966924
+                    ]
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://localhost:8000/state-cases/2007659138",
+                    "stateCaseId": 2007659138
+                }
+            ]
+        },
+        "rawHeaders": [
+            "date",
+            "Thu, 04 May 2023 16:24:47 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "92",
+            "content-type",
+            "application/json",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

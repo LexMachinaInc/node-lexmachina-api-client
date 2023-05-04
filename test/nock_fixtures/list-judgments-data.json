@@ -1,92 +1,49 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth2/token",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "token_type": "bearer",
-            "access_token": "Di2EzhVMMRXXeGa36sNdtcMfvGUixkRV",
-            "expires_in": 3600
-        },
-        "rawHeaders": [
-            "Date",
-            "Thu, 13 Apr 2023 20:29:03 GMT",
-            "Content-Type",
-            "application/json; charset=utf-8",
-            "Connection",
-            "close",
-            "cache-control",
-            "no-store",
-            "pragma",
-            "no-cache",
-            "Content-Length",
-            "91",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Response-Latency",
-            "14",
-            "Server",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
-        "path": "/list-judgment-sources",
+        "path": "/list-judgment-sources/FederalDistrict",
         "body": "",
         "status": 200,
         "response": {
             "damages": [
                 "No Type Specified",
-                "Consent Judgment",
-                "Judgment on Merits",
+                "Jury Verdict",
                 "Default Judgment",
-                "Jury Verdict"
-            ],
-            "remedies": [
                 "Judgment on Merits",
-                "Default Judgment",
-                "No Type Specified",
                 "Consent Judgment"
             ],
-            "findings": [
-                "Summary Judgment",
+            "remedies": [
                 "No Type Specified",
+                "Judgment on Merits",
                 "Consent Judgment",
-                "Default Judgment",
-                "Judgment as a Matter of Law",
+                "Default Judgment"
+            ],
+            "findings": [
+                "No Type Specified",
+                "Summary Judgment",
+                "Trial",
                 "Judgment on the Pleadings",
-                "Trial"
-            ]
+                "Judgment as a Matter of Law",
+                "Default Judgment",
+                "Consent Judgment"
+            ],
+            "court": {
+                "name": "All Federal District Courts",
+                "type": "FederalDistrict"
+            }
         },
         "rawHeaders": [
-            "Content-Type",
+            "date",
+            "Thu, 04 May 2023 16:16:44 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "427",
+            "content-type",
             "application/json",
-            "Content-Length",
-            "355",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "a30ce843770fe1608464eb538cd1b6d156fd4a3bb3ff1ce93413ca2631f64d39",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "40bb6544d4a48efccb89c97bd62f8ff3",
-            "Date",
-            "Thu, 13 Apr 2023 20:29:04 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "16",
-            "X-Kong-Proxy-Latency",
-            "3",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }

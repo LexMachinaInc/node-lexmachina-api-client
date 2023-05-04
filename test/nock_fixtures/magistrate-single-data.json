@@ -1,79 +1,33 @@
 [
     {
-        "scope": "https://api.beta.lexmachina.com:443",
-        "method": "POST",
-        "path": "/oauth2/token",
-        "body": "grant_type=client_credentials",
-        "status": 200,
-        "response": {
-            "expires_in": 3600,
-            "access_token": "X9FH4dY5k5KNcuX4Syyi0cmDanM7WYPw",
-            "token_type": "bearer"
-        },
-        "rawHeaders": [
-            "Date",
-            "Thu, 13 Apr 2023 20:29:53 GMT",
-            "Content-Type",
-            "application/json; charset=utf-8",
-            "Connection",
-            "close",
-            "cache-control",
-            "no-store",
-            "pragma",
-            "no-cache",
-            "Content-Length",
-            "91",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Response-Latency",
-            "29",
-            "Server",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.beta.lexmachina.com:443",
+        "scope": "http://localhost:8000",
         "method": "GET",
-        "path": "/magistrate-judges/333",
+        "path": "/magistrate-judges/1507",
         "body": "",
-        "status": 200,
+        "status": 422,
         "response": {
-            "name": "Hildy Bowbeer",
-            "magistrateJudgeId": 333,
-            "initials": "HB",
-            "caseCountByCourt": [
+            "detail": [
                 {
-                    "court": "total",
-                    "count": 3906
+                    "loc": [
+                        "query",
+                        "magistrateJudgeId"
+                    ],
+                    "msg": "field required",
+                    "type": "value_error.missing"
                 }
             ]
         },
         "rawHeaders": [
-            "Content-Type",
+            "date",
+            "Thu, 04 May 2023 16:54:09 GMT",
+            "server",
+            "uvicorn",
+            "content-length",
+            "102",
+            "content-type",
             "application/json",
-            "Content-Length",
-            "116",
-            "Connection",
-            "close",
-            "X-Cache-Key",
-            "e9acf8004ae5f9c1f424a9bb1b0b120f0bf154e29af0ae0e28ff1153f1d49fa2",
-            "X-Cache-Status",
-            "Miss",
-            "X-Cloud-Trace-Context",
-            "a2b2b2dd0e417d69377702e31883a309;o=1",
-            "Date",
-            "Thu, 13 Apr 2023 20:29:54 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "1255",
-            "X-Kong-Proxy-Latency",
-            "31",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "connection",
+            "close"
         ],
         "responseIsBinary": false
     }
