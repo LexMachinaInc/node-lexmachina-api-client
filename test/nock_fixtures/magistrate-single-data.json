@@ -4,26 +4,25 @@
         "method": "GET",
         "path": "/magistrate-judges/1507",
         "body": "",
-        "status": 422,
+        "status": 200,
         "response": {
-            "detail": [
+            "name": "Craig S Denney",
+            "magistrateJudgeId": 1507,
+            "initials": "CSD",
+            "caseCountByCourt": [
                 {
-                    "loc": [
-                        "query",
-                        "magistrateJudgeId"
-                    ],
-                    "msg": "field required",
-                    "type": "value_error.missing"
+                    "court": "total",
+                    "count": 460
                 }
             ]
         },
         "rawHeaders": [
             "date",
-            "Thu, 04 May 2023 16:54:09 GMT",
+            "Thu, 04 May 2023 19:00:17 GMT",
             "server",
             "uvicorn",
             "content-length",
-            "102",
+            "118",
             "content-type",
             "application/json",
             "connection",

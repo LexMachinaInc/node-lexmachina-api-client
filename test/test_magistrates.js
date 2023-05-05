@@ -22,7 +22,7 @@ describe('Magistrate Endpoints', () => {
             nockDone();
 
             expect(magistrate.magistrateJudgeId).to.equal(magistrateId);
-            expect(magistrate.name).to.equal('Beryl Alaine Howell');
+            expect(magistrate.name).to.equal('Craig S Denney');
         }); 
     });
 
