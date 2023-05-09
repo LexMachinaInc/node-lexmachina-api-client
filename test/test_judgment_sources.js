@@ -15,7 +15,7 @@ describe('List Judgment Sources', () => {
         const { nockDone} = await nockBack('list-judgments-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
-        var judgmentSources = await client.listJudgmentSources();
+        var judgmentSources = await client.listDistrictJudgmentSources();
         nockDone();
 
         expect(Object.keys(judgmentSources)).to.have.lengthOf(4);

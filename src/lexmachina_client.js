@@ -153,10 +153,15 @@ module.exports = class LexMachinaClient {
         var config = { 'endpoint': '/list-events/State' };
         return this.lmRequest.requestURL(config);
     }
-    async listJudgmentSources() {
+    async listDistrictJudgmentSources() {
         var config = { 'endpoint': '/list-judgment-sources/FederalDistrict' };
         return this.lmRequest.requestURL(config);
     }
+    async listStateJudgmentEvents() {
+        var config = { 'endpoint': '/list-judgment-events/State' };
+        return this.lmRequest.requestURL(config);
+    }
+
     async magistrates(magistrates) {
         var config = {};
         if (Number.isInteger(magistrates)) {

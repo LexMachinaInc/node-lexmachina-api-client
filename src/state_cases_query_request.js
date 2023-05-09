@@ -488,6 +488,31 @@ module.exports = class StateCasesQueryRequest {
         return this;
     }
 
+    addRulingsIncludeJudgmentEvent(values) {
+        if (Array.isArray(values)) {
+            values.forEach(value => { this.addRulingsIncludeJudgmentEvent(value); });
+        } else {
+            pushUnique(this.queryObject.rulings[0].judgmentEvent.include, values);
+        }
+        return this;
+    }
+
+    addRulingsExcludeJudgmentEvent(values) {
+        if (Array.isArray(values)) {
+            values.forEach(value => { this.addRulingsExcludeJudgmentEvent(value); });
+        } else {
+            pushUnique(this.queryObject.rulings[0].judgmentEvent.exclude, values);
+        }
+        return this;
+    }
+
+    addRulingsDate(value, operator) {
+        this.setDate(value, this.queryObject.damages[0].date, operator);
+        return this;
+    }
+
+
+
     setDate(value, field, operator) {
         var object ;
 

@@ -1206,438 +1206,6 @@ describe('Add and Remove Query Statements', () => {
         });
     });
 
-    describe('Law Firms', () => {
-        var lawFirm = 1234;
-        var array1 = [1234, 2345, 3456];
-
-        it('should be able to add and remove lawFirms includes and excludes', () => {
-            var caseQuery = new StateCasesQueryRequest();
-            expect(caseQuery.queryObject.lawFirms.include).to.be.empty;
-            expect(caseQuery.queryObject.lawFirms.exclude).to.be.empty;
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.be.empty;
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.be.empty;
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.be.empty;
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.be.empty;
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.be.empty;
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.be.empty;
-
-            caseQuery.addLawFirmsInclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.include).to.be.empty;
-            caseQuery.addLawFirmsInclude(array1);
-            expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.include).to.be.empty;
-
-            caseQuery.addLawFirmsExclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.exclude).to.be.empty;
-            caseQuery.addLawFirmsExclude(array1);
-            expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.exclude).to.be.empty;
-
-            caseQuery.addLawFirmsIncludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.be.empty;
-            caseQuery.addLawFirmsIncludePlaintiff(array1);
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.be.empty;
-
-            caseQuery.addLawFirmsExcludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.be.empty;
-            caseQuery.addLawFirmsExcludePlaintiff(array1);
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.be.empty;
-
-            caseQuery.addLawFirmsIncludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.be.empty;
-            caseQuery.addLawFirmsIncludeDefendant(array1);
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.be.empty;
-
-            caseQuery.addLawFirmsExcludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.be.empty;
-            caseQuery.addLawFirmsExcludeDefendant(array1);
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.be.empty;
-
-            caseQuery.addLawFirmsIncludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.be.empty;
-            caseQuery.addLawFirmsIncludeThirdParty(array1);
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.be.empty;
-
-            caseQuery.addLawFirmsExcludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.be.empty;
-            caseQuery.addLawFirmsExcludeThirdParty(array1);
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.be.empty;
-        });
-
-        it('adding the same law firm to includes and excludes should not duplicate entries', () => {
-            var lawFirm = 1234;
-            var array1 = [1234, 2345, 3456];
-            var array2 = [2345, 3456, 4567];
-
-            var caseQuery = new StateCasesQueryRequest();
-            caseQuery.addLawFirmsInclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(1);
-            caseQuery.addLawFirmsInclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(1);
-            caseQuery.addLawFirmsExclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsInclude(array1);
-            expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(3);
-            caseQuery.addLawFirmsInclude(array2);
-            expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(4);
-            caseQuery.addLawFirmsInclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.include).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExclude(array1);
-            expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(3);
-            caseQuery.addLawFirmsExclude(array2);
-            expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(4);
-            caseQuery.addLawFirmsExclude(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.exclude).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsIncludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(1);
-            caseQuery.addLawFirmsIncludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExcludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(1);
-            caseQuery.addLawFirmsExcludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsIncludePlaintiff(array1);
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(3);
-            caseQuery.addLawFirmsIncludePlaintiff(array2);
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(4);
-            caseQuery.addLawFirmsIncludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includePlaintiff).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExcludePlaintiff(array1);
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(3);
-            caseQuery.addLawFirmsExcludePlaintiff(array2);
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(4);
-            caseQuery.addLawFirmsExcludePlaintiff(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludePlaintiff).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsIncludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(1);
-            caseQuery.addLawFirmsIncludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExcludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(1);
-            caseQuery.addLawFirmsExcludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsIncludeDefendant(array1);
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(3);
-            caseQuery.addLawFirmsIncludeDefendant(array2);
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(4);
-            caseQuery.addLawFirmsIncludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeDefendant).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExcludeDefendant(array1);
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(3);
-            caseQuery.addLawFirmsExcludeDefendant(array2);
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(4);
-            caseQuery.addLawFirmsExcludeDefendant(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeDefendant).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsIncludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(1);
-            caseQuery.addLawFirmsIncludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExcludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(1);
-            caseQuery.addLawFirmsExcludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsIncludeThirdParty(array1);
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(3);
-            caseQuery.addLawFirmsIncludeThirdParty(array2);
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(4);
-            caseQuery.addLawFirmsIncludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.includeThirdParty).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addLawFirmsExcludeThirdParty(array1);
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(3);
-            caseQuery.addLawFirmsExcludeThirdParty(array2);
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(4);
-            caseQuery.addLawFirmsExcludeThirdParty(lawFirm);
-            expect(caseQuery.queryObject.lawFirms.excludeThirdParty).to.have.lengthOf(4);
-            caseQuery.clear();
-        });
-    });
-
-    describe('Parties', () => {
-        var party = 1234;
-        var array1 = [1234, 2345, 3456];
-
-        it('should be able to add and remove parties includes and excludes', () => {
-            var caseQuery = new StateCasesQueryRequest();
-            expect(caseQuery.queryObject.parties.include).to.be.empty;
-            expect(caseQuery.queryObject.parties.exclude).to.be.empty;
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.be.empty;
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.be.empty;
-            expect(caseQuery.queryObject.parties.includeDefendant).to.be.empty;
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.be.empty;
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.be.empty;
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.be.empty;
-
-            caseQuery.addPartiesInclude(party);
-            expect(caseQuery.queryObject.parties.include).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.include).to.be.empty;
-            caseQuery.addPartiesInclude(array1);
-            expect(caseQuery.queryObject.parties.include).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.include).to.be.empty;
-
-            caseQuery.addPartiesExclude(party);
-            expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.exclude).to.be.empty;
-            caseQuery.addPartiesExclude(array1);
-            expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.exclude).to.be.empty;
-
-            caseQuery.addPartiesIncludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.be.empty;
-            caseQuery.addPartiesIncludePlaintiff(array1);
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.be.empty;
-
-            caseQuery.addPartiesExcludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.be.empty;
-            caseQuery.addPartiesExcludePlaintiff(array1);
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.be.empty;
-
-            caseQuery.addPartiesIncludeDefendant(party);
-            expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.includeDefendant).to.be.empty;
-            caseQuery.addPartiesIncludeDefendant(array1);
-            expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.includeDefendant).to.be.empty;
-
-            caseQuery.addPartiesExcludeDefendant(party);
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.be.empty;
-            caseQuery.addPartiesExcludeDefendant(array1);
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.be.empty;
-
-            caseQuery.addPartiesIncludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.be.empty;
-            caseQuery.addPartiesIncludeThirdParty(array1);
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(3);
-            caseQuery.setState('CA');
-            caseQuery.finalize();
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.be.empty;
-
-            caseQuery.addPartiesExcludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.be.empty;
-            caseQuery.addPartiesExcludeThirdParty(array1);
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(3);
-            caseQuery.clear();
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.be.empty;
-        });
-
-        it('adding the same party to includes and excludes should not duplicate entries', () => {
-            var party = 1234;
-            var array1 = [1234, 2345, 3456];
-            var array2 = [2345, 3456, 4567];
-
-            var caseQuery = new StateCasesQueryRequest();
-            caseQuery.addPartiesInclude(party);
-            expect(caseQuery.queryObject.parties.include).to.have.lengthOf(1);
-            caseQuery.addPartiesInclude(party);
-            expect(caseQuery.queryObject.parties.include).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExclude(party);
-            expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(1);
-            caseQuery.addPartiesExclude(party);
-            expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesInclude(array1);
-            expect(caseQuery.queryObject.parties.include).to.have.lengthOf(3);
-            caseQuery.addPartiesInclude(array2);
-            expect(caseQuery.queryObject.parties.include).to.have.lengthOf(4);
-            caseQuery.addPartiesInclude(party);
-            expect(caseQuery.queryObject.parties.include).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExclude(array1);
-            expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(3);
-            caseQuery.addPartiesExclude(array2);
-            expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(4);
-            caseQuery.addPartiesExclude(party);
-            expect(caseQuery.queryObject.parties.exclude).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addPartiesIncludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(1);
-            caseQuery.addPartiesIncludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExcludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(1);
-            caseQuery.addPartiesExcludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesIncludePlaintiff(array1);
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(3);
-            caseQuery.addPartiesIncludePlaintiff(array2);
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(4);
-            caseQuery.addPartiesIncludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.includePlaintiff).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExcludePlaintiff(array1);
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(3);
-            caseQuery.addPartiesExcludePlaintiff(array2);
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(4);
-            caseQuery.addPartiesExcludePlaintiff(party);
-            expect(caseQuery.queryObject.parties.excludePlaintiff).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addPartiesIncludeDefendant(party);
-            expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(1);
-            caseQuery.addPartiesIncludeDefendant(party);
-            expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExcludeDefendant(party);
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(1);
-            caseQuery.addPartiesExcludeDefendant(party);
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesIncludeDefendant(array1);
-            expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(3);
-            caseQuery.addPartiesIncludeDefendant(array2);
-            expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(4);
-            caseQuery.addPartiesIncludeDefendant(party);
-            expect(caseQuery.queryObject.parties.includeDefendant).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExcludeDefendant(array1);
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(3);
-            caseQuery.addPartiesExcludeDefendant(array2);
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(4);
-            caseQuery.addPartiesExcludeDefendant(party);
-            expect(caseQuery.queryObject.parties.excludeDefendant).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addPartiesIncludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(1);
-            caseQuery.addPartiesIncludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExcludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(1);
-            caseQuery.addPartiesExcludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(1);
-            caseQuery.clear();
-
-            caseQuery.addPartiesIncludeThirdParty(array1);
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(3);
-            caseQuery.addPartiesIncludeThirdParty(array2);
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(4);
-            caseQuery.addPartiesIncludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.includeThirdParty).to.have.lengthOf(4);
-            caseQuery.clear();
-
-            caseQuery.addPartiesExcludeThirdParty(array1);
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(3);
-            caseQuery.addPartiesExcludeThirdParty(array2);
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(4);
-            caseQuery.addPartiesExcludeThirdParty(party);
-            expect(caseQuery.queryObject.parties.excludeThirdParty).to.have.lengthOf(4);
-            caseQuery.clear();
-        });
-    });
-
     describe('Resolutions', () => {
         var summary1 = 'Claimant Win';
         var specific1 = 'Contested Dismissal';
@@ -1676,6 +1244,46 @@ describe('Add and Remove Query Statements', () => {
 
     });
 
+    describe('Rulings', () => {
+        var judgmentEvents = [
+            "Default Judgment",
+            "Consent Judgment",
+            "Bench Trial",
+            "Jury Verdict",
+            "Other Judgment"
+        ];
+
+
+        it('should be able to add and remove resolution', () => {
+            var caseQuery = new StateCasesQueryRequest();
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.include).to.be.empty;
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.exclude).to.be.empty;
+
+            caseQuery.addRulingsIncludeJudgmentEvent(judgmentEvents[0]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.include).to.have.lengthOf(1);
+            caseQuery.addRulingsIncludeJudgmentEvent(judgmentEvents[1]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.include).to.have.lengthOf(2);            
+            caseQuery.addRulingsIncludeJudgmentEvent(judgmentEvents[2]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.include).to.have.lengthOf(3);
+            caseQuery.addRulingsIncludeJudgmentEvent(judgmentEvents[2]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.include).to.have.lengthOf(3);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.include).to.be.empty;
+
+
+            caseQuery.addRulingsExcludeJudgmentEvent(judgmentEvents[0]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.exclude).to.have.lengthOf(1);
+            caseQuery.addRulingsExcludeJudgmentEvent(judgmentEvents[1]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.exclude).to.have.lengthOf(2);            
+            caseQuery.addRulingsExcludeJudgmentEvent(judgmentEvents[2]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.exclude).to.have.lengthOf(3);
+            caseQuery.addRulingsExcludeJudgmentEvent(judgmentEvents[2]);
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.exclude).to.have.lengthOf(3);
+            caseQuery.clear();
+            expect(caseQuery.queryObject.rulings[0].judgmentEvent.exclude).to.be.empty;
+        });
+
+    });
 
 describe('Set/unset attributes', () => {
     var caseQuery = new StateCasesQueryRequest();

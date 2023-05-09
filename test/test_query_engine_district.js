@@ -203,7 +203,7 @@ describe('Execute Queries',   () => {
             var source;
             var index;
             var cases;
-            var judgmentSources = await client.listJudgmentSources();
+            var judgmentSources = await client.listDistrictJudgmentSources();
             var findingSources = judgmentSources.findings;
             //console.log(findingSources)
             findingSources.sort();
@@ -320,7 +320,7 @@ describe('Execute Queries',   () => {
             nock.enableNetConnect();
             
             var caseQuery = new DistrictCasesQueryRequest();
-            var judgmentSources = await client.listJudgmentSources();
+            var judgmentSources = await client.listDistrictJudgmentSources();
             var remedySources = judgmentSources.remedies;
             remedySources.sort();
             var source;
@@ -416,7 +416,7 @@ describe('Execute Queries',   () => {
             nock.enableNetConnect();
             
             var caseQuery = new DistrictCasesQueryRequest();
-            var judgmentSources = await client.listJudgmentSources();
+            var judgmentSources = await client.listDistrictJudgmentSources();
             var damageSources = judgmentSources.damages;
             damageSources.sort();
             var source;

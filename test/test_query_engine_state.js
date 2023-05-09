@@ -41,6 +41,43 @@ describe('Execute Queries',   () => {
         });
     });
 
+    describe('Query Judgment Events', async () => {
+
+        it('should be able to query via case types includes and excludes', async () => {
+            const { nockDone} = await nockBack('query-state-judgment-events-data.json');
+            nock.enableNetConnect();
+            
+            var caseQuery = new StateCasesQueryRequest();
+            var event;
+            var index;
+            var cases;
+            var types = await client.listStateJudgmentEvents();
+            events = types.judgmentEvents;
+            for (index=0; index < events.length; index++) {
+                event = events[index];
+                caseQuery.addRulingsIncludeJudgmentEvent(event);
+                caseQuery.setState("CA");
+                cases = await client.queryStateCases(caseQuery);
+                //console.log("Cases = "+cases)
+                expect(cases).to.have.lengthOf(5);
+                caseQuery.clear();
+            }
+            for (index=0; index < types.length; index++) {
+                caseType = types[index];
+                caseQuery.addRulingsExcludeJudgmentEvent(caseType);
+                caseQuery.setState("CA");
+                cases = await client.queryStateCases(caseQuery);
+                //console.log("Cases = "+cases)
+                expect(cases).to.have.lengthOf(5);
+                caseQuery.clear();
+            }
+            nockDone();
+
+            
+        });
+
+    });
+
     describe('Query Case Types', async () => {
 
         it('should be able to query via case types includes and excludes', async () => {
@@ -77,6 +114,7 @@ describe('Execute Queries',   () => {
         });
 
     });
+
 
     describe('Query Case Tags',  () => {
 
