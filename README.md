@@ -3,6 +3,8 @@ Client for Lex Machina Legal Analytics API
 
 This package provides a client to access the Lex Machina API for legal analytics. Access and documentation are provided at the [Lex Machina API Developer Portal](https://developer.lexmachina.com/).
 
+This version of the node package (2.0 and above) is specifically for accessing the general availability version of the Lex Machina API. For users still accessing beta you will need to pin your version to the 1.0 release by specifiying "@lexmachina/lexmachina-client": "1.x" in your package.json file.
+
 # Getting Started
 
 1. Create an app and get the client key and secret via the [directions here](https://developer.lexmachina.com/default/docs/generating_oauth_credentials).
@@ -11,21 +13,24 @@ This package provides a client to access the Lex Machina API for legal analytics
 
     ```json
     {
-        "client": {
-        "id": "CLIENT ID",
-        "secret": "CLIENT SECRET"
-    },
-    "auth": {
-        "tokenHost": "https://api.beta/lexmachina.com",
-        "tokenPath": "/oauth2/token"
-     }
+        "baseURL": "https://api.lexmachina.com",
+        "authParams": {
+            "client": {
+                "id": "CLIENT ID",
+                "secret": "CLIENT SECRET"
+            },
+            "auth": {
+                "tokenHost": "https://api.beta/lexmachina.com",
+                "tokenPath": "/oauth2/token"
+            }
+        }
     }
     ```
 
 1. To execute API calls you will use the two classes of this package. Both are discussed in detail later.
 
     1. For accessing all GET and POST endpoints, LexMachinaClient provides those functions.
-    1. In order to specify the query use CaseQueryRequest to add criteria to the query.
+    1. In order to specify the query use a case query request to add criteria to the query.
 
 For each of these, you first create the object then call the functions on that object.
 
@@ -62,13 +67,20 @@ The functions provided fall into several classes:
 
 These functions are available from LexMachinaClient. Each returns an array or JSON object describing resources. 
 
-- LexMachinaClient.listCaseResolutions()
-- LexMachinaClient.listCaseTags()
-- LexMachinaClient.listCaseTypes()
-- LexMachinaClient.listCourts()
-- LexMachinaClient.listDamages()
-- LexMachinaClient.listEvents()
-- LexMachinaClient.listJudgmentSources()
+- LexMachinaClient.listDistrictCaseResolutions()
+- LexMachinaClient.listStateCaseResolutions()
+- LexMachinaClient.listDistrictCaseTags()
+- LexMachinaClient.listStateCaseTags()
+- LexMachinaClient.listDistrictCaseTypes()
+- LexMachinaClient.listStateCaseTypes()
+- LexMachinaClient.listDistrictCourts()
+- LexMachinaClient.listStateCourts()
+- LexMachinaClient.listDistrictDamages()
+- LexMachinaClient.listStateDamages()
+- LexMachinaClient.listDistrictEvents()
+- LexMachinaClient.listStateEvents()
+- LexMachinaClient.listDistrictJudgmentSources()
+- LexMachinaClient.listStateJudgmentEvents()
 
 ## Lookup by ID(s)
 These functions are available from LexMachinaClient. Each takes a single integer or an array of up to 100 integers where the parameter is the Lex Machina ID for that record. It will return a JSON object or an array of objects representing the data for that type of record.
@@ -95,49 +107,49 @@ Search functions take a string input and return lists of JSON objects. These sea
 
 
 
-Querying for cases is an operation with enough complexity that it warrants its own class. In order to query for district cases, first a CaseQueryRequest must be constructed. 
+Querying for cases is an operation with enough complexity that it warrants its own class. In order to query for district cases, first a DistrictCasesQueryRequest must be constructed. To query for state cases, use a StateCasesQueryRequest object.
 
-All operations on the CaseQueryRequest add criteria to the query. There are no methods to remove individual criteria but the object can be returned to empty at any time via the .clear() method.
+All operations on either case query request add criteria to the query. There are no methods to remove individual criteria but the object can be returned to empty at any time via the .clear() method.
 
 The constraint methods can be chained so all constraints can be added in a single line such as:
 
 ```javascript
-  const query = new CasesQueryRequest()
+  const query = new DistrictCasesQueryRequest()
      .setDate("2022-09-01", "filed", "onOrAfter")
      .addLawFirmsIncludeDefendant(123)
      .setPageSize(100);
 ```
 
-Following is a list of operations available in the CaseQueryRequest without discussion of the meaning of each. For a detailed discussion of the concepts used in querying the Lex Machina API see [this post on the developer portal](https://developer.lexmachina.com/default/docs/query_usage_portal_post).
+Following is a list of operations available in the cases query request without discussion of the meaning of each. For a detailed discussion of the concepts used in querying the Lex Machina API see [this post on the developer portal for district queries](https://developer.lexmachina.com/default/docs/query_usage_portal_post) and [this post adding the state concepts](https://developer.lexmachina.com/default/docs/state_query_usage).
 
 
 ## Participant Criteria
 
-The following methods add criteria based on participants in a case and their role. Each takes an integer or array of integers that correspond to the Lex Machina ID for each participant type. These function calls can be chained.
+The following methods add criteria based on participants in a case and their role. Each takes an integer or array of integers that correspond to the Lex Machina ID for each participant type. These function calls can be chained. All of the following work on either district or state requests.
 
-- CaseQueryRequest.addJudgesInclude()
-- CaseQueryRequest.addJudgesExclude()
+- .addJudgesInclude()
+- .addJudgesExclude()
 
-- CaseQueryRequest.addMagistratesInclude()
-- CaseQueryRequest.addMagistratesExclude()
+- .addMagistratesInclude()
+- .addMagistratesExclude()
 
-- CaseQueryRequest.addLawFirmsInclude()
-- CaseQueryRequest.addLawFirmsExclude()
-- CaseQueryRequest.addLawFirmsIncludePlaintiff()
-- CaseQueryRequest.addLawFirmsExcludePlaintiff()
-- CaseQueryRequest.addLawFirmsIncludeDefendant()
-- CaseQueryRequest.addLawFirmsExcludeDefendant()
-- CaseQueryRequest.addLawFirmsIncludeThirdParty()
-- CaseQueryRequest.addLawFirmsExcludeThirdParty()
+- .addLawFirmsInclude()
+- .addLawFirmsExclude()
+- .addLawFirmsIncludePlaintiff()
+- .addLawFirmsExcludePlaintiff()
+- .addLawFirmsIncludeDefendant()
+- .addLawFirmsExcludeDefendant()
+- .addLawFirmsIncludeThirdParty()
+- .addLawFirmsExcludeThirdParty()
 
-- CaseQueryRequest.addPartiesInclude()
-- CaseQueryRequest.addPartiesExclude()
-- CaseQueryRequest.addPartiesIncludePlaintiff()
-- CaseQueryRequest.addPartiesExcludePlaintiff()
-- CaseQueryRequest.addPartiesIncludeDefendant()
-- CaseQueryRequest.addPartiesExcludeDefendant()
-- CaseQueryRequest.addPartiesIncludeThirdParty()
-- CaseQueryRequest.addPartiesExcludeThirdParty()
+- .addPartiesInclude()
+- .addPartiesExclude()
+- .addPartiesIncludePlaintiff()
+- .addPartiesExcludePlaintiff()
+- .addPartiesIncludeDefendant()
+- .addPartiesExcludeDefendant()
+- .addPartiesIncludeThirdParty()
+- .addPartiesExcludeThirdParty()
 
 
 ## Case Aspect Criteria
@@ -147,36 +159,36 @@ The following methods add criteria based on aspects of the case. In most of thes
 All of the add functions will take either a single value or an array of values. The set functions require a single value. These function calls can be chained.
 
 
-- CaseQueryRequest.setCaseStatus()
-- CaseQueryRequest.addCaseTypesInclude()
-- CaseQueryRequest.addCaseTypesExclude()
-- CaseQueryRequest.addCaseTagsInclude()
-- CaseQueryRequest.addCaseTagsExclude()
-- CaseQueryRequest.addEventTypesInclude()
-- CaseQueryRequest.addEventTypesExclude()
-- CaseQueryRequest.addResolutionsInclude()
-- CaseQueryRequest.addResolutionsExclude()
-- CaseQueryRequest.addFindingsIncludeAwardedToParties()
-- CaseQueryRequest.addFindingsIncludeAwardedAgainstParties()
-- CaseQueryRequest.addFindingsIncludeJudgmentSource()
-- CaseQueryRequest.addFindingsExcludeJudgmentSource()
-- CaseQueryRequest.addFindingsIncludePatentInvalidityReasons()
-- CaseQueryRequest.addRemediesIncludeAwardedToParties()
-- CaseQueryRequest.addRemediesIncludeAwardedAgainstParties()
-- CaseQueryRequest.addRemediesIncludeJudgmentSource()
-- CaseQueryRequest.addRemediesExcludeJudgmentSource()
-- CaseQueryRequest.addDamagesIncludeAwardedToParties()
-- CaseQueryRequest.addDamagesIncludeAwardedAgainstParties()
-- CaseQueryRequest.addDamagesIncludeNameType()
-- CaseQueryRequest.addDamagesExcludeNameType()
-- CaseQueryRequest.addDamagesIncludeJudgmentSource()
-- CaseQueryRequest.addDamagesExcludeJudgmentSource()
-- CaseQueryRequest.addDamagesDate()
-- CaseQueryRequest.setDamagesMinimumAmount()
-- CaseQueryRequest.addPatentsInclude()
-- CaseQueryRequest.addPatentsExclude()
-- CaseQueryRequest.addMDLInclude()
-- CaseQueryRequest.addMDLExclude()
+- .setCaseStatus()
+- .addCaseTypesInclude()
+- .addCaseTypesExclude()
+- .addCaseTagsInclude()
+- .addCaseTagsExclude()
+- .addEventTypesInclude()
+- .addEventTypesExclude()
+- .addResolutionsInclude()
+- .addResolutionsExclude()
+- .addFindingsIncludeAwardedToParties()
+- .addFindingsIncludeAwardedAgainstParties()
+- .addFindingsIncludeJudgmentSource()
+- .addFindingsExcludeJudgmentSource()
+- .addFindingsIncludePatentInvalidityReasons()
+- .addRemediesIncludeAwardedToParties()
+- .addRemediesIncludeAwardedAgainstParties()
+- .addRemediesIncludeJudgmentSource()
+- .addRemediesExcludeJudgmentSource()
+- .addDamagesIncludeAwardedToParties()
+- .addDamagesIncludeAwardedAgainstParties()
+- .addDamagesIncludeNameType()
+- .addDamagesExcludeNameType()
+- .addDamagesIncludeJudgmentSource()
+- .addDamagesExcludeJudgmentSource()
+- .addDamagesDate()
+- .setDamagesMinimumAmount()
+- .addPatentsInclude()
+- .addPatentsExclude()
+- .addMDLInclude()
+- .addMDLExclude()
 
 ## Date Criteria
 
@@ -193,14 +205,14 @@ The operators are one of the these strings:
 - OnOrBefore
 - OnOrAfter
 
-CaseQueryRequest.setDate()
+.setDate()
 
 Example:
 
-To query on all cases filed since the beginning of 2019:
+To query on all district cases filed since the beginning of 2019:
 
 ```javascript
-CaseQueryRequest.setDate("2019-01-01", "Filed", "OnOrAfter");
+DistrictCasesQueryRequest.setDate("2019-01-01", "Filed", "OnOrAfter");
 ```
 
 ## Query aspects
@@ -208,22 +220,28 @@ CaseQueryRequest.setDate("2019-01-01", "Filed", "OnOrAfter");
 The following methods control aspects of the query and operation of the query. By default the page size is 5 cases and it can be increased to a maximum of 100. These function calls can be chained.
 
 
-- CaseQueryRequest.setOrdering()
-- CaseQueryRequest.setPage()
-- CaseQueryRequest.setPageSize()
-- CaseQueryRequest.nextPage()
-- CaseQueryRequest.clear()
+- .setOrdering()
+- .setPage()
+- .setPageSize()
+- .nextPage()
+- .clear()
 
 
 # Executing the Query
 
-After creating a CaseQueryRequest with the desired criteria, the query must be executed. This is done with the LexMachinaClient object. To execute the query, pass in the CaseQueryRequest object. 
+After creating a case query request with the desired criteria, the query must be executed. This is done with the LexMachinaClient object. To execute the query, pass in the request object. 
 
 
 ```javascript
 var client = new LexMachinaClient();
-var query = new CasesQueryRequest(); // Add criteria to this
+var query = new DistrictCasesQueryRequest(); // Add criteria to this
 var cases = await client.queryDistrictCases(query)
+```
+
+```javascript
+var client = new LexMachinaClient();
+var query = new StateCasesQueryRequest(); // Add criteria to this
+var cases = await client.queryStateCases(query)
 ```
 
 There is an optional second parameter that is a JSON object for options. This takes a single value at present. If absent, the query will be executed with the page and page size in the query object. If this option object is present:
