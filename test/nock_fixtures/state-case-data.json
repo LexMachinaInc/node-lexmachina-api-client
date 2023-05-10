@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "mXE4PPlQkNghvnEr6n6k1QlHc3sTL4DU",
+            "token_type": "bearer",
+            "expires_in": 3600
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:31:15 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "pragma",
+            "no-cache",
+            "cache-control",
+            "no-store",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "15",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/state-cases/2007659138",
         "body": "",
@@ -114,6 +147,16 @@
                     ]
                 },
                 {
+                    "name": "Carina M. Jordan",
+                    "attorneyId": 80557927,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
                     "name": "Shane T. Wate",
                     "attorneyId": 118631852,
                     "lawFirmIds": [
@@ -126,16 +169,6 @@
                 {
                     "name": "Patrick James Layman",
                     "attorneyId": 81113718,
-                    "lawFirmIds": [
-                        54335638
-                    ],
-                    "clientsPartyIds": [
-                        473505
-                    ]
-                },
-                {
-                    "name": "Carina M. Jordan",
-                    "attorneyId": 80557927,
                     "lawFirmIds": [
                         54335638
                     ],
@@ -214,16 +247,26 @@
             }
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:37:04 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "2334",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "2334",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "6c55be1dc33eac4ac4a3477fd8d99f86",
+            "Date",
+            "Wed, 10 May 2023 14:31:16 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "298",
+            "X-Kong-Proxy-Latency",
+            "27",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

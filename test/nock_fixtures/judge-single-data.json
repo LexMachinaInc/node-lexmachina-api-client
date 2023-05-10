@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "expires_in": 3600,
+            "access_token": "pNaxuQOecW1rrP0cuazBeYljBhXNYqt7",
+            "token_type": "bearer"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:24:40 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "5",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/federal-judges/3349",
         "body": "",
@@ -13,22 +46,32 @@
             "caseCountByCourt": [
                 {
                     "court": "total",
-                    "count": 1773
+                    "count": 1778
                 }
             ],
             "nominatingPresident": "Barack Obama"
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:42 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "185",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "185",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "2cb637005efbda2aa957856022270597",
+            "Date",
+            "Wed, 10 May 2023 14:24:41 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "52",
+            "X-Kong-Proxy-Latency",
+            "45",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

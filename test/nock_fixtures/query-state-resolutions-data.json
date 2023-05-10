@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/list-case-resolutions/State",
         "body": "",
@@ -13,7 +13,7 @@
             "caseResolutions": [
                 {
                     "summary": "Plaintiff Win",
-                    "specific": "Jury Verdict"
+                    "specific": "Bench Trial"
                 },
                 {
                     "summary": "Plaintiff Win",
@@ -21,17 +21,21 @@
                 },
                 {
                     "summary": "Plaintiff Win",
-                    "specific": "Default Judgment"
-                },
-                {
-                    "summary": "Plaintiff Win",
-                    "specific": "Bench Trial"
+                    "specific": "Jury Verdict"
                 },
                 {
                     "summary": "Plaintiff Win",
                     "specific": "Other Judgment"
                 },
                 {
+                    "summary": "Plaintiff Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Other Judgment"
+                },
+                {
                     "summary": "Defendant Win",
                     "specific": "Default Judgment"
                 },
@@ -41,89 +45,47 @@
                 },
                 {
                     "summary": "Defendant Win",
-                    "specific": "Other Judgment"
+                    "specific": "Consent Judgment"
                 },
                 {
                     "summary": "Defendant Win",
                     "specific": "Jury Verdict"
                 },
                 {
-                    "summary": "Defendant Win",
-                    "specific": "Consent Judgment"
-                },
-                {
                     "summary": "Likely Settlement",
-                    "specific": "Consent Judgment"
-                },
-                {
-                    "summary": "Likely Settlement",
-                    "specific": "Default Judgment"
-                },
-                {
-                    "summary": "Likely Settlement",
-                    "specific": "Bench Trial"
-                },
-                {
-                    "summary": "Likely Settlement",
-                    "specific": "Other Judgment"
-                },
-                {
-                    "summary": "Likely Settlement",
-                    "specific": "Jury Verdict"
+                    "specific": "Likely Settlement"
                 },
                 {
                     "summary": "Procedural",
-                    "specific": "Bench Trial"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Other Judgment"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Jury Verdict"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Consent Judgment"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Default Judgment"
+                    "specific": "Procedural"
                 },
                 {
                     "summary": "Indeterminable",
-                    "specific": "Jury Verdict"
-                },
-                {
-                    "summary": "Indeterminable",
-                    "specific": "Consent Judgment"
-                },
-                {
-                    "summary": "Indeterminable",
-                    "specific": "Default Judgment"
-                },
-                {
-                    "summary": "Indeterminable",
-                    "specific": "Bench Trial"
-                },
-                {
-                    "summary": "Indeterminable",
-                    "specific": "Other Judgment"
+                    "specific": "Indeterminable"
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:36 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "1477",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "799",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "212e0311a2f18d2e63cb811299b15a69",
+            "Date",
+            "Wed, 10 May 2023 14:29:50 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "12",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

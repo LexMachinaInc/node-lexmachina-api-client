@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "expires_in": 3600,
+            "access_token": "GeJngtfSq2DjArPpYkvAHnstfqr3Z7Yl",
+            "token_type": "bearer"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:30:58 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "4",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/search-law-firms?q=slusher&pageSize=500&pageNumber=1",
         "body": "",
@@ -13,86 +46,96 @@
                 {
                     "name": "Skelton Slusher Barnhill Watkins Wells",
                     "lawFirmId": 9133778,
-                    "url": "https://localhost:8000/law-firms/9133778"
+                    "url": "https://api.lexmachina.com/law-firms/9133778"
                 },
                 {
                     "name": "Rodney B Slusher",
                     "lawFirmId": 18620057,
-                    "url": "https://localhost:8000/law-firms/18620057"
+                    "url": "https://api.lexmachina.com/law-firms/18620057"
                 },
                 {
                     "name": "Holder, Susan, Slusher, & Oxenhandler",
                     "lawFirmId": 29024883,
-                    "url": "https://localhost:8000/law-firms/29024883"
+                    "url": "https://api.lexmachina.com/law-firms/29024883"
                 },
                 {
                     "name": "Slusher & Rosenblum",
                     "lawFirmId": 53936949,
-                    "url": "https://localhost:8000/law-firms/53936949"
+                    "url": "https://api.lexmachina.com/law-firms/53936949"
                 },
                 {
                     "name": "Slusher & Associates",
                     "lawFirmId": 104345547,
-                    "url": "https://localhost:8000/law-firms/104345547"
+                    "url": "https://api.lexmachina.com/law-firms/104345547"
                 },
                 {
                     "name": "Harry R. Slusher",
                     "lawFirmId": 104588230,
-                    "url": "https://localhost:8000/law-firms/104588230"
+                    "url": "https://api.lexmachina.com/law-firms/104588230"
                 },
                 {
                     "name": "Jeffrey L. Slusher",
                     "lawFirmId": 104622586,
-                    "url": "https://localhost:8000/law-firms/104622586"
+                    "url": "https://api.lexmachina.com/law-firms/104622586"
                 },
                 {
                     "name": "Lee B. Slusher",
                     "lawFirmId": 104674814,
-                    "url": "https://localhost:8000/law-firms/104674814"
+                    "url": "https://api.lexmachina.com/law-firms/104674814"
                 },
                 {
                     "name": "Terry A. Slusher",
                     "lawFirmId": 104815093,
-                    "url": "https://localhost:8000/law-firms/104815093"
+                    "url": "https://api.lexmachina.com/law-firms/104815093"
                 },
                 {
                     "name": "Villareal & Slusher",
                     "lawFirmId": 104837226,
-                    "url": "https://localhost:8000/law-firms/104837226"
+                    "url": "https://api.lexmachina.com/law-firms/104837226"
                 },
                 {
                     "name": "Wilkins & Slusher",
                     "lawFirmId": 104845865,
-                    "url": "https://localhost:8000/law-firms/104845865"
+                    "url": "https://api.lexmachina.com/law-firms/104845865"
                 },
                 {
                     "name": "Holder, Susan, Slusher Law Firm",
                     "lawFirmId": 104988414,
-                    "url": "https://localhost:8000/law-firms/104988414"
+                    "url": "https://api.lexmachina.com/law-firms/104988414"
                 },
                 {
                     "name": "The Law & Mediation Office Of Kennedy Slusher",
                     "lawFirmId": 150380498,
-                    "url": "https://localhost:8000/law-firms/150380498"
+                    "url": "https://api.lexmachina.com/law-firms/150380498"
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:27:05 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "1456",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "1508",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "4e4836617a28d1666460db6b8554affa",
+            "Date",
+            "Wed, 10 May 2023 14:30:58 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "298",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/search-law-firms?q=slusher&pageSize=500&pageNumber=2",
         "body": "",
@@ -104,16 +147,26 @@
             "lawFirms": []
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:27:06 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "56",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "56",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "99f40558373ebdb1641c4279bcdf6bcc",
+            "Date",
+            "Wed, 10 May 2023 14:30:58 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "222",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

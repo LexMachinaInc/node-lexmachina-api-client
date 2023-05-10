@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/list-case-types/State",
         "body": "",
@@ -823,16 +823,26 @@
             }
         ],
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:36 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "12589",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "12589",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "fb95caf4b25732afb2ce287bcba18614",
+            "Date",
+            "Wed, 10 May 2023 14:24:32 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "36",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

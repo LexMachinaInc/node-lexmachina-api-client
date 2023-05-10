@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "expires_in": 3600,
+            "access_token": "YRkuCiEDf4PDOkhdijRTacnmIqG0Xhhh",
+            "token_type": "bearer"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:30:48 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "15",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/search-attorneys?q=sligh&pageSize=500&pageNumber=1",
         "body": "",
@@ -13,91 +46,101 @@
                 {
                     "name": "Crosslight Promotion",
                     "attorneyId": 1216107,
-                    "url": "https://localhost:8000/attorneys/1216107"
+                    "url": "https://api.lexmachina.com/attorneys/1216107"
                 },
                 {
                     "name": "Joseph R. Slights III",
                     "attorneyId": 9993143,
-                    "url": "https://localhost:8000/attorneys/9993143"
+                    "url": "https://api.lexmachina.com/attorneys/9993143"
                 },
                 {
                     "name": "Kathryn Harper Sligh",
                     "attorneyId": 14974596,
-                    "url": "https://localhost:8000/attorneys/14974596"
+                    "url": "https://api.lexmachina.com/attorneys/14974596"
                 },
                 {
                     "name": "David Richard Sligh",
                     "attorneyId": 15193508,
-                    "url": "https://localhost:8000/attorneys/15193508"
+                    "url": "https://api.lexmachina.com/attorneys/15193508"
                 },
                 {
                     "name": "Ellen W. Slights",
                     "attorneyId": 16289669,
-                    "url": "https://localhost:8000/attorneys/16289669"
+                    "url": "https://api.lexmachina.com/attorneys/16289669"
                 },
                 {
                     "name": "Bradley S. Slighting",
                     "attorneyId": 54566248,
-                    "url": "https://localhost:8000/attorneys/54566248"
+                    "url": "https://api.lexmachina.com/attorneys/54566248"
                 },
                 {
                     "name": "John A. Sligh Jr.",
                     "attorneyId": 105438064,
-                    "url": "https://localhost:8000/attorneys/105438064"
+                    "url": "https://api.lexmachina.com/attorneys/105438064"
                 },
                 {
                     "name": "Lynn T. Slight",
                     "attorneyId": 105438065,
-                    "url": "https://localhost:8000/attorneys/105438065"
+                    "url": "https://api.lexmachina.com/attorneys/105438065"
                 },
                 {
                     "name": "Jesse J. Sligh",
                     "attorneyId": 105438066,
-                    "url": "https://localhost:8000/attorneys/105438066"
+                    "url": "https://api.lexmachina.com/attorneys/105438066"
                 },
                 {
                     "name": "Peter L. Grosslight",
                     "attorneyId": 105758505,
-                    "url": "https://localhost:8000/attorneys/105758505"
+                    "url": "https://api.lexmachina.com/attorneys/105758505"
                 },
                 {
                     "name": "Kathryn H. Sligh",
                     "attorneyId": 106831204,
-                    "url": "https://localhost:8000/attorneys/106831204"
+                    "url": "https://api.lexmachina.com/attorneys/106831204"
                 },
                 {
                     "name": "Rayford Sligh Jr.",
                     "attorneyId": 114196054,
-                    "url": "https://localhost:8000/attorneys/114196054"
+                    "url": "https://api.lexmachina.com/attorneys/114196054"
                 },
                 {
                     "name": "Anna V. Short-Slightom",
                     "attorneyId": 137446639,
-                    "url": "https://localhost:8000/attorneys/137446639"
+                    "url": "https://api.lexmachina.com/attorneys/137446639"
                 },
                 {
                     "name": "Rachel A. Sligh",
                     "attorneyId": 143290563,
-                    "url": "https://localhost:8000/attorneys/143290563"
+                    "url": "https://api.lexmachina.com/attorneys/143290563"
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:26:56 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "1494",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "1550",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "17a8cf8a5d6a1c54287cb0f0c671a3a9",
+            "Date",
+            "Wed, 10 May 2023 14:30:49 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "596",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/search-attorneys?q=sligh&pageSize=500&pageNumber=2",
         "body": "",
@@ -109,16 +152,26 @@
             "attorneys": []
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:26:57 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "57",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "57",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "f8de78de3cd6f922a5ecdf54293d77bd",
+            "Date",
+            "Wed, 10 May 2023 14:30:50 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "559",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

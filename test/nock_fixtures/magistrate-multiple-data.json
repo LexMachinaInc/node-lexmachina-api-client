@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/magistrate-judges?magistrateJudgeIds=1507&magistrateJudgeIds=1536&magistrateJudgeIds=1385",
         "body": "",
@@ -13,7 +13,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 460
+                        "count": 464
                     }
                 ]
             },
@@ -24,7 +24,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 478
+                        "count": 489
                     }
                 ]
             },
@@ -35,22 +35,32 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 1757
+                        "count": 1759
                     }
                 ]
             }
         ],
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:50:45 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "363",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "363",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "0ee366e270bde1d5846fce5c2e6c82dc",
+            "Date",
+            "Wed, 10 May 2023 14:24:45 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "64",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

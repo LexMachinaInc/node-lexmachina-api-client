@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "rdWyVoXsVpZb2kdfxMTkk8Qsm0xtTzsq",
+            "token_type": "bearer",
+            "expires_in": 3600
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:24:30 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "pragma",
+            "no-cache",
+            "cache-control",
+            "no-store",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "14",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/list-case-resolutions/FederalDistrict",
         "body": "",
@@ -13,11 +46,19 @@
             "caseResolutions": [
                 {
                     "summary": "Claimant Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Summary Judgment"
+                },
+                {
+                    "summary": "Claimant Win",
                     "specific": "Judgment as a Matter of Law"
                 },
                 {
                     "summary": "Claimant Win",
-                    "specific": "Judgment on the Pleadings"
+                    "specific": "Trial"
                 },
                 {
                     "summary": "Claimant Win",
@@ -29,27 +70,19 @@
                 },
                 {
                     "summary": "Claimant Win",
-                    "specific": "Default Judgment"
-                },
-                {
-                    "summary": "Claimant Win",
-                    "specific": "Trial"
-                },
-                {
-                    "summary": "Claimant Win",
-                    "specific": "Summary Judgment"
-                },
-                {
-                    "summary": "Claim Defendant Win",
-                    "specific": "Judgment as a Matter of Law"
-                },
-                {
-                    "summary": "Claim Defendant Win",
                     "specific": "Judgment on the Pleadings"
                 },
                 {
                     "summary": "Claim Defendant Win",
+                    "specific": "Trial"
+                },
+                {
+                    "summary": "Claim Defendant Win",
                     "specific": "Decision on Bankruptcy Appeal"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Judgment on the Pleadings"
                 },
                 {
                     "summary": "Claim Defendant Win",
@@ -61,15 +94,19 @@
                 },
                 {
                     "summary": "Claim Defendant Win",
-                    "specific": "Trial"
+                    "specific": "Summary Judgment"
                 },
                 {
                     "summary": "Claim Defendant Win",
-                    "specific": "Summary Judgment"
+                    "specific": "Judgment as a Matter of Law"
                 },
                 {
                     "summary": "Likely Settlement",
                     "specific": "Likely Settlement"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Multidistrict Litigation"
                 },
                 {
                     "summary": "Procedural",
@@ -81,11 +118,15 @@
                 },
                 {
                     "summary": "Procedural",
+                    "specific": "Consolidation"
+                },
+                {
+                    "summary": "Procedural",
                     "specific": "Intradistrict Transfer"
                 },
                 {
                     "summary": "Procedural",
-                    "specific": "Multidistrict Litigation"
+                    "specific": "Severance"
                 },
                 {
                     "summary": "Procedural",
@@ -94,28 +135,30 @@
                 {
                     "summary": "Procedural",
                     "specific": "Stay"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Consolidation"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Severance"
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:36 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "1481",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "1481",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "4c05365ae0d900a349f9db2ae2dd3462",
+            "Date",
+            "Wed, 10 May 2023 14:24:30 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "13",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "expires_in": 3600,
+            "access_token": "IPWR7hxeqRSh85WbuKH6ivxG799Upat6",
+            "token_type": "bearer"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:30:57 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "6",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/search-judges?q=brim",
         "body": "",
@@ -17,7 +50,7 @@
                             "count": 122
                         }
                     ],
-                    "url": "https://localhost:8000/federal-judges/260"
+                    "url": "https://api.lexmachina.com/federal-judges/260"
                 },
                 {
                     "name": "Philip A. Brimmer",
@@ -26,26 +59,36 @@
                     "caseCountByCourt": [
                         {
                             "court": "total",
-                            "count": 3581
+                            "count": 3590
                         }
                     ],
-                    "url": "https://localhost:8000/federal-judges/3191"
+                    "url": "https://api.lexmachina.com/federal-judges/3191"
                 }
             ],
             "magistrateJudges": [],
             "stateJudges": []
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:27:05 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "408",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "416",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "3957f4c8c0bcbb4b0e86fa14b1916290",
+            "Date",
+            "Wed, 10 May 2023 14:30:57 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "57",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

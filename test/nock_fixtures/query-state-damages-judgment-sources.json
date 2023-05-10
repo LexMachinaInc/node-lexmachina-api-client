@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/list-damages/State",
         "body": "",
@@ -17,21 +17,31 @@
             }
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:37 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "162",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "162",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "b57863c453600248585e085b71ec266e",
+            "Date",
+            "Wed, 10 May 2023 14:29:50 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "10",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
@@ -55,43 +65,53 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
                     "stateCaseId": 2003503224
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "url": "https://api.lexmachina.com/state-cases/2002651250",
                     "stateCaseId": 2002651250
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651203",
+                    "url": "https://api.lexmachina.com/state-cases/2002651203",
                     "stateCaseId": 2002651203
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651348",
+                    "url": "https://api.lexmachina.com/state-cases/2002651348",
                     "stateCaseId": 2002651348
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651434",
+                    "url": "https://api.lexmachina.com/state-cases/2002651434",
                     "stateCaseId": 2002651434
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:37 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "416",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "bd3d66e55a4b0d17784f18df3f4d32f4;o=1",
+            "Date",
+            "Wed, 10 May 2023 14:29:51 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "106",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
@@ -115,43 +135,53 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
                     "stateCaseId": 2003503224
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "url": "https://api.lexmachina.com/state-cases/2002651250",
                     "stateCaseId": 2002651250
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2004707060",
+                    "url": "https://api.lexmachina.com/state-cases/2004707060",
                     "stateCaseId": 2004707060
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2006291819",
+                    "url": "https://api.lexmachina.com/state-cases/2006291819",
                     "stateCaseId": 2006291819
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2006291859",
+                    "url": "https://api.lexmachina.com/state-cases/2006291859",
                     "stateCaseId": 2006291859
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:40 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "416",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "e90c0e35891eb5b5c96ad3e3578e9e6b",
+            "Date",
+            "Wed, 10 May 2023 14:29:51 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "106",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
@@ -175,43 +205,53 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/state-cases/2002651302",
+                    "url": "https://api.lexmachina.com/state-cases/2002651302",
                     "stateCaseId": 2002651302
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2004707078",
+                    "url": "https://api.lexmachina.com/state-cases/2004707078",
                     "stateCaseId": 2004707078
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2004707417",
+                    "url": "https://api.lexmachina.com/state-cases/2004707417",
                     "stateCaseId": 2004707417
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2006292033",
+                    "url": "https://api.lexmachina.com/state-cases/2006292033",
                     "stateCaseId": 2006292033
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651348",
+                    "url": "https://api.lexmachina.com/state-cases/2002651348",
                     "stateCaseId": 2002651348
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:41 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "416",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "c785ccf0793c42f895762d039df1d63d",
+            "Date",
+            "Wed, 10 May 2023 14:29:51 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "61",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
@@ -235,43 +275,53 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
                     "stateCaseId": 2003503224
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "url": "https://api.lexmachina.com/state-cases/2002651250",
                     "stateCaseId": 2002651250
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651302",
+                    "url": "https://api.lexmachina.com/state-cases/2002651302",
                     "stateCaseId": 2002651302
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2004707060",
+                    "url": "https://api.lexmachina.com/state-cases/2004707060",
                     "stateCaseId": 2004707060
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2004707078",
+                    "url": "https://api.lexmachina.com/state-cases/2004707078",
                     "stateCaseId": 2004707078
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:42 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "416",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "dfcb9ad41a686583cefb16dc0e44e34f",
+            "Date",
+            "Wed, 10 May 2023 14:29:51 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "123",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
@@ -295,43 +345,53 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
                     "stateCaseId": 2003503224
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "url": "https://api.lexmachina.com/state-cases/2002651250",
                     "stateCaseId": 2002651250
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651302",
+                    "url": "https://api.lexmachina.com/state-cases/2002651302",
                     "stateCaseId": 2002651302
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2004707078",
+                    "url": "https://api.lexmachina.com/state-cases/2004707078",
                     "stateCaseId": 2004707078
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651203",
+                    "url": "https://api.lexmachina.com/state-cases/2002651203",
                     "stateCaseId": 2002651203
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:43 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "416",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "49daa3f25e60388fc468ba8c748fcb1c",
+            "Date",
+            "Wed, 10 May 2023 14:29:52 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "114",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
@@ -355,38 +415,48 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/state-cases/2003503224",
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
                     "stateCaseId": 2003503224
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2002651250",
+                    "url": "https://api.lexmachina.com/state-cases/2002651250",
                     "stateCaseId": 2002651250
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2004707060",
+                    "url": "https://api.lexmachina.com/state-cases/2004707060",
                     "stateCaseId": 2004707060
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2006291819",
+                    "url": "https://api.lexmachina.com/state-cases/2006291819",
                     "stateCaseId": 2006291819
                 },
                 {
-                    "url": "https://localhost:8000/state-cases/2006291859",
+                    "url": "https://api.lexmachina.com/state-cases/2006291859",
                     "stateCaseId": 2006291859
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:43 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "416",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "dd357a2112d3151031dc97f4a944003e",
+            "Date",
+            "Wed, 10 May 2023 14:29:52 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "122",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

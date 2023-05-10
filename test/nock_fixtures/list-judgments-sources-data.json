@@ -6,27 +6,27 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "expires_in": 3600,
-            "access_token": "A7JGXxVTMD9ICBWhIV0WGekto7ptudoI",
-            "token_type": "bearer"
+            "access_token": "TPdOFDmTO1VD8Aq51wVZaWc2AuXH2qMW",
+            "token_type": "bearer",
+            "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:46 GMT",
+            "Wed, 10 May 2023 14:24:42 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
             "close",
-            "cache-control",
-            "no-store",
             "pragma",
             "no-cache",
+            "cache-control",
+            "no-store",
             "Content-Length",
             "91",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "14",
+            "16",
             "Server",
             "kong/3.2.1.0-enterprise-edition"
         ],
@@ -35,32 +35,56 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/parties/216320",
+        "path": "/list-judgment-sources/FederalDistrict",
         "body": "",
         "status": 200,
         "response": {
-            "name": "Neil Gaiman",
-            "partyId": 216320
+            "damages": [
+                "Default Judgment",
+                "Jury Verdict",
+                "No Type Specified",
+                "Consent Judgment",
+                "Judgment on Merits"
+            ],
+            "remedies": [
+                "Default Judgment",
+                "No Type Specified",
+                "Judgment on Merits",
+                "Consent Judgment"
+            ],
+            "findings": [
+                "Default Judgment",
+                "Summary Judgment",
+                "Trial",
+                "Judgment as a Matter of Law",
+                "Judgment on the Pleadings",
+                "No Type Specified",
+                "Consent Judgment"
+            ],
+            "court": {
+                "name": "All Federal District Courts",
+                "type": "FederalDistrict"
+            }
         },
         "rawHeaders": [
             "Content-Type",
             "application/json",
             "Content-Length",
-            "39",
+            "427",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "ca1826f6de8ba695d036bbe7901df584",
+            "be3b5faf85dfbda358f299ceef8284ec",
             "Date",
-            "Wed, 10 May 2023 14:24:46 GMT",
+            "Wed, 10 May 2023 14:24:42 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "37",
+            "13",
             "X-Kong-Proxy-Latency",
-            "3",
+            "2",
             "Via",
             "kong/3.2.1.0-enterprise-edition"
         ],

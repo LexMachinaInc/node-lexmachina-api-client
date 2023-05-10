@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-district-cases",
         "body": {
@@ -20,38 +20,48 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/district-cases/2002223010",
+                    "url": "https://api.lexmachina.com/district-cases/2002223010",
                     "districtCaseId": 2002223010
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2000707601",
+                    "url": "https://api.lexmachina.com/district-cases/2000707601",
                     "districtCaseId": 2000707601
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2000707734",
+                    "url": "https://api.lexmachina.com/district-cases/2000707734",
                     "districtCaseId": 2000707734
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2000096394",
+                    "url": "https://api.lexmachina.com/district-cases/2000096394",
                     "districtCaseId": 2000096394
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2000095605",
+                    "url": "https://api.lexmachina.com/district-cases/2000095605",
                     "districtCaseId": 2000095605
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:21:41 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "446",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "466",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "75a5f298293afa33a0fce1fec4e6662b",
+            "Date",
+            "Wed, 10 May 2023 14:27:37 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "155",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

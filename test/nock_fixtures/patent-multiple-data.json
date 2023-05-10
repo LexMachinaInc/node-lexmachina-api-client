@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/patents/?patentNumbers=7304635&patentNumbers=4703017&patentNumbers=6003252",
         "body": "",
@@ -66,16 +66,26 @@
             }
         ],
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:47 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "3660",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "3660",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "e0f5686da20b356ba6e99011e7a5bbdc",
+            "Date",
+            "Wed, 10 May 2023 14:24:47 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "150",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

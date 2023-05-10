@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "expires_in": 3600,
+            "access_token": "pLeuaoHH0Ar9uWxK7NwXVW2dUOimQdgT",
+            "token_type": "bearer"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:24:38 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "14",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/list-events/FederalDistrict",
         "body": "",
@@ -13,23 +46,33 @@
             "events": [
                 "Markman Hearing",
                 "Permanent Injuction",
-                "Summary Judgement",
+                "Summary Judgment",
                 "Dismiss (Contested)",
                 "Filed",
                 "Terminated"
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:41 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "187",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "186",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "2cd85fe2b24376847ac84150f0c4c7b9;o=1",
+            "Date",
+            "Wed, 10 May 2023 14:24:38 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "12",
+            "X-Kong-Proxy-Latency",
+            "12",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

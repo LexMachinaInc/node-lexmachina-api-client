@@ -6,21 +6,21 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "expires_in": 3600,
-            "access_token": "A7JGXxVTMD9ICBWhIV0WGekto7ptudoI",
-            "token_type": "bearer"
+            "access_token": "ccHGBSGJk6OcSBCrI29iOk1R9LpI3tQD",
+            "token_type": "bearer",
+            "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:46 GMT",
+            "Wed, 10 May 2023 14:24:41 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
             "close",
-            "cache-control",
-            "no-store",
             "pragma",
             "no-cache",
+            "cache-control",
+            "no-store",
             "Content-Length",
             "91",
             "Access-Control-Allow-Origin",
@@ -35,30 +35,39 @@
     {
         "scope": "https://api.lexmachina.com:443",
         "method": "GET",
-        "path": "/parties/216320",
+        "path": "/list-judgment-events/State",
         "body": "",
         "status": 200,
         "response": {
-            "name": "Neil Gaiman",
-            "partyId": 216320
+            "judgmentEvents": [
+                "Default Judgment",
+                "Consent Judgment",
+                "Bench Trial",
+                "Jury Verdict",
+                "Other Judgment"
+            ],
+            "court": {
+                "name": "All State Courts",
+                "type": "State"
+            }
         },
         "rawHeaders": [
             "Content-Type",
             "application/json",
             "Content-Length",
-            "39",
+            "155",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "ca1826f6de8ba695d036bbe7901df584",
+            "5a343396cc055940205ee37c6d5f304a",
             "Date",
-            "Wed, 10 May 2023 14:24:46 GMT",
+            "Wed, 10 May 2023 14:24:42 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "37",
+            "11",
             "X-Kong-Proxy-Latency",
             "3",
             "Via",

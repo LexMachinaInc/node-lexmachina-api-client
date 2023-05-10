@@ -1,6 +1,39 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "Af1rwkmhFs7pvx8bK1ySquhJXLBI1njo",
+            "token_type": "bearer",
+            "expires_in": 3600
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 May 2023 14:24:34 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "pragma",
+            "no-cache",
+            "cache-control",
+            "no-store",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "13",
+            "Server",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/list-damages/FederalDistrict",
         "body": "",
@@ -178,16 +211,26 @@
             }
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:37 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "4188",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "4188",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "3022751f003f52626868a8a7fa2e4eb7",
+            "Date",
+            "Wed, 10 May 2023 14:24:35 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "17",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

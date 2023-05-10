@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-district-cases",
         "body": {
@@ -18,115 +18,125 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://localhost:8000/district-cases/2007625272",
+                    "url": "https://api.lexmachina.com/district-cases/2007625272",
                     "districtCaseId": 2007625272
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007625273",
+                    "url": "https://api.lexmachina.com/district-cases/2007625273",
                     "districtCaseId": 2007625273
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631031",
+                    "url": "https://api.lexmachina.com/district-cases/2007631031",
                     "districtCaseId": 2007631031
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631032",
+                    "url": "https://api.lexmachina.com/district-cases/2007631032",
                     "districtCaseId": 2007631032
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631033",
+                    "url": "https://api.lexmachina.com/district-cases/2007631033",
                     "districtCaseId": 2007631033
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631035",
+                    "url": "https://api.lexmachina.com/district-cases/2007631035",
                     "districtCaseId": 2007631035
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631039",
+                    "url": "https://api.lexmachina.com/district-cases/2007631039",
                     "districtCaseId": 2007631039
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631040",
+                    "url": "https://api.lexmachina.com/district-cases/2007631040",
                     "districtCaseId": 2007631040
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631075",
+                    "url": "https://api.lexmachina.com/district-cases/2007631075",
                     "districtCaseId": 2007631075
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631078",
+                    "url": "https://api.lexmachina.com/district-cases/2007631078",
                     "districtCaseId": 2007631078
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631079",
+                    "url": "https://api.lexmachina.com/district-cases/2007631079",
                     "districtCaseId": 2007631079
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631086",
+                    "url": "https://api.lexmachina.com/district-cases/2007631086",
                     "districtCaseId": 2007631086
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631087",
+                    "url": "https://api.lexmachina.com/district-cases/2007631087",
                     "districtCaseId": 2007631087
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631098",
+                    "url": "https://api.lexmachina.com/district-cases/2007631098",
                     "districtCaseId": 2007631098
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631101",
+                    "url": "https://api.lexmachina.com/district-cases/2007631101",
                     "districtCaseId": 2007631101
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631104",
+                    "url": "https://api.lexmachina.com/district-cases/2007631104",
                     "districtCaseId": 2007631104
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631114",
+                    "url": "https://api.lexmachina.com/district-cases/2007631114",
                     "districtCaseId": 2007631114
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631119",
+                    "url": "https://api.lexmachina.com/district-cases/2007631119",
                     "districtCaseId": 2007631119
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631128",
+                    "url": "https://api.lexmachina.com/district-cases/2007631128",
                     "districtCaseId": 2007631128
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631717",
+                    "url": "https://api.lexmachina.com/district-cases/2007631717",
                     "districtCaseId": 2007631717
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007631763",
+                    "url": "https://api.lexmachina.com/district-cases/2007631763",
                     "districtCaseId": 2007631763
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007633164",
+                    "url": "https://api.lexmachina.com/district-cases/2007633164",
                     "districtCaseId": 2007633164
                 },
                 {
-                    "url": "https://localhost:8000/district-cases/2007691573",
+                    "url": "https://api.lexmachina.com/district-cases/2007691573",
                     "districtCaseId": 2007691573
                 }
             ]
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:13 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "2012",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "2104",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "53595fcde98c64095d4e787803bff1fb",
+            "Date",
+            "Wed, 10 May 2023 14:29:42 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "41",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     },
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-district-cases",
         "body": {
@@ -145,16 +155,26 @@
             "cases": []
         },
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:24:13 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "12",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "12",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "fd416701f938359ea8760025e7517928",
+            "Date",
+            "Wed, 10 May 2023 14:29:42 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "40",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

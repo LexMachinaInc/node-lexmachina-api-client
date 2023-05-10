@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/attorneys?attorneyIds=110161257&attorneyIds=43337&attorneyIds=14974596",
         "body": "",
@@ -20,16 +20,26 @@
             }
         ],
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:34 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "156",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "156",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "18e6406b0cfe28d58a8c30dbe6a81c11",
+            "Date",
+            "Wed, 10 May 2023 14:24:28 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "73",
+            "X-Kong-Proxy-Latency",
+            "59",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }

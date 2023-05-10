@@ -1,17 +1,64 @@
 [
     {
         "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-judgment-events/State",
+        "body": "",
+        "status": 200,
+        "response": {
+            "judgmentEvents": [
+                "Default Judgment",
+                "Consent Judgment",
+                "Bench Trial",
+                "Jury Verdict",
+                "Other Judgment"
+            ],
+            "court": {
+                "name": "All State Courts",
+                "type": "State"
+            }
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "155",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "05f87633326d66a3db8b971f2c03daa6",
+            "Date",
+            "Wed, 10 May 2023 14:29:43 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "12",
+            "X-Kong-Proxy-Latency",
+            "4",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
-            "lawFirms": {
-                "include": [
-                    8489350
-                ]
-            },
             "courts": {
-                "state": "NV"
+                "state": "CA"
             },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "include": [
+                            "Default Judgment"
+                        ]
+                    }
+                }
+            ],
             "ordering": "ByFirstFiled",
             "page": 1,
             "pageSize": 5
@@ -20,24 +67,24 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940435",
-                    "stateCaseId": 2003940435
+                    "url": "https://api.lexmachina.com/state-cases/2006289796",
+                    "stateCaseId": 2006289796
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940594",
-                    "stateCaseId": 2003940594
+                    "url": "https://api.lexmachina.com/state-cases/2002823527",
+                    "stateCaseId": 2002823527
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003945463",
-                    "stateCaseId": 2003945463
+                    "url": "https://api.lexmachina.com/state-cases/2006291859",
+                    "stateCaseId": 2006291859
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003959013",
-                    "stateCaseId": 2003959013
+                    "url": "https://api.lexmachina.com/state-cases/2003585557",
+                    "stateCaseId": 2003585557
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003965442",
-                    "stateCaseId": 2003965442
+                    "url": "https://api.lexmachina.com/state-cases/2004707313",
+                    "stateCaseId": 2004707313
                 }
             ]
         },
@@ -49,15 +96,15 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "ef7f28163e59cd32acda298a8faea8ae",
+            "b0427fb765388a7eb5a4fea0dc873e59",
             "Date",
-            "Wed, 10 May 2023 14:30:28 GMT",
+            "Wed, 10 May 2023 14:29:43 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "41",
+            "163",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
@@ -70,14 +117,18 @@
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
-            "lawFirms": {
-                "include": [
-                    54662
-                ]
-            },
             "courts": {
-                "state": "NV"
+                "state": "CA"
             },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "include": [
+                            "Consent Judgment"
+                        ]
+                    }
+                }
+            ],
             "ordering": "ByFirstFiled",
             "page": 1,
             "pageSize": 5
@@ -86,24 +137,24 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940430",
-                    "stateCaseId": 2003940430
+                    "url": "https://api.lexmachina.com/state-cases/2006292161",
+                    "stateCaseId": 2006292161
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940445",
-                    "stateCaseId": 2003940445
+                    "url": "https://api.lexmachina.com/state-cases/2003117770",
+                    "stateCaseId": 2003117770
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940454",
-                    "stateCaseId": 2003940454
+                    "url": "https://api.lexmachina.com/state-cases/2003806742",
+                    "stateCaseId": 2003806742
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940455",
-                    "stateCaseId": 2003940455
+                    "url": "https://api.lexmachina.com/state-cases/2002652137",
+                    "stateCaseId": 2002652137
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003945135",
-                    "stateCaseId": 2003945135
+                    "url": "https://api.lexmachina.com/state-cases/2002652217",
+                    "stateCaseId": 2002652217
                 }
             ]
         },
@@ -115,15 +166,15 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "656e50c6a960821daaa4472bbc25e1bc",
+            "32a1fab2cc67254bdd37b82c698038b4",
             "Date",
-            "Wed, 10 May 2023 14:30:28 GMT",
+            "Wed, 10 May 2023 14:29:43 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "298",
+            "59",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
@@ -136,14 +187,18 @@
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
-            "lawFirms": {
-                "include": [
-                    154487959
-                ]
-            },
             "courts": {
-                "state": "NV"
+                "state": "CA"
             },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "include": [
+                            "Bench Trial"
+                        ]
+                    }
+                }
+            ],
             "ordering": "ByFirstFiled",
             "page": 1,
             "pageSize": 5
@@ -152,24 +207,24 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940423",
-                    "stateCaseId": 2003940423
+                    "url": "https://api.lexmachina.com/state-cases/2002769478",
+                    "stateCaseId": 2002769478
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003941037",
-                    "stateCaseId": 2003941037
+                    "url": "https://api.lexmachina.com/state-cases/2002769570",
+                    "stateCaseId": 2002769570
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003942418",
-                    "stateCaseId": 2003942418
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
+                    "stateCaseId": 2003503224
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003942422",
-                    "stateCaseId": 2003942422
+                    "url": "https://api.lexmachina.com/state-cases/2002651148",
+                    "stateCaseId": 2002651148
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003942490",
-                    "stateCaseId": 2003942490
+                    "url": "https://api.lexmachina.com/state-cases/2002651250",
+                    "stateCaseId": 2002651250
                 }
             ]
         },
@@ -181,15 +236,15 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "2cb0861e1c8f6f92940fb0b62c846b8d",
+            "e94683466abe7438feb03d67607039ad",
             "Date",
-            "Wed, 10 May 2023 14:30:28 GMT",
+            "Wed, 10 May 2023 14:29:44 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "41",
+            "180",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
@@ -202,14 +257,18 @@
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
-            "lawFirms": {
-                "exclude": [
-                    8489350
-                ]
-            },
             "courts": {
-                "state": "NV"
+                "state": "CA"
             },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "include": [
+                            "Jury Verdict"
+                        ]
+                    }
+                }
+            ],
             "ordering": "ByFirstFiled",
             "page": 1,
             "pageSize": 5
@@ -218,24 +277,24 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940414",
-                    "stateCaseId": 2003940414
+                    "url": "https://api.lexmachina.com/state-cases/2002651302",
+                    "stateCaseId": 2002651302
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003945132",
-                    "stateCaseId": 2003945132
+                    "url": "https://api.lexmachina.com/state-cases/2004707078",
+                    "stateCaseId": 2004707078
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940413",
-                    "stateCaseId": 2003940413
+                    "url": "https://api.lexmachina.com/state-cases/2002651071",
+                    "stateCaseId": 2002651071
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940417",
-                    "stateCaseId": 2003940417
+                    "url": "https://api.lexmachina.com/state-cases/2004707417",
+                    "stateCaseId": 2004707417
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940418",
-                    "stateCaseId": 2003940418
+                    "url": "https://api.lexmachina.com/state-cases/2006124780",
+                    "stateCaseId": 2006124780
                 }
             ]
         },
@@ -247,15 +306,15 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "f0c101b85bf9bf7478efe1931c82b903",
+            "50caed165b3905a708cdbb25c25f8269",
             "Date",
-            "Wed, 10 May 2023 14:30:29 GMT",
+            "Wed, 10 May 2023 14:29:44 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "66",
+            "86",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
@@ -268,14 +327,18 @@
         "method": "POST",
         "path": "/query-state-cases",
         "body": {
-            "lawFirms": {
-                "exclude": [
-                    54662
-                ]
-            },
             "courts": {
-                "state": "NV"
+                "state": "CA"
             },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "include": [
+                            "Other Judgment"
+                        ]
+                    }
+                }
+            ],
             "ordering": "ByFirstFiled",
             "page": 1,
             "pageSize": 5
@@ -284,24 +347,24 @@
         "response": {
             "cases": [
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940414",
-                    "stateCaseId": 2003940414
+                    "url": "https://api.lexmachina.com/state-cases/2006124780",
+                    "stateCaseId": 2006124780
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003945132",
-                    "stateCaseId": 2003945132
+                    "url": "https://api.lexmachina.com/state-cases/2002651434",
+                    "stateCaseId": 2002651434
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940413",
-                    "stateCaseId": 2003940413
+                    "url": "https://api.lexmachina.com/state-cases/2006293125",
+                    "stateCaseId": 2006293125
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940417",
-                    "stateCaseId": 2003940417
+                    "url": "https://api.lexmachina.com/state-cases/2002653306",
+                    "stateCaseId": 2002653306
                 },
                 {
-                    "url": "https://api.lexmachina.com/state-cases/2003940418",
-                    "stateCaseId": 2003940418
+                    "url": "https://api.lexmachina.com/state-cases/2006293872",
+                    "stateCaseId": 2006293872
                 }
             ]
         },
@@ -313,81 +376,15 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "aabc8fd7ff0f141301a7ce716ee6acbb",
+            "b356b355695c214b4e04e66b53f4edec",
             "Date",
-            "Wed, 10 May 2023 14:30:29 GMT",
+            "Wed, 10 May 2023 14:29:44 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "305",
-            "X-Kong-Proxy-Latency",
-            "1",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "POST",
-        "path": "/query-state-cases",
-        "body": {
-            "lawFirms": {
-                "exclude": [
-                    154487959
-                ]
-            },
-            "courts": {
-                "state": "NV"
-            },
-            "ordering": "ByFirstFiled",
-            "page": 1,
-            "pageSize": 5
-        },
-        "status": 200,
-        "response": {
-            "cases": [
-                {
-                    "url": "https://api.lexmachina.com/state-cases/2003940414",
-                    "stateCaseId": 2003940414
-                },
-                {
-                    "url": "https://api.lexmachina.com/state-cases/2003945132",
-                    "stateCaseId": 2003945132
-                },
-                {
-                    "url": "https://api.lexmachina.com/state-cases/2003940413",
-                    "stateCaseId": 2003940413
-                },
-                {
-                    "url": "https://api.lexmachina.com/state-cases/2003940417",
-                    "stateCaseId": 2003940417
-                },
-                {
-                    "url": "https://api.lexmachina.com/state-cases/2003940418",
-                    "stateCaseId": 2003940418
-                }
-            ]
-        },
-        "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
-            "436",
-            "Connection",
-            "close",
-            "X-Cloud-Trace-Context",
-            "ae8e301185b5ab82b3c55eb456ace54f",
-            "Date",
-            "Wed, 10 May 2023 14:30:29 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "50",
+            "48",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",

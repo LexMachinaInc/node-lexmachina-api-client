@@ -1,6 +1,6 @@
 [
     {
-        "scope": "http://localhost:8000",
+        "scope": "https://api.lexmachina.com:443",
         "method": "GET",
         "path": "/federal-judges?federalJudgeIds=3349&federalJudgeIds=3488&federalJudgeIds=2877",
         "body": "",
@@ -14,7 +14,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 1773
+                        "count": 1778
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -27,7 +27,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 3808
+                        "count": 3815
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -40,23 +40,33 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 6183
+                        "count": 6192
                     }
                 ],
                 "nominatingPresident": "William J. Clinton"
             }
         ],
         "rawHeaders": [
-            "date",
-            "Thu, 04 May 2023 16:16:43 GMT",
-            "server",
-            "uvicorn",
-            "content-length",
-            "564",
-            "content-type",
+            "Content-Type",
             "application/json",
-            "connection",
-            "close"
+            "Content-Length",
+            "564",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "add4f8cb6cd38225093fbf4d3f30d15f",
+            "Date",
+            "Wed, 10 May 2023 14:24:41 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "73",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.2.1.0-enterprise-edition"
         ],
         "responseIsBinary": false
     }
