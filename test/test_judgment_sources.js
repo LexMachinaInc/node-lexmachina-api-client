@@ -12,7 +12,7 @@ describe('List Judgment Sources', () => {
     var categories = ['damages', 'remedies', 'findings'];
 
     it('should contain judgment sources', async () => {
-        const { nockDone} = await nockBack('list-judgments-data.json');
+        const { nockDone} = await nockBack('list-judgments-sources-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
         var judgmentSources = await client.listDistrictJudgmentSources();
