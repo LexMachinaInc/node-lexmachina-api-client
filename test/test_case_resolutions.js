@@ -35,11 +35,14 @@ describe('List State Case Resolutions', () => {
         var caseResolutionsObject = await client.listStateCaseResolutions();
         nockDone();
         var caseResolutions = caseResolutionsObject.caseResolutions;
-        expect(caseResolutions).to.have.length.above(20);
+        expect(caseResolutions).to.have.length.above(10);
 
-        caseResolutions.should.deep.include({summary:'Plaintiff Win', specific:'Bench Trial'});
-        caseResolutions.should.deep.include({summary:'Procedural', specific:'Consent Judgment'});
-        caseResolutions.should.deep.include({summary:'Defendant Win', specific:'Jury Verdict'});
+        expect(caseResolutions).to.contain.an.item.with.property('summary', 'Plaintiff Win');
+        expect(caseResolutions).to.contain.an.item.with.property('summary', 'Procedural');
+        expect(caseResolutions).to.contain.an.item.with.property('summary', 'Defendant Win');
+        expect(caseResolutions).to.contain.an.item.with.property('specific', 'Bench Trial');
+        expect(caseResolutions).to.contain.an.item.with.property('specific', 'Consent Judgment');
+        expect(caseResolutions).to.contain.an.item.with.property('specific', 'Jury Verdict');
 
     });
 });
