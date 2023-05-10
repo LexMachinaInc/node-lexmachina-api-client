@@ -10,7 +10,7 @@ nockBack.fixtures = './test/nock_fixtures/';
 nockBack.setMode('record');
 
 
-describe('Execute Queries',   () => {
+describe('Execute State Queries',   () => {
     var client = new LexMachinaClient('config/config.json');
 
 
