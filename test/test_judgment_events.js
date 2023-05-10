@@ -10,7 +10,7 @@ nockBack.setMode('record');
 
 describe('List Judgment Events', () => {
 
-    it('should contain judgment sources', async () => {
+    it('should contain judgment events', async () => {
         const { nockDone} = await nockBack('list-judgment-events-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
