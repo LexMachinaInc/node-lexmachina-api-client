@@ -28,7 +28,7 @@ async function getJudge() {
 
 async function run() {
     var client = new LexMachinaClient('config/config.json');
-    var query = new DistrictCasesQueryRequest();    //Hardcoded to Perkins Coie for this
+    var query = new DistrictCasesQueryRequest();
     var judge_id = await getJudge();
     var judge = await client.federalJudges(judge_id);
 
