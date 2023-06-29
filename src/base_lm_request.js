@@ -46,7 +46,7 @@ module.exports = class BaseLexMachinaRequest {
             raxConfig: {
                 retry: 3,
                 httpMethodsToRetry: ['GET', 'HEAD', 'OPTIONS', 'DELETE', 'PUT', 'POST'],
-                statusCodesToRetry: [[100, 199], [401, 401], [500, 599]],
+                statusCodesToRetry: [[100, 199], [401, 401], [429,429], [500, 599]],
             }};
 
         if (config.method) {
