@@ -39,3 +39,19 @@ describe('List State Events', () => {
         events.should.include('Terminated');
     });
 });
+
+describe('List Appeals Events', () => {
+
+    it('should contain events', async () => {
+        const { nockDone} = await nockBack('list-appeals-events-data.json');
+        nock.enableNetConnect();
+        const client = new LexMachinaClient();
+        var eventsObject = await client.listAppealsEvents();
+        var events = eventsObject.events;
+        nockDone();
+        expect(events).to.have.length.above(1);
+
+        events.should.include('Filed');
+        events.should.include('Terminated');
+    });
+});
