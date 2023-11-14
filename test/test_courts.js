@@ -39,3 +39,20 @@ describe('List State Courts', () => {
         nockDone();
     });
 });
+
+describe('List Appeals Courts', () => {
+
+    it('should contain appeals courts', async () => {
+        const { nockDone} = await nockBack('list-appeals-courts-data.json');
+        nock.enableNetConnect();
+        const client = new LexMachinaClient();
+        var courts = await client.listAppealsCourts();
+
+        expect(courts).to.have.length.above(10);
+        courts.should.include.a.thing.with.deep.property('type', 'FederalAppeals');
+        courts.should.include.a.thing.with.deep.property('name', 'U.S. Court of Appeals for the Ninth Circuit');
+        courts.should.include.a.thing.with.deep.property('shortName', '7th Cir.');
+        courts.should.include.a.thing.with.deep.property('abbreviation', 'cafc');
+        nockDone();
+    });
+});
