@@ -532,7 +532,7 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.includeThirdParty).to.be.empty;
             expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.be.empty;
 
-            var attorneys = [ ];
+            var attorneys = [57093, 13660912, 110527508 ];
             var attorney;
             var index;
             var cases;
@@ -567,7 +567,7 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.includeRespondent).to.be.empty;
             expect(caseQuery.queryObject.attorneys.excludeRespondent).to.be.empty;
 
-            var attorneys = [ ];
+            var attorneys = [ 109509341, 2788323, 46122804];
             var attorney;
             var index;
             var cases;
@@ -595,7 +595,7 @@ describe('Execute Appeal Queries',   () => {
         });
 
 
-        it('should be able to query via attorneys petiioner movant includes and excludes', async () => {
+        it('should be able to query via attorneys petitioner movant includes and excludes', async () => {
             const { nockDone} = await nockBack('query-appeals-attorneys-petitioner-movant.json');
             nock.enableNetConnect();
 
@@ -603,7 +603,7 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.includePetitionerMovant).to.be.empty;
             expect(caseQuery.queryObject.attorneys.excludePetitionerMovant).to.be.empty;
 
-            var attorneys = [ ];
+            var attorneys = [ 9360420, 9793157, 21228268];
             var attorney;
             var index;
             var cases;
