@@ -12,7 +12,8 @@ module.exports = class QueryCases {
             config.endpoint = '/query-district-cases';
         } else if (court == "state") {
             config.endpoint = '/query-state-cases';
-
+        } else if (court == "appeals") {
+            config.endpoint = '/query-appeals-cases';
         } else {
             throw new Error("A court must be specified for queries")
         }
@@ -28,6 +29,9 @@ module.exports = class QueryCases {
             if (court == "state"){
                 return caseObjects.map(a=>a.stateCaseId);
                 }
+            if (court == "appeals"){
+                return caseObjects.map(a=>a.appealsCaseId)
+            }
         } else {
             return  [];
         }

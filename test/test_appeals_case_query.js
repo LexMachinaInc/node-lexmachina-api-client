@@ -1621,7 +1621,7 @@ describe('Add and Remove Query Statements', () => {
                 var caseQuery = new AppealCasesQueryRequest();
                 caseQuery.finalize();
                 //console.log("After clearing, object is %s", JSON.stringify(caseQuery.queryObject));
-                expect(Object.keys(caseQuery.queryObject)).to.have.lengthOf(4);
+                expect(Object.keys(caseQuery.queryObject)).to.have.lengthOf(3);
             });
 
         });

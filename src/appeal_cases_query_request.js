@@ -13,7 +13,6 @@ module.exports = class AppealCasesQueryRequest {
 
         this.queryObjectTemplate = {
             'courts': { 'include': [], 'exclude': []},
-            'caseStatus': 'Open',
             'caseTags': { 'include': [], 'exclude': [] },
             'dates': {
                 'filed': { 'onOrAfter': '', 'onOrBefore': '' },

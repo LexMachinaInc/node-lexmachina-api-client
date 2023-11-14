@@ -63,6 +63,17 @@ module.exports = class LexMachinaClient {
         return this.lmRequest.requestURL(config);
     }
 
+
+    async appealsCases(cases) {
+        var config = {};
+        if (Number.isInteger(cases)) {
+            config.endpoint = '/appeals-cases/' + cases;
+        } else {
+            throw new Error('The case_id must be an integer');
+        }
+        return this.lmRequest.requestURL(config);
+    }
+
     async federalJudges(judges) {
         var config = {};
         if (Number.isInteger(judges)) {
@@ -104,6 +115,11 @@ module.exports = class LexMachinaClient {
         return this.lmRequest.requestURL(config);
     }
 
+    async listAppealsCaseResolutions() {
+        var config = { 'endpoint': '/list-case-resolutions/FederalAppeals' };
+        return this.lmRequest.requestURL(config);
+    }
+
     async listDistrictCaseTags() {
         var config = { 'endpoint': '/list-case-tags/FederalDistrict' };
         return this.lmRequest.requestURL(config);
@@ -111,6 +127,11 @@ module.exports = class LexMachinaClient {
     
     async listStateCaseTags() {
         var config = { 'endpoint': '/list-case-tags/State' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listAppealsCaseTags() {
+        var config = { 'endpoint': '/list-case-tags/FederalAppeals' };
         return this.lmRequest.requestURL(config);
     }
 
@@ -124,6 +145,12 @@ module.exports = class LexMachinaClient {
         return this.lmRequest.requestURL(config);
     }
 
+    async listAppealsCaseTypes() {
+        var config = { 'endpoint': '/list-case-types/FederalAppeals' };
+        return this.lmRequest.requestURL(config);
+    }
+
+
     async listDistrictCourts() {
         var config = { 'endpoint': '/list-courts/FederalDistrict' };
         return this.lmRequest.requestURL(config);
@@ -131,6 +158,11 @@ module.exports = class LexMachinaClient {
 
     async listStateCourts() {
         var config = { 'endpoint': '/list-courts/State' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listAppealsCourts() {
+        var config = { 'endpoint': '/list-courts/FederalAppeals' };
         return this.lmRequest.requestURL(config);
     }
 
@@ -153,6 +185,12 @@ module.exports = class LexMachinaClient {
         var config = { 'endpoint': '/list-events/State' };
         return this.lmRequest.requestURL(config);
     }
+
+    async listAppealsEvents() {
+        var config = { 'endpoint': '/list-events/FederalAppeals' };
+        return this.lmRequest.requestURL(config);
+    }
+
     async listDistrictJudgmentSources() {
         var config = { 'endpoint': '/list-judgment-sources/FederalDistrict' };
         return this.lmRequest.requestURL(config);
@@ -284,5 +322,9 @@ module.exports = class LexMachinaClient {
 
     async queryStateCases(query, options) {
         return this.queryEngine.queryCases("state", query, options);
+    }
+
+    async queryAppealsCases(query, options) {
+        return this.queryEngine.queryCases("appeals", query, options);
     }
 };
