@@ -60,3 +60,21 @@ describe('List State Case Types', () => {
         nockDone();
     });
 });
+
+describe('List Appeals Case Types', () => {
+
+    it('should contain appeals case types', async () => {
+        const { nockDone} = await nockBack('list-appeals-case-types-data.json');
+        nock.enableNetConnect();
+        const client = new LexMachinaClient();
+        var caseTypesObject = await client.listAppealsCaseTypes();
+        
+        expect(caseTypesObject[0].caseTypes).to.have.length.above(20);
+ 
+        caseTypesObject[0].caseTypes.should.contain("Antitrust");  
+        caseTypesObject[0].caseTypes.should.contain("Insurance");  
+        caseTypesObject[0].caseTypes.should.contain("Trade Secret");  
+
+        nockDone();
+    });
+});
