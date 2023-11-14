@@ -282,6 +282,12 @@ var query = new StateCasesQueryRequest(); // Add criteria to this
 var cases = await client.queryStateCases(query)
 ```
 
+```javascript
+var client = new LexMachinaClient();
+var query = new AppealsCasesQueryRequest(); // Add criteria to this
+var cases = await client.queryAppealsCases(query)
+```
+
 There is an optional second parameter that is a JSON object for options. This takes a single value at present. If absent, the query will be executed with the page and page size in the query object. If this option object is present:
 
 ```json
