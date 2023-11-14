@@ -21,5 +21,5 @@ describe('List Judgment Events', () => {
         var actualEvents = judgmentEvents.judgmentEvents;
         actualEvents.should.include('Default Judgment');
         actualEvents.should.include('Consent Judgment');
-        });
     });
+});

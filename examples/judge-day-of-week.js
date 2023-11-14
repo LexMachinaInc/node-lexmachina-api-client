@@ -71,7 +71,7 @@ async function run() {
         var dayOfWeek = Object.keys(daysStats);
 
         var days = dayOfWeek.filter(day => daysStats[day] > 0);
-        var dayOfWeekSorted = days.sort((a,b) => {return daysStats[b] - daysStats[a]});
+        var dayOfWeekSorted = days.sort((a,b) => {return daysStats[b] - daysStats[a];});
         for (var k = 0; k < dayOfWeekSorted.length; k++) {
             var thisDay = dayOfWeekSorted[k];
             console.log('%s: %i', thisDay, daysStats[thisDay]);

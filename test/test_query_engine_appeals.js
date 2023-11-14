@@ -431,9 +431,7 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.exclude).to.be.empty;
 
             var attorneys = [ 54134214, 54367124, 18779280];
-            var attorney;
-            var index;
-            var cases;
+            var attorney, index, cases;
 
             for (index=0; index < attorneys.length; index++)  {
                 attorney = attorneys[index];
@@ -466,8 +464,7 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.excludeAppellant).to.be.empty;
 
             var attorneys = [ 111150293, 151814354, 2132007];
-            var index;
-            var cases;
+            var attorney, index, cases;
 
             for (index=0; index < attorneys.length; index++)  {
                 attorney = attorneys[index];
@@ -499,9 +496,7 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.excludeAppellee).to.be.empty;
 
             var attorneys = [ 340302, 8110350, 109160082];
-            var attorney;
-            var index;
-            var cases;
+            var attorney, index, cases;
 
             for (index=0; index < attorneys.length; index++)  {
                 attorney = attorneys[index];
@@ -533,9 +528,8 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.be.empty;
 
             var attorneys = [57093, 13660912, 110527508 ];
-            var attorney;
-            var index;
-            var cases;
+            var attorney, index, cases;
+
 
             for (index=0; index < attorneys.length; index++)  {
                 attorney = attorneys[index];
@@ -568,9 +562,8 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.excludeRespondent).to.be.empty;
 
             var attorneys = [ 109509341, 2788323, 46122804];
-            var attorney;
-            var index;
-            var cases;
+            var attorney, index, cases;
+
 
             for (index=0; index < attorneys.length; index++)  {
                 attorney = attorneys[index];
@@ -604,9 +597,7 @@ describe('Execute Appeal Queries',   () => {
             expect(caseQuery.queryObject.attorneys.excludePetitionerMovant).to.be.empty;
 
             var attorneys = [ 9360420, 9793157, 21228268];
-            var attorney;
-            var index;
-            var cases;
+            var attorney, index, cases;
 
             for (index=0; index < attorneys.length; index++)  {
                 attorney = attorneys[index];

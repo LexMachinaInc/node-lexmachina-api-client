@@ -5,24 +5,24 @@ const path = require('path');
 module.exports = class LexMachinaClient {
 
     constructor(input_config_file_path) {
-            var config_file_path='';
-            if (!input_config_file_path) {
-                config_file_path =  '../config/config.json';
+        var config_file_path='';
+        if (!input_config_file_path) {
+            config_file_path =  '../config/config.json';
+        } else {
+            if (!path.isAbsolute(input_config_file_path)) {
+                config_file_path = path.join(process.cwd(), input_config_file_path);
             } else {
-                if (!path.isAbsolute(input_config_file_path)) {
-                    config_file_path = path.join(process.cwd(), input_config_file_path);
-                } else {
-                    config_file_path = input_config_file_path;
-                }
+                config_file_path = input_config_file_path;
             }
+        }
     
-            try {
-                var config =  require(config_file_path);
-                this.token_config = config.authParameters;
-            } catch (e){
-                console.log(' Cannot load config file at ' + config_file_path);
-                throw (e);
-            }
+        try {
+            var config =  require(config_file_path);
+            this.token_config = config.authParameters;
+        } catch (e){
+            console.log(' Cannot load config file at ' + config_file_path);
+            throw (e);
+        }
         
         
         this.lmRequest = new BaseLexMachinaRequest(config);
@@ -338,14 +338,14 @@ module.exports = class LexMachinaClient {
     }
 
     async queryDistrictCases(query, options) {
-        return this.queryEngine.queryCases("district", query, options);
+        return this.queryEngine.queryCases('district', query, options);
     }
 
     async queryStateCases(query, options) {
-        return this.queryEngine.queryCases("state", query, options);
+        return this.queryEngine.queryCases('state', query, options);
     }
 
     async queryAppealsCases(query, options) {
-        return this.queryEngine.queryCases("appeals", query, options);
+        return this.queryEngine.queryCases('appeals', query, options);
     }
 };

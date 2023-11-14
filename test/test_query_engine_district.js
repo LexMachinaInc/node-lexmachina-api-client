@@ -82,9 +82,7 @@ describe('Execute District Queries',   () => {
             nock.enableNetConnect();
             
             var caseQuery = new DistrictCasesQueryRequest();
-            var caseTag;
-            var index;
-            var cases;
+            var caseTag, index, cases, tags;
             var tagsObject = await client.listDistrictCaseTags();
             tags = tagsObject[0].caseTags;
             tags.sort();

@@ -28,7 +28,7 @@ describe('Execute State Queries',   () => {
             for (index=0; index < statuses.length; index++) {
                 caseStatus = statuses[index];
                 caseQuery.setCaseStatus(caseStatus);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 //console.log(caseStatus)
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases = "+cases)
@@ -48,24 +48,23 @@ describe('Execute State Queries',   () => {
             nock.enableNetConnect();
             
             var caseQuery = new StateCasesQueryRequest();
-            var event;
-            var index;
-            var cases;
+            var events, index, cases, thisevent;
             var types = await client.listStateJudgmentEvents();
             events = types.judgmentEvents;
             for (index=0; index < events.length; index++) {
-                event = events[index];
-                caseQuery.addRulingsIncludeJudgmentEvent(event);
-                caseQuery.setState("CA");
+                // event is a reserved word now
+                thisevent = events[index];
+                caseQuery.addRulingsIncludeJudgmentEvent(thisevent);
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases = "+cases)
                 expect(cases).to.have.lengthOf(5);
                 caseQuery.clear();
             }
-            for (index=0; index < types.length; index++) {
-                caseType = types[index];
-                caseQuery.addRulingsExcludeJudgmentEvent(caseType);
-                caseQuery.setState("CA");
+            for (index=0; index < events.length; index++) {
+                thisevent = events[index];
+                caseQuery.addRulingsExcludeJudgmentEvent(thisevent);
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases = "+cases)
                 expect(cases).to.have.lengthOf(5);
@@ -93,7 +92,7 @@ describe('Execute State Queries',   () => {
             for (index=0; index < types.length; index++) {
                 caseType = types[index];
                 caseQuery.addCaseTypesInclude(caseType);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases = "+cases)
                 expect(cases).to.have.lengthOf(5);
@@ -102,7 +101,7 @@ describe('Execute State Queries',   () => {
             for (index=0; index < types.length; index++) {
                 caseType = types[index];
                 caseQuery.addCaseTypesExclude(caseType);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases = "+cases)
                 expect(cases).to.have.lengthOf(5);
@@ -142,7 +141,7 @@ describe('Execute State Queries',   () => {
             for (index=0; index < tags.length; index++) {
                 caseTag = tags[index];
                 caseQuery.addCaseTagsExclude(caseTag);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Exclude cases for tag %s = %s", caseTag, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -177,7 +176,7 @@ describe('Execute State Queries',   () => {
                     continue;
                 }
                 caseQuery.addEventTypesInclude(event);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Include cases for event %s = %s", event, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -186,7 +185,7 @@ describe('Execute State Queries',   () => {
                     continue;
                 }
                 caseQuery.addEventTypesExclude(event);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Exclude cases for event %s = %s", event, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -215,7 +214,7 @@ describe('Execute State Queries',   () => {
                 resolutions = resolutions.caseResolutions;
 
                 caseQuery.addResolutionsInclude(resolution.summary, resolution.specific);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("For resolution include %s, cases =  %s", JSON.stringify(resolution), JSON.stringify(cases) )
                 expect(cases).to.not.be.empty;
@@ -224,7 +223,7 @@ describe('Execute State Queries',   () => {
             for (index=0; index < resolutions.length; index++) {
                 resolution = resolutions[index];
                 caseQuery.addResolutionsExclude( resolution.summary, resolution.specific);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("For resolution exclude %s, cases =  %s", JSON.stringify(resolution), JSON.stringify(cases) )
 
@@ -256,7 +255,7 @@ describe('Execute State Queries',   () => {
             {
                 source = damageSources[index];
                 caseQuery.addDamagesIncludeName(source);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Include cases for damage judgment source %s = %s", source, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -266,7 +265,7 @@ describe('Execute State Queries',   () => {
             {
                 source = damageSources[index];
                 caseQuery.addDamagesExcludeName(source);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Exclude cases for damage judgment source %s = %s", source, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -292,7 +291,7 @@ describe('Execute State Queries',   () => {
                 party = toParties[index];
 
                 caseQuery.addDamagesIncludeAwardedToParties(party);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Awarded to cases for damage party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -302,7 +301,7 @@ describe('Execute State Queries',   () => {
             {
                 party = againstParties[index];
                 caseQuery.addDamagesIncludeAwardedAgainstParties(party);
-                caseQuery.setState("CA");
+                caseQuery.setState('CA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Awarded against cases for damage judgment source %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -321,7 +320,7 @@ describe('Execute State Queries',   () => {
 
             caseQuery.addDamagesDate('2020-01-01', 'onOrAfter');
             caseQuery.addDamagesDate('2022-01-01', 'onOrBefore');
-            caseQuery.setState("CA");
+            caseQuery.setState('CA');
             var cases = await client.queryStateCases(caseQuery);
             expect(cases).to.not.be.empty;
             caseQuery.clear();
@@ -354,7 +353,7 @@ describe('Execute State Queries',   () => {
                 judge = judges[index];
 
                 caseQuery.addJudgesInclude(judge);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including judge %i = %s", judge, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -364,7 +363,7 @@ describe('Execute State Queries',   () => {
                 judge = judges[index];
 
                 caseQuery.addJudgesExclude(judge);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding judge %i = %s", judge, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -396,8 +395,8 @@ describe('Execute State Queries',   () => {
 
                 caseQuery.addCourtsInclude(court.name);
                 caseQuery.setState(court.state);
-                cases =caseQuery.setCaseStatus("Open");
-                 await client.queryStateCases(caseQuery);
+                cases =caseQuery.setCaseStatus('Open');
+                await client.queryStateCases(caseQuery);
                 //console.log("Cases for including court %s = %s", court, cases.toString())
                 //console.log("Checking the court include for %s:%s", court.state, court.name);
                 expect(cases).to.not.be.empty;
@@ -411,7 +410,7 @@ describe('Execute State Queries',   () => {
                 }
                 caseQuery.addCourtsExclude(court.name);
                 caseQuery.setState(court.state);
-                caseQuery.setCaseStatus("Open");
+                caseQuery.setCaseStatus('Open');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding court %s = %s", court, cases.toString())
                 //console.log("Checking the court exclude for %s:%s", court.state, court.name);
@@ -444,7 +443,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsInclude(lawFirm);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -454,7 +453,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsExclude(lawFirm);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -482,7 +481,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsIncludePlaintiff(lawFirm);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -492,7 +491,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsExcludePlaintiff(lawFirm);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -519,7 +518,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsIncludeDefendant(lawFirm);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -529,7 +528,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsExcludeDefendant(lawFirm);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -556,7 +555,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsIncludeThirdParty(lawFirm);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -566,7 +565,7 @@ describe('Execute State Queries',   () => {
                 lawFirm = lawFirms[index];
 
                 caseQuery.addLawFirmsExcludeThirdParty(lawFirm);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -600,7 +599,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesInclude(party);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -610,7 +609,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesExclude(party);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -637,7 +636,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesIncludePlaintiff(party);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -647,7 +646,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesExcludePlaintiff(party);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -673,7 +672,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesIncludeDefendant(party);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -683,7 +682,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesExcludeDefendant(party);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -709,7 +708,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesIncludeThirdParty(party);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -719,7 +718,7 @@ describe('Execute State Queries',   () => {
                 party = parties[index];
 
                 caseQuery.addPartiesExcludeThirdParty(party);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -751,7 +750,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysInclude(attorney);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -761,7 +760,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysExclude(attorney);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -788,7 +787,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysIncludePlaintiff(attorney);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -798,7 +797,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysExcludePlaintiff(attorney);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -824,7 +823,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysIncludeDefendant(attorney);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -834,7 +833,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysExcludeDefendant(attorney);
-                caseQuery.setState("WA");
+                caseQuery.setState('WA');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -860,7 +859,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysIncludeThirdParty(attorney);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -870,7 +869,7 @@ describe('Execute State Queries',   () => {
                 attorney = attorneys[index];
 
                 caseQuery.addAttorneysExcludeThirdParty(attorney);
-                caseQuery.setState("NV");
+                caseQuery.setState('NV');
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
                 expect(cases).to.not.be.empty;
@@ -889,7 +888,7 @@ describe('Execute State Queries',   () => {
             nock.enableNetConnect();
 
             var caseQuery = new StateCasesQueryRequest();
-            caseQuery.setState("CA");
+            caseQuery.setState('CA');
             caseQuery.setDate('2022-01-03', 'filed', 'onOrAfter');
             caseQuery.setDate('2023-01-03', 'filed', 'onOrBefore');
             caseQuery.setPageSize(5);

@@ -24,7 +24,7 @@ module.exports = class AppealCasesQueryRequest {
             'attorneys': { 'include': [], 'exclude': [], 'includeAppellant': [], 'excludeAppellant': [], 'includeAppellee': [],  'excludeAppellee': [], 'includeRespondent': [], 'excludeRespondent': [], 'includeThirdParty': [], 'excludeThirdParty': [], 'includePetitionerMovant': [], 'excludePetitionerMovant': []},
             'parties': { 'include': [], 'exclude': [], 'includeAppellant': [], 'excludeAppellant': [], 'includeAppellee': [],  'excludeAppellee': [], 'includeRespondent': [], 'excludeRespondent': [], 'includeThirdParty': [], 'excludeThirdParty': [], 'includePetitionerMovant': [], 'excludePetitionerMovant': []},
             'originatingVenues': { 'include': [], 'exclude': [] },
-            "originatingCases": { "includeDistrictCaseIds": [],"excludeDistrictCaseIds": [],"includeOriginatingJudges": { "districtFederalJudges": { "include": [],"exclude": []}},"originatingDistrictCaseCriteria": { "courts": {"include": [], "exclude": []}, "caseTypes": { "include": [], "exclude": []  } } },
+            'originatingCases': { 'includeDistrictCaseIds': [],'excludeDistrictCaseIds': [],'includeOriginatingJudges': { 'districtFederalJudges': { 'include': [],'exclude': []}},'originatingDistrictCaseCriteria': { 'courts': {'include': [], 'exclude': []}, 'caseTypes': { 'include': [], 'exclude': []  } } },
             'resolutions': { 'include': [], 'exclude': [] },
             'supremeCourtDecisions': { 'include': [], 'exclude': [] },
             'ordering': 'ByFirstFiled',

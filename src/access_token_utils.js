@@ -2,7 +2,6 @@ const storage = require('node-persist');
 const { ClientCredentials } = require('simple-oauth2');
 const TOKEN_KEY = 'accesstoken';
 const debug = require('debug')('auth');
-const path = require('path');
 
 module.exports = class AccessTokenUtils {
 

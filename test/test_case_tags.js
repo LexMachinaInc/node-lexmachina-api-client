@@ -36,14 +36,14 @@ describe('List State Case Tags', () => {
         
         expect(caseTagsObject).to.have.length.greaterThan(40);
 
-        caseTagsObject.should.include.a.thing.with.deep.nested.property("caseTags",[
-            "Trial",
-            "Jury"
+        caseTagsObject.should.include.a.thing.with.deep.nested.property('caseTags',[
+            'Trial',
+            'Jury'
         ]);        
-        caseTagsObject.should.include.a.thing.with.deep.nested.property("court", {
-            "name": "Court of Chancery",
-            "type": "State",
-            "state": "DE"
+        caseTagsObject.should.include.a.thing.with.deep.nested.property('court', {
+            'name': 'Court of Chancery',
+            'type': 'State',
+            'state': 'DE'
         });
     });
 });
@@ -60,16 +60,16 @@ describe('List Appeals Case Tags', () => {
         expect(caseTagsObject[0].caseTags).to.have.length.greaterThan(10);
 
         caseTagsObject[0].caseTags.should.contain(
-            "Petition for Review: Grant"
+            'Petition for Review: Grant'
         );  
         
         caseTagsObject[0].caseTags.should.contain(
-            "Appealability Ruling"
+            'Appealability Ruling'
         );  
 
-        caseTagsObject.should.include.a.thing.with.deep.nested.property("court", {
-            "name": "All Federal Appeals Courts",
-            "type": "FederalAppeals"
+        caseTagsObject.should.include.a.thing.with.deep.nested.property('court', {
+            'name': 'All Federal Appeals Courts',
+            'type': 'FederalAppeals'
         });
     });
 });

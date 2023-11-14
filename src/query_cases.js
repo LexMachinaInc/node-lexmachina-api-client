@@ -8,14 +8,14 @@ module.exports = class QueryCases {
 
     async queryOnePage(court, query, options) {
         var config = options || {};
-        if (court == "district") {
+        if (court == 'district') {
             config.endpoint = '/query-district-cases';
-        } else if (court == "state") {
+        } else if (court == 'state') {
             config.endpoint = '/query-state-cases';
-        } else if (court == "appeals") {
+        } else if (court == 'appeals') {
             config.endpoint = '/query-appeals-cases';
         } else {
-            throw new Error("A court must be specified for queries")
+            throw new Error('A court must be specified for queries');
         }
         config.method = 'post';
         config.data = query.getPostBody();
@@ -23,14 +23,14 @@ module.exports = class QueryCases {
         var result = await this.lmRequest.requestURL(config);
         if (result) {
             var caseObjects = result.cases;
-            if (court == "district") {
-            return caseObjects.map(a=>a.districtCaseId);
+            if (court == 'district') {
+                return caseObjects.map(a=>a.districtCaseId);
             }
-            if (court == "state"){
+            if (court == 'state'){
                 return caseObjects.map(a=>a.stateCaseId);
-                }
-            if (court == "appeals"){
-                return caseObjects.map(a=>a.appealsCaseId)
+            }
+            if (court == 'appeals'){
+                return caseObjects.map(a=>a.appealsCaseId);
             }
         } else {
             return  [];

@@ -443,7 +443,7 @@ module.exports = class StateCasesQueryRequest {
         if (Array.isArray(names)) {
             names.forEach(name => { this.addDamagesIncludeName(name); });
         } else {
-        pushUnique(this.queryObject.damages[0].name.include, names);
+            pushUnique(this.queryObject.damages[0].name.include, names);
         }
         return this;
     }
@@ -452,7 +452,7 @@ module.exports = class StateCasesQueryRequest {
         if (Array.isArray(names)) {
             names.forEach(name => { this.addDamagesExcludeName(name); });
         } else {
-        pushUnique(this.queryObject.damages[0].name.exclude, names);
+            pushUnique(this.queryObject.damages[0].name.exclude, names);
         }
         return this;
     }
@@ -565,7 +565,7 @@ module.exports = class StateCasesQueryRequest {
         this.removeEmptyValues(this.queryObject);
         //console.log(JSON.stringify(this.queryObject));
         if (!(this.queryObject.courts && this.queryObject.courts.state) ){
-            throw new Error("A state must be specified for state queries");
+            throw new Error('A state must be specified for state queries');
         }
     }
 

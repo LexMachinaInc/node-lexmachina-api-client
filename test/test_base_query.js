@@ -8,7 +8,6 @@ const nock = require('nock');
 const nockBack = require('nock').back;
 
 nockBack.fixtures = './test/nock_fixtures/';
-const AccessTokenUtils = require('../src/access_token_utils.js');
 nockBack.setMode('record');
 const LexMachinaClient = require('../src/lexmachina_client');
 
@@ -33,7 +32,9 @@ describe('Base LexMachina Request', () => {
 
         it('should throw error with nonexistent file constructor', () => {
             function badConfigFile() {
+
                 const client = new LexMachinaClient('../config/nonexistent.json');
+                client.token_config ; // just doing this to suppress eslint
             }
             expect(badConfigFile).to.throw();
         });

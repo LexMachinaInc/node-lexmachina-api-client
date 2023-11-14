@@ -34,29 +34,29 @@ describe('List State Case Types', () => {
         var caseTypesObject = await client.listStateCaseTypes();
         
         expect(caseTypesObject).to.have.length.above(45);
-        caseTypesObject.should.include.a.thing.with.deep.nested.property("caseTypes",[
-            "Contract (TX)",
-            "Injury or Damage (TX)",
-            "Other Civil (TX)",
-            "Real Property (TX)",
-            "Related to Criminal Matters (TX)"]);
-        caseTypesObject.should.include.a.thing.with.deep.nested.property("caseTypes",[
-            "Other Civil (GA)",
-            "Torts (GA)",
-            "Civil Writ (GA)",
-            "Appeal / Judicial Review (GA)",
-            "Tax Appeal (GA)",
-            "Property (GA)",
-            "Contract (GA)"]);
-        caseTypesObject.should.include.a.thing.with.deep.nested.property("caseTypes",[
-            "Contract (OR)",
-            "Other Civil (OR)",
-            "Real Property (OR)",
-            "Torts (General) (OR)",
-            "Torts (Legal Malpractice) (OR)",
-            "Torts (Medical Malpractice) (OR)",
-            "Torts (Products Liability) (OR)",
-            "Torts (Wrongful Death) (OR)"]);
+        caseTypesObject.should.include.a.thing.with.deep.nested.property('caseTypes',[
+            'Contract (TX)',
+            'Injury or Damage (TX)',
+            'Other Civil (TX)',
+            'Real Property (TX)',
+            'Related to Criminal Matters (TX)']);
+        caseTypesObject.should.include.a.thing.with.deep.nested.property('caseTypes',[
+            'Other Civil (GA)',
+            'Torts (GA)',
+            'Civil Writ (GA)',
+            'Appeal / Judicial Review (GA)',
+            'Tax Appeal (GA)',
+            'Property (GA)',
+            'Contract (GA)']);
+        caseTypesObject.should.include.a.thing.with.deep.nested.property('caseTypes',[
+            'Contract (OR)',
+            'Other Civil (OR)',
+            'Real Property (OR)',
+            'Torts (General) (OR)',
+            'Torts (Legal Malpractice) (OR)',
+            'Torts (Medical Malpractice) (OR)',
+            'Torts (Products Liability) (OR)',
+            'Torts (Wrongful Death) (OR)']);
         nockDone();
     });
 });
@@ -71,9 +71,9 @@ describe('List Appeals Case Types', () => {
         
         expect(caseTypesObject[0].caseTypes).to.have.length.above(20);
  
-        caseTypesObject[0].caseTypes.should.contain("Antitrust");  
-        caseTypesObject[0].caseTypes.should.contain("Insurance");  
-        caseTypesObject[0].caseTypes.should.contain("Trade Secret");  
+        caseTypesObject[0].caseTypes.should.contain('Antitrust');  
+        caseTypesObject[0].caseTypes.should.contain('Insurance');  
+        caseTypesObject[0].caseTypes.should.contain('Trade Secret');  
 
         nockDone();
     });

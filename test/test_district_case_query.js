@@ -741,7 +741,7 @@ describe('Add and Remove Query Statements', () => {
         });
     });
 
-// Attorneys
+    // Attorneys
 
     describe('Attorneys', () => {
         it('should be able to add and remove law firm includes and excludes', () => {
