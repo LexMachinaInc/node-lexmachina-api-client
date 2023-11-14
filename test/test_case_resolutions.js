@@ -46,3 +46,24 @@ describe('List State Case Resolutions', () => {
 
     });
 });
+
+describe('List Appeals Case Resolutions', () => {
+
+    it('should contain appeals case resolutions', async () => {
+        const { nockDone} = await nockBack('list-appeals-case-resolutions-data.json');
+        nock.enableNetConnect();
+        const client = new LexMachinaClient();
+        var caseResolutionsObject = await client.listAppealsCaseResolutions();
+        nockDone();
+        var caseResolutions = caseResolutionsObject.caseResolutions;
+        expect(caseResolutions).to.have.length.above(10);
+
+        expect(caseResolutions).to.contain.an.item.with.property('summary', 'Appellant Win');
+        expect(caseResolutions).to.contain.an.item.with.property('summary', 'Procedural');
+        expect(caseResolutions).to.contain.an.item.with.property('summary', 'Appellee Win');
+        expect(caseResolutions).to.contain.an.item.with.property('specific', 'Dismissal');
+        expect(caseResolutions).to.contain.an.item.with.property('specific', 'Reversed');
+        expect(caseResolutions).to.contain.an.item.with.property('specific', 'Consolidation');
+
+    });
+});
