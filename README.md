@@ -69,18 +69,26 @@ These functions are available from LexMachinaClient. Each returns an array or JS
 
 - LexMachinaClient.listDistrictCaseResolutions()
 - LexMachinaClient.listStateCaseResolutions()
+- LexMachinaClient.listAppealsCaseResolutions()
 - LexMachinaClient.listDistrictCaseTags()
 - LexMachinaClient.listStateCaseTags()
+- LexMachinaClient.listAppealsCaseTags()
 - LexMachinaClient.listDistrictCaseTypes()
 - LexMachinaClient.listStateCaseTypes()
+- LexMachinaClient.listAppealsCaseTypes()
 - LexMachinaClient.listDistrictCourts()
 - LexMachinaClient.listStateCourts()
+- LexMachinaClient.listAppealsCourts()
 - LexMachinaClient.listDistrictDamages()
 - LexMachinaClient.listStateDamages()
 - LexMachinaClient.listDistrictEvents()
 - LexMachinaClient.listStateEvents()
+- LexMachinaClient.listAppealsEvents()
 - LexMachinaClient.listDistrictJudgmentSources()
 - LexMachinaClient.listStateJudgmentEvents()
+- LexMachinaClient.listAppealabilityRulings()
+- LexMachinaClient.listAppellateDecisions()
+- LexMachinaClient.listOriginatingVenues()
 
 ## Lookup by ID(s)
 These functions are available from LexMachinaClient. Each takes a single integer or an array of up to 100 integers where the parameter is the Lex Machina ID for that record. It will return a JSON object or an array of objects representing the data for that type of record.
@@ -105,11 +113,9 @@ Search functions take a string input and return lists of JSON objects. These sea
 
 # Case Query Object
 
+Querying for cases is an operation with enough complexity that it warrants its own class. In order to query for district cases, first a DistrictCasesQueryRequest must be constructed. To query for state cases, use a StateCasesQueryRequest object. To query for appeals cases, use an AppealsCasesQueryRequest object.
 
-
-Querying for cases is an operation with enough complexity that it warrants its own class. In order to query for district cases, first a DistrictCasesQueryRequest must be constructed. To query for state cases, use a StateCasesQueryRequest object.
-
-All operations on either case query request add criteria to the query. There are no methods to remove individual criteria but the object can be returned to empty at any time via the .clear() method.
+All operations on any of the case query requests add criteria to the query. There are no methods to remove individual criteria but the object can be returned to empty at any time via the .clear() method.
 
 The constraint methods can be chained so all constraints can be added in a single line such as:
 
@@ -120,7 +126,7 @@ The constraint methods can be chained so all constraints can be added in a singl
      .setPageSize(100);
 ```
 
-Following is a list of operations available in the cases query request without discussion of the meaning of each. For a detailed discussion of the concepts used in querying the Lex Machina API see [this post on the developer portal for district queries](https://developer.lexmachina.com/default/docs/query_usage_portal_post) and [this post adding the state concepts](https://developer.lexmachina.com/default/docs/state_query_usage).
+Following is a list of operations available in the cases query request without discussion of the meaning of each. For a detailed discussion of the concepts used in querying the Lex Machina API see [this post on the developer portal for district queries](https://developer.lexmachina.com/default/docs/query_usage_portal_post), [this post adding the state concepts](https://developer.lexmachina.com/default/docs/state_query_usage) and [this post about the appeals query](https://developer.lexmachina.com/default/docs/appeals_query_usage).
 
 
 ## Participant Criteria
@@ -151,10 +157,42 @@ The following methods add criteria based on participants in a case and their rol
 - .addPartiesIncludeThirdParty()
 - .addPartiesExcludeThirdParty()
 
+### Appeals Only Participant Criteria
+
+The appeals query has participant criteria that apply only to that court and that particular query.
+
+- .addLawFirmsIncludeAppellant()
+- .addLawFirmsExcludeAppellant()
+- .addLawFirmsIncludeAppellee()
+- .addLawFirmsExcludeAppellee()
+- .addLawFirmsIncludeRespondent()
+- .addLawFirmsExcludeRespondent()
+- .addLawFirmsIncludePetitionerMovant()
+- .addLawFirmsExcludePetitionerMovant()
+
+
+- .addAttorneysIncludeAppellant()
+- .addAttorneysExcludeAppellant()
+- .addAttorneysIncludeAppellee()
+- .addAttorneysExcludeAppellee()
+- .addAttorneysIncludeRespondent()
+- .addAttorneysExcludeRespondent()
+- .addAttorneysIncludePetitionerMovant()
+- .addAttorneysExcludePetitionerMovant()
+
+- .addPartiesIncludeAppellant()
+- .addPartiesExcludeAppellant()
+- .addPartiesIncludeAppellee()
+- .addPartiesExcludeAppellee()
+- .addPartiesIncludeRespondent()
+- .addPartiesExcludeRespondent()
+- .addPartiesIncludePetitionerMovant()
+- .addPartiesExcludePetitionerMovant()
+
 
 ## Case Aspect Criteria
 
-The following methods add criteria based on aspects of the case. In most of these, the list of valid inputs is available via the corresponding API list functionality, such as LexMachinaClient.listCaseTypes() . 
+The following methods add criteria based on aspects of the case. In most of these, the list of valid inputs is available via the corresponding API list functionality. Where applicable it will exist with one of "District", "State" or "Appeals" in the function name such as .listDistrictEvent(), .listStateEvents() or .listAppealsEvents().
 
 All of the add functions will take either a single value or an array of values. The set functions require a single value. These function calls can be chained.
 
