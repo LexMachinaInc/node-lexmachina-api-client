@@ -8,25 +8,25 @@
         "response": {
             "damages": [
                 "Default Judgment",
+                "Judgment on Merits",
                 "Jury Verdict",
                 "No Type Specified",
-                "Consent Judgment",
-                "Judgment on Merits"
+                "Consent Judgment"
             ],
             "remedies": [
-                "Default Judgment",
-                "No Type Specified",
                 "Judgment on Merits",
-                "Consent Judgment"
+                "No Type Specified",
+                "Consent Judgment",
+                "Default Judgment"
             ],
             "findings": [
-                "Default Judgment",
-                "Summary Judgment",
-                "Trial",
-                "Judgment as a Matter of Law",
                 "Judgment on the Pleadings",
+                "Judgment as a Matter of Law",
+                "Default Judgment",
                 "No Type Specified",
-                "Consent Judgment"
+                "Consent Judgment",
+                "Summary Judgment",
+                "Trial"
             ],
             "court": {
                 "name": "All Federal District Courts",
@@ -41,19 +41,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "7e669846d699808faf78a791ccd8c453",
+            "e4f223ba8ba0ae20d28f48bd7edb91f0",
             "Date",
-            "Wed, 10 May 2023 14:27:18 GMT",
+            "Tue, 14 Nov 2023 18:02:19 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "16",
+            "18",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -108,19 +108,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "3dd444054a36ae2aa65ed3777479d93c",
+            "90bb600fa81713ecedc646702788dc8b",
             "Date",
-            "Wed, 10 May 2023 14:27:19 GMT",
+            "Tue, 14 Nov 2023 18:02:20 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "304",
+            "917",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -175,19 +175,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "596fd343f4d625e96f1e5293389cc0fa",
+            "c5d6a4219342f51a0a50b4bc59fc3e34",
             "Date",
-            "Wed, 10 May 2023 14:27:20 GMT",
+            "Tue, 14 Nov 2023 18:02:21 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "90",
+            "373",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -242,19 +242,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "ea2a46d642ddc9934f05d63a526684a9",
+            "0e26f5811f018df511e11451789e822d",
             "Date",
-            "Wed, 10 May 2023 14:27:20 GMT",
+            "Tue, 14 Nov 2023 18:02:21 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "110",
+            "106",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -280,24 +280,24 @@
         "response": {
             "cases": [
                 {
+                    "url": "https://api.lexmachina.com/district-cases/2001978208",
+                    "districtCaseId": 2001978208
+                },
+                {
+                    "url": "https://api.lexmachina.com/district-cases/2002333954",
+                    "districtCaseId": 2002333954
+                },
+                {
+                    "url": "https://api.lexmachina.com/district-cases/2001853420",
+                    "districtCaseId": 2001853420
+                },
+                {
                     "url": "https://api.lexmachina.com/district-cases/2006506298",
                     "districtCaseId": 2006506298
                 },
                 {
-                    "url": "https://api.lexmachina.com/district-cases/2001583881",
-                    "districtCaseId": 2001583881
-                },
-                {
-                    "url": "https://api.lexmachina.com/district-cases/2001816187",
-                    "districtCaseId": 2001816187
-                },
-                {
-                    "url": "https://api.lexmachina.com/district-cases/2000707219",
-                    "districtCaseId": 2000707219
-                },
-                {
-                    "url": "https://api.lexmachina.com/district-cases/17557",
-                    "districtCaseId": 17557
+                    "url": "https://api.lexmachina.com/district-cases/2002092843",
+                    "districtCaseId": 2002092843
                 }
             ]
         },
@@ -305,23 +305,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "456",
+            "466",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "f46777e9bce3639fbd26950db0196d97",
+            "1d1d8738b5c102366b3dc1fa6a9aa8c0",
             "Date",
-            "Wed, 10 May 2023 14:27:20 GMT",
+            "Tue, 14 Nov 2023 18:02:22 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "68",
+            "238",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -376,19 +376,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "f29ca3f11ef8e874597125c2e39fd21c",
+            "23727556404c54ffe4cae4a0e2b3185c",
             "Date",
-            "Wed, 10 May 2023 14:27:21 GMT",
+            "Tue, 14 Nov 2023 18:02:22 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "52",
+            "133",
             "X-Kong-Proxy-Latency",
-            "0",
+            "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -426,12 +426,12 @@
                     "districtCaseId": 2001812700
                 },
                 {
-                    "url": "https://api.lexmachina.com/district-cases/3739",
-                    "districtCaseId": 3739
+                    "url": "https://api.lexmachina.com/district-cases/2002092843",
+                    "districtCaseId": 2002092843
                 },
                 {
-                    "url": "https://api.lexmachina.com/district-cases/2000707898",
-                    "districtCaseId": 2000707898
+                    "url": "https://api.lexmachina.com/district-cases/3739",
+                    "districtCaseId": 3739
                 }
             ]
         },
@@ -443,19 +443,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "1a03f39d00f81ef5d5e09d8dac5d2f0f",
+            "a44a59541edb3b63cab06214df218d2c",
             "Date",
-            "Wed, 10 May 2023 14:27:21 GMT",
+            "Tue, 14 Nov 2023 18:02:23 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "50",
+            "199",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -497,8 +497,8 @@
                     "districtCaseId": 3774
                 },
                 {
-                    "url": "https://api.lexmachina.com/district-cases/5916",
-                    "districtCaseId": 5916
+                    "url": "https://api.lexmachina.com/district-cases/2001978208",
+                    "districtCaseId": 2001978208
                 }
             ]
         },
@@ -506,23 +506,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "418",
+            "430",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "b1f2e14e5be6d6485cad100a88197238",
+            "e573f2773dd5e67801893426fe03283f",
             "Date",
-            "Wed, 10 May 2023 14:27:21 GMT",
+            "Tue, 14 Nov 2023 18:02:23 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "46",
+            "118",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -577,19 +577,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "6997b0a612f02e83d328fb5ce488d984",
+            "c4466bcdff518d9c395a62ece298e3df",
             "Date",
-            "Wed, 10 May 2023 14:27:21 GMT",
+            "Tue, 14 Nov 2023 18:02:23 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "47",
+            "110",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -644,19 +644,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "2db30523425996ed5aaac125cbaee68a",
+            "8fc02a01f0bbdbede44df7a6f36cbb83",
             "Date",
-            "Wed, 10 May 2023 14:27:22 GMT",
+            "Tue, 14 Nov 2023 18:02:23 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "60",
+            "124",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -711,19 +711,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "e58029c0231787cbc657924d1da63c30",
+            "3db0cdd78b5cdca5d9149e58d012f15f",
             "Date",
-            "Wed, 10 May 2023 14:27:22 GMT",
+            "Tue, 14 Nov 2023 18:02:24 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "47",
+            "111",
             "X-Kong-Proxy-Latency",
-            "1",
+            "2",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -778,19 +778,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "4a3e6801c2c691375de50a58fd67e438",
+            "1cdbc59082b3546179b7db9f3f4f1f1d",
             "Date",
-            "Wed, 10 May 2023 14:27:22 GMT",
+            "Tue, 14 Nov 2023 18:02:24 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "51",
+            "127",
             "X-Kong-Proxy-Latency",
-            "1",
+            "2",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -845,19 +845,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "c20abf31a5172ee8170b9b51667ff3d2",
+            "8838922f7a4e16852a7413d5c60e6aa8",
             "Date",
-            "Wed, 10 May 2023 14:27:22 GMT",
+            "Tue, 14 Nov 2023 18:02:24 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "45",
+            "114",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

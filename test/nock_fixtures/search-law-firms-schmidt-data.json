@@ -6,7 +6,7 @@
         "body": "",
         "status": 200,
         "response": {
-            "totalCount": 644,
+            "totalCount": 651,
             "page": 1,
             "nextPage": "http://lawmachine-ovxin55ppa-uk.a.run.app/search-law-firms?q=schmidt&pageSize=500&pageNumber=1?q=schmidt&pageNumber=2&pageSize=500",
             "lawFirms": [
@@ -571,11 +571,6 @@
                     "url": "https://api.lexmachina.com/law-firms/48918622"
                 },
                 {
-                    "name": "Law Offices of Randall B. Schmidt",
-                    "lawFirmId": 49074606,
-                    "url": "https://api.lexmachina.com/law-firms/49074606"
-                },
-                {
                     "name": "The Law Offices Of Anne Schmidt",
                     "lawFirmId": 49097934,
                     "url": "https://api.lexmachina.com/law-firms/49097934"
@@ -706,11 +701,6 @@
                     "url": "https://api.lexmachina.com/law-firms/70369013"
                 },
                 {
-                    "name": "Kelly, Smith & Schmidt",
-                    "lawFirmId": 74308634,
-                    "url": "https://api.lexmachina.com/law-firms/74308634"
-                },
-                {
                     "name": "Schmidt Law",
                     "lawFirmId": 74628732,
                     "url": "https://api.lexmachina.com/law-firms/74628732"
@@ -734,6 +724,11 @@
                     "name": "E. Schmidt & Associates",
                     "lawFirmId": 87271678,
                     "url": "https://api.lexmachina.com/law-firms/87271678"
+                },
+                {
+                    "name": "Kelly, Smith & Schmidt",
+                    "lawFirmId": 87432912,
+                    "url": "https://api.lexmachina.com/law-firms/87432912"
                 },
                 {
                     "name": "Coats Schmidt",
@@ -844,11 +839,6 @@
                     "name": "Scott D. Schmidt",
                     "lawFirmId": 104340376,
                     "url": "https://api.lexmachina.com/law-firms/104340376"
-                },
-                {
-                    "name": "Raney & Schmidt",
-                    "lawFirmId": 104341644,
-                    "url": "https://api.lexmachina.com/law-firms/104341644"
                 },
                 {
                     "name": "The Schmidt Firm",
@@ -2509,6 +2499,16 @@
                     "name": "Law Offices of C.E. Schmidt",
                     "lawFirmId": 104935794,
                     "url": "https://api.lexmachina.com/law-firms/104935794"
+                },
+                {
+                    "name": "Richard Rudolph Schmidt",
+                    "lawFirmId": 104938251,
+                    "url": "https://api.lexmachina.com/law-firms/104938251"
+                },
+                {
+                    "name": "Law Office of Larry L. Schmidt",
+                    "lawFirmId": 104939254,
+                    "url": "https://api.lexmachina.com/law-firms/104939254"
                 }
             ]
         },
@@ -2516,23 +2516,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "55249",
+            "55256",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "cbc44f49eb67e83b96964a5086640d5b",
+            "f385aeadc1ce892054dbfbd67a789fa3",
             "Date",
-            "Wed, 10 May 2023 14:30:59 GMT",
+            "Tue, 14 Nov 2023 18:05:54 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "279",
+            "298",
             "X-Kong-Proxy-Latency",
-            "1",
+            "5",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -2543,20 +2543,10 @@
         "body": "",
         "status": 200,
         "response": {
-            "totalCount": 644,
+            "totalCount": 651,
             "page": 2,
             "nextPage": null,
             "lawFirms": [
-                {
-                    "name": "Richard Rudolph Schmidt",
-                    "lawFirmId": 104938251,
-                    "url": "https://api.lexmachina.com/law-firms/104938251"
-                },
-                {
-                    "name": "Law Office of Larry L. Schmidt",
-                    "lawFirmId": 104939254,
-                    "url": "https://api.lexmachina.com/law-firms/104939254"
-                },
                 {
                     "name": "Shawn Schmidt Law Office",
                     "lawFirmId": 104939591,
@@ -2873,6 +2863,11 @@
                     "url": "https://api.lexmachina.com/law-firms/109474044"
                 },
                 {
+                    "name": "Law Offices of Randall B. Schmidt",
+                    "lawFirmId": 109493033,
+                    "url": "https://api.lexmachina.com/law-firms/109493033"
+                },
+                {
                     "name": "Hammerschmidt Law",
                     "lawFirmId": 110334984,
                     "url": "https://api.lexmachina.com/law-firms/110334984"
@@ -2914,8 +2909,8 @@
                 },
                 {
                     "name": "The Law Office of Curt D. Schmidt",
-                    "lawFirmId": 116407008,
-                    "url": "https://api.lexmachina.com/law-firms/116407008"
+                    "lawFirmId": 116407108,
+                    "url": "https://api.lexmachina.com/law-firms/116407108"
                 },
                 {
                     "name": "Beals, Gossage, Schmidt, Low & Holden",
@@ -3066,11 +3061,6 @@
                     "name": "Schmidt Kiritides Fridkin & Rassias",
                     "lawFirmId": 144455438,
                     "url": "https://api.lexmachina.com/law-firms/144455438"
-                },
-                {
-                    "name": "Terrance E. Schmidt",
-                    "lawFirmId": 145567016,
-                    "url": "https://api.lexmachina.com/law-firms/145567016"
                 },
                 {
                     "name": "Law Office Of Alison Schmidt",
@@ -3263,9 +3253,54 @@
                     "url": "https://api.lexmachina.com/law-firms/172629190"
                 },
                 {
-                    "name": "Law Office of Charles Schmidt",
-                    "lawFirmId": 173439000,
-                    "url": "https://api.lexmachina.com/law-firms/173439000"
+                    "name": "D. Maria Schmidt",
+                    "lawFirmId": 177053641,
+                    "url": "https://api.lexmachina.com/law-firms/177053641"
+                },
+                {
+                    "name": "BLEAKL 2 : ' & SCHMIDT",
+                    "lawFirmId": 179888095,
+                    "url": "https://api.lexmachina.com/law-firms/179888095"
+                },
+                {
+                    "name": "TI & SCHMIDT",
+                    "lawFirmId": 180052357,
+                    "url": "https://api.lexmachina.com/law-firms/180052357"
+                },
+                {
+                    "name": "Penny W. Schmidt",
+                    "lawFirmId": 180150317,
+                    "url": "https://api.lexmachina.com/law-firms/180150317"
+                },
+                {
+                    "name": "Justin G. Schmidt",
+                    "lawFirmId": 183470640,
+                    "url": "https://api.lexmachina.com/law-firms/183470640"
+                },
+                {
+                    "name": "Smith (Linda Schmidt)",
+                    "lawFirmId": 184772801,
+                    "url": "https://api.lexmachina.com/law-firms/184772801"
+                },
+                {
+                    "name": "BLEAKELY Apr & SCHMIDT",
+                    "lawFirmId": 186465126,
+                    "url": "https://api.lexmachina.com/law-firms/186465126"
+                },
+                {
+                    "name": "Terrance E. Schmidt",
+                    "lawFirmId": 187313664,
+                    "url": "https://api.lexmachina.com/law-firms/187313664"
+                },
+                {
+                    "name": "Raney & Schmidt",
+                    "lawFirmId": 187839629,
+                    "url": "https://api.lexmachina.com/law-firms/187839629"
+                },
+                {
+                    "name": "The Schmidt Law Firm",
+                    "lawFirmId": 187956237,
+                    "url": "https://api.lexmachina.com/law-firms/187956237"
                 }
             ]
         },
@@ -3273,23 +3308,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "16536",
+            "17271",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "1c6a113a30dbbc15af7ed6a0ee6cade9",
+            "a49059ac84397d98282e3f40a458d52a",
             "Date",
-            "Wed, 10 May 2023 14:30:59 GMT",
+            "Tue, 14 Nov 2023 18:05:54 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "249",
+            "250",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -3300,7 +3335,7 @@
         "body": "",
         "status": 200,
         "response": {
-            "totalCount": 644,
+            "totalCount": 651,
             "page": 3,
             "nextPage": null,
             "lawFirms": []
@@ -3313,19 +3348,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "c82c7132c1a5a5d5f082f35c59b5f8fd",
+            "e973114f946f7a06a484e5835339a5e2",
             "Date",
-            "Wed, 10 May 2023 14:31:00 GMT",
+            "Tue, 14 Nov 2023 18:05:55 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "222",
+            "234",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

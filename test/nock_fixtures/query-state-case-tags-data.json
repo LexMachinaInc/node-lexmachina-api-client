@@ -192,6 +192,7 @@
                     "Medical Malpractice (GA)",
                     "Order re: Summary Judgment",
                     "Class Action",
+                    "Collections (GA)",
                     "Special Master (GA)",
                     "Trial"
                 ]
@@ -206,6 +207,7 @@
                     "Medical Malpractice (GA)",
                     "Order re: Summary Judgment",
                     "Class Action",
+                    "Collections (GA)",
                     "Trial"
                 ]
             },
@@ -219,6 +221,7 @@
                     "Medical Malpractice (GA)",
                     "Order re: Summary Judgment",
                     "Class Action",
+                    "Collections (GA)",
                     "Special Master (GA)",
                     "Trial"
                 ]
@@ -233,6 +236,7 @@
                     "Medical Malpractice (GA)",
                     "Order re: Summary Judgment",
                     "Class Action",
+                    "Collections (GA)",
                     "Special Master (GA)",
                     "Trial"
                 ]
@@ -258,9 +262,393 @@
                     "state": "OR"
                 },
                 "caseTags": [
-                    "Class Action",
-                    "Collections (OR)",
-                    "Trial"
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Benton County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Clackamas County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Deschutes County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Jackson County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lane County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Linn County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Marion County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Washington County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Baker County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Clatsop County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Columbia County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Coos County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Crook County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Curry County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Douglas County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Gilliam County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Grant County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Harney County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Hood River County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Jefferson County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Josephine County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Klamath County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lake County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lincoln County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Malheur County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Morrow County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Polk County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Sherman County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Tillamook County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Umatilla County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Union County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Wallowa County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Wasco County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Wheeler County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Yamhill County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTags": [
+                    "Trial",
+                    "Collections (OR)"
                 ]
             },
             {
@@ -366,7 +754,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -377,7 +766,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -388,7 +778,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -399,7 +790,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -410,7 +802,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -421,7 +814,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -432,7 +826,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -443,7 +838,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -454,7 +850,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -465,7 +862,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -476,7 +874,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -487,7 +886,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -498,7 +898,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -509,7 +910,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -520,7 +922,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -531,7 +934,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -542,7 +946,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -553,7 +958,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -564,7 +970,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -575,7 +982,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -586,7 +994,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             },
             {
@@ -597,7 +1006,8 @@
                 },
                 "caseTags": [
                     "Medical Malpractice (GA)",
-                    "Trial"
+                    "Trial",
+                    "Collections (GA)"
                 ]
             }
         ],
@@ -605,23 +1015,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "7060",
+            "11656",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "f1ad5b04f7c25477e57e76e8445a5193",
+            "0ac53f6d84e6378c08c92723da9cc8f8",
             "Date",
-            "Wed, 10 May 2023 14:29:47 GMT",
+            "Tue, 14 Nov 2023 18:04:48 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "39",
+            "65",
             "X-Kong-Proxy-Latency",
-            "1",
+            "3",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -675,19 +1085,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "aa73d979e253c764587895a773a5721f",
+            "6b369a83aab9cd75c2a2a561e1fa1953",
             "Date",
-            "Wed, 10 May 2023 14:29:47 GMT",
+            "Tue, 14 Nov 2023 18:04:48 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "65",
+            "66",
             "X-Kong-Proxy-Latency",
-            "2",
+            "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -741,19 +1151,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "edfc749d6b09766bc343f9b8d053ea57",
+            "2ac1b47269574cce7725e61f75b6d9db",
             "Date",
-            "Wed, 10 May 2023 14:29:47 GMT",
+            "Tue, 14 Nov 2023 18:04:48 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "55",
+            "68",
             "X-Kong-Proxy-Latency",
             "2",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -807,9 +1217,9 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "9c242dcfb346ed790f7cbcdec10fd310",
+            "8523f1655a927b2ad50e6b1e610e3ee7",
             "Date",
-            "Wed, 10 May 2023 14:29:48 GMT",
+            "Tue, 14 Nov 2023 18:04:48 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
@@ -819,7 +1229,7 @@
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -873,19 +1283,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "7075a2b081905b0ce4f4cfa3b1b2c79d",
+            "d348a4a1f9d690df4f816e2573d77a7e",
             "Date",
-            "Wed, 10 May 2023 14:29:48 GMT",
+            "Tue, 14 Nov 2023 18:04:49 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "59",
+            "64",
             "X-Kong-Proxy-Latency",
-            "2",
+            "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -939,19 +1349,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "a241360a3e7da54b1d44762a4465cbfc",
+            "20dfbf40c37d01216ff20d79e8f5a32f",
             "Date",
-            "Wed, 10 May 2023 14:29:48 GMT",
+            "Tue, 14 Nov 2023 18:04:49 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "59",
+            "56",
             "X-Kong-Proxy-Latency",
-            "1",
+            "0",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -1005,19 +1415,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "435fe0e409a6d844c7230837ecefb45b",
+            "21592176325f67971e7b2d36d9cf3a98",
             "Date",
-            "Wed, 10 May 2023 14:29:48 GMT",
+            "Tue, 14 Nov 2023 18:04:49 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "58",
+            "59",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -1071,19 +1481,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "b736d729636c50e5f6d8cf2b82d9b3f5",
+            "84a4b4df818acd5d5baa463b255d9c46",
             "Date",
-            "Wed, 10 May 2023 14:29:48 GMT",
+            "Tue, 14 Nov 2023 18:04:49 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "58",
+            "65",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -1137,19 +1547,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "50b2e4fbe3ef2b9fd6934011a93f424d",
+            "74b9c88bcb93946e17bdc3768a87e320",
             "Date",
-            "Wed, 10 May 2023 14:29:49 GMT",
+            "Tue, 14 Nov 2023 18:04:49 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "56",
+            "64",
             "X-Kong-Proxy-Latency",
-            "2",
+            "6",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -1203,19 +1613,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "d82c6b3b956309177a9ba4df153c572a",
+            "2aa82049b86c7fd563838f8ee1b89b14",
             "Date",
-            "Wed, 10 May 2023 14:29:49 GMT",
+            "Tue, 14 Nov 2023 18:04:50 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "58",
+            "55",
             "X-Kong-Proxy-Latency",
-            "1",
+            "5",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -1269,19 +1679,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "cdf33c6534766e8b93fda1c347ad51df",
+            "7ffc9c8a6eb26e049220fe5d6c0bbaaa",
             "Date",
-            "Wed, 10 May 2023 14:29:49 GMT",
+            "Tue, 14 Nov 2023 18:04:50 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "57",
+            "61",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

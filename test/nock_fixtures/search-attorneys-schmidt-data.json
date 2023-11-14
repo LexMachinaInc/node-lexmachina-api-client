@@ -6,7 +6,7 @@
         "body": "",
         "status": 200,
         "response": {
-            "totalCount": 1749,
+            "totalCount": 1781,
             "page": 1,
             "nextPage": "http://lawmachine-ovxin55ppa-uk.a.run.app/search-attorneys?q=schmidt&pageSize=500&pageNumber=1?q=schmidt&pageNumber=2&pageSize=500",
             "attorneys": [
@@ -181,7 +181,7 @@
                     "url": "https://api.lexmachina.com/attorneys/1179890"
                 },
                 {
-                    "name": "Denis Schmidt",
+                    "name": "Denis Schmidt (Custodio & Dubey)",
                     "attorneyId": 1187693,
                     "url": "https://api.lexmachina.com/attorneys/1187693"
                 },
@@ -1096,11 +1096,6 @@
                     "url": "https://api.lexmachina.com/attorneys/48878117"
                 },
                 {
-                    "name": "Graham B. Schmidt",
-                    "attorneyId": 48896291,
-                    "url": "https://api.lexmachina.com/attorneys/48896291"
-                },
-                {
                     "name": "Robert C. Schmidt Jr.",
                     "attorneyId": 48927905,
                     "url": "https://api.lexmachina.com/attorneys/48927905"
@@ -1191,7 +1186,7 @@
                     "url": "https://api.lexmachina.com/attorneys/54416270"
                 },
                 {
-                    "name": "Christopher J. Schmidt",
+                    "name": "Christopher J. Schmidt (State of Pennsylvania)",
                     "attorneyId": 54480049,
                     "url": "https://api.lexmachina.com/attorneys/54480049"
                 },
@@ -1451,11 +1446,6 @@
                     "url": "https://api.lexmachina.com/attorneys/69848605"
                 },
                 {
-                    "name": "Margaret E. Rodgers Schmidt",
-                    "attorneyId": 69927411,
-                    "url": "https://api.lexmachina.com/attorneys/69927411"
-                },
-                {
                     "name": "Leia D. Schmidt",
                     "attorneyId": 69938839,
                     "url": "https://api.lexmachina.com/attorneys/69938839"
@@ -1506,6 +1496,11 @@
                     "url": "https://api.lexmachina.com/attorneys/75002181"
                 },
                 {
+                    "name": "Christina Patrizia Schmidt",
+                    "attorneyId": 75700976,
+                    "url": "https://api.lexmachina.com/attorneys/75700976"
+                },
+                {
                     "name": "Amber Brooke Schmidt Medina",
                     "attorneyId": 76581270,
                     "url": "https://api.lexmachina.com/attorneys/76581270"
@@ -1514,11 +1509,6 @@
                     "name": "Jerome Paul Schmidt",
                     "attorneyId": 76581272,
                     "url": "https://api.lexmachina.com/attorneys/76581272"
-                },
-                {
-                    "name": "Christina Patrizia Schmidt",
-                    "attorneyId": 78054363,
-                    "url": "https://api.lexmachina.com/attorneys/78054363"
                 },
                 {
                     "name": "Laura D. Schmidt",
@@ -1591,7 +1581,7 @@
                     "url": "https://api.lexmachina.com/attorneys/88132004"
                 },
                 {
-                    "name": "John Schmidt",
+                    "name": "John Schmidt (duplicate name)",
                     "attorneyId": 88326686,
                     "url": "https://api.lexmachina.com/attorneys/88326686"
                 },
@@ -1651,12 +1641,7 @@
                     "url": "https://api.lexmachina.com/attorneys/94281368"
                 },
                 {
-                    "name": "Thomas P. Schmidt (Christensen Hsu Sipes)",
-                    "attorneyId": 94474727,
-                    "url": "https://api.lexmachina.com/attorneys/94474727"
-                },
-                {
-                    "name": "Lisa Schmidt",
+                    "name": "Lisa Schmidt (duplicate name)",
                     "attorneyId": 94693369,
                     "url": "https://api.lexmachina.com/attorneys/94693369"
                 },
@@ -2111,11 +2096,6 @@
                     "url": "https://api.lexmachina.com/attorneys/105210172"
                 },
                 {
-                    "name": "Peter H. Schmidt II",
-                    "attorneyId": 105213984,
-                    "url": "https://api.lexmachina.com/attorneys/105213984"
-                },
-                {
                     "name": "Diana M. Schmidt",
                     "attorneyId": 105217012,
                     "url": "https://api.lexmachina.com/attorneys/105217012"
@@ -2509,44 +2489,7 @@
                     "name": "Thomas J. Schmidt Jr.",
                     "attorneyId": 105469460,
                     "url": "https://api.lexmachina.com/attorneys/105469460"
-                }
-            ]
-        },
-        "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
-            "54345",
-            "Connection",
-            "close",
-            "X-Cloud-Trace-Context",
-            "de818c56942917a6f000688025ebc99f",
-            "Date",
-            "Wed, 10 May 2023 14:30:51 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "612",
-            "X-Kong-Proxy-Latency",
-            "11",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "GET",
-        "path": "/search-attorneys?q=schmidt&pageSize=500&pageNumber=2",
-        "body": "",
-        "status": 200,
-        "response": {
-            "totalCount": 1749,
-            "page": 2,
-            "nextPage": "http://lawmachine-ovxin55ppa-uk.a.run.app/search-attorneys?q=schmidt&pageSize=500&pageNumber=2?q=schmidt&pageNumber=3&pageSize=500",
-            "attorneys": [
+                },
                 {
                     "name": "Thomas E. Schmidt",
                     "attorneyId": 105469461,
@@ -2566,7 +2509,44 @@
                     "name": "Thomas Alan Schmidt",
                     "attorneyId": 105469465,
                     "url": "https://api.lexmachina.com/attorneys/105469465"
-                },
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "54402",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "daf3f93e5e64e4ca5400cac54ca4ccfc",
+            "Date",
+            "Tue, 14 Nov 2023 18:05:40 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "806",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/search-attorneys?q=schmidt&pageSize=500&pageNumber=2",
+        "body": "",
+        "status": 200,
+        "response": {
+            "totalCount": 1781,
+            "page": 2,
+            "nextPage": "http://lawmachine-ovxin55ppa-uk.a.run.app/search-attorneys?q=schmidt&pageSize=500&pageNumber=2?q=schmidt&pageNumber=3&pageSize=500",
+            "attorneys": [
                 {
                     "name": "Thomas M. Schmidt",
                     "attorneyId": 105469466,
@@ -2903,11 +2883,6 @@
                     "url": "https://api.lexmachina.com/attorneys/105469572"
                 },
                 {
-                    "name": "Michael A. Schmidt",
-                    "attorneyId": 105469579,
-                    "url": "https://api.lexmachina.com/attorneys/105469579"
-                },
-                {
                     "name": "Melvin L. Schmidt",
                     "attorneyId": 105469580,
                     "url": "https://api.lexmachina.com/attorneys/105469580"
@@ -3156,11 +3131,6 @@
                     "name": "John N. Schmidt",
                     "attorneyId": 105469643,
                     "url": "https://api.lexmachina.com/attorneys/105469643"
-                },
-                {
-                    "name": "John R. Schmidt",
-                    "attorneyId": 105469644,
-                    "url": "https://api.lexmachina.com/attorneys/105469644"
                 },
                 {
                     "name": "John Joseph Schmidt",
@@ -3993,6 +3963,11 @@
                     "url": "https://api.lexmachina.com/attorneys/105658426"
                 },
                 {
+                    "name": "Rebecca J. Schmidt",
+                    "attorneyId": 105683377,
+                    "url": "https://api.lexmachina.com/attorneys/105683377"
+                },
+                {
                     "name": "James J. Hugenschmidt",
                     "attorneyId": 105705857,
                     "url": "https://api.lexmachina.com/attorneys/105705857"
@@ -4276,11 +4251,6 @@
                     "name": "Catherine Paige Schmidt",
                     "attorneyId": 106082707,
                     "url": "https://api.lexmachina.com/attorneys/106082707"
-                },
-                {
-                    "name": "F. Evans Schmidt",
-                    "attorneyId": 106083841,
-                    "url": "https://api.lexmachina.com/attorneys/106083841"
                 },
                 {
                     "name": "Axel Kleinschmidt",
@@ -5046,44 +5016,7 @@
                     "name": "Marja Ramm-Schmidt",
                     "attorneyId": 106401084,
                     "url": "https://api.lexmachina.com/attorneys/106401084"
-                }
-            ]
-        },
-        "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
-            "54424",
-            "Connection",
-            "close",
-            "X-Cloud-Trace-Context",
-            "363e061a1016ed4862b5142500cb306d",
-            "Date",
-            "Wed, 10 May 2023 14:30:53 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "629",
-            "X-Kong-Proxy-Latency",
-            "1",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "GET",
-        "path": "/search-attorneys?q=schmidt&pageSize=500&pageNumber=3",
-        "body": "",
-        "status": 200,
-        "response": {
-            "totalCount": 1749,
-            "page": 3,
-            "nextPage": "http://lawmachine-ovxin55ppa-uk.a.run.app/search-attorneys?q=schmidt&pageSize=500&pageNumber=3?q=schmidt&pageNumber=4&pageSize=500",
-            "attorneys": [
+                },
                 {
                     "name": "Casper Schmidt",
                     "attorneyId": 106402785,
@@ -5113,7 +5046,44 @@
                     "name": "Monika Schmidt",
                     "attorneyId": 106412092,
                     "url": "https://api.lexmachina.com/attorneys/106412092"
-                },
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "54426",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "e94138fd22b3068de0c9d06c4fabbf4f",
+            "Date",
+            "Tue, 14 Nov 2023 18:05:42 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1305",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/search-attorneys?q=schmidt&pageSize=500&pageNumber=3",
+        "body": "",
+        "status": 200,
+        "response": {
+            "totalCount": 1781,
+            "page": 3,
+            "nextPage": "http://lawmachine-ovxin55ppa-uk.a.run.app/search-attorneys?q=schmidt&pageSize=500&pageNumber=3?q=schmidt&pageNumber=4&pageSize=500",
+            "attorneys": [
                 {
                     "name": "Ulrich Schaarschmidt",
                     "attorneyId": 106414348,
@@ -5323,6 +5293,11 @@
                     "name": "Regina Ann Torre-Schmidt",
                     "attorneyId": 106490743,
                     "url": "https://api.lexmachina.com/attorneys/106490743"
+                },
+                {
+                    "name": "Jason C. Schmidt",
+                    "attorneyId": 106494913,
+                    "url": "https://api.lexmachina.com/attorneys/106494913"
                 },
                 {
                     "name": "Fleur Herrenschmidt",
@@ -5670,11 +5645,6 @@
                     "url": "https://api.lexmachina.com/attorneys/106680914"
                 },
                 {
-                    "name": "Graham Boardman Schmidt",
-                    "attorneyId": 106683457,
-                    "url": "https://api.lexmachina.com/attorneys/106683457"
-                },
-                {
                     "name": "Kathryn R. Schmidt",
                     "attorneyId": 106683587,
                     "url": "https://api.lexmachina.com/attorneys/106683587"
@@ -6013,11 +5983,6 @@
                     "name": "Jens Goldschmidt",
                     "attorneyId": 106841826,
                     "url": "https://api.lexmachina.com/attorneys/106841826"
-                },
-                {
-                    "name": "Sarah Schmidt-Versteyl",
-                    "attorneyId": 106841950,
-                    "url": "https://api.lexmachina.com/attorneys/106841950"
                 },
                 {
                     "name": "Paul Schmidt-Uili",
@@ -6418,11 +6383,6 @@
                     "name": "Steven Woodrow Schmidt-Lackner",
                     "attorneyId": 107043777,
                     "url": "https://api.lexmachina.com/attorneys/107043777"
-                },
-                {
-                    "name": "Sarah Schmidt",
-                    "attorneyId": 107048712,
-                    "url": "https://api.lexmachina.com/attorneys/107048712"
                 },
                 {
                     "name": "Breezy Amber Schmidt",
@@ -7280,6 +7240,11 @@
                     "url": "https://api.lexmachina.com/attorneys/119913240"
                 },
                 {
+                    "name": "Schmidt-Versteyl Sarah",
+                    "attorneyId": 119916525,
+                    "url": "https://api.lexmachina.com/attorneys/119916525"
+                },
+                {
                     "name": "Christopher T. Schmidt",
                     "attorneyId": 119918147,
                     "url": "https://api.lexmachina.com/attorneys/119918147"
@@ -7465,7 +7430,7 @@
                     "url": "https://api.lexmachina.com/attorneys/121006648"
                 },
                 {
-                    "name": "Taylor Schmidt",
+                    "name": "Taylor Emily Rose Schmidt",
                     "attorneyId": 121008583,
                     "url": "https://api.lexmachina.com/attorneys/121008583"
                 },
@@ -7520,14 +7485,9 @@
                     "url": "https://api.lexmachina.com/attorneys/121737964"
                 },
                 {
-                    "name": "Adam R. Schmidt (duplicate name)",
+                    "name": "Adam R. Schmidt",
                     "attorneyId": 122030376,
                     "url": "https://api.lexmachina.com/attorneys/122030376"
-                },
-                {
-                    "name": "Rebecca J. Schmidt",
-                    "attorneyId": 122071994,
-                    "url": "https://api.lexmachina.com/attorneys/122071994"
                 },
                 {
                     "name": "David F. Schmidt",
@@ -7570,11 +7530,6 @@
                     "url": "https://api.lexmachina.com/attorneys/124304669"
                 },
                 {
-                    "name": "Jason C.. Schmidt",
-                    "attorneyId": 124323845,
-                    "url": "https://api.lexmachina.com/attorneys/124323845"
-                },
-                {
                     "name": "Katie A. Schmidt",
                     "attorneyId": 124324267,
                     "url": "https://api.lexmachina.com/attorneys/124324267"
@@ -7583,44 +7538,7 @@
                     "name": "Robert Jacob Schmidt",
                     "attorneyId": 124527729,
                     "url": "https://api.lexmachina.com/attorneys/124527729"
-                }
-            ]
-        },
-        "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
-            "54884",
-            "Connection",
-            "close",
-            "X-Cloud-Trace-Context",
-            "fede082bc80fce995f11df6e853f04cf;o=1",
-            "Date",
-            "Wed, 10 May 2023 14:30:54 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "619",
-            "X-Kong-Proxy-Latency",
-            "1",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "GET",
-        "path": "/search-attorneys?q=schmidt&pageSize=500&pageNumber=4",
-        "body": "",
-        "status": 200,
-        "response": {
-            "totalCount": 1749,
-            "page": 4,
-            "nextPage": null,
-            "attorneys": [
+                },
                 {
                     "name": "Kate Schmidt",
                     "attorneyId": 124633758,
@@ -7665,7 +7583,44 @@
                     "name": "Eric William Schmidt",
                     "attorneyId": 129371374,
                     "url": "https://api.lexmachina.com/attorneys/129371374"
-                },
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "54870",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "d19bf789e30f419debb0d290cbf7b1d0;o=1",
+            "Date",
+            "Tue, 14 Nov 2023 18:05:44 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1945",
+            "X-Kong-Proxy-Latency",
+            "14",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/search-attorneys?q=schmidt&pageSize=500&pageNumber=4",
+        "body": "",
+        "status": 200,
+        "response": {
+            "totalCount": 1781,
+            "page": 4,
+            "nextPage": null,
+            "attorneys": [
                 {
                     "name": "Amy Schmidt",
                     "attorneyId": 129499375,
@@ -7695,11 +7650,6 @@
                     "name": "Carissa M. Schmidt",
                     "attorneyId": 130382698,
                     "url": "https://api.lexmachina.com/attorneys/130382698"
-                },
-                {
-                    "name": "Chris Schmidt",
-                    "attorneyId": 130383670,
-                    "url": "https://api.lexmachina.com/attorneys/130383670"
                 },
                 {
                     "name": "Stanislav Schmidt",
@@ -7967,11 +7917,6 @@
                     "url": "https://api.lexmachina.com/attorneys/146955509"
                 },
                 {
-                    "name": "Schmidt Karl",
-                    "attorneyId": 146956187,
-                    "url": "https://api.lexmachina.com/attorneys/146956187"
-                },
-                {
                     "name": "Sior Ccim Taylor Schmidt",
                     "attorneyId": 146958506,
                     "url": "https://api.lexmachina.com/attorneys/146958506"
@@ -8020,6 +7965,11 @@
                     "name": "Alan W. Schmidt",
                     "attorneyId": 146987472,
                     "url": "https://api.lexmachina.com/attorneys/146987472"
+                },
+                {
+                    "name": "Graham B. Schmidt",
+                    "attorneyId": 146987473,
+                    "url": "https://api.lexmachina.com/attorneys/146987473"
                 },
                 {
                     "name": "John G. Schmidt",
@@ -8087,11 +8037,6 @@
                     "url": "https://api.lexmachina.com/attorneys/149126205"
                 },
                 {
-                    "name": "Eric P. Schmidt",
-                    "attorneyId": 149824385,
-                    "url": "https://api.lexmachina.com/attorneys/149824385"
-                },
-                {
                     "name": "Kevin M. Schmidt",
                     "attorneyId": 150047072,
                     "url": "https://api.lexmachina.com/attorneys/150047072"
@@ -8122,7 +8067,7 @@
                     "url": "https://api.lexmachina.com/attorneys/151590897"
                 },
                 {
-                    "name": "Peter L. Schmidt",
+                    "name": "Peter L. Schmidt (Arnold & Porter)",
                     "attorneyId": 151740363,
                     "url": "https://api.lexmachina.com/attorneys/151740363"
                 },
@@ -8225,11 +8170,6 @@
                     "name": "Daniel Schmidt",
                     "attorneyId": 153589625,
                     "url": "https://api.lexmachina.com/attorneys/153589625"
-                },
-                {
-                    "name": "Ryan W. Schmidt (duplicate name)",
-                    "attorneyId": 153647458,
-                    "url": "https://api.lexmachina.com/attorneys/153647458"
                 },
                 {
                     "name": "Corey E. Schmidt",
@@ -8442,54 +8382,14 @@
                     "url": "https://api.lexmachina.com/attorneys/164480449"
                 },
                 {
-                    "name": "Ryan W. Schmidt (duplicate name)",
-                    "attorneyId": 164809373,
-                    "url": "https://api.lexmachina.com/attorneys/164809373"
-                },
-                {
-                    "name": "Adam R. Schmidt (duplicate name)",
-                    "attorneyId": 164901039,
-                    "url": "https://api.lexmachina.com/attorneys/164901039"
-                },
-                {
-                    "name": "Ryan W. Schmidt (duplicate name)",
-                    "attorneyId": 164992375,
-                    "url": "https://api.lexmachina.com/attorneys/164992375"
-                },
-                {
-                    "name": "Rebecca J. Schmidt",
-                    "attorneyId": 165282987,
-                    "url": "https://api.lexmachina.com/attorneys/165282987"
-                },
-                {
                     "name": "Angela A. Schmidt (Law Office of Angela Schmidt)",
                     "attorneyId": 165556702,
                     "url": "https://api.lexmachina.com/attorneys/165556702"
                 },
                 {
-                    "name": "Adam R. Schmidt (duplicate name)",
-                    "attorneyId": 165590330,
-                    "url": "https://api.lexmachina.com/attorneys/165590330"
-                },
-                {
-                    "name": "Adam R. Schmidt",
-                    "attorneyId": 165654317,
-                    "url": "https://api.lexmachina.com/attorneys/165654317"
-                },
-                {
-                    "name": "Adam Schmidt (duplicate name)",
-                    "attorneyId": 165925291,
-                    "url": "https://api.lexmachina.com/attorneys/165925291"
-                },
-                {
-                    "name": "Adam Schmidt (duplicate name)",
+                    "name": "Adam Schmidt",
                     "attorneyId": 165963881,
                     "url": "https://api.lexmachina.com/attorneys/165963881"
-                },
-                {
-                    "name": "Adam R. Schmidt (duplicate name)",
-                    "attorneyId": 166142322,
-                    "url": "https://api.lexmachina.com/attorneys/166142322"
                 },
                 {
                     "name": "Anna Kleinschmidt",
@@ -8532,7 +8432,7 @@
                     "url": "https://api.lexmachina.com/attorneys/167556389"
                 },
                 {
-                    "name": "Ryan Schmidt (Jones Day)",
+                    "name": "Ryan Schmidt",
                     "attorneyId": 167571758,
                     "url": "https://api.lexmachina.com/attorneys/167571758"
                 },
@@ -8682,11 +8582,6 @@
                     "url": "https://api.lexmachina.com/attorneys/169021521"
                 },
                 {
-                    "name": "Doug Schmidt",
-                    "attorneyId": 169284874,
-                    "url": "https://api.lexmachina.com/attorneys/169284874"
-                },
-                {
                     "name": "Scott A. Schmidt",
                     "attorneyId": 169286265,
                     "url": "https://api.lexmachina.com/attorneys/169286265"
@@ -8707,19 +8602,9 @@
                     "url": "https://api.lexmachina.com/attorneys/170528049"
                 },
                 {
-                    "name": "Katie J. Schmidt",
-                    "attorneyId": 170575075,
-                    "url": "https://api.lexmachina.com/attorneys/170575075"
-                },
-                {
                     "name": "Brittany E. Schmidt",
                     "attorneyId": 170966992,
                     "url": "https://api.lexmachina.com/attorneys/170966992"
-                },
-                {
-                    "name": "Ryan Schmidt (duplicate name)",
-                    "attorneyId": 171618468,
-                    "url": "https://api.lexmachina.com/attorneys/171618468"
                 },
                 {
                     "name": "Frances J. Schmidt",
@@ -8777,24 +8662,9 @@
                     "url": "https://api.lexmachina.com/attorneys/172575781"
                 },
                 {
-                    "name": "Alison Schmidt-Woods",
-                    "attorneyId": 172580504,
-                    "url": "https://api.lexmachina.com/attorneys/172580504"
-                },
-                {
                     "name": "Shane E. Schmidt",
                     "attorneyId": 172958223,
                     "url": "https://api.lexmachina.com/attorneys/172958223"
-                },
-                {
-                    "name": "Charles Henry Schmidt Jr",
-                    "attorneyId": 173439000,
-                    "url": "https://api.lexmachina.com/attorneys/173439000"
-                },
-                {
-                    "name": "Tara Renee Schmidt",
-                    "attorneyId": 173544782,
-                    "url": "https://api.lexmachina.com/attorneys/173544782"
                 },
                 {
                     "name": "Erin Elizabeth Blechschmidt",
@@ -8852,11 +8722,6 @@
                     "url": "https://api.lexmachina.com/attorneys/175582085"
                 },
                 {
-                    "name": "Aaron Kleinschmidt",
-                    "attorneyId": 175592214,
-                    "url": "https://api.lexmachina.com/attorneys/175592214"
-                },
-                {
                     "name": "Carl L. Schmidt",
                     "attorneyId": 175596974,
                     "url": "https://api.lexmachina.com/attorneys/175596974"
@@ -8865,6 +8730,301 @@
                     "name": "Christine Schmidt",
                     "attorneyId": 175848020,
                     "url": "https://api.lexmachina.com/attorneys/175848020"
+                },
+                {
+                    "name": "Jesse Schmidt",
+                    "attorneyId": 176419391,
+                    "url": "https://api.lexmachina.com/attorneys/176419391"
+                },
+                {
+                    "name": "Sarah J. Schmidtke",
+                    "attorneyId": 176420769,
+                    "url": "https://api.lexmachina.com/attorneys/176420769"
+                },
+                {
+                    "name": "John R. Schmidt",
+                    "attorneyId": 176443172,
+                    "url": "https://api.lexmachina.com/attorneys/176443172"
+                },
+                {
+                    "name": "Flip Schmidt",
+                    "attorneyId": 176668198,
+                    "url": "https://api.lexmachina.com/attorneys/176668198"
+                },
+                {
+                    "name": "Brian Schmidt",
+                    "attorneyId": 176693263,
+                    "url": "https://api.lexmachina.com/attorneys/176693263"
+                },
+                {
+                    "name": "Michael A. Schmidt (Schmidt & Yee)",
+                    "attorneyId": 176830087,
+                    "url": "https://api.lexmachina.com/attorneys/176830087"
+                },
+                {
+                    "name": "Peter L. Schmidt (Heyman Enerio Gattuso & Hirzel)",
+                    "attorneyId": 176940703,
+                    "url": "https://api.lexmachina.com/attorneys/176940703"
+                },
+                {
+                    "name": "Kayla Marie Schmidt",
+                    "attorneyId": 176997145,
+                    "url": "https://api.lexmachina.com/attorneys/176997145"
+                },
+                {
+                    "name": "Terry Lee Honigschmidt",
+                    "attorneyId": 177048502,
+                    "url": "https://api.lexmachina.com/attorneys/177048502"
+                },
+                {
+                    "name": "James T. Schmidt Jr.",
+                    "attorneyId": 177709628,
+                    "url": "https://api.lexmachina.com/attorneys/177709628"
+                },
+                {
+                    "name": "Tara Schmidt",
+                    "attorneyId": 178036867,
+                    "url": "https://api.lexmachina.com/attorneys/178036867"
+                },
+                {
+                    "name": "Robert Kastenschmidt",
+                    "attorneyId": 178523958,
+                    "url": "https://api.lexmachina.com/attorneys/178523958"
+                },
+                {
+                    "name": "Thomas Schmidt",
+                    "attorneyId": 178830415,
+                    "url": "https://api.lexmachina.com/attorneys/178830415"
+                },
+                {
+                    "name": "Katie J. Schmidt",
+                    "attorneyId": 178961477,
+                    "url": "https://api.lexmachina.com/attorneys/178961477"
+                },
+                {
+                    "name": "Max Goldschmidt",
+                    "attorneyId": 179040599,
+                    "url": "https://api.lexmachina.com/attorneys/179040599"
+                },
+                {
+                    "name": "Elizabeth C. Foreschmidt",
+                    "attorneyId": 180408317,
+                    "url": "https://api.lexmachina.com/attorneys/180408317"
+                },
+                {
+                    "name": "Zachary W. Carter (The Law Office of Curt D. Schmidt)",
+                    "attorneyId": 180756180,
+                    "url": "https://api.lexmachina.com/attorneys/180756180"
+                },
+                {
+                    "name": "Matthew Goldschmidt",
+                    "attorneyId": 181083776,
+                    "url": "https://api.lexmachina.com/attorneys/181083776"
+                },
+                {
+                    "name": "Grace Elizabeth Schmidt",
+                    "attorneyId": 181817300,
+                    "url": "https://api.lexmachina.com/attorneys/181817300"
+                },
+                {
+                    "name": "Christopher J. Schmidt (duplicate name)",
+                    "attorneyId": 181903319,
+                    "url": "https://api.lexmachina.com/attorneys/181903319"
+                },
+                {
+                    "name": "Denis Schmidt (duplicate name)",
+                    "attorneyId": 182190879,
+                    "url": "https://api.lexmachina.com/attorneys/182190879"
+                },
+                {
+                    "name": "Michael A. Schmidt (duplicate name)",
+                    "attorneyId": 182527178,
+                    "url": "https://api.lexmachina.com/attorneys/182527178"
+                },
+                {
+                    "name": "Clinten E. Schmidt",
+                    "attorneyId": 182633953,
+                    "url": "https://api.lexmachina.com/attorneys/182633953"
+                },
+                {
+                    "name": "Marcus P. Schmidt",
+                    "attorneyId": 182650725,
+                    "url": "https://api.lexmachina.com/attorneys/182650725"
+                },
+                {
+                    "name": "Jeffrey M. Schmidt",
+                    "attorneyId": 182680136,
+                    "url": "https://api.lexmachina.com/attorneys/182680136"
+                },
+                {
+                    "name": "John A. Schmidt",
+                    "attorneyId": 182719313,
+                    "url": "https://api.lexmachina.com/attorneys/182719313"
+                },
+                {
+                    "name": "Dwain Schmidt",
+                    "attorneyId": 183449119,
+                    "url": "https://api.lexmachina.com/attorneys/183449119"
+                },
+                {
+                    "name": "Kiley N. Schmidt",
+                    "attorneyId": 183468823,
+                    "url": "https://api.lexmachina.com/attorneys/183468823"
+                },
+                {
+                    "name": "Paul K. Schmidt",
+                    "attorneyId": 183814343,
+                    "url": "https://api.lexmachina.com/attorneys/183814343"
+                },
+                {
+                    "name": "Lisa Schmidt (Hassler Law Firm)",
+                    "attorneyId": 184550055,
+                    "url": "https://api.lexmachina.com/attorneys/184550055"
+                },
+                {
+                    "name": "Emily S. Bauerschmidt",
+                    "attorneyId": 184556311,
+                    "url": "https://api.lexmachina.com/attorneys/184556311"
+                },
+                {
+                    "name": "“Razz” Schmidtmann",
+                    "attorneyId": 184557032,
+                    "url": "https://api.lexmachina.com/attorneys/184557032"
+                },
+                {
+                    "name": "Onica Matsika Schmidt",
+                    "attorneyId": 184558714,
+                    "url": "https://api.lexmachina.com/attorneys/184558714"
+                },
+                {
+                    "name": "Philip Schmidtke-Mönkediek",
+                    "attorneyId": 184559576,
+                    "url": "https://api.lexmachina.com/attorneys/184559576"
+                },
+                {
+                    "name": "Alessandra Schmidt",
+                    "attorneyId": 184560244,
+                    "url": "https://api.lexmachina.com/attorneys/184560244"
+                },
+                {
+                    "name": "Johanna Louise Schmidt",
+                    "attorneyId": 184561610,
+                    "url": "https://api.lexmachina.com/attorneys/184561610"
+                },
+                {
+                    "name": "Kevin Eisenschmidt",
+                    "attorneyId": 184561656,
+                    "url": "https://api.lexmachina.com/attorneys/184561656"
+                },
+                {
+                    "name": "Nina Zegarra-Schmidt",
+                    "attorneyId": 184561847,
+                    "url": "https://api.lexmachina.com/attorneys/184561847"
+                },
+                {
+                    "name": "Schmidt-Reynolds V. Cr",
+                    "attorneyId": 184741023,
+                    "url": "https://api.lexmachina.com/attorneys/184741023"
+                },
+                {
+                    "name": "Linda Schmidt",
+                    "attorneyId": 184772801,
+                    "url": "https://api.lexmachina.com/attorneys/184772801"
+                },
+                {
+                    "name": "Camila Dell Agnolo Schmidt",
+                    "attorneyId": 184938279,
+                    "url": "https://api.lexmachina.com/attorneys/184938279"
+                },
+                {
+                    "name": "Meetgraham B. Schmidt",
+                    "attorneyId": 184940592,
+                    "url": "https://api.lexmachina.com/attorneys/184940592"
+                },
+                {
+                    "name": "Margaret E. Rodgers Schmidt",
+                    "attorneyId": 185188691,
+                    "url": "https://api.lexmachina.com/attorneys/185188691"
+                },
+                {
+                    "name": "Jacob T. Schmidt",
+                    "attorneyId": 185237279,
+                    "url": "https://api.lexmachina.com/attorneys/185237279"
+                },
+                {
+                    "name": "Lela Schmidt",
+                    "attorneyId": 185239791,
+                    "url": "https://api.lexmachina.com/attorneys/185239791"
+                },
+                {
+                    "name": "Melissa Derr Schmidt",
+                    "attorneyId": 185642615,
+                    "url": "https://api.lexmachina.com/attorneys/185642615"
+                },
+                {
+                    "name": "Jacob Thomas Schmidt",
+                    "attorneyId": 186105184,
+                    "url": "https://api.lexmachina.com/attorneys/186105184"
+                },
+                {
+                    "name": "J. Dwain Schmidt",
+                    "attorneyId": 186917920,
+                    "url": "https://api.lexmachina.com/attorneys/186917920"
+                },
+                {
+                    "name": "J. Landon K. Schmidt",
+                    "attorneyId": 188035818,
+                    "url": "https://api.lexmachina.com/attorneys/188035818"
+                },
+                {
+                    "name": "Daniel O. Schmidt (duplicate name)",
+                    "attorneyId": 188210076,
+                    "url": "https://api.lexmachina.com/attorneys/188210076"
+                },
+                {
+                    "name": "Graham Boardman Schmidt",
+                    "attorneyId": 188244342,
+                    "url": "https://api.lexmachina.com/attorneys/188244342"
+                },
+                {
+                    "name": "John Schmidt (duplicate name)",
+                    "attorneyId": 188407172,
+                    "url": "https://api.lexmachina.com/attorneys/188407172"
+                },
+                {
+                    "name": "Maxwell Ryan Goldschmidt",
+                    "attorneyId": 188634394,
+                    "url": "https://api.lexmachina.com/attorneys/188634394"
+                },
+                {
+                    "name": "Chris Schmidt",
+                    "attorneyId": 188801056,
+                    "url": "https://api.lexmachina.com/attorneys/188801056"
+                },
+                {
+                    "name": "Daniel O. Schmidt (duplicate name)",
+                    "attorneyId": 189320538,
+                    "url": "https://api.lexmachina.com/attorneys/189320538"
+                },
+                {
+                    "name": "Rebecca E. Schmidt",
+                    "attorneyId": 189490878,
+                    "url": "https://api.lexmachina.com/attorneys/189490878"
+                },
+                {
+                    "name": "Liz Schmidt",
+                    "attorneyId": 190259172,
+                    "url": "https://api.lexmachina.com/attorneys/190259172"
+                },
+                {
+                    "name": "Suzanne L. Schmidt",
+                    "attorneyId": 190273132,
+                    "url": "https://api.lexmachina.com/attorneys/190273132"
+                },
+                {
+                    "name": "Jennifer A. Schmidt",
+                    "attorneyId": 190301666,
+                    "url": "https://api.lexmachina.com/attorneys/190301666"
                 }
             ]
         },
@@ -8872,23 +9032,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "27001",
+            "30561",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "0787771653d6a764b95f5a6d7bc3b0b7",
+            "12224bf05c630383542e050bdc8961d6",
             "Date",
-            "Wed, 10 May 2023 14:30:55 GMT",
+            "Tue, 14 Nov 2023 18:05:47 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "586",
+            "2280",
             "X-Kong-Proxy-Latency",
-            "13",
+            "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -8899,7 +9059,7 @@
         "body": "",
         "status": 200,
         "response": {
-            "totalCount": 1749,
+            "totalCount": 1781,
             "page": 5,
             "nextPage": null,
             "attorneys": []
@@ -8912,19 +9072,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "aa324365f343a957776aaf1179677f8c",
+            "9d03394a0de626f55d8a36c4782eb97d",
             "Date",
-            "Wed, 10 May 2023 14:30:56 GMT",
+            "Tue, 14 Nov 2023 18:05:49 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "561",
+            "2249",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

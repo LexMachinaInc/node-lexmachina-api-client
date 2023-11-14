@@ -12,8 +12,8 @@
                 "abstract": "An electronic information browsing system that provides a book-like interface—a virtual book—for presenting electronic contents. Specifically, an electronic information browsing system that allows users to configure its behavior via data and program specification encapsulated in a dynamic file format. Configurable behavior includes but not limited to the kind of contents to be displayed in the virtual book, the sources of the contents to be displayed, the static aspects of the virtual book such as the book dimensions and the dynamic aspects of the virtual book such as when a page is to be flipped, how the flipping of pages is contingent upon the execution of certain pre-specified events, etc.",
                 "inventors": {
                     "inventors": [
-                        "SEET CHERN HWAY",
-                        "HO SENG BENG"
+                        "HO SENG BENG",
+                        "SEET CHERN HWAY"
                     ],
                     "originalAssignee": [
                         "E BOOK SYSTEMS PTE LTD"
@@ -22,8 +22,18 @@
                     "issueDate": "2007-12-04"
                 },
                 "districtCourtCases": {
-                    "numberOfCases": 5,
-                    "findings": []
+                    "numberOfCases": 7,
+                    "findings": [
+                        {
+                            "caseId": [
+                                2009069481
+                            ],
+                            "type": [
+                                "Infringement"
+                            ],
+                            "winner": "Claimant Win"
+                        }
+                    ]
                 }
             },
             {
@@ -33,8 +43,8 @@
                 "inventors": {
                     "inventors": [
                         "CAMPBELL ROBERT L",
-                        "WAGNER DANIEL B",
-                        "O'CONNELL JAMES P"
+                        "O'CONNELL JAMES P",
+                        "WAGNER DANIEL B"
                     ],
                     "originalAssignee": [
                         "BECTON DICKINSON CO"
@@ -69,23 +79,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "3660",
+            "3731",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "e0f5686da20b356ba6e99011e7a5bbdc",
+            "4e54ac72e21b07f1a8a38dafdaa30d93",
             "Date",
-            "Wed, 10 May 2023 14:24:47 GMT",
+            "Tue, 14 Nov 2023 17:54:18 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "150",
+            "182",
             "X-Kong-Proxy-Latency",
-            "1",
+            "3",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

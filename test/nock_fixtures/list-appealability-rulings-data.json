@@ -1,0 +1,73 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "4MuX0bp58GBPIFwI5cLaoJ4yrBiHBFfr",
+            "token_type": "bearer",
+            "expires_in": 3600
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 14 Nov 2023 17:53:46 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "pragma",
+            "no-cache",
+            "cache-control",
+            "no-store",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "19",
+            "Server",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-appealability-rulings",
+        "body": "",
+        "status": 200,
+        "response": [
+            "Permission to Appeal: Grant",
+            "Permission to Appeal: Deny",
+            "Certificate of Appealability: Grant",
+            "Certificate of Appealability: Deny",
+            "Petition for Review: Grant",
+            "Petition for Review: Deny"
+        ],
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "192",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "60e29ba8d778fdb17f46feef72e2efeb;o=1",
+            "Date",
+            "Tue, 14 Nov 2023 17:53:46 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "34",
+            "X-Kong-Proxy-Latency",
+            "37",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

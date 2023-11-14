@@ -6,29 +6,29 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "expires_in": 3600,
-            "access_token": "pNaxuQOecW1rrP0cuazBeYljBhXNYqt7",
-            "token_type": "bearer"
+            "access_token": "t4hPjSrqX9ogxP3KFM1ZyH60BUFmDLPg",
+            "token_type": "bearer",
+            "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:40 GMT",
+            "Tue, 14 Nov 2023 17:54:06 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
             "close",
-            "cache-control",
-            "no-store",
             "pragma",
             "no-cache",
+            "cache-control",
+            "no-store",
             "Content-Length",
             "91",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "5",
+            "29",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -46,7 +46,7 @@
             "caseCountByCourt": [
                 {
                     "court": "total",
-                    "count": 1778
+                    "count": 1855
                 }
             ],
             "nominatingPresident": "Barack Obama"
@@ -59,19 +59,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "2cb637005efbda2aa957856022270597",
+            "65a04253ac64e53d2b849390d7f5f5ad",
             "Date",
-            "Wed, 10 May 2023 14:24:41 GMT",
+            "Tue, 14 Nov 2023 17:54:07 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "52",
+            "194",
             "X-Kong-Proxy-Latency",
-            "45",
+            "14",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

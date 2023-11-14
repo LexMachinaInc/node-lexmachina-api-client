@@ -1,0 +1,92 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-case-resolutions/FederalAppeals",
+        "body": "",
+        "status": 200,
+        "response": {
+            "court": {
+                "name": "All Federal Appeals Courts",
+                "type": "FederalAppeals"
+            },
+            "caseResolutions": [
+                {
+                    "summary": "Appellee Win",
+                    "specific": "Affirmed"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Affirmed / Reversed in Part"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Reversed"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Appealability Granted"
+                },
+                {
+                    "summary": "Appellee Win",
+                    "specific": "Appealability Denied"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Granted (Other)"
+                },
+                {
+                    "summary": "Appellee Win",
+                    "specific": "Denied (Other)"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Likely Settlement"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Dismissal"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Consolidation"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Transfer"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Other Ruling"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Remand"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "801",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "c6a10a732c82a24d7c34cf91e105003c",
+            "Date",
+            "Tue, 14 Nov 2023 17:53:54 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "14",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

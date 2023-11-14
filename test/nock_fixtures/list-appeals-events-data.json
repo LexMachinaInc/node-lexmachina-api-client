@@ -1,0 +1,42 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-events/FederalAppeals",
+        "body": "",
+        "status": 200,
+        "response": {
+            "court": {
+                "name": "All Federal Appeals Courts",
+                "type": "FederalAppeals"
+            },
+            "events": [
+                "Filed",
+                "Terminated"
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "103",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "8a737f2d90c91559dfb4d8248a6c114e",
+            "Date",
+            "Tue, 14 Nov 2023 17:54:04 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "25",
+            "X-Kong-Proxy-Latency",
+            "18",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

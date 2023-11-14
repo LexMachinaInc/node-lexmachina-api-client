@@ -13,35 +13,23 @@
             "caseResolutions": [
                 {
                     "summary": "Plaintiff Win",
-                    "specific": "Bench Trial"
-                },
-                {
-                    "summary": "Plaintiff Win",
-                    "specific": "Consent Judgment"
-                },
-                {
-                    "summary": "Plaintiff Win",
                     "specific": "Jury Verdict"
                 },
                 {
                     "summary": "Plaintiff Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Plaintiff Win",
+                    "specific": "Bench Trial"
+                },
+                {
+                    "summary": "Plaintiff Win",
                     "specific": "Other Judgment"
                 },
                 {
                     "summary": "Plaintiff Win",
-                    "specific": "Default Judgment"
-                },
-                {
-                    "summary": "Defendant Win",
-                    "specific": "Other Judgment"
-                },
-                {
-                    "summary": "Defendant Win",
-                    "specific": "Default Judgment"
-                },
-                {
-                    "summary": "Defendant Win",
-                    "specific": "Bench Trial"
+                    "specific": "Consent Judgment"
                 },
                 {
                     "summary": "Defendant Win",
@@ -50,6 +38,18 @@
                 {
                     "summary": "Defendant Win",
                     "specific": "Jury Verdict"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Bench Trial"
+                },
+                {
+                    "summary": "Defendant Win",
+                    "specific": "Other Judgment"
                 },
                 {
                     "summary": "Likely Settlement",
@@ -73,19 +73,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "988548bb49fe6465c1f46bdcc306c839",
+            "53331bbbb99cdf5fc30581ed7df03f8d",
             "Date",
-            "Wed, 10 May 2023 14:24:30 GMT",
+            "Tue, 14 Nov 2023 17:53:54 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "14",
+            "21",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

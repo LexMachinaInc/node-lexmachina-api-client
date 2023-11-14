@@ -1,0 +1,150 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "ModaUGs5Om4b8B8g4VdJn7tZfZKf3v5J",
+            "token_type": "bearer",
+            "expires_in": 3600
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 14 Nov 2023 17:53:48 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "pragma",
+            "no-cache",
+            "cache-control",
+            "no-store",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "18",
+            "Server",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/appeals-cases/2005612712",
+        "body": "",
+        "status": 200,
+        "response": {
+            "appealsCaseId": 2005612712,
+            "title": "Meadows v. US",
+            "court": "U.S. Court of Appeals for the First Circuit",
+            "civilActionNumber": "12-1005",
+            "status": "Terminated",
+            "caseTags": [
+                "Appealability Ruling",
+                "Certificate of Appealability: Deny"
+            ],
+            "dates": {
+                "filed": "2012-01-03",
+                "terminated": "2013-01-18",
+                "lastDocket": "2013-04-18"
+            },
+            "judges": [
+                {
+                    "name": "Norman H. Stahl",
+                    "federalJudgeId": 2267
+                },
+                {
+                    "name": "Jeffrey R. Howard",
+                    "federalJudgeId": 2932
+                },
+                {
+                    "name": "Ojetta Rogeriee Thompson",
+                    "federalJudgeId": 3233
+                }
+            ],
+            "lawFirms": [
+                {
+                    "name": "Department of Justice",
+                    "lawFirmId": 604,
+                    "clientPartyIds": [
+                        65981
+                    ]
+                }
+            ],
+            "attorneys": [
+                {
+                    "name": "Dina Michael Chaitowitz",
+                    "attorneyId": 151659035,
+                    "lawFirmIds": [
+                        604
+                    ],
+                    "clientsPartyIds": [
+                        65981
+                    ]
+                },
+                {
+                    "name": "Paul Getz Levenson",
+                    "attorneyId": 151700910,
+                    "lawFirmIds": [
+                        604
+                    ],
+                    "clientsPartyIds": [
+                        65981
+                    ]
+                }
+            ],
+            "parties": [
+                {
+                    "name": "UNITED STATES",
+                    "partyId": 65981,
+                    "role": "Appellee"
+                },
+                {
+                    "name": "TIMOTHY J. MEADOWS (Federal Prisoner: 26118-038)",
+                    "partyId": 69436580,
+                    "role": "Appellant"
+                }
+            ],
+            "originatingVenues": [
+                "Originating Venue: Federal District Court"
+            ],
+            "originatingCases": [],
+            "appealabilityRulings": [
+                "Certificate of Appealability: Deny"
+            ],
+            "caseResolution": {
+                "summary": "Appellee Win",
+                "specific": "Appealability Denied"
+            },
+            "supremeCourtAndRehearingDecisions": []
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "1221",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "a68cfbb0220f1f6274c0e3c97fae2922",
+            "Date",
+            "Tue, 14 Nov 2023 17:53:49 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1237",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

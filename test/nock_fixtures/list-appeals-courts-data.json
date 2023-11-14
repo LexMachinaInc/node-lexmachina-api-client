@@ -1,0 +1,112 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-courts/FederalAppeals",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "name": "U.S. Court of Appeals for the First Circuit",
+                "type": "FederalAppeals",
+                "shortName": "1st Cir.",
+                "abbreviation": "ca1"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Tenth Circuit",
+                "type": "FederalAppeals",
+                "shortName": "10th Cir.",
+                "abbreviation": "ca10"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Eleventh Circuit",
+                "type": "FederalAppeals",
+                "shortName": "11th Cir.",
+                "abbreviation": "ca11"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Second Circuit",
+                "type": "FederalAppeals",
+                "shortName": "2d Cir.",
+                "abbreviation": "ca2"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Third Circuit",
+                "type": "FederalAppeals",
+                "shortName": "3d Cir.",
+                "abbreviation": "ca3"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Fourth Circuit",
+                "type": "FederalAppeals",
+                "shortName": "4th Cir.",
+                "abbreviation": "ca4"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Fifth Circuit",
+                "type": "FederalAppeals",
+                "shortName": "5th Cir.",
+                "abbreviation": "ca5"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Sixth Circuit",
+                "type": "FederalAppeals",
+                "shortName": "6th Cir.",
+                "abbreviation": "ca6"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Seventh Circuit",
+                "type": "FederalAppeals",
+                "shortName": "7th Cir.",
+                "abbreviation": "ca7"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Eighth Circuit",
+                "type": "FederalAppeals",
+                "shortName": "8th Cir.",
+                "abbreviation": "ca8"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Ninth Circuit",
+                "type": "FederalAppeals",
+                "shortName": "9th Cir.",
+                "abbreviation": "ca9"
+            },
+            {
+                "name": "U.S. Court of Appeals for the District of Columbia Circuit",
+                "type": "FederalAppeals",
+                "shortName": "D.C. Cir.",
+                "abbreviation": "cadc"
+            },
+            {
+                "name": "U.S. Court of Appeals for the Federal Circuit",
+                "type": "FederalAppeals",
+                "shortName": "Fed. Cir.",
+                "abbreviation": "cafc"
+            }
+        ],
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "1631",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "3529d9f9fa5ead2baf7f99532d2c4e2b",
+            "Date",
+            "Tue, 14 Nov 2023 17:53:59 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "53",
+            "X-Kong-Proxy-Latency",
+            "3",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

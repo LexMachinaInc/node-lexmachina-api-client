@@ -14,7 +14,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 1778
+                        "count": 1855
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -27,7 +27,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 3815
+                        "count": 4005
                     }
                 ],
                 "nominatingPresident": "Barack Obama"
@@ -40,7 +40,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 6192
+                        "count": 6322
                     }
                 ],
                 "nominatingPresident": "William J. Clinton"
@@ -54,19 +54,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "add4f8cb6cd38225093fbf4d3f30d15f",
+            "445e81f0448e47ee941c877d236d60ee",
             "Date",
-            "Wed, 10 May 2023 14:24:41 GMT",
+            "Tue, 14 Nov 2023 17:54:07 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "73",
+            "229",
             "X-Kong-Proxy-Latency",
-            "1",
+            "3",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

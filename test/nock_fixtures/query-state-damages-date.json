@@ -52,19 +52,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "3ca9adf322123821c0489e0b9b956f4a",
+            "7d47bd8485f40f3a225b8baeeca1d00b",
             "Date",
-            "Wed, 10 May 2023 14:30:01 GMT",
+            "Tue, 14 Nov 2023 18:05:10 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "5893",
+            "14578",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

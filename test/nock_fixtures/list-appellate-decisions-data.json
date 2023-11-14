@@ -1,0 +1,70 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "4OKlhnBkhHImevH0g6JhdMv9jjb16QSq",
+            "token_type": "bearer",
+            "expires_in": 3600
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 14 Nov 2023 17:53:50 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "pragma",
+            "no-cache",
+            "cache-control",
+            "no-store",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "5",
+            "Server",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-appellate-decisions/FederalDistrict",
+        "body": "",
+        "status": 200,
+        "response": [
+            "Affirmed",
+            "Affirmed / Reversed in Part",
+            "Reversed"
+        ],
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "53",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "2d3766060ee4001b16676abbb0e73788",
+            "Date",
+            "Tue, 14 Nov 2023 17:53:51 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "23",
+            "X-Kong-Proxy-Latency",
+            "58",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

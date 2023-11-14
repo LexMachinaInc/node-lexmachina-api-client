@@ -6,13 +6,13 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "access_token": "Af1rwkmhFs7pvx8bK1ySquhJXLBI1njo",
+            "access_token": "9heaN9uJFwJYD6tqULI1wdrzW0mPwMjE",
             "token_type": "bearer",
             "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:34 GMT",
+            "Tue, 14 Nov 2023 17:54:00 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
@@ -26,9 +26,9 @@
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "13",
+            "21",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -199,10 +199,18 @@
                     "Actual Damages (Real Property)",
                     "Restitution (Real Property)",
                     "Restitution ",
-                    "Punitive Damages (Real Property)",
-                    "Punitive Damages ",
+                    "Nominal Damages (Real Property)",
+                    "Nominal Damages ",
+                    "Special Damages (Real Property)",
+                    "Special Damages ",
+                    "Just Compensation",
                     "Settled Claim Damages (Real Property)",
-                    "Settled Claim Damages "
+                    "Settled Claim Damages ",
+                    "Punitive Damages (Real Property)",
+                    "Punitive Damages "
+                ],
+                "Class Action": [
+                    "Approved Class Action Settlement (Class Action)"
                 ]
             },
             "court": {
@@ -214,23 +222,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "4188",
+            "4381",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "3022751f003f52626868a8a7fa2e4eb7",
+            "fbce67e4ce49d39d908d3bd2e2b7ef26",
             "Date",
-            "Wed, 10 May 2023 14:24:35 GMT",
+            "Tue, 14 Nov 2023 17:54:00 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "17",
+            "15",
             "X-Kong-Proxy-Latency",
-            "3",
+            "15",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

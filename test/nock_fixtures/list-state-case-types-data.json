@@ -316,6 +316,592 @@
             },
             {
                 "court": {
+                    "name": "Benton County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Clackamas County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Deschutes County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Jackson County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lane County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Linn County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Marion County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Washington County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Baker County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Clatsop County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Columbia County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Coos County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Crook County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Curry County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Douglas County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Gilliam County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Grant County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Harney County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Hood River County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Jefferson County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Josephine County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Klamath County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lake County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Lincoln County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Malheur County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Morrow County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Polk County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Sherman County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Tillamook County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Umatilla County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Union County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Wallowa County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": []
+            },
+            {
+                "court": {
+                    "name": "Wasco County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Wheeler County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
+                    "name": "Yamhill County Circuit Court",
+                    "type": "State",
+                    "state": "OR"
+                },
+                "caseTypes": [
+                    "Contract (OR)",
+                    "Other Civil (OR)",
+                    "Real Property (OR)",
+                    "Torts (General) (OR)",
+                    "Torts (Legal Malpractice) (OR)",
+                    "Torts (Medical Malpractice) (OR)",
+                    "Torts (Products Liability) (OR)",
+                    "Torts (Wrongful Death) (OR)"
+                ]
+            },
+            {
+                "court": {
                     "name": "New Castle County Superior Court",
                     "type": "State",
                     "state": "DE"
@@ -826,23 +1412,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "12589",
+            "22971",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "fb95caf4b25732afb2ce287bcba18614",
+            "4565c61c546ce25bd646427927dcfa7a",
             "Date",
-            "Wed, 10 May 2023 14:24:32 GMT",
+            "Tue, 14 Nov 2023 17:53:57 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "36",
+            "57",
             "X-Kong-Proxy-Latency",
-            "1",
+            "3",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

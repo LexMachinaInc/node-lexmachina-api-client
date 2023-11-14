@@ -6,13 +6,13 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
+            "token_type": "bearer",
             "expires_in": 3600,
-            "access_token": "kn9pr85s2MS8TP1XcEe9HUBmTENpMG5L",
-            "token_type": "bearer"
+            "access_token": "GsEDVqqpxOktGBWyVnJG9NfvyRin0eMv"
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:47 GMT",
+            "Tue, 14 Nov 2023 17:54:17 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
@@ -26,9 +26,9 @@
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "4",
+            "20",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -44,8 +44,8 @@
             "abstract": "An electronic information browsing system that provides a book-like interface—a virtual book—for presenting electronic contents. Specifically, an electronic information browsing system that allows users to configure its behavior via data and program specification encapsulated in a dynamic file format. Configurable behavior includes but not limited to the kind of contents to be displayed in the virtual book, the sources of the contents to be displayed, the static aspects of the virtual book such as the book dimensions and the dynamic aspects of the virtual book such as when a page is to be flipped, how the flipping of pages is contingent upon the execution of certain pre-specified events, etc.",
             "inventors": {
                 "inventors": [
-                    "SEET CHERN HWAY",
-                    "HO SENG BENG"
+                    "HO SENG BENG",
+                    "SEET CHERN HWAY"
                 ],
                 "originalAssignee": [
                     "E BOOK SYSTEMS PTE LTD"
@@ -54,31 +54,41 @@
                 "issueDate": "2007-12-04"
             },
             "districtCourtCases": {
-                "numberOfCases": 5,
-                "findings": []
+                "numberOfCases": 7,
+                "findings": [
+                    {
+                        "caseId": [
+                            2009069481
+                        ],
+                        "type": [
+                            "Infringement"
+                        ],
+                        "winner": "Claimant Win"
+                    }
+                ]
             }
         },
         "rawHeaders": [
             "Content-Type",
             "application/json",
             "Content-Length",
-            "995",
+            "1066",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "83591167666074704382fa7d77f9a29a",
+            "d383b169fbb84cae8d5659f4e442cd26",
             "Date",
-            "Wed, 10 May 2023 14:24:47 GMT",
+            "Tue, 14 Nov 2023 17:54:17 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "79",
+            "257",
             "X-Kong-Proxy-Latency",
-            "3",
+            "7",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

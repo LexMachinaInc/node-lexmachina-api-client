@@ -8,25 +8,25 @@
         "response": {
             "damages": [
                 "Default Judgment",
+                "Judgment on Merits",
                 "Jury Verdict",
                 "No Type Specified",
-                "Consent Judgment",
-                "Judgment on Merits"
+                "Consent Judgment"
             ],
             "remedies": [
-                "Default Judgment",
-                "No Type Specified",
                 "Judgment on Merits",
-                "Consent Judgment"
+                "No Type Specified",
+                "Consent Judgment",
+                "Default Judgment"
             ],
             "findings": [
-                "Default Judgment",
-                "Summary Judgment",
-                "Trial",
-                "Judgment as a Matter of Law",
                 "Judgment on the Pleadings",
+                "Judgment as a Matter of Law",
+                "Default Judgment",
                 "No Type Specified",
-                "Consent Judgment"
+                "Consent Judgment",
+                "Summary Judgment",
+                "Trial"
             ],
             "court": {
                 "name": "All Federal District Courts",
@@ -41,19 +41,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "6f5ba63a56c510a46bd54e226b415284",
+            "30c15e65d15f6939a78133c1e5d7a0f6",
             "Date",
-            "Wed, 10 May 2023 14:27:26 GMT",
+            "Tue, 14 Nov 2023 18:02:28 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "17",
+            "19",
             "X-Kong-Proxy-Latency",
-            "1",
+            "2",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -108,19 +108,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "bf67f7a8a6a98d6d9c444dad4a1ead56",
+            "adb6ab023fa40f0ee6946e49dd7dbce0",
             "Date",
-            "Wed, 10 May 2023 14:27:26 GMT",
+            "Tue, 14 Nov 2023 18:02:28 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "332",
+            "188",
             "X-Kong-Proxy-Latency",
-            "0",
+            "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -175,19 +175,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "ce69985405169be5885022d5b8e6cab9",
+            "43772d926a99da9d9f5d0e278320ec75",
             "Date",
-            "Wed, 10 May 2023 14:27:27 GMT",
+            "Tue, 14 Nov 2023 18:02:29 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "198",
+            "127",
             "X-Kong-Proxy-Latency",
-            "1",
+            "2",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -242,19 +242,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "cfe7c62bd2e407d2a5462a246a8a8527",
+            "7840de32b1b91a521591f976fe0114d3",
             "Date",
-            "Wed, 10 May 2023 14:27:28 GMT",
+            "Tue, 14 Nov 2023 18:02:29 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "355",
+            "192",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -309,19 +309,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "724a3c52ad74a6ff84f0fa697807bcd7",
+            "9d4b50270ca6b1e114e74696bc6d28be",
             "Date",
-            "Wed, 10 May 2023 14:27:29 GMT",
+            "Tue, 14 Nov 2023 18:02:30 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "483",
+            "247",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -376,19 +376,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "0611ae946e9032f426eb63ae471598f7",
+            "8a806e56b8e6c7f72226ad5c747d113e",
             "Date",
-            "Wed, 10 May 2023 14:27:30 GMT",
+            "Tue, 14 Nov 2023 18:02:30 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "640",
+            "311",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -443,19 +443,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "82091aa3af06f54aa64be531218dd488",
+            "b5ffb77783d7f11d0674540ad110820b",
             "Date",
-            "Wed, 10 May 2023 14:27:31 GMT",
+            "Tue, 14 Nov 2023 18:02:31 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "495",
+            "246",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

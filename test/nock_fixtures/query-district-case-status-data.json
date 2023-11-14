@@ -6,13 +6,13 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "access_token": "cNmBxWm7e32RwyGgJKjSKeRbnzxsnRcC",
+            "access_token": "OBpqTiGL4SUfUOvb74RfnRzgsXkDQn4J",
             "token_type": "bearer",
             "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:48 GMT",
+            "Tue, 14 Nov 2023 17:58:08 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
@@ -26,9 +26,9 @@
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "26",
+            "18",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -75,19 +75,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "ddef126a9516a8f27f0c81b5d13e2b94;o=1",
+            "d84b28ce7f16cbb51689834d43bfd30f",
             "Date",
-            "Wed, 10 May 2023 14:24:49 GMT",
+            "Tue, 14 Nov 2023 17:58:09 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "41",
+            "71",
             "X-Kong-Proxy-Latency",
-            "11",
+            "41",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -134,19 +134,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "dbbef5e73183255e44b7c0f66744d2b3",
+            "4616431498ee9ead90dd24bb3bff2b91",
             "Date",
-            "Wed, 10 May 2023 14:24:49 GMT",
+            "Tue, 14 Nov 2023 17:58:09 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "63",
+            "75",
             "X-Kong-Proxy-Latency",
-            "1",
+            "14",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

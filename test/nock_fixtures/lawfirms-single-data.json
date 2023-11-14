@@ -6,21 +6,21 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "expires_in": 3600,
-            "access_token": "6ARzyHT0NO8pj8PopJEmh96lSe8oMxYU",
-            "token_type": "bearer"
+            "access_token": "uUrvDMFFqhLnmApWeQaDO42wuY6gvKlz",
+            "token_type": "bearer",
+            "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:43 GMT",
+            "Tue, 14 Nov 2023 17:54:10 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
             "close",
-            "cache-control",
-            "no-store",
             "pragma",
             "no-cache",
+            "cache-control",
+            "no-store",
             "Content-Length",
             "91",
             "Access-Control-Allow-Origin",
@@ -28,7 +28,7 @@
             "X-Kong-Response-Latency",
             "5",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -50,19 +50,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "99eb7adc81d9da6a080f84841247e912",
+            "09e7a90bb03231a579e9ad5d0ac4d0f4",
             "Date",
-            "Wed, 10 May 2023 14:24:43 GMT",
+            "Tue, 14 Nov 2023 17:54:10 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "34",
+            "48",
             "X-Kong-Proxy-Latency",
-            "2",
+            "6",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

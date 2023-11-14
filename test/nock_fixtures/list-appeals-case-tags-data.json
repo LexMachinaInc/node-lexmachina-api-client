@@ -1,0 +1,53 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-case-tags/FederalAppeals",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "court": {
+                    "name": "All Federal Appeals Courts",
+                    "type": "FederalAppeals"
+                },
+                "caseTags": [
+                    "Panel Rehearing Granted",
+                    "SCOTUS Decision",
+                    "Certificate of Appealability: Grant",
+                    "Certificate of Appealability: Deny",
+                    "Petition for Review: Grant",
+                    "Petition for Review: Deny",
+                    "Permission to Appeal: Grant",
+                    "Permission to Appeal: Deny",
+                    "Appealability Ruling",
+                    "Writ of Certiorari Granted",
+                    "Rehearing En Banc Granted"
+                ]
+            }
+        ],
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "401",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "d0979e0e1193e90cf60fce5073a17c2b",
+            "Date",
+            "Tue, 14 Nov 2023 17:53:56 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "17",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

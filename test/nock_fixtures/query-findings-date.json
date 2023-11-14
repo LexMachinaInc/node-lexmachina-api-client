@@ -32,12 +32,12 @@
                     "districtCaseId": 2000707734
                 },
                 {
-                    "url": "https://api.lexmachina.com/district-cases/2002171699",
-                    "districtCaseId": 2002171699
+                    "url": "https://api.lexmachina.com/district-cases/2001826309",
+                    "districtCaseId": 2001826309
                 },
                 {
-                    "url": "https://api.lexmachina.com/district-cases/2000708129",
-                    "districtCaseId": 2000708129
+                    "url": "https://api.lexmachina.com/district-cases/2001863729",
+                    "districtCaseId": 2001863729
                 }
             ]
         },
@@ -49,19 +49,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "92e08683199133ae8d20add7be363017",
+            "e6717e7185ff8c2a7d795cd3092fd0ad",
             "Date",
-            "Wed, 10 May 2023 14:27:25 GMT",
+            "Tue, 14 Nov 2023 18:02:28 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "290",
+            "222",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

@@ -50,9 +50,9 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "529ad0c5e032aaef66e91dfa0bf2261c",
+            "e18281946ee6c3f738d1eff4d80e628d",
             "Date",
-            "Wed, 10 May 2023 14:27:24 GMT",
+            "Tue, 14 Nov 2023 18:02:27 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
@@ -62,7 +62,7 @@
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -117,19 +117,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "a3abc7e410432de65ac9644171aff78c",
+            "fb60d8ed59cccc1390a336802f94ad12",
             "Date",
-            "Wed, 10 May 2023 14:27:25 GMT",
+            "Tue, 14 Nov 2023 18:02:27 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "92",
+            "93",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

@@ -1,0 +1,82 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/oauth2/token",
+        "body": "grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "token_type": "bearer",
+            "expires_in": 3600,
+            "access_token": "vyQEs2OfC8Y1XWf88dfGrN6V6LxS8PFz"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 14 Nov 2023 17:54:14 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Connection",
+            "close",
+            "cache-control",
+            "no-store",
+            "pragma",
+            "no-cache",
+            "Content-Length",
+            "91",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Response-Latency",
+            "6",
+            "Server",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-originating-venues/FederalAppeals",
+        "body": "",
+        "status": 200,
+        "response": {
+            "originatingVenues": [
+                "Originating Venue: Board of Immigration Appeals",
+                "Originating Venue: Court of Federal Claims",
+                "Originating Venue: Federal Bankruptcy Court",
+                "Originating Venue: Bankruptcy Appellate Panel",
+                "Originating Venue: Federal District Court",
+                "Originating Venue: Other Agency",
+                "Originating Venue: ITC",
+                "Originating Venue: Other Court",
+                "Originating Venue: PTAB"
+            ],
+            "court": {
+                "name": "All Federal Appeals Courts",
+                "type": "FederalAppeals"
+            }
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "444",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "6acbea9072ef0e95583c509ba6226a7c",
+            "Date",
+            "Tue, 14 Nov 2023 17:54:14 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "14",
+            "X-Kong-Proxy-Latency",
+            "4",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

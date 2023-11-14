@@ -13,7 +13,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 464
+                        "count": 600
                     }
                 ]
             },
@@ -24,7 +24,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 489
+                        "count": 790
                     }
                 ]
             },
@@ -35,7 +35,7 @@
                 "caseCountByCourt": [
                     {
                         "court": "total",
-                        "count": 1759
+                        "count": 1794
                     }
                 ]
             }
@@ -48,19 +48,19 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "0ee366e270bde1d5846fce5c2e6c82dc",
+            "be31a1e4257edabdf5ddd9f391b1f154",
             "Date",
-            "Wed, 10 May 2023 14:24:45 GMT",
+            "Tue, 14 Nov 2023 17:54:13 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "64",
+            "849",
             "X-Kong-Proxy-Latency",
-            "1",
+            "13",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

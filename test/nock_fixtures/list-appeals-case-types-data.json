@@ -1,0 +1,65 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-case-types/FederalAppeals",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "court": {
+                    "name": "All Federal Appeals Courts",
+                    "type": "FederalAppeals"
+                },
+                "caseTypes": [
+                    "Antitrust",
+                    "Bankruptcy",
+                    "Civil Rights",
+                    "Class Action",
+                    "Consumer Protection",
+                    "Contracts",
+                    "Copyright",
+                    "ERISA",
+                    "Employment",
+                    "Environmental",
+                    "False Claims",
+                    "Insurance",
+                    "Internet",
+                    "Patent",
+                    "Product Liability",
+                    "Real Property",
+                    "Securities",
+                    "Surety Bond",
+                    "Tax",
+                    "Torts",
+                    "Trade Secret",
+                    "Trademark",
+                    "Remaining Federal"
+                ]
+            }
+        ],
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "396",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "bcca866830a8ec363bd2a8ad3b71e769",
+            "Date",
+            "Tue, 14 Nov 2023 17:53:57 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "15",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

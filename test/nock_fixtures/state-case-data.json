@@ -6,13 +6,13 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "access_token": "mXE4PPlQkNghvnEr6n6k1QlHc3sTL4DU",
+            "access_token": "aFDh0Q9YQYcKFJOkNM73ck5KZKFIv0iw",
             "token_type": "bearer",
             "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:31:15 GMT",
+            "Tue, 14 Nov 2023 18:09:42 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
@@ -26,9 +26,9 @@
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "15",
+            "18",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -103,12 +103,19 @@
                     "clientPartyIds": [
                         473505
                     ]
+                },
+                {
+                    "name": "Law Offices of Robert S. Gitmeid",
+                    "lawFirmId": 56119778,
+                    "clientPartyIds": [
+                        54966924
+                    ]
                 }
             ],
             "attorneys": [
                 {
-                    "name": "Hootan Atefyekta",
-                    "attorneyId": 154939122,
+                    "name": "Thomas J. Sebourn",
+                    "attorneyId": 81113712,
                     "lawFirmIds": [
                         54335638
                     ],
@@ -117,8 +124,8 @@
                     ]
                 },
                 {
-                    "name": "Erin E. Patterson",
-                    "attorneyId": 80537178,
+                    "name": "Julie M. VanderNoor Urner (Suttell & Hammer)",
+                    "attorneyId": 153890112,
                     "lawFirmIds": [
                         54335638
                     ],
@@ -127,8 +134,8 @@
                     ]
                 },
                 {
-                    "name": "Sunny S.J. Lee",
-                    "attorneyId": 9452800,
+                    "name": "Nicholas John Babilis",
+                    "attorneyId": 80753924,
                     "lawFirmIds": [
                         54335638
                     ],
@@ -147,8 +154,38 @@
                     ]
                 },
                 {
+                    "name": "Sunny S.J. Lee",
+                    "attorneyId": 9452800,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
                     "name": "Carina M. Jordan",
                     "attorneyId": 80557927,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Erin E. Patterson (Suttell & Hammer)",
+                    "attorneyId": 81113714,
+                    "lawFirmIds": [
+                        54335638
+                    ],
+                    "clientsPartyIds": [
+                        473505
+                    ]
+                },
+                {
+                    "name": "Hootan Atefyekta",
+                    "attorneyId": 154939122,
                     "lawFirmIds": [
                         54335638
                     ],
@@ -177,33 +214,13 @@
                     ]
                 },
                 {
-                    "name": "Thomas J. Sebourn",
-                    "attorneyId": 80536571,
+                    "name": "Paul Lawrence Brisson",
+                    "attorneyId": 75668742,
                     "lawFirmIds": [
-                        54335638
+                        56119778
                     ],
                     "clientsPartyIds": [
-                        473505
-                    ]
-                },
-                {
-                    "name": "Nicholas John Babilis",
-                    "attorneyId": 80753924,
-                    "lawFirmIds": [
-                        54335638
-                    ],
-                    "clientsPartyIds": [
-                        473505
-                    ]
-                },
-                {
-                    "name": "Julie M. VanderNoor Urner",
-                    "attorneyId": 153890112,
-                    "lawFirmIds": [
-                        54335638
-                    ],
-                    "clientsPartyIds": [
-                        473505
+                        54966924
                     ]
                 }
             ],
@@ -250,23 +267,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "2334",
+            "2573",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "6c55be1dc33eac4ac4a3477fd8d99f86",
+            "cd1397ef30334af19bf1511ca8553299;o=1",
             "Date",
-            "Wed, 10 May 2023 14:31:16 GMT",
+            "Tue, 14 Nov 2023 18:09:42 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "298",
+            "535",
             "X-Kong-Proxy-Latency",
-            "27",
+            "17",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

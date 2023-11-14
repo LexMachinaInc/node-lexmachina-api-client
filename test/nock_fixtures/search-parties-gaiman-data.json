@@ -6,29 +6,29 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "expires_in": 3600,
-            "access_token": "UqikjXBmkZEQ8Rfhxou3kxWpsYjXNVVm",
-            "token_type": "bearer"
+            "access_token": "cJFKF3rNFI2GZxpLdysNOMFaN4wHv0Go",
+            "token_type": "bearer",
+            "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:31:01 GMT",
+            "Tue, 14 Nov 2023 19:17:35 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
             "close",
-            "cache-control",
-            "no-store",
             "pragma",
             "no-cache",
+            "cache-control",
+            "no-store",
             "Content-Length",
             "91",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "3",
+            "41",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -37,101 +37,27 @@
         "method": "GET",
         "path": "/search-parties?q=gaiman&pageSize=500&pageNumber=1",
         "body": "",
-        "status": 200,
+        "status": 500,
         "response": {
-            "totalCount": 6,
-            "page": 1,
-            "nextPage": null,
-            "parties": [
-                {
-                    "name": "Neil Gaiman",
-                    "partyId": 216320,
-                    "url": "https://api.lexmachina.com/parties/216320"
-                },
-                {
-                    "name": "Michael Gaiman",
-                    "partyId": 223143,
-                    "url": "https://api.lexmachina.com/parties/223143"
-                },
-                {
-                    "name": "Jacqueline Gaiman",
-                    "partyId": 2878022,
-                    "url": "https://api.lexmachina.com/parties/2878022"
-                },
-                {
-                    "name": "Jacqueline E Gaiman",
-                    "partyId": 3228449,
-                    "url": "https://api.lexmachina.com/parties/3228449"
-                },
-                {
-                    "name": "Gaiman",
-                    "partyId": 58870942,
-                    "url": "https://api.lexmachina.com/parties/58870942"
-                },
-                {
-                    "name": "Shaoxingaimansha",
-                    "partyId": 64536849,
-                    "url": "https://api.lexmachina.com/parties/64536849"
-                }
-            ]
+            "message": "An unexpected error occurred"
         },
         "rawHeaders": [
+            "Date",
+            "Tue, 14 Nov 2023 19:19:35 GMT",
             "Content-Type",
-            "application/json",
-            "Content-Length",
-            "622",
+            "application/json; charset=utf-8",
             "Connection",
             "close",
-            "X-Cloud-Trace-Context",
-            "aa51b92276df54683e55b462bc136b46",
-            "Date",
-            "Wed, 10 May 2023 14:31:03 GMT",
-            "Server",
-            "Google Frontend",
+            "Content-Length",
+            "46",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "2583",
-            "X-Kong-Proxy-Latency",
             "2",
-            "Via",
-            "kong/3.2.1.0-enterprise-edition"
-        ],
-        "responseIsBinary": false
-    },
-    {
-        "scope": "https://api.lexmachina.com:443",
-        "method": "GET",
-        "path": "/search-parties?q=gaiman&pageSize=500&pageNumber=2",
-        "body": "",
-        "status": 200,
-        "response": {
-            "totalCount": 6,
-            "page": 2,
-            "nextPage": null,
-            "parties": []
-        },
-        "rawHeaders": [
-            "Content-Type",
-            "application/json",
-            "Content-Length",
-            "54",
-            "Connection",
-            "close",
-            "X-Cloud-Trace-Context",
-            "8e4897251290ffc2b73c489a62428e10",
-            "Date",
-            "Wed, 10 May 2023 14:31:06 GMT",
-            "Server",
-            "Google Frontend",
-            "Access-Control-Allow-Origin",
-            "*",
-            "X-Kong-Upstream-Latency",
-            "2488",
             "X-Kong-Proxy-Latency",
-            "1",
+            "120023",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

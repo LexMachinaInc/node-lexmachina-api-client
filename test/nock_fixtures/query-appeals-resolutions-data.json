@@ -1,0 +1,1808 @@
+[
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "GET",
+        "path": "/list-case-resolutions/FederalAppeals",
+        "body": "",
+        "status": 200,
+        "response": {
+            "court": {
+                "name": "All Federal Appeals Courts",
+                "type": "FederalAppeals"
+            },
+            "caseResolutions": [
+                {
+                    "summary": "Appellee Win",
+                    "specific": "Affirmed"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Affirmed / Reversed in Part"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Reversed"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Appealability Granted"
+                },
+                {
+                    "summary": "Appellee Win",
+                    "specific": "Appealability Denied"
+                },
+                {
+                    "summary": "Appellant Win",
+                    "specific": "Granted (Other)"
+                },
+                {
+                    "summary": "Appellee Win",
+                    "specific": "Denied (Other)"
+                },
+                {
+                    "summary": "Likely Settlement",
+                    "specific": "Likely Settlement"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Dismissal"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Consolidation"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Transfer"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Other Ruling"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Remand"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "801",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "5719bdd4541abaad4f837a2b2eaa41f2",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:21 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "15",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Appellee Win",
+                        "specific": "Affirmed"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624120",
+                    "appealsCaseId": 2005624120
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624121",
+                    "appealsCaseId": 2005624121
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624122",
+                    "appealsCaseId": 2005624122
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624123",
+                    "appealsCaseId": 2005624123
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624124",
+                    "appealsCaseId": 2005624124
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "569d4d567443c0244eb21d62b181e768",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:21 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "452",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Affirmed / Reversed in Part"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005985236",
+                    "appealsCaseId": 2005985236
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624128",
+                    "appealsCaseId": 2005624128
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005670890",
+                    "appealsCaseId": 2005670890
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005817961",
+                    "appealsCaseId": 2005817961
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005845709",
+                    "appealsCaseId": 2005845709
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "6c4f40a110d69013e297b8b175ebb1db;o=1",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:22 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "313",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Reversed"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005677700",
+                    "appealsCaseId": 2005677700
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005969885",
+                    "appealsCaseId": 2005969885
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2006056526",
+                    "appealsCaseId": 2006056526
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624131",
+                    "appealsCaseId": 2005624131
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005789208",
+                    "appealsCaseId": 2005789208
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "f6d7295aff7780abc60ae83f09c0a588",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:22 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "335",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Appealability Granted"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005802993",
+                    "appealsCaseId": 2005802993
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005807959",
+                    "appealsCaseId": 2005807959
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2006042578",
+                    "appealsCaseId": 2006042578
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005954963",
+                    "appealsCaseId": 2005954963
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005704947",
+                    "appealsCaseId": 2005704947
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "fd46d4c8e5521b4c8359118f4dca67fa",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:23 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "276",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Appellee Win",
+                        "specific": "Appealability Denied"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005678180",
+                    "appealsCaseId": 2005678180
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005756070",
+                    "appealsCaseId": 2005756070
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005786557",
+                    "appealsCaseId": 2005786557
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005813904",
+                    "appealsCaseId": 2005813904
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "87e909078dc208004dd8d8a0dd81caf6",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:23 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "443",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Granted (Other)"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005670100",
+                    "appealsCaseId": 2005670100
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005868848",
+                    "appealsCaseId": 2005868848
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005979813",
+                    "appealsCaseId": 2005979813
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005851828",
+                    "appealsCaseId": 2005851828
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2006032379",
+                    "appealsCaseId": 2006032379
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "5b030ce0f2b809067f73ab24d5bfe8d3",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:24 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "285",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Appellee Win",
+                        "specific": "Denied (Other)"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005670861",
+                    "appealsCaseId": 2005670861
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005697327",
+                    "appealsCaseId": 2005697327
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005848343",
+                    "appealsCaseId": 2005848343
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005913392",
+                    "appealsCaseId": 2005913392
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "f8ad4c30a252b627c2f87cce80026efd",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:25 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "446",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Likely Settlement",
+                        "specific": "Likely Settlement"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005625620",
+                    "appealsCaseId": 2005625620
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005683027",
+                    "appealsCaseId": 2005683027
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005689244",
+                    "appealsCaseId": 2005689244
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005816324",
+                    "appealsCaseId": 2005816324
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "ce7371b5411b34d3d8a4e681f51b09f4",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:26 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "972",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Dismissal"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624125",
+                    "appealsCaseId": 2005624125
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624126",
+                    "appealsCaseId": 2005624126
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005730458",
+                    "appealsCaseId": 2005730458
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005734269",
+                    "appealsCaseId": 2005734269
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "7f9a79749f5df6ec647b9950a9fae56f",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:26 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "380",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Consolidation"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005670259",
+                    "appealsCaseId": 2005670259
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005670170",
+                    "appealsCaseId": 2005670170
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005669430",
+                    "appealsCaseId": 2005669430
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005671072",
+                    "appealsCaseId": 2005671072
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005671370",
+                    "appealsCaseId": 2005671370
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "da8ce5bf3af00eff9b96f7988dbdf9f5",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:27 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "570",
+            "X-Kong-Proxy-Latency",
+            "15",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Transfer"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005791734",
+                    "appealsCaseId": 2005791734
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2006009881",
+                    "appealsCaseId": 2006009881
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005932373",
+                    "appealsCaseId": 2005932373
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2006001511",
+                    "appealsCaseId": 2006001511
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005785952",
+                    "appealsCaseId": 2005785952
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "acab353d2ff7f23aa9739896b86226c5",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:28 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "141",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Other Ruling"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005670866",
+                    "appealsCaseId": 2005670866
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005670885",
+                    "appealsCaseId": 2005670885
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005671073",
+                    "appealsCaseId": 2005671073
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005671850",
+                    "appealsCaseId": 2005671850
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2006073567",
+                    "appealsCaseId": 2006073567
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "8230782c1b245ae288ed8780f5d1631d",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:28 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "144",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "include": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Remand"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005825460",
+                    "appealsCaseId": 2005825460
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2006078960",
+                    "appealsCaseId": 2006078960
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005907838",
+                    "appealsCaseId": 2005907838
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005938603",
+                    "appealsCaseId": 2005938603
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "5c0aecfca5a06e4bd58a6544e2f35a94",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:28 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "208",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Appellee Win",
+                        "specific": "Affirmed"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "a6424fcbbfbbe80f64460097f17e6ac5",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:30 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1431",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Affirmed / Reversed in Part"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "6f65c6a6935c1234c2b8c27e191ad7e1",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:31 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1314",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Reversed"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "f08aba5241f5e0cb5db47d488ab2a459;o=1",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:33 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1334",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Appealability Granted"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "397f0194bc9b0baf83c25bf956fefe5d",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:35 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1345",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Appellee Win",
+                        "specific": "Appealability Denied"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624120",
+                    "appealsCaseId": 2005624120
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "15bb01d5fbd184ec64550bbb24ea8690",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:36 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1448",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Appellant Win",
+                        "specific": "Granted (Other)"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "5b3a240b37f1985b9d0b300083d1ed64",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:38 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1292",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Appellee Win",
+                        "specific": "Denied (Other)"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624120",
+                    "appealsCaseId": 2005624120
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "d955f243bc93c93ebd4cf2272cb70057",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:39 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1428",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Likely Settlement",
+                        "specific": "Likely Settlement"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624120",
+                    "appealsCaseId": 2005624120
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "f6d0c901adf792a65a70567e034315c8",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:42 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "2394",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Dismissal"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624120",
+                    "appealsCaseId": 2005624120
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "de6f3672f8ec88e2adabaae08b15e037;o=1",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:44 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "2031",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Consolidation"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "5730dc70b05be0c4cafe470764afa4a5",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:46 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1991",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Transfer"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "cbd0b71f28d25083f8125b3b7fd97dff",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:48 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1949",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Other Ruling"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624119",
+                    "appealsCaseId": 2005624119
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "5cc19668a55d94cbc94181380c957ec9",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:51 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1995",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-appeals-cases",
+        "body": {
+            "resolutions": {
+                "exclude": [
+                    {
+                        "summary": "Procedural",
+                        "specific": "Remand"
+                    }
+                ]
+            },
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005594843",
+                    "appealsCaseId": 2005594843
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005612712",
+                    "appealsCaseId": 2005612712
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624019",
+                    "appealsCaseId": 2005624019
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624118",
+                    "appealsCaseId": 2005624118
+                },
+                {
+                    "url": "https://api.lexmachina.com/appeals-cases/2005624120",
+                    "appealsCaseId": 2005624120
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "456",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "32a1580018d40e657443acc08963cf02",
+            "Date",
+            "Tue, 14 Nov 2023 17:55:53 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "1923",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    }
+]

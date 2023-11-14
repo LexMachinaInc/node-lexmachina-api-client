@@ -6,13 +6,13 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "access_token": "rdWyVoXsVpZb2kdfxMTkk8Qsm0xtTzsq",
+            "access_token": "m9JB48Vixe9IXJlxVy05twqcUHpacC0V",
             "token_type": "bearer",
             "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:30 GMT",
+            "Tue, 14 Nov 2023 17:53:54 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
@@ -26,9 +26,9 @@
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "14",
+            "17",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -46,11 +46,11 @@
             "caseResolutions": [
                 {
                     "summary": "Claimant Win",
-                    "specific": "Default Judgment"
+                    "specific": "Trial"
                 },
                 {
                     "summary": "Claimant Win",
-                    "specific": "Summary Judgment"
+                    "specific": "Judgment on the Pleadings"
                 },
                 {
                     "summary": "Claimant Win",
@@ -58,35 +58,23 @@
                 },
                 {
                     "summary": "Claimant Win",
-                    "specific": "Trial"
+                    "specific": "Decision on Bankruptcy Appeal"
                 },
                 {
                     "summary": "Claimant Win",
-                    "specific": "Decision on Bankruptcy Appeal"
+                    "specific": "Default Judgment"
+                },
+                {
+                    "summary": "Claimant Win",
+                    "specific": "Summary Judgment"
                 },
                 {
                     "summary": "Claimant Win",
                     "specific": "Consent Judgment"
                 },
                 {
-                    "summary": "Claimant Win",
-                    "specific": "Judgment on the Pleadings"
-                },
-                {
-                    "summary": "Claim Defendant Win",
-                    "specific": "Trial"
-                },
-                {
                     "summary": "Claim Defendant Win",
                     "specific": "Decision on Bankruptcy Appeal"
-                },
-                {
-                    "summary": "Claim Defendant Win",
-                    "specific": "Judgment on the Pleadings"
-                },
-                {
-                    "summary": "Claim Defendant Win",
-                    "specific": "Consent Judgment"
                 },
                 {
                     "summary": "Claim Defendant Win",
@@ -95,6 +83,18 @@
                 {
                     "summary": "Claim Defendant Win",
                     "specific": "Summary Judgment"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Consent Judgment"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Trial"
+                },
+                {
+                    "summary": "Claim Defendant Win",
+                    "specific": "Judgment on the Pleadings"
                 },
                 {
                     "summary": "Claim Defendant Win",
@@ -105,16 +105,12 @@
                     "specific": "Likely Settlement"
                 },
                 {
-                    "summary": "Procedural",
-                    "specific": "Multidistrict Litigation"
+                    "summary": "Likely Settlement",
+                    "specific": "Class Action Settlement"
                 },
                 {
                     "summary": "Procedural",
-                    "specific": "Contested Dismissal"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Interdistrict Transfer"
+                    "specific": "Stay"
                 },
                 {
                     "summary": "Procedural",
@@ -122,11 +118,7 @@
                 },
                 {
                     "summary": "Procedural",
-                    "specific": "Intradistrict Transfer"
-                },
-                {
-                    "summary": "Procedural",
-                    "specific": "Severance"
+                    "specific": "Contested Dismissal"
                 },
                 {
                     "summary": "Procedural",
@@ -134,7 +126,19 @@
                 },
                 {
                     "summary": "Procedural",
-                    "specific": "Stay"
+                    "specific": "Severance"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Intradistrict Transfer"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Multidistrict Litigation"
+                },
+                {
+                    "summary": "Procedural",
+                    "specific": "Interdistrict Transfer"
                 }
             ]
         },
@@ -142,23 +146,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "1481",
+            "1550",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "4c05365ae0d900a349f9db2ae2dd3462",
+            "e635e9abd29e30c33e5b77e3604a8a00",
             "Date",
-            "Wed, 10 May 2023 14:24:30 GMT",
+            "Tue, 14 Nov 2023 17:53:54 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "13",
+            "19",
             "X-Kong-Proxy-Latency",
-            "2",
+            "4",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }

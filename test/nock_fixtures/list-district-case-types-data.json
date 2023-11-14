@@ -6,13 +6,13 @@
         "body": "grant_type=client_credentials",
         "status": 200,
         "response": {
-            "access_token": "SFxBy0MZagY3XOjnvwl4WgXOQSyAkE06",
+            "access_token": "F7Blh1Mgs60odZc3nWAW3BatCTConJkY",
             "token_type": "bearer",
             "expires_in": 3600
         },
         "rawHeaders": [
             "Date",
-            "Wed, 10 May 2023 14:24:32 GMT",
+            "Tue, 14 Nov 2023 17:53:57 GMT",
             "Content-Type",
             "application/json; charset=utf-8",
             "Connection",
@@ -26,9 +26,9 @@
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Response-Latency",
-            "5",
+            "19",
             "Server",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     },
@@ -48,6 +48,7 @@
                     "Antitrust",
                     "Bankruptcy",
                     "Civil Rights",
+                    "Class Action",
                     "Consumer Protection",
                     "Contracts",
                     "Copyright",
@@ -74,23 +75,23 @@
             "Content-Type",
             "application/json",
             "Content-Length",
-            "383",
+            "398",
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "a84d59b94f781202ba79db034cee83b7",
+            "f5044746817fcf5247ddf1b02a318924;o=1",
             "Date",
-            "Wed, 10 May 2023 14:24:32 GMT",
+            "Tue, 14 Nov 2023 17:53:57 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "13",
+            "20",
             "X-Kong-Proxy-Latency",
-            "2",
+            "13",
             "Via",
-            "kong/3.2.1.0-enterprise-edition"
+            "kong/3.4.1.1-enterprise-edition"
         ],
         "responseIsBinary": false
     }
