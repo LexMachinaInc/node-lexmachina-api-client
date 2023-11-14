@@ -120,6 +120,22 @@ module.exports = class LexMachinaClient {
         return this.lmRequest.requestURL(config);
     }
 
+
+    async listAppealabilityRulings() {
+        var config = { 'endpoint': '/list-appealability-rulings' };
+        return this.lmRequest.requestURL(config);
+    } 
+    
+    async listAppellateDecisions() {
+        var config = { 'endpoint': '/list-appellate-decisions/FederalDistrict' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listOriginatingVenues() {
+        var config = { 'endpoint': '/list-originating-venues/FederalAppeals' };
+        return this.lmRequest.requestURL(config);
+    }
+
     async listDistrictCaseTags() {
         var config = { 'endpoint': '/list-case-tags/FederalDistrict' };
         return this.lmRequest.requestURL(config);
@@ -197,6 +213,11 @@ module.exports = class LexMachinaClient {
     }
     async listStateJudgmentEvents() {
         var config = { 'endpoint': '/list-judgment-events/State' };
+        return this.lmRequest.requestURL(config);
+    }
+
+    async listSupremeCourtDecisions() {
+        var config = { 'endpoint': '/list-supreme-court-decisions/FederalAppeals' };
         return this.lmRequest.requestURL(config);
     }
 
