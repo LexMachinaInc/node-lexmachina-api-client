@@ -420,6 +420,218 @@ describe('Execute Appeal Queries',   () => {
 
     });
 
+    describe('Query Attorneys', () => {
+
+        it('should be able to query via attorneys includes and excludes', async () => {
+            const { nockDone} = await nockBack('query-appeals-attorneys.json');
+            nock.enableNetConnect();
+
+            var caseQuery = new AppealCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.include).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.exclude).to.be.empty;
+
+            var attorneys = [ 54134214, 54367124, 18779280];
+            var attorney;
+            var index;
+            var cases;
+
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysInclude(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysExclude(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+                    
+            nockDone();
+        });
+
+        it('should be able to query via attorneys appellant includes and excludes', async () => {
+            const { nockDone} = await nockBack('query-appeals-attorneys-appellant.json');
+            nock.enableNetConnect();
+
+            var caseQuery = new AppealCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includeAppellant).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludeAppellant).to.be.empty;
+
+            var attorneys = [ 111150293, 151814354, 2132007];
+            var index;
+            var cases;
+
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysIncludeAppellant(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysExcludeAppellant(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+                
+            nockDone();
+        });
+        it('should be able to query via attorneys appellee includes and excludes', async () => {
+            const { nockDone} = await nockBack('query-appeals-attorneys-appellee.json');
+            nock.enableNetConnect();
+
+            var caseQuery = new AppealCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includeAppellee).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludeAppellee).to.be.empty;
+
+            var attorneys = [ 340302, 8110350, 109160082];
+            var attorney;
+            var index;
+            var cases;
+
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysIncludeAppellee(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysExcludeAppellee(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            
+            nockDone();
+        });
+        it('should be able to query via attorneys third party includes and excludes', async () => {
+            const { nockDone} = await nockBack('query-appeals-attorneys-third-party.json');
+            nock.enableNetConnect();
+
+            var caseQuery = new AppealCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includeThirdParty).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludeThirdParty).to.be.empty;
+
+            var attorneys = [ ];
+            var attorney;
+            var index;
+            var cases;
+
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysIncludeThirdParty(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysExcludeThirdParty(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            
+            nockDone();
+        });
+
+        it('should be able to query via attorneys respondent includes and excludes', async () => {
+            const { nockDone} = await nockBack('query-appeals-attorneys-respondent.json');
+            nock.enableNetConnect();
+
+            var caseQuery = new AppealCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includeRespondent).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludeRespondent).to.be.empty;
+
+            var attorneys = [ ];
+            var attorney;
+            var index;
+            var cases;
+
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysIncludeRespondent(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysExcludeRespondent(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            
+            nockDone();
+        });
+
+
+        it('should be able to query via attorneys petiioner movant includes and excludes', async () => {
+            const { nockDone} = await nockBack('query-appeals-attorneys-petitioner-movant.json');
+            nock.enableNetConnect();
+
+            var caseQuery = new AppealCasesQueryRequest();
+            expect(caseQuery.queryObject.attorneys.includePetitionerMovant).to.be.empty;
+            expect(caseQuery.queryObject.attorneys.excludePetitionerMovant).to.be.empty;
+
+            var attorneys = [ ];
+            var attorney;
+            var index;
+            var cases;
+
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysIncludePetitionerMovant(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for including attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            for (index=0; index < attorneys.length; index++)  {
+                attorney = attorneys[index];
+
+                caseQuery.addAttorneysExcludePetitionerMovant(attorney);
+                cases = await client.queryAppealsCases(caseQuery);
+                //console.log("Cases for excluding attorney %i = %s", attorney, cases.toString())
+                expect(cases).to.not.be.empty;
+                caseQuery.clear();
+            }
+            
+            nockDone();
+        });
+
+    });
+
 
 
     describe('Query Parties', () => {
