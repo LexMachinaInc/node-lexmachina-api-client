@@ -78,18 +78,18 @@ describe('Execute District Queries',   () => {
     describe('Query Case Tags',  () => {
 
         it('should be able to query via case tags includes and excludes', async () => {
-            const { nockDone} = await nockBack('query-case-tags-data.json');
+            const { nockDone} = await nockBack('query-district-case-tags-data.json');
             nock.enableNetConnect();
             
             var caseQuery = new DistrictCasesQueryRequest();
             var caseTag;
             var index;
             var cases;
-            var tags = await client.listDistrictCaseTags();
-            tags = tags[0].caseTags;
+            var tagsObject = await client.listDistrictCaseTags();
+            tags = tagsObject[0].caseTags;
             tags.sort();
 
-            for (index=0; index < tags.length; index++) {
+            for (index=0; index < tags.length ; index++) {
                 caseTag = tags[index];
                 //TBD remove when this gets fixed in production
                 caseQuery.addCaseTagsInclude(caseTag);

@@ -12,15 +12,15 @@ nockBack.setMode('record');
 describe('Search Parties', () => {
 
     it('should contain results', async () => {
-        var search_string = 'gaiman';
-        const { nockDone } = await nockBack('search-parties-gaiman-data.json');
+        var search_string = 'merck';
+        const { nockDone } = await nockBack('search-parties-merck-data.json');
         nock.enableNetConnect();
         const client = new LexMachinaClient();
         var parties = await client.searchParties(search_string);
         nockDone();
-        expect(parties).to.have.length.above(1);
-        parties.should.include.a.thing.with.deep.property('name', 'Neil Gaiman');
-        parties.should.include.a.thing.with.deep.property('partyId', 216320);
+        expect(parties).to.have.length.above(100);
+        parties.should.include.a.thing.with.deep.property('name', 'John Merck');
+        parties.should.include.a.thing.with.deep.property('partyId', 147190);
     });
 
     it('should page through results', async () => {

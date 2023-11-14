@@ -396,7 +396,8 @@ describe('Execute State Queries',   () => {
 
                 caseQuery.addCourtsInclude(court.name);
                 caseQuery.setState(court.state);
-                cases = await client.queryStateCases(caseQuery);
+                cases =caseQuery.setCaseStatus("Open");
+                 await client.queryStateCases(caseQuery);
                 //console.log("Cases for including court %s = %s", court, cases.toString())
                 //console.log("Checking the court include for %s:%s", court.state, court.name);
                 expect(cases).to.not.be.empty;
@@ -410,6 +411,7 @@ describe('Execute State Queries',   () => {
                 }
                 caseQuery.addCourtsExclude(court.name);
                 caseQuery.setState(court.state);
+                caseQuery.setCaseStatus("Open");
                 cases = await client.queryStateCases(caseQuery);
                 //console.log("Cases for excluding court %s = %s", court, cases.toString())
                 //console.log("Checking the court exclude for %s:%s", court.state, court.name);
