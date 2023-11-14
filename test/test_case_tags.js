@@ -47,3 +47,29 @@ describe('List State Case Tags', () => {
         });
     });
 });
+
+describe('List Appeals Case Tags', () => {
+
+    it('should contain appeals case tags', async () => {
+        const { nockDone} = await nockBack('list-appeals-case-tags-data.json');
+        nock.enableNetConnect();
+        const client = new LexMachinaClient();
+        var caseTagsObject = await client.listAppealsCaseTags();
+        nockDone();
+        
+        expect(caseTagsObject[0].caseTags).to.have.length.greaterThan(10);
+
+        caseTagsObject[0].caseTags.should.contain(
+            "Petition for Review: Grant"
+        );  
+        
+        caseTagsObject[0].caseTags.should.contain(
+            "Appealability Ruling"
+        );  
+
+        caseTagsObject.should.include.a.thing.with.deep.nested.property("court", {
+            "name": "All Federal Appeals Courts",
+            "type": "FederalAppeals"
+        });
+    });
+});
