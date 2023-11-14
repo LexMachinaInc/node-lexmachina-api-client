@@ -30,7 +30,7 @@ describe('Execute Appeal Queries',   () => {
                 caseType = types[index];
                 caseQuery.addOriginatingCasesIncludeCaseTypes(caseType);
                 cases = await client.queryAppealsCases(caseQuery);
-                console.log("Cases = "+cases)
+                //console.log("Cases = "+cases)
                 expect(cases).to.have.lengthOf(5);
                 caseQuery.clear();
             }
@@ -102,7 +102,7 @@ describe('Execute Appeal Queries',   () => {
                 resolution = resolutions[index];
                 caseQuery.addResolutionsInclude(resolution.summary, resolution.specific);
                 cases = await client.queryAppealsCases(caseQuery);
-                console.log("For resolution include %s, cases =  %s", JSON.stringify(resolution), JSON.stringify(cases) )
+                //console.log("For resolution include %s, cases =  %s", JSON.stringify(resolution), JSON.stringify(cases) )
                 expect(cases).to.not.be.empty;
                 caseQuery.clear();
             }
@@ -110,7 +110,7 @@ describe('Execute Appeal Queries',   () => {
                 resolution = resolutions[index];
                 caseQuery.addResolutionsExclude( resolution.summary, resolution.specific);
                 cases = await client.queryAppealsCases(caseQuery);
-                console.log("For resolution exclude %s, cases =  %s", JSON.stringify(resolution), JSON.stringify(cases) )
+                //console.log("For resolution exclude %s, cases =  %s", JSON.stringify(resolution), JSON.stringify(cases) )
 
                 expect(cases).to.have.lengthOf(5);
                 caseQuery.clear();
@@ -182,7 +182,7 @@ describe('Execute Appeal Queries',   () => {
 
                 caseQuery.addCourtsInclude(court);
                 cases = await client.queryAppealsCases(caseQuery);
-                console.log("Cases for including court %s = %s", court, cases.toString())
+                //console.log("Cases for including court %s = %s", court, cases.toString())
                 expect(cases).to.not.be.empty;
                 caseQuery.clear();
             }
@@ -222,7 +222,7 @@ describe('Execute Appeal Queries',   () => {
 
                 caseQuery.addLawFirmsInclude(lawFirm);
                 cases = await client.queryAppealsCases(caseQuery);
-                console.log("Cases for including lawFirm %i = %s", lawFirm, cases.toString())
+                //console.log("Cases for including lawFirm %i = %s", lawFirm, cases.toString())
                 expect(cases).to.not.be.empty;
                 caseQuery.clear();
             }
@@ -442,7 +442,7 @@ describe('Execute Appeal Queries',   () => {
 
                 caseQuery.addPartiesInclude(party);
                 cases = await client.queryAppealsCases(caseQuery);
-                console.log("Cases for including party %i = %s", party, cases.toString())
+                //console.log("Cases for including party %i = %s", party, cases.toString())
                 expect(cases).to.not.be.empty;
                 caseQuery.clear();
             }
