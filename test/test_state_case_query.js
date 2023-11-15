@@ -4,7 +4,7 @@ const expect = chai.expect;
 chai.should();
 chai.use(require('chai-things'));
 
-describe('Add and Remove Query Statements', () => {
+describe('Add and Remove Query Statements for State', () => {
 
     it('should be able to add and remove state and court includes and excludes', () => {
         var caseQuery = new StateCasesQueryRequest();

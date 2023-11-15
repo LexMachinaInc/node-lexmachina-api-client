@@ -4,7 +4,7 @@ const expect = chai.expect;
 chai.should();
 chai.use(require('chai-things'));
 
-describe('Add and Remove Query Statements', () => {
+describe('Add and Remove Query Statements for District', () => {
 
     describe('Case Status', () => {
         it('should be able to add and remove Case Status', () => {
