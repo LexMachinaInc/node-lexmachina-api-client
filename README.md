@@ -3,8 +3,6 @@ Client for Lex Machina Legal Analytics API
 
 This package provides a client to access the Lex Machina API for legal analytics. Access and documentation are provided at the [Lex Machina API Developer Portal](https://developer.lexmachina.com/).
 
-This version of the node package (2.0 and above) is specifically for accessing the general availability version of the Lex Machina API. For users still accessing beta you will need to pin your version to the 1.0 release by specifiying "@lexmachina/lexmachina-client": "1.x" in your package.json file.
-
 # Getting Started
 
 1. Create an app and get the client key and secret via the [directions here](https://developer.lexmachina.com/default/docs/generating_oauth_credentials).
