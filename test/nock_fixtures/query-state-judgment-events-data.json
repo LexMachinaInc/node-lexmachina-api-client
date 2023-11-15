@@ -26,17 +26,17 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "b7fb9f47c602d7d608f830094f2ed087",
+            "2203930acd9913f96c7b80bd9e720657",
             "Date",
-            "Tue, 14 Nov 2023 18:04:43 GMT",
+            "Wed, 15 Nov 2023 00:02:09 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "41",
+            "20",
             "X-Kong-Proxy-Latency",
-            "10",
+            "1",
             "Via",
             "kong/3.4.1.1-enterprise-edition"
         ],
@@ -96,17 +96,17 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "678e0eb79063869585c1aa57efb1f3e8",
+            "579a4ee7a33864c823c98b167edb4da4",
             "Date",
-            "Tue, 14 Nov 2023 18:04:43 GMT",
+            "Wed, 15 Nov 2023 00:02:09 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "115",
+            "127",
             "X-Kong-Proxy-Latency",
-            "1",
+            "31",
             "Via",
             "kong/3.4.1.1-enterprise-edition"
         ],
@@ -166,15 +166,15 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "ed436b6d79ace1de5724270b5fc99526",
+            "22e1ccdb0d529f9f0b1556e68be0c085",
             "Date",
-            "Tue, 14 Nov 2023 18:04:44 GMT",
+            "Wed, 15 Nov 2023 00:02:09 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "63",
+            "69",
             "X-Kong-Proxy-Latency",
             "1",
             "Via",
@@ -236,17 +236,17 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "f6ac78e9fd2c50e2c24ac9b554ff9f82",
+            "923567f95f29533307b01011925310ff",
             "Date",
-            "Tue, 14 Nov 2023 18:04:44 GMT",
+            "Wed, 15 Nov 2023 00:02:10 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "139",
+            "158",
             "X-Kong-Proxy-Latency",
-            "4",
+            "1",
             "Via",
             "kong/3.4.1.1-enterprise-edition"
         ],
@@ -306,17 +306,17 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "bfbfcf17990ff115f7353076504cabb8",
+            "7506e9c731217a40dba417a18412994a",
             "Date",
-            "Tue, 14 Nov 2023 18:04:44 GMT",
+            "Wed, 15 Nov 2023 00:02:10 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "86",
+            "87",
             "X-Kong-Proxy-Latency",
-            "1",
+            "2",
             "Via",
             "kong/3.4.1.1-enterprise-edition"
         ],
@@ -376,17 +376,367 @@
             "Connection",
             "close",
             "X-Cloud-Trace-Context",
-            "d3f930890354b9d7d2dee3503225dc26",
+            "409041d3d7e916518d0836e0bfa44ea9",
             "Date",
-            "Tue, 14 Nov 2023 18:04:44 GMT",
+            "Wed, 15 Nov 2023 00:02:10 GMT",
             "Server",
             "Google Frontend",
             "Access-Control-Allow-Origin",
             "*",
             "X-Kong-Upstream-Latency",
-            "54",
+            "67",
+            "X-Kong-Proxy-Latency",
+            "2",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "exclude": [
+                            "Default Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769478",
+                    "stateCaseId": 2002769478
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769570",
+                    "stateCaseId": 2002769570
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002651148",
+                    "stateCaseId": 2002651148
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002651250",
+                    "stateCaseId": 2002651250
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "9e5a6b7344c269d910a612ac05f30d53",
+            "Date",
+            "Wed, 15 Nov 2023 00:02:10 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "197",
+            "X-Kong-Proxy-Latency",
+            "14",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "exclude": [
+                            "Consent Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769478",
+                    "stateCaseId": 2002769478
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769570",
+                    "stateCaseId": 2002769570
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2006289796",
+                    "stateCaseId": 2006289796
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002651148",
+                    "stateCaseId": 2002651148
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "4f2a0f80c5b984b97fcf7a24f5e797a7",
+            "Date",
+            "Wed, 15 Nov 2023 00:02:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "247",
             "X-Kong-Proxy-Latency",
             "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "exclude": [
+                            "Bench Trial"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2006289796",
+                    "stateCaseId": 2006289796
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002651302",
+                    "stateCaseId": 2002651302
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002823527",
+                    "stateCaseId": 2002823527
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2004707078",
+                    "stateCaseId": 2004707078
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2006291859",
+                    "stateCaseId": 2006291859
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "f279bb38895bee923898ed4780de4b4e",
+            "Date",
+            "Wed, 15 Nov 2023 00:02:11 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "160",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "exclude": [
+                            "Jury Verdict"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769478",
+                    "stateCaseId": 2002769478
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769570",
+                    "stateCaseId": 2002769570
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2006289796",
+                    "stateCaseId": 2006289796
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002651148",
+                    "stateCaseId": 2002651148
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "9124798099b1a562edabb9ee0cc693ef",
+            "Date",
+            "Wed, 15 Nov 2023 00:02:12 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "246",
+            "X-Kong-Proxy-Latency",
+            "1",
+            "Via",
+            "kong/3.4.1.1-enterprise-edition"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.lexmachina.com:443",
+        "method": "POST",
+        "path": "/query-state-cases",
+        "body": {
+            "courts": {
+                "state": "CA"
+            },
+            "rulings": [
+                {
+                    "judgmentEvent": {
+                        "exclude": [
+                            "Other Judgment"
+                        ]
+                    }
+                }
+            ],
+            "ordering": "ByFirstFiled",
+            "page": 1,
+            "pageSize": 5
+        },
+        "status": 200,
+        "response": {
+            "cases": [
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769478",
+                    "stateCaseId": 2002769478
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002769570",
+                    "stateCaseId": 2002769570
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2003503224",
+                    "stateCaseId": 2003503224
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2006289796",
+                    "stateCaseId": 2006289796
+                },
+                {
+                    "url": "https://api.lexmachina.com/state-cases/2002651148",
+                    "stateCaseId": 2002651148
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "436",
+            "Connection",
+            "close",
+            "X-Cloud-Trace-Context",
+            "e1bf69f9f379643a3bac231639a331b3",
+            "Date",
+            "Wed, 15 Nov 2023 00:02:12 GMT",
+            "Server",
+            "Google Frontend",
+            "Access-Control-Allow-Origin",
+            "*",
+            "X-Kong-Upstream-Latency",
+            "240",
+            "X-Kong-Proxy-Latency",
+            "2",
             "Via",
             "kong/3.4.1.1-enterprise-edition"
         ],
